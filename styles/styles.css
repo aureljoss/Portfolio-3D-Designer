@@ -1,0 +1,152 @@
+*{font-size: 16px;
+font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+
+h1 {font-size: 120px;
+    font-weight: 800;}
+
+#nav {
+    list-style-type: none;
+    margin: auto;
+    right: 4vw;
+    top:1.5vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav li{
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 1.5em;
+}
+
+#nav li a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#nav li:hover{
+    font-weight: 700;
+    transform: scale(1.15);
+    transition:all .5s;
+}
+
+#myName{position: fixed;
+        display: flex;
+        margin-left:5vw;
+        text-transform: uppercase;
+        width: auto;
+        top: 1.5vh;
+        left: 5vw;
+        margin: auto;
+    }
+
+#menu { position: absolute;
+        left: 12px;
+        top: 50%;
+        animation: menu 1s forwards;
+    }
+
+@keyframes menu {
+    0%{transform: translateX(0vw) rotate(-90deg);} 
+    100%{transform: translateX(1vw) rotate(-90deg);}   
+}
+
+#menuText:hover{transform: scale(1.5);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: transform .7s;}
+
+#menuText {font-size: 9px;}
+
+#scroll {
+    position: fixed;
+    bottom:8vh;
+    left: 50%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scroll 1s 1s backwards;
+
+}
+
+@keyframes scroll{
+    0%{transform: translateY(1vw)}
+    100%{transform: translateY(0vw)}
+}
+
+#scrollArrow{
+    display: inline-block;
+    margin-top: .2em;
+    margin-left: .4em;
+    animation: scrollArrow .7s infinite alternate;   
+}
+
+#scrollText {font-size: 9px;
+    transform: rotate(-90deg); 
+}
+
+@keyframes scrollArrow{
+    0%{transform: translateY(1em) rotate(90deg) scale(1.2,2);}
+    100%{transform: translateY(0em) rotate(90deg) scale(1.2,2);}
+}
+
+.lines {border-left: 4px solid black;
+        margin: 2px;
+        height: 2px;}
+
+a:hover {color: #121214;}
+
+#start {
+    background-color: #ff5851;
+    margin: 5vh 4vw;
+    color: #121214;
+    height: 90vh;
+    width: 92vw;
+    display: flex;
+}
+
+.whiteText{
+        color: white;
+    }
+
+#intro {
+    max-width: 50vw;
+    margin:auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-weight: 800;
+}
+
+#bonjourMain{
+    display:flex;
+    width: 50vw;
+    align-items: center;
+    }
+
+#bonjour {
+        line-height: 7rem;
+        animation: bonjour 1s;
+        }       
+
+#x{
+    font-size: 120px;
+    transition: transform 1s;
+    font-weight: 800;
+    animation: ex 1.5s ease-in-out;
+    margin-bottom: .05em;
+    margin-left:.2em
+}
+
+@keyframes bonjour {
+    from { transform : translateX(1vw) }
+    to   { transform : translateX(0vw) }
+}
+
+@keyframes ex {
+    0% { transform : translateX(20vw) skew(-25deg)}
+    94% { transform : translateX(0vw) skew(-25deg) }
+}
