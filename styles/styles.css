@@ -43,6 +43,9 @@ h1 {font-size: 120px;
         margin: auto;
     }
 
+#introName {font-size: 2em;
+    animation: introAnimation 1s ease-in-out;}
+
 #menu { position: absolute;
         left: 12px;
         top: 50%;
@@ -111,42 +114,69 @@ a:hover {color: #121214;}
 
 .whiteText{
         color: white;
+        font-size: 1.2em;
+        animation: introTextAnimation 1.2s ease-in-out;
     }
 
+    @keyframes introTextAnimation {
+        0% {opacity: 0;}
+        50% {opacity: 0;}
+        100% {opacity: 100;}
+    }
+    
+
 #intro {
-    max-width: 50vw;
+    max-width: 30vw;
     margin:auto;
     margin-left: 5vw;
     margin-right: 5vw;
     font-weight: 800;
 }
 
+@keyframes introAnimation {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
 #bonjourMain{
     display:flex;
     width: 50vw;
     align-items: center;
+
     }
 
 #bonjour {
         line-height: 7rem;
-        animation: bonjour 1s;
+        animation: bonjour 3s;
         }       
 
 #x{
     font-size: 120px;
     transition: transform 1s;
     font-weight: 800;
-    animation: ex 1.5s ease-in-out;
+    animation: ex 3s ease-in-out;
     margin-bottom: .05em;
     margin-left:.2em
 }
 
 @keyframes bonjour {
-    from { transform : translateX(1vw) }
-    to   { transform : translateX(0vw) }
+    0% { opacity: 0;
+        transform: translateX(30em);}
+    30% { opacity: 0;
+        transform : translateX(30em) }
+    100%   { visibility: visible;
+        transform : translateX(0vw) }
 }
 
 @keyframes ex {
-    0% { transform : translateX(20vw) skew(-25deg)}
-    94% { transform : translateX(0vw) skew(-25deg) }
+    0% { opacity: 0;
+        transform: translateX(30em);}
+    30% { opacity: 0;
+        transform : translateX(30em) }
+    100%   { visibility: visible;
+        transform : translateX(0vw) }
+    }
+
+#firstGallery {
+    margin: 4vw;;
 }
