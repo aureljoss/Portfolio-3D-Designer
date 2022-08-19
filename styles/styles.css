@@ -4,6 +4,16 @@ font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
 h1 {font-size: 120px;
     font-weight: 800;}
 
+#navbar{
+    background-color: white;
+    height: 5vh;
+    top:0px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+
 #nav {
     list-style-type: none;
     margin: auto;
@@ -46,7 +56,7 @@ h1 {font-size: 120px;
 #introName {font-size: 2em;
     animation: introAnimation 1s ease-in-out;}
 
-#menu { position: absolute;
+#menu { position: fixed;
         left: 12px;
         top: 50%;
         animation: menu 1s forwards;
@@ -148,7 +158,7 @@ a:hover {color: #121214;}
 #bonjour {
         line-height: 7rem;
         animation: bonjour 3s;
-        }       
+        }     
 
 #x{
     font-size: 120px;
@@ -158,6 +168,7 @@ a:hover {color: #121214;}
     margin-bottom: .05em;
     margin-left:.2em
 }
+
 
 @keyframes bonjour {
     0% { opacity: 0;
@@ -179,4 +190,41 @@ a:hover {color: #121214;}
 
 #firstGallery {
     margin: 4vw;;
+}
+
+
+/* ----- Hippo Animation ----- */
+
+.hippoProject {
+    background:#1e313f;
+    margin: 10vh 15vw;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+button {
+    background: transparent;
+    width: 240px;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.ear-left-outer, .ear-right-outer {fill:#919191;}
+.ear-left-inner, .ear-right-inner {fill:#6D6D6D;}
+.eye-right-outer, .eye-left-outer, .nostril-right-outer, .nostril-left-outer, .body {fill:#AAAAAA;}
+.eye-right-inner, .eye-left-inner {fill:#FFFFFF;}
+.nostril-right-inner, .nostril-left-inner{fill:#8C8C8C;}
+.freckle {fill:#7C7C7C;}
+.tongue {fill:#FF4848;}
+.tooth-left, .tooth-right {fill:#FFFFE1;}
+
+.hello{
+    height:600px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
