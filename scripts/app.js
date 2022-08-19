@@ -4,11 +4,11 @@ document.addEventListener("scroll", () => {
 });
 
 
-gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
+//gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
 // ------ HippoProject ----- //
 
-// -- GSAP scroll trigger -- *NOT WORKING* //
+// -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.hippoProject', {
@@ -16,6 +16,7 @@ gsap.from('.hippoProject', {
       trigger: '.hippoProject',
       toggleActions: 'restart pause reverse pause',
       start: 'top center',
+      once: true,
   },
   x: 800,
 }); 
@@ -24,13 +25,14 @@ gsap.from('.hippoProject', {
             trigger: '.hippoProject',
             toggleActions: 'restart pause reverse pause',
             start: 'top center',
+            once: true,
         },
         x: 0,
         duration: 2,
         ease: "bounce.out",
     }); 
 
-// gsap.to(".hippoProject", {scrollTrigger: ".hippoProject",x:500,});//
+
 
 // -- Hippo Hover Animation -- //
 
@@ -64,3 +66,10 @@ earWiggle.set('.ear-right',{transformOrigin:"center center"});
 earWiggle.to('.ear-right', {duration: 0.1, rotation: 75});
 earWiggle.to('.ear-right', {duration: 0.1, rotation: 0});
 window.setInterval(() => earWiggle.play(0), 1500);
+
+
+// ------ Banner scroll ----- //
+
+// -- GSAP scroll trigger -- //
+gsap.registerPlugin(ScrollTrigger);
+

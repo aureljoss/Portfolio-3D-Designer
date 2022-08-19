@@ -4,6 +4,14 @@ font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
 h1 {font-size: 120px;
     font-weight: 800;}
 
+h2 {font-size:70px;}
+
+h3 {
+    font-size: 60px;
+}
+
+h5{ font-size:40px;}
+
 #navbar{
     background-color: white;
     height: 5vh;
@@ -75,7 +83,7 @@ h1 {font-size: 120px;
 #menuText {font-size: 9px;}
 
 #scroll {
-    position: fixed;
+    position: absolute;
     bottom:8vh;
     left: 50%;
     color:white;
@@ -224,7 +232,25 @@ button {
 
 .hello{
     height:600px;
+    width: 50vw;
+    margin: 15vw;
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#getInTouch {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 50px;
+    margin-top:100px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
