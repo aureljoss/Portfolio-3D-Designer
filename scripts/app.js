@@ -18,7 +18,7 @@ gsap.from('.hippoProject', {
       start: 'top center',
       once: true,
   },
-  x: 800,
+  x: 400,
 }); 
     gsap.to('.hippoProject', {
         scrollTrigger: {
