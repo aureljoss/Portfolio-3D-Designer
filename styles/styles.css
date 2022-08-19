@@ -4,13 +4,16 @@ font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
 h1 {font-size: 120px;
     font-weight: 800;}
 
-h2 {font-size:70px;}
+h2 {font-size:70px;
+}
 
 h3 {
     font-size: 60px;
 }
 
 h5{ font-size:40px;}
+
+p{    line-height: 1.5;}
 
 #navbar{
     background-color: white;
@@ -70,6 +73,13 @@ h5{ font-size:40px;}
         animation: menu 1s forwards;
     }
 
+#socialIcon{position:fixed;   
+    right: 3px;
+    top:50%;
+    display: flex;
+    flex-direction: column;
+}
+
 @keyframes menu {
     0%{transform: translateX(0vw) rotate(-90deg);} 
     100%{transform: translateX(1vw) rotate(-90deg);}   
@@ -78,9 +88,24 @@ h5{ font-size:40px;}
 #menuText:hover{transform: scale(1.5);
     font-weight: 500;
     text-decoration: underline;
-    transition: transform .7s;}
+    transition: transform .7s;
+    cursor: pointer;
+}
+
+.hoverIcon:hover {
+    animation: social .5s forwards;
+    cursor: pointer;
+}
+
+.hoverIcon{
+    height:40px;
+}
 
 #menuText {font-size: 9px;}
+
+@keyframes social {
+    to{transform: scale(1.2)};  
+}
 
 #scroll {
     position: absolute;
@@ -119,14 +144,18 @@ h5{ font-size:40px;}
         margin: 2px;
         height: 2px;}
 
+.lines:hover{
+    cursor: pointer;
+}
+
 a:hover {color: #121214;}
 
 #start {
     background-color: #ff5851;
-    margin: 5vh 4vw;
+    margin: 5vh 5vw;
     color: #121214;
     height: 90vh;
-    width: 92vw;
+    width: 90vw;
     display: flex;
 }
 
@@ -205,12 +234,13 @@ a:hover {color: #121214;}
 
 .hippoProject {
     background:#1e313f;
-    margin: 10vh 15vw;
+    margin: 20vh auto;
     height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    max-width: 1000px;
 }
 
 button {
@@ -230,13 +260,13 @@ button {
 .tongue {fill:#FF4848;}
 .tooth-left, .tooth-right {fill:#FFFFE1;}
 
-.hello{
-    height:600px;
-    width: 50vw;
-    margin: 15vw;
+.section{
+    margin: 20vh auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    max-width: 1000px;
 }
 
 #getInTouch {
@@ -251,6 +281,24 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.images {
+    border-radius: 20px;
+    max-width: 400px;
+}
 
+.images:hover {
+    border-radius: 20px;
+    box-shadow: 10px 5px 8px lightgray;
+    animation: images .3s forwards;
+    cursor: grab;
+}
+
+@keyframes images {
+    to{transform:  translateY(-5px)} 
+}
+
+.sectionTitles{
+    margin:0px;
 }
