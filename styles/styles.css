@@ -13,7 +13,8 @@ h3 {
 
 h5{ font-size:40px;}
 
-p{    line-height: 1.5;}
+p{line-height: 1.5;
+}
 
 #navbar{
     background-color: white;
@@ -229,13 +230,21 @@ a:hover {color: #121214;}
     margin: 4vw;;
 }
 
+/* ----- Introduction ----- */
+.introduction{
+    margin: 5vh auto;
+    width:40vw;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ----- Hippo Animation ----- */
 
 .hippoProject {
     background:#1e313f;
-    margin: 20vh auto;
-    height: 800px;
+    margin: 15vh auto;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
