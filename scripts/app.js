@@ -6,6 +6,31 @@ document.addEventListener("scroll", () => {
 
 //gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
+// ------ Introduction GSAP Scroll Trigger ------//
+gsap.from('.introduction', {
+  opacity: 0,
+  scrollTrigger: {
+      trigger: '.introduction',
+      toggleActions: 'restart pause reverse pause',
+      start: 'top center',
+      once: true,
+  },
+  y: 100,
+}); 
+    gsap.to('.introduction', {
+      opacity:1,
+        scrollTrigger: {
+            trigger: '.introduction',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top bottom',
+            once: true,
+        },
+        y: 0,
+        duration: 2,
+        ease: "bounce.out",
+    }); 
+
+
 // ------ HippoProject ----- //
 
 // -- GSAP scroll trigger -- //
