@@ -6,7 +6,13 @@ document.addEventListener("scroll", () => {
 
 //gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
-// ------ Introduction GSAP Scroll Trigger ------//
+// ------ Cursor ------//
+new kursor({
+  type: 1,
+  removeDefaultCursor:true,
+})
+
+// ------ Intro with GSAP Scroll Trigger ------//
 gsap.from('.introduction', {
   opacity: 0,
   scrollTrigger: {
