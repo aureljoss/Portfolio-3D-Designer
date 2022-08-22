@@ -36,6 +36,14 @@ gsap.from('.introduction', {
         ease: "bounce.out",
     }); 
 
+const btn = document.getElementById('collapsible');
+
+btn.addEventListener('click', () => {
+  btn.style.display = 'none';
+
+  const box = document.getElementById('hidden-text');
+  box.style.display = 'block';
+});
 
 // ------ HippoProject ----- //
 
@@ -82,7 +90,7 @@ mouthOpen.to('.nostrils', {duration: mouthSpeed, ease: easeType, y: -2},0);
 
 // ---- Mouse Hover --//
 
-const button = document.querySelector('button');
+const button = document.getElementById('hippo');
 
 button.addEventListener('mouseenter', enterButton);
 button.addEventListener('mouseleave', leaveButton);

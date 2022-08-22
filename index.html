@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="icon" type="image/x-icon" href="/images/noun-smiley-face-801770.svg">
     <script src="scripts/app.js" defer></script>
+    <meta charset="UTF-8">
     
 </head>
 <body>
     <header>
         <nav id="navbar">
             <div>
-                <h6 id="myName"> Aurelie Josserand</h6>
+                <p id="myName"> Aurelie Josserand</p>
             </div>
             <ul id="nav">
                 <li><a href="index.html"> 
@@ -76,7 +77,7 @@
                    </svg>
                     </button>     
                 </a> </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </nav>
         <div id="menu">
@@ -114,14 +115,34 @@
         </div>
         <section>
             <div class="section">
-                <h5 class="introduction"> This page highlights personal projects, visualizations of my current emotions, and never-ending quest for exploration. </h5>
+                <h5 class="introduction"> This page highlights my personal and professional journey, and my never-ending quest for exploration. </h5>
             <div>
                 <img class="images" src="/images/istockphoto-1142960072-612x612.jpg" alt="Portrait">
                 </div>
             </div>
         </section>
+        <section>
+            <div class="section">
+                <div class="description">
+                    <h2 class="sectionTitles"> 01. About me </h2>
+                    <p> I enjoy creating things that live on the internet. My interest in web development started back in 2015 when I was editing custom Squarespace themes for my architectural portfolio — turns out hacking together a custom contact form taught me a lot about HTML & CSS!</p>
+                    <p> Fast-forward to fall 2021, I decided to start the front end developer training on Codecademy and pursue a carreer change in front end developement.</p>     
+                    <p> As a designer and project architect, I am in charge of coordinating with teams of engineers, designers and various stackholders. All skills I am hoping will help me in my web developement journey.  </p>
+                    <h6 id="collapsible">Tell me more!</h6>
+                    <div id="hidden-text"><p> <span class='bold'>Well since you've asked, </span> I was born and raised in the south of <span class='bold'>France </span><span>&#x1F956;</span>. During my bachelors at the University of Clermont-Ferrand, I had the opportunity to study abroad in the US. One thing led to another, and here I am, ten years later, living and working in Washington D.C as an architect.
+                        <p> But after a decade in the profession, I began to realize that I want to take my technical knowledge and translate it to the <span class='bold'>digital world.</span></p>
+                        <p> I also believe that my <span class='bold'>cultural background and gender identity </span> &#x1F308; has been an asset to understand different team members and end-users perspectives. These traits have given me the ability to <span class='bold'>empathize <with others needs while balancing feedback and expectations of our clients to improve the end product.</p>
+                    
+                    </div>                   
+                </div>
+                <div>
+                    <img class="images" src="/images/1635446082155.jpg" alt="Portrait">
+                </div>
+            </div>
+        </section>
+
         <section class="hippoProject">
-            <button>
+            <button id="hippo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 109">
                     <g class="ears">
                         <g class="ear-left">
@@ -197,19 +218,6 @@
                     </svg>
                     
             </button>
-        </section>
-        <section>
-            <div class="section">
-                <div class="description">
-                    <h2 class="sectionTitles"> 01. About me </h2>
-                    <p> I enjoy creating things that live on the internet. My interest in web development started back in 2015 when I was editing custom Squarespace themes for my architectural portfolio — turns out hacking together a custom contact form taught me a lot about HTML & CSS!</p>
-                    <p> Fast-forward to fall 2021, I decided to start the front end developer training on Codecademy and pursue a carreer change in front end developement.</p>     
-                    <p> As a designer and project architect, I am in charge of coordinating with teams of engineers, designers and various stackholders. All skills I am hoping will help me in my web developement journey.  </p>                   
-                </div>
-                <div>
-                    <img class="images" src="/images/1635446082155.jpg" alt="Portrait">
-                </div>
-            </div>
         </section>
 
         <section class="section">
