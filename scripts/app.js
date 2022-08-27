@@ -142,3 +142,17 @@ gsap.from('#carrot', {
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
+// ------ Social ----- //
+
+const sayHello = document.getElementById('sayHello');
+const  social=document.getElementById('socialIcon');
+
+sayHello.addEventListener('mouseenter', enterHello);
+sayHello.addEventListener('mouseleave', leaveHello);
+
+function enterHello(){
+  social.style.transform="scale(2)";
+}
+function leaveHello(){
+  social.style.transform="scale(1)";
+}
