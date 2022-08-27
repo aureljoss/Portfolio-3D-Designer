@@ -50,18 +50,18 @@ btn.addEventListener('click', () => {
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('.hippoProject', {
+gsap.from('#hippo', {
   scrollTrigger: {
-      trigger: '.hippoProject',
+      trigger: '#hippo',
       toggleActions: 'restart pause reverse pause',
       start: 'top center',
       once: true,
   },
   x: 400,
 }); 
-    gsap.to('.hippoProject', {
+    gsap.to('#hippo', {
         scrollTrigger: {
-            trigger: '.hippoProject',
+            trigger: '#hippo',
             toggleActions: 'restart pause reverse pause',
             start: 'top center',
             once: true,
@@ -105,6 +105,36 @@ earWiggle.set('.ear-right',{transformOrigin:"center center"});
 earWiggle.to('.ear-right', {duration: 0.1, rotation: 75});
 earWiggle.to('.ear-right', {duration: 0.1, rotation: 0});
 window.setInterval(() => earWiggle.play(0), 1500);
+
+
+// ------ HippoProject ----- //
+
+// -- GSAP scroll trigger -- //
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('#carrot', {
+  scrollTrigger: {
+      trigger: '#carrot',
+      toggleActions: 'restart pause reverse pause',
+      start: 'top center',
+      once: true,
+  },
+  x: 400,
+  autoAlpha:0,
+  delay: 2,
+}); 
+    gsap.to('#carrot', {
+        scrollTrigger: {
+            trigger: '#carrot',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top center',
+            once: true,
+        },
+        x: 0,
+        duration: 2,
+        ease: "bounce.out",
+        delay:2,
+    }); 
 
 
 // ------ Banner scroll ----- //

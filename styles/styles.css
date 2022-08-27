@@ -254,30 +254,40 @@ a:hover {color: #121214;}
 
 /* ----- Hippo Animation ----- */
 
-.hippoProject {
-    background:#1e313f;
-    margin: 15vh;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    max-width: 500px;
-}
 
+
+#hippo {
+    background:#1e313f;
+    border-radius: 50px;
+}
 button {
     background: transparent;
-    width: 240px;
     border: 0;
     cursor: pointer;
-    padding: 0;
+    height: 600px;
+    width: 400px;
+    padding:5em;
 }
 
-#carrot{
-    max-width: 13px;
-    transform: rotate(-30deg);
-    margin-right: 10px;
-    ;}
+#carrot {
+    background:#542105;
+    border-radius: 50px;
+    visibility:hidden;
+}
+
+#carrotSVG {
+    height: 90%;
+}
+
+#illustrations{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    max-width: 1000px;
+}
 
 .carrot-fill{fill:#F6851F;}
 .head-fill{fill:#149547;}
@@ -302,7 +312,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 #collapsible {
