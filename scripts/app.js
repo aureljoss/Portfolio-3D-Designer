@@ -57,7 +57,7 @@ gsap.from('#hippo', {
       start: 'top center',
       once: true,
   },
-  x: 400,
+  x: 200,
 }); 
     gsap.to('#hippo', {
         scrollTrigger: {
@@ -107,7 +107,7 @@ earWiggle.to('.ear-right', {duration: 0.1, rotation: 0});
 window.setInterval(() => earWiggle.play(0), 1500);
 
 
-// ------ HippoProject ----- //
+// ------ LapiProject ----- //
 
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
@@ -119,7 +119,7 @@ gsap.from('#carrot', {
       start: 'top center',
       once: true,
   },
-  x: 400,
+  x: 200,
   autoAlpha:0,
   delay: 2,
 }); 
@@ -164,7 +164,7 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var width = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / width) * 100;
-  document.getElementById("myBar").style.height = scrolled + "%";
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }
