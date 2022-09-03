@@ -12,6 +12,28 @@ new kursor({
   removeDefaultCursor:true,
 })
 
+// ------ Menu ----- //
+
+const menu = document.getElementById('menu');
+
+menu.addEventListener('click', () => {
+  menu.style.display = 'none';
+
+  const nav = document.getElementById('nav');
+  nav.style.display = 'flex';
+});
+
+// ------ About me button ----- //
+
+const btn = document.getElementById('collapsible');
+
+btn.addEventListener('click', () => {
+  btn.style.display = 'none';
+
+  const box = document.getElementById('hidden-text');
+  box.style.display = 'block';
+});
+
 // ------ Intro with GSAP Scroll Trigger ------//
 gsap.from('.introduction', {
   opacity: 0,
@@ -35,15 +57,6 @@ gsap.from('.introduction', {
         duration: 2,
         ease: "bounce.out",
     }); 
-
-const btn = document.getElementById('collapsible');
-
-btn.addEventListener('click', () => {
-  btn.style.display = 'none';
-
-  const box = document.getElementById('hidden-text');
-  box.style.display = 'block';
-});
 
 // ------ HippoProject ----- //
 
