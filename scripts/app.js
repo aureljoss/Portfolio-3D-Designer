@@ -14,14 +14,29 @@ new kursor({
 
 // ------ Menu ----- //
 
-const menu = document.getElementById('menu');
+const menu = document.getElementById('menuText');
+const menuOptions = document.getElementById('menuOptions');
 
 menu.addEventListener('click', () => {
-  menu.style.display = 'none';
-
-  const nav = document.getElementById('nav');
-  nav.style.display = 'flex';
+  menuOptions.style.display = 'flex';
+  menuOptions.style.alignItems = 'center';
 });
+
+const aboutLink = document.getElementById('aboutLink');
+aboutLink.addEventListener('click',()=>{
+  menuOptions.style.display='none';
+})
+
+const skillsLink = document.getElementById('skillsLink');
+skillsLink.addEventListener('click',()=>{
+  menuOptions.style.display='none';
+})
+
+const contact = document.getElementById('contactLink');
+contact.addEventListener('click',()=>{
+  menuOptions.style.display='none';
+})
+
 
 // ------ About me button ----- //
 

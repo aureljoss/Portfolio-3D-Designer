@@ -26,6 +26,14 @@ body{
     margin: auto 5vw;
 }
 
+#navbar{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 5vh;
+}
+
 #myName{position: fixed;
         display: flex;
         text-transform: uppercase;
@@ -43,20 +51,24 @@ body{
 
 #menu { position: fixed;
         left: 12px;
-        top: 50%;
+        top: 48vh;
         animation: menu 1s forwards;
         height: 4vh;;
     }
 
+#menuOptions{
+    display: none;
+    position: fixed;
+    width: 20vw;
+    height: 30vh;
+    line-height: 3em;
+    top:35vh;
+    z-index: 1;
+    align-items: center;
+}
+
 #nav {
     list-style-type: none;
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    height: 90vh;
-    width: 90vw;;
-    justify-content: center;
-
     }
     
 #nav li{
@@ -71,8 +83,7 @@ body{
     }
     
 #nav li:hover{
-    font-weight: 700;
-    transform: scale(1.15);
+    transform: scale(1.15) translateX(15px);;
     transition:all .5s;
     }    
 
