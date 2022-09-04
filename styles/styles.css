@@ -348,10 +348,10 @@ button {
 
 #collapsible {
     border: solid 1px black;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 8em;
     text-align: center;
-    padding: 5px;
+    padding: 18px;
     margin:4vh auto;
   }
   
@@ -406,10 +406,10 @@ button {
 
 #sayHello{
     border: solid 1px black;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 120px;
     text-align: center;
-    padding: 5px;
+    padding: 18px;
     margin:4vh auto;
 }
 #sayHello:hover{
@@ -421,10 +421,10 @@ button {
 
 #seeMore{
     border: solid 1px black;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 120px;
     text-align: center;
-    padding: 5px;
+    padding: 18px;
     margin:4vh auto;
 }
 
