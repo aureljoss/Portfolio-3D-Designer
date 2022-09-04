@@ -60,11 +60,11 @@ body{
     display: none;
     position: fixed;
     width: 20vw;
-    height: 30vh;
-    line-height: 3em;
-    top:35vh;
+    height: 15vh;
+    top:42.5vh;
     z-index: 1;
     align-items: center;
+    background-color: white;
 }
 
 #nav {
@@ -72,19 +72,31 @@ body{
     }
     
 #nav li{
-    font-weight: 1000;
+    font-weight: 800;
+    line-height: 40px;
     }
     
 #nav li a{
     color: black;
     text-decoration: none;
     font-size: 2em;
-    background-color: white;
     }
+
+#menuOptions #cross {
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+#menuOptions #cross:hover{
+    transform: scale(1.2);
+    transition:all .5s;
+    }    
     
 #nav li:hover{
-    transform: scale(1.15) translateX(15px);;
+    transform: translateX(10px);;
     transition:all .5s;
+    text-decoration: underline wavy 3px;
     }    
 
 #socialIcon{position:fixed;   

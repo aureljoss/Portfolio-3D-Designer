@@ -18,6 +18,7 @@ const menu = document.getElementById('menuText');
 const menuOptions = document.getElementById('menuOptions');
 
 menu.addEventListener('click', () => {
+  menu.style.display='none';
   menuOptions.style.display = 'flex';
   menuOptions.style.alignItems = 'center';
 });
@@ -25,16 +26,25 @@ menu.addEventListener('click', () => {
 const aboutLink = document.getElementById('aboutLink');
 aboutLink.addEventListener('click',()=>{
   menuOptions.style.display='none';
+  menu.style.display='flex';
 })
 
 const skillsLink = document.getElementById('skillsLink');
 skillsLink.addEventListener('click',()=>{
   menuOptions.style.display='none';
+  menu.style.display='flex';
 })
 
 const contact = document.getElementById('contactLink');
 contact.addEventListener('click',()=>{
   menuOptions.style.display='none';
+  menu.style.display='flex';
+})
+
+const cross = document.getElementById('cross');
+cross.addEventListener('click',()=>{
+  menuOptions.style.display='none';
+  menu.style.display='flex';
 })
 
 
