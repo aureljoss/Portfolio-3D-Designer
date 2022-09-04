@@ -27,7 +27,6 @@ body{
 }
 
 #navbar{
-    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -110,7 +109,7 @@ body{
 .emoji {
     position: fixed;
     top: 1vh;
-    width: 2.5vw;
+    width: 2em;
     right: 5vw;
     animation: emoji 1.5s linear;
     animation-iteration-count: 10;
@@ -456,4 +455,11 @@ button {
   .progress-bar {
     height: 4px;
     background: #000000;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 10vh;
+    right: -3vw;
+    transform: rotate(90deg);
   }
