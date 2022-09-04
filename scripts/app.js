@@ -16,9 +16,13 @@ new kursor({
 
 const menu = document.getElementById('menuText');
 const menuOptions = document.getElementById('menuOptions');
+const menuLines=document.getElementById('lines');
+const cross=document.getElementById('cross');
 
 menu.addEventListener('click', () => {
   menu.style.display='none';
+  menuLines.style.display='none';
+  cross.style.display='block';
   menuOptions.style.display = 'flex';
   menuOptions.style.alignItems = 'center';
 });
@@ -41,11 +45,20 @@ contact.addEventListener('click',()=>{
   menu.style.display='flex';
 })
 
-const cross = document.getElementById('cross');
 cross.addEventListener('click',()=>{
   menuOptions.style.display='none';
-  menu.style.display='flex';
+  menu.style.removeProperty('display');
+  cross.style.display='none';
+  menuLines.style.removeProperty('display');
 })
+
+menuLines.addEventListener('click', () => {
+  menu.style.display='none';
+  menuLines.style.display='none';
+  cross.style.display='flex';
+  menuOptions.style.display = 'flex';
+  menuOptions.style.alignItems = 'center';
+});
 
 
 // ------ About me button ----- //
@@ -174,11 +187,6 @@ gsap.from('#carrot', {
         delay:2,
     }); 
 
-
-// ------ Banner scroll ----- //
-
-// -- GSAP scroll trigger -- //
-gsap.registerPlugin(ScrollTrigger);
 
 // ------ Social ----- //
 

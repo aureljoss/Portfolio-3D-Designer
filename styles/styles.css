@@ -82,16 +82,25 @@ body{
     font-size: 2em;
     }
 
-#menuOptions #cross {
+#cross {
+    display:none;
+    position:fixed;
+    left:12px;
+    top:46vh;
+    z-index: 1;
     font-size: 2em;
     font-weight: 700;
-    margin-left: 10px;
 }
 
-#menuOptions #cross:hover{
+#cross:hover{
     transform: scale(1.2);
     transition:all .5s;
     }    
+
+#lines:hover {
+    transform:scale(1.2);
+    transition: all .5s;
+}
     
 #nav li:hover{
     transform: translateX(10px);;
@@ -102,7 +111,7 @@ body{
 .emoji {
     position: fixed;
     top: 1vh;
-    width: 30px;
+    width: 2.5vw;
     right: 5vw;
     animation: emoji 1.5s linear;
     animation-iteration-count: 10;
