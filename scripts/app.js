@@ -3,220 +3,232 @@ document.addEventListener("scroll", () => {
   text.style.left = window.scrollY * 5 + "px";
 });
 
-
 //gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
 // ------ Cursor ------//
 new kursor({
   type: 1,
-  removeDefaultCursor:true,
-})
+  removeDefaultCursor: true,
+});
 
 // ------ Menu ----- //
 
-const menu = document.getElementById('menuText');
-const menuOptions = document.getElementById('menuOptions');
-const menuLines=document.getElementById('lines');
-const cross=document.getElementById('cross');
+const menu = document.getElementById("menuText");
+const menuOptions = document.getElementById("menuOptions");
+const menuLines = document.getElementById("lines");
+const cross = document.getElementById("cross");
 
-menu.addEventListener('click', () => {
-  menu.style.display='none';
-  menuLines.style.display='none';
-  cross.style.display='block';
-  menuOptions.style.display = 'flex';
-  menuOptions.style.alignItems = 'center';
+menu.addEventListener("click", () => {
+  menu.style.display = "none";
+  menuLines.style.display = "none";
+  cross.style.display = "block";
+  menuOptions.style.display = "flex";
+  menuOptions.style.alignItems = "center";
 });
 
-const aboutLink = document.getElementById('aboutLink');
-aboutLink.addEventListener('click',()=>{
-  menuOptions.style.display='none';
-  menu.style.display='flex';
-  menuLines.style.display='block';
-  cross.style.display='none';
-})
-
-const skillsLink = document.getElementById('skillsLink');
-skillsLink.addEventListener('click',()=>{
-  menuOptions.style.display='none';
-  menu.style.display='flex';
-  menuLines.style.display='block';
-  cross.style.display='none';
-})
-
-const contact = document.getElementById('contactLink');
-contact.addEventListener('click',()=>{
-  menuOptions.style.display='none';
-  menu.style.display='flex';
-  menuLines.style.display='block';
-  cross.style.display='none';
-})
-
-cross.addEventListener('click',()=>{
-  menuOptions.style.display='none';
-  menu.style.removeProperty('display');
-  cross.style.display='none';
-  menuLines.style.removeProperty('display');
-})
-
-menuLines.addEventListener('click', () => {
-  menu.style.display='none';
-  menuLines.style.display='none';
-  cross.style.display='flex';
-  menuOptions.style.display = 'flex';
-  menuOptions.style.alignItems = 'center';
+const aboutLink = document.getElementById("aboutLink");
+aboutLink.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
 });
 
+const skillsLink = document.getElementById("skillsLink");
+skillsLink.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
+});
+
+const contact = document.getElementById("contactLink");
+contact.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
+});
+
+cross.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.removeProperty("display");
+  cross.style.display = "none";
+  menuLines.style.removeProperty("display");
+});
+
+menuLines.addEventListener("click", () => {
+  menu.style.display = "none";
+  menuLines.style.display = "none";
+  cross.style.display = "flex";
+  menuOptions.style.display = "flex";
+  menuOptions.style.alignItems = "center";
+});
 
 // ------ About me button ----- //
 
-const btn = document.getElementById('collapsible');
+const btn = document.getElementById("collapsible");
 
-btn.addEventListener('click', () => {
-  btn.style.display = 'none';
+btn.addEventListener("click", () => {
+  btn.style.display = "none";
 
-  const box = document.getElementById('hidden-text');
-  box.style.display = 'block';
+  const box = document.getElementById("hidden-text");
+  box.style.display = "block";
 });
 
 // ------ Intro with GSAP Scroll Trigger ------//
-gsap.from('.introduction', {
+gsap.from(".introduction", {
   opacity: 0,
   scrollTrigger: {
-      trigger: '.introduction',
-      toggleActions: 'restart pause reverse pause',
-      start: 'top center',
-      once: true,
+    trigger: ".introduction",
+    toggleActions: "restart pause reverse pause",
+    start: "top center",
+    once: true,
   },
   y: 100,
-}); 
-    gsap.to('.introduction', {
-      opacity:1,
-        scrollTrigger: {
-            trigger: '.introduction',
-            toggleActions: 'restart pause reverse pause',
-            start: 'top bottom',
-            once: true,
-        },
-        y: 0,
-        duration: 2,
-        ease: "bounce.out",
-    }); 
+});
+gsap.to(".introduction", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".introduction",
+    toggleActions: "restart pause reverse pause",
+    start: "top bottom",
+    once: true,
+  },
+  y: 0,
+  duration: 2,
+  ease: "bounce.out",
+});
 
 // ------ HippoProject ----- //
 
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('#hippo', {
+gsap.from("#hippo", {
   scrollTrigger: {
-      trigger: '#hippo',
-      toggleActions: 'restart pause reverse pause',
-      start: 'top center',
-      once: true,
+    trigger: "#hippo",
+    toggleActions: "restart pause reverse pause",
+    start: "top center",
+    once: true,
   },
   x: 200,
-}); 
-    gsap.to('#hippo', {
-        scrollTrigger: {
-            trigger: '#hippo',
-            toggleActions: 'restart pause reverse pause',
-            start: 'top center',
-            once: true,
-        },
-        x: 0,
-        duration: 2,
-        ease: "bounce.out",
-    }); 
-
-
+});
+gsap.to("#hippo", {
+  scrollTrigger: {
+    trigger: "#hippo",
+    toggleActions: "restart pause reverse pause",
+    start: "top center",
+    once: true,
+  },
+  x: 0,
+  duration: 2,
+  ease: "bounce.out",
+});
 
 // -- Hippo Hover Animation -- //
 
-const mouthOpen= gsap.timeline ({paused:true});
-const easeType= Power2.easeOut;
-const mouthSpeed= 0.5;
-mouthOpen.to('.mouth-back',{duration:mouthSpeed, ease: easeType, y:-70},0);
-mouthOpen.to('.tongue',{duration:mouthSpeed * 1.5, ease: easeType, y:-70,},0);
-mouthOpen.to('.teeth',{duration:mouthSpeed, ease: easeType, y:-70, scaleY: 1.2},0);
-mouthOpen.to('.freckles', {duration: mouthSpeed, ease: easeType, y: -8},0);
-mouthOpen.to('.ears', {duration: mouthSpeed, ease: easeType, y:10},0);
-mouthOpen.to('.eye-right', {duration: mouthSpeed, ease: easeType, x:-2},0);
-mouthOpen.to('.eye-left', {duration: mouthSpeed, ease: easeType, x:2},0);
-mouthOpen.to('.eyes', {duration: mouthSpeed, ease: easeType, y:2},0);
-mouthOpen.to('.nostrils', {duration: mouthSpeed, ease: easeType, y: -2},0);
+const mouthOpen = gsap.timeline({ paused: true });
+const easeType = Power2.easeOut;
+const mouthSpeed = 0.5;
+mouthOpen.to(
+  ".mouth-back",
+  { duration: mouthSpeed, ease: easeType, y: -70 },
+  0
+);
+mouthOpen.to(
+  ".tongue",
+  { duration: mouthSpeed * 1.5, ease: easeType, y: -70 },
+  0
+);
+mouthOpen.to(
+  ".teeth",
+  { duration: mouthSpeed, ease: easeType, y: -70, scaleY: 1.2 },
+  0
+);
+mouthOpen.to(".freckles", { duration: mouthSpeed, ease: easeType, y: -8 }, 0);
+mouthOpen.to(".ears", { duration: mouthSpeed, ease: easeType, y: 10 }, 0);
+mouthOpen.to(".eye-right", { duration: mouthSpeed, ease: easeType, x: -2 }, 0);
+mouthOpen.to(".eye-left", { duration: mouthSpeed, ease: easeType, x: 2 }, 0);
+mouthOpen.to(".eyes", { duration: mouthSpeed, ease: easeType, y: 2 }, 0);
+mouthOpen.to(".nostrils", { duration: mouthSpeed, ease: easeType, y: -2 }, 0);
 
 // ---- Mouse Hover --//
 
-const button = document.getElementById('hippo');
+const button = document.getElementById("hippo");
 
-button.addEventListener('mouseenter', enterButton);
-button.addEventListener('mouseleave', leaveButton);
+button.addEventListener("mouseenter", enterButton);
+button.addEventListener("mouseleave", leaveButton);
 
-function enterButton(){mouthOpen.play();}
-function leaveButton (){mouthOpen.reverse();}
-
+function enterButton() {
+  mouthOpen.play();
+}
+function leaveButton() {
+  mouthOpen.reverse();
+}
 
 // -- Ear Wiggle --//
-const earWiggle=gsap.timeline({paused:true, repeat:2});
-earWiggle.set('.ear-right',{transformOrigin:"center center"});
-earWiggle.to('.ear-right', {duration: 0.1, rotation: 75});
-earWiggle.to('.ear-right', {duration: 0.1, rotation: 0});
+const earWiggle = gsap.timeline({ paused: true, repeat: 2 });
+earWiggle.set(".ear-right", { transformOrigin: "center center" });
+earWiggle.to(".ear-right", { duration: 0.1, rotation: 75 });
+earWiggle.to(".ear-right", { duration: 0.1, rotation: 0 });
 window.setInterval(() => earWiggle.play(0), 1500);
-
 
 // ------ LapiProject ----- //
 
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('#carrot', {
+gsap.from("#carrot", {
   scrollTrigger: {
-      trigger: '#carrot',
-      toggleActions: 'restart pause reverse pause',
-      start: 'top center',
-      once: true,
+    trigger: "#carrot",
+    toggleActions: "restart pause reverse pause",
+    start: "top center",
+    once: true,
   },
   x: 200,
-  autoAlpha:0,
+  autoAlpha: 0,
   delay: 2,
-}); 
-    gsap.to('#carrot', {
-        scrollTrigger: {
-            trigger: '#carrot',
-            toggleActions: 'restart pause reverse pause',
-            start: 'top center',
-            once: true,
-        },
-        x: 0,
-        duration: 2,
-        ease: "bounce.out",
-        delay:2,
-    }); 
-
+});
+gsap.to("#carrot", {
+  scrollTrigger: {
+    trigger: "#carrot",
+    toggleActions: "restart pause reverse pause",
+    start: "top center",
+    once: true,
+  },
+  x: 0,
+  duration: 2,
+  ease: "bounce.out",
+  delay: 2,
+});
 
 // ------ Social ----- //
 
-const sayHello = document.getElementById('sayHello');
-const  social=document.getElementById('socialIcon');
+const sayHello = document.getElementById("sayHello");
+const social = document.getElementById("socialIcon");
 
-sayHello.addEventListener('mouseenter', enterHello);
-sayHello.addEventListener('mouseleave', leaveHello);
+sayHello.addEventListener("mouseenter", enterHello);
+sayHello.addEventListener("mouseleave", leaveHello);
 
-function enterHello(){
-  social.style.transform="scale(2)";
+function enterHello() {
+  social.style.transform = "scale(2)";
 }
-function leaveHello(){
-  social.style.transform="scale(1)";
+function leaveHello() {
+  social.style.transform = "scale(1)";
 }
-
 
 // ----- Scroll Indicator ----- //
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
