@@ -514,34 +514,18 @@ button {
   margin: 0px;
 }
 
-#sayHello {
+.expandButtons {
   border: solid 1px black;
   border-radius: 40px;
-  width: 120px;
   text-align: center;
-  padding: 18px;
+  padding: 14px;
+  width:8em;
   margin: 4vh auto;
 }
-#sayHello:hover {
-  background-color: rgb(200, 248, 200);
+.expandButtons:hover {
+  background-color: rgb(233, 233, 233);
   cursor: pointer;
-  box-shadow: 5px 5px 5px lightgray;
-  transform: translateY(-2px);
-}
-
-#seeMore {
-  border: solid 1px black;
-  border-radius: 40px;
-  width: 120px;
-  text-align: center;
-  padding: 18px;
-  margin: 4vh auto;
-}
-
-#seeMore:hover {
-  background-color: rgb(238, 203, 243);
-  cursor: pointer;
-  box-shadow: 5px 5px 5px lightgray;
+  box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
 }
 
