@@ -478,6 +478,29 @@ button {
   font-weight: 600;
 }
 
+#skillsLayout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 0px 20px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.skillsButton{
+  border: 1px solid black;
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(56, 56, 56);
+  font-weight: 200;
+  font-size: .8em;
+  width:100px;
+
+}
+
 #getInTouch {
   display: flex;
   justify-content: center;
