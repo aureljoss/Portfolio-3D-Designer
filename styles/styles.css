@@ -363,10 +363,6 @@ button {
   visibility: hidden;
 }
 
-#carrotSVG {
-  height: 90%;
-}
-
 #illustrations {
   margin: auto;
   display: flex;
