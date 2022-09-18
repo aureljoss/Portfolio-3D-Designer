@@ -203,6 +203,13 @@ gsap.to("#lapi", {
   delay: 2,
 });
 
+// -- Starfish Walking --//
+const STWalking = gsap.timeline({ paused: true, repeat: 2 });
+STWalking.set(".Starfish", { transformOrigin: "center center" });
+STWalking.to(".Starfish", { duration: 4, x:-300, y:-100 });
+STWalking.to(".Starfish", { duration: 4, x:0, y:0 });
+window.setInterval(() => STWalking.play(0), 1500);
+
 // ------ Social ----- //
 
 const sayHello = document.getElementById("sayHello");
