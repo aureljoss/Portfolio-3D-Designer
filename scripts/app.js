@@ -67,7 +67,7 @@ menuLines.addEventListener("click", () => {
 
 // ------ About me button ----- //
 
-const btn = document.getElementById("collapsible");
+const btn = document.getElementsByClassName("expandButtons");
 
 btn.addEventListener("click", () => {
   btn.style.display = "none";
@@ -181,7 +181,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("#lapi", {
   scrollTrigger: {
-    trigger: "#lapi",
+    trigger: "#carrot",
     toggleActions: "restart pause reverse pause",
     start: "top center",
     once: true,
