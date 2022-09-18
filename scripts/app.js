@@ -85,7 +85,7 @@ gsap.from(".introduction", {
     start: "top center",
     once: true,
   },
-  y: 100,
+  x: -100,
 });
 gsap.to(".introduction", {
   opacity: 1,
@@ -95,7 +95,7 @@ gsap.to(".introduction", {
     start: "top bottom",
     once: true,
   },
-  y: 0,
+  x: 0,
   duration: 2,
   ease: "bounce.out",
 });

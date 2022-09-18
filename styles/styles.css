@@ -336,7 +336,7 @@ a:hover {
 /* ----- Introduction ----- */
 .introduction {
   margin: 5vh auto;
-  width: 40vw;
+  width: 60vw;
   max-width: 1000px;
   justify-content: center;
   align-items: center;
@@ -475,7 +475,7 @@ button#hippo {
 }
 
 .section {
-  margin: 20vh auto;
+  margin: 30vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
