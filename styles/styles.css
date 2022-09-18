@@ -357,9 +357,11 @@ button {
   padding: 5em;
 }
 
-#carrot {
+#lapi {
   background: #542105;
   border-radius: 50px;
+  max-width: 400px;
+  max-height:600px;
   visibility: hidden;
 }
 
@@ -370,7 +372,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 1vw;
-  max-width: 1000px;
 }
 
 .carrot-fill {

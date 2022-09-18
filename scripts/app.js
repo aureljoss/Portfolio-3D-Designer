@@ -179,9 +179,9 @@ window.setInterval(() => earWiggle.play(0), 1500);
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#carrot", {
+gsap.from("#lapi", {
   scrollTrigger: {
-    trigger: "#carrot",
+    trigger: "#lapi",
     toggleActions: "restart pause reverse pause",
     start: "top center",
     once: true,
@@ -190,9 +190,9 @@ gsap.from("#carrot", {
   autoAlpha: 0,
   delay: 2,
 });
-gsap.to("#carrot", {
+gsap.to("#lapi", {
   scrollTrigger: {
-    trigger: "#carrot",
+    trigger: "#lapi",
     toggleActions: "restart pause reverse pause",
     start: "top center",
     once: true,
