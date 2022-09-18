@@ -181,7 +181,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("#lapi", {
   scrollTrigger: {
-    trigger: "#carrot",
+    trigger: "#lapi",
     toggleActions: "restart pause reverse pause",
     start: "top center",
     once: true,
@@ -204,11 +204,25 @@ gsap.to("#lapi", {
 });
 
 // -- Starfish Walking --//
-const STWalking = gsap.timeline({ paused: true, repeat: 2 });
-STWalking.set(".Starfish", { transformOrigin: "center center" });
-STWalking.to(".Starfish", { duration: 4, x:-300, y:-100 });
-STWalking.to(".Starfish", { duration: 4, x:0, y:0 });
-window.setInterval(() => STWalking.play(0), 1500);
+const SFwalking = gsap.timeline({ paused: true });
+const SFSpeed = 0.5;
+
+SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -20, x:50 }, 0);
+
+// ---- Mouse Hover --//
+
+const Starfish = document.getElementById("lapi");
+
+Starfish.addEventListener("mouseenter", enterButton);
+Starfish.addEventListener("mouseleave", leaveButton);
+
+function enterButton() {
+  SFwalking .play();
+}
+function leaveButton() {
+  SFwalking .reverse();
+}
+
 
 // ------ Social ----- //
 

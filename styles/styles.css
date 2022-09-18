@@ -367,6 +367,8 @@ button#hippo {
   visibility: hidden;
 }
 
+#Chair,#Lapipiou,#Drink{transform: scale(1.2);}
+
 #illustrations {
   margin: auto;
   display: flex;
@@ -381,68 +383,60 @@ button#hippo {
   stroke-width: 3px;
 }
 
-.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
   stroke: #000;
 }
 
-.cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11 {
+.cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9, .cls-10 {
   stroke-miterlimit: 10;
 }
 
-.cls-2, .cls-12 {
+.cls-2 {
   fill: none;
 }
 
-.cls-3, .cls-9 {
+.cls-3, .cls-8 {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .cls-4 {
-  fill: #c4b0a2;
+  fill: #d8c2c0;
 }
 
-.cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+.cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
   stroke-width: 2px;
 }
 
 .cls-5 {
-  fill: #d8c2c0;
-}
-
-.cls-14 {
-  clip-path: url(#clippath);
-}
-
-.cls-6 {
   fill: #e7ad44;
 }
 
-.cls-7 {
+.cls-6 {
   fill: #38ad0c;
 }
 
-.cls-15 {
+.cls-11 {
   fill: #5191bc;
 }
 
-.cls-8 {
+.cls-7 {
   fill: #6b2905;
 }
 
-.cls-9 {
+.cls-8 {
   fill: #cd431c;
 }
 
-.cls-10 {
+.cls-9 {
   fill: #ce953c;
 }
 
-.cls-16 {
+.cls-12 {
   fill: #ef63a2;
 }
 
-.cls-11 {
+.cls-10 {
   fill: #08227f;
 }
 
@@ -490,7 +484,7 @@ button#hippo {
 }
 
 #collapsible {
-  border: solid 1px black;
+  border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   width: 8em;
   text-align: center;
@@ -499,7 +493,6 @@ button#hippo {
 }
 
 #collapsible:hover {
-  background-color: rgb(211, 211, 211);
   cursor: pointer;
   box-shadow: 5px 5px 5px lightgray;
   transform: translateY(-2px);
@@ -587,7 +580,7 @@ button#hippo {
 }
 
 .expandButtons {
-  border: solid 1px black;
+  border: solid 1px rgb(134,134,134);
   border-radius: 40px;
   text-align: center;
   padding: 14px;
@@ -595,7 +588,6 @@ button#hippo {
   margin: 4vh auto;
 }
 .expandButtons:hover {
-  background-color: rgb(233, 233, 233);
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
