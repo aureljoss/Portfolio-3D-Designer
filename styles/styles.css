@@ -358,11 +358,10 @@ button {
 }
 
 #lapi {
-  background: #542105;
   border-radius: 50px;
   max-width: 400px;
   max-height:600px;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
 #illustrations {
@@ -371,41 +370,81 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1vw;
+  gap: 2vw;
 }
 
-.carrot-fill {
-  fill: #f6851f;
+.cls-1 {
+  fill: #2b91e3;
+  stroke-width: 3px;
 }
-.head-fill {
-  fill: #149547;
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+  stroke: #000;
 }
-.head-outline {
-  fill: none;
-  stroke: black;
-  stroke-width: 10px;
-}
-.carrot-outline {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4px;
-  stroke-miterlimit: 7;
-}
-.eyes {
-  stroke: #000000;
-  stroke-width: 5;
+
+.cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11 {
   stroke-miterlimit: 10;
 }
-.eyes-twinkle {
-  fill: #ffffff;
-  stroke: #ffffff;
-  stroke-miterlimit: 10;
-}
-.smile {
+
+.cls-2, .cls-12 {
   fill: none;
-  stroke: #000000;
-  stroke-width: 6;
-  stroke-miterlimit: 10;
+}
+
+.cls-3, .cls-9 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cls-4 {
+  fill: #c4b0a2;
+}
+
+.cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+  stroke-width: 2px;
+}
+
+.cls-13 {
+  fill: #dba601;
+}
+
+.cls-5 {
+  fill: #d8c2c0;
+}
+
+.cls-14 {
+  clip-path: url(#clippath);
+}
+
+.cls-6 {
+  fill: #e7ad44;
+}
+
+.cls-7 {
+  fill: #38ad0c;
+}
+
+.cls-15 {
+  fill: #5191bc;
+}
+
+.cls-8 {
+  fill: #6b2905;
+}
+
+.cls-9 {
+  fill: #cd431c;
+}
+
+.cls-10 {
+  fill: #ce953c;
+}
+
+.cls-16 {
+  fill: #ef63a2;
+}
+
+.cls-11 {
+  fill: #08227f;
 }
 
 .ear-left-outer,
