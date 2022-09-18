@@ -348,19 +348,22 @@ a:hover {
   background: #1e313f;
   border-radius: 50px;
 }
+
 button {
   background: transparent;
   border: 0;
   cursor: pointer;
   height: 600px;
   width: 400px;
-  padding: 5em;
+}
+
+button#hippo {
+  padding:5em;
 }
 
 #lapi {
+  background-color: #dba601;
   border-radius: 50px;
-  max-width: 400px;
-  max-height:600px;
   /*visibility: hidden;*/
 }
 
@@ -401,10 +404,6 @@ button {
 
 .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
   stroke-width: 2px;
-}
-
-.cls-13 {
-  fill: #dba601;
 }
 
 .cls-5 {
