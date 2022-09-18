@@ -203,13 +203,13 @@ gsap.to("#lapi", {
   delay: 2,
 });
 
-// -- Starfish Walking --//
+// -- Starfish Walking Lapi Project--//
 const SFwalking = gsap.timeline({ paused: true });
 const SFSpeed = 0.5;
 
 SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -20, x:50 }, 0);
 
-// ---- Mouse Hover --//
+// ---- Mouse Hover Lapi Project--//
 
 const Starfish = document.getElementById("lapi");
 
@@ -247,9 +247,7 @@ window.onscroll = function () {
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
+  var height = document.documentElement.scrollHeight -document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }

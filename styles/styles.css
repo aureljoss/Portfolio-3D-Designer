@@ -334,7 +334,7 @@ a:hover {
 }
 
 /* ----- Introduction ----- */
-#introduction {
+.introduction {
   margin: 5vh auto;
   width: 40vw;
   max-width: 1000px;
@@ -483,25 +483,6 @@ button#hippo {
   max-width: 1200px;
 }
 
-#collapsible {
-  border: solid 1px rgb(134, 134, 134);
-  border-radius: 40px;
-  width: 8em;
-  text-align: center;
-  padding: 18px;
-  margin: 4vh auto;
-}
-
-#collapsible:hover {
-  cursor: pointer;
-  box-shadow: 5px 5px 5px lightgray;
-  transform: translateY(-2px);
-}
-
-#hidden-text {
-  display: none;
-}
-
 .bold {
   font-weight: 600;
 }
@@ -579,19 +560,24 @@ button#hippo {
   margin: 0px;
 }
 
-.expandButtons {
+.expandButtons, #collapsible {
   border: solid 1px rgb(134,134,134);
   border-radius: 40px;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   width:8em;
   margin: 4vh auto;
 }
-.expandButtons:hover {
+.expandButtons:hover, #collapsible:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
 }
+
+#hidden-text {
+  display: none;
+}
+
 
 .pinkText {
   color: #db433e;
