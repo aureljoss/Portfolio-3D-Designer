@@ -67,7 +67,7 @@ menuLines.addEventListener("click", () => {
 
 // ------ About me button ----- //
 
-const btn = document.getElementsByClassName("expandButtons");
+const btn = document.getElementById("collapsible");
 
 btn.addEventListener("click", () => {
   btn.style.display = "none";

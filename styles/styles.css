@@ -364,7 +364,7 @@ button#hippo {
 #lapi {
   background-color: #dba601;
   border-radius: 50px;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 #illustrations {
@@ -489,7 +489,7 @@ button#hippo {
   max-width: 1200px;
 }
 
-#expandButtons {
+#collapsible {
   border: solid 1px black;
   border-radius: 40px;
   width: 8em;
@@ -498,7 +498,7 @@ button#hippo {
   margin: 4vh auto;
 }
 
-#expandButtons:hover {
+#collapsible:hover {
   background-color: rgb(211, 211, 211);
   cursor: pointer;
   box-shadow: 5px 5px 5px lightgray;
