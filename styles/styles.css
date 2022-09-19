@@ -475,12 +475,12 @@ button#hippo {
 }
 
 .section {
-  margin: 30vh auto;
+  margin: 15vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5vw;
-  max-width: 1200px;
+  width: 60vw;
 }
 
 .bold {
