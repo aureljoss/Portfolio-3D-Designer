@@ -36,6 +36,10 @@ body {
   margin: auto 5vw;
 }
 
+header{
+  margin-right: 5vw;
+}
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -578,10 +582,10 @@ button#hippo {
   color: #db433e;
 }
 
-.header {
+.progress {
   position: fixed;
   z-index: 1;
-  width: 88.8vw;
+  width: 89vw;
 }
 
 /* The progress container (grey background) */
@@ -599,6 +603,6 @@ button#hippo {
 footer {
   position: fixed;
   bottom: 10vh;
-  right: -3vw;
+  right: -4vw;
   transform: rotate(90deg);
 }
