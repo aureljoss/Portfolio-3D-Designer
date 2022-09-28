@@ -491,23 +491,18 @@ button#hippo {
   font-weight: 600;
 }
 
-#skillsLayout{
-  border: 1px solid rgb(134,134,134);
-  border-radius: 40px;
-  margin: 3vh 0vh;
-  width: 550px;
+.list {
+  list-style-type: none;
 }
 
+#listSkills{
+  display: flex;
+  flex-direction: row;
+}
 
-.skillsButton{
-  padding: 10px;
-  border: solid 1px rgb(134,134,134);
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: .8em;
-  width:130px;
-  text-align: center;
-  text-transform: uppercase;
+.SLA{
+  display: flex;
+  flex-direction: column;
 }
 
 #plusSignPos{
