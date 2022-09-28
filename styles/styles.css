@@ -485,6 +485,7 @@ button#hippo {
   align-items: center;
   gap: 5vw;
   width: 60vw;
+  border-top: 1px solid #c4c4c4;
 }
 
 .bold {
