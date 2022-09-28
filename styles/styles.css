@@ -498,14 +498,6 @@ button#hippo {
   width: 550px;
 }
 
-#sB{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 0px 10px;
-}
 
 .skillsButton{
   padding: 10px;
