@@ -534,7 +534,7 @@ button#hippo {
   display: flex;
   flex-direction: row;
   margin-bottom: 10vh;
-  column-gap: 1em;
+  width: 60vw;
 }
 
 .SLA {
@@ -549,11 +549,13 @@ button#hippo {
   display: flex;
   flex-direction: row;
   column-gap: 4em;
-
+  width: 60vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .quotes {
-  min-width:250px;
+  max-width:40%;
   
 }
 
