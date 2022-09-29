@@ -547,17 +547,21 @@ button#hippo {
 }
 
 #quotes-group {
-  display: flex;
-  flex-direction: row;
-  column-gap: 4em;
   width: 60vw;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .quotes {
-  max-width:40%;
-  
+  max-width:60%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.portrait{
+  max-width: 3em;
+  max-height:3em;
+  border-radius: 1.5em;
+  margin: 2em;
 }
 
 #plusSignPos {
