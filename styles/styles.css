@@ -36,7 +36,7 @@ body {
   margin: auto 5vw;
 }
 
-header{
+header {
   margin-right: 5vw;
 }
 
@@ -340,6 +340,7 @@ a:hover {
 /* ----- Introduction ----- */
 .introduction {
   margin: 5vh auto;
+  padding-top: 15vh;
   width: 60vw;
   max-width: 1000px;
   justify-content: center;
@@ -362,7 +363,7 @@ button {
 }
 
 button#hippo {
-  padding:5em;
+  padding: 5em;
 }
 
 #lapi {
@@ -371,7 +372,11 @@ button#hippo {
   visibility: hidden;
 }
 
-#Chair,#Lapipiou,#Drink{transform: scale(1.2);}
+#Chair,
+#Lapipiou,
+#Drink {
+  transform: scale(1.2);
+}
 
 #illustrations {
   margin: auto;
@@ -387,11 +392,27 @@ button#hippo {
   stroke-width: 3px;
 }
 
-.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9,
+.cls-10 {
   stroke: #000;
 }
 
-.cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9, .cls-10 {
+.cls-1,
+.cls-2,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-9,
+.cls-10 {
   stroke-miterlimit: 10;
 }
 
@@ -399,7 +420,8 @@ button#hippo {
   fill: none;
 }
 
-.cls-3, .cls-8 {
+.cls-3,
+.cls-8 {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -408,7 +430,13 @@ button#hippo {
   fill: #d8c2c0;
 }
 
-.cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9,
+.cls-10 {
   stroke-width: 2px;
 }
 
@@ -494,34 +522,47 @@ button#hippo {
 
 .list {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.list li{
+.list li {
   line-height: 2em;
 }
 
-#listSkills{
+#listSkills {
   display: flex;
   flex-direction: row;
   margin-bottom: 10vh;
+  column-gap: 1em;
 }
 
-.SLA{
+.SLA {
   display: flex;
   flex-direction: column;
-  width:33%;
-  min-width:200px;
+  width: 33%;
+  min-width: 200px;
   flex-wrap: nowrap;
 }
 
-#plusSignPos{
-  position: absolute;
-  max-width: 1200px;  
+#quotes-group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4em;
+
 }
 
-#plusSign{
+.quotes {
+  min-width:250px;
+  
+}
+
+#plusSignPos {
+  position: absolute;
+  min-width: 1200px;
+}
+
+#plusSign {
   width: 3em;
 }
 
@@ -557,15 +598,17 @@ button#hippo {
   }
 }
 
-.expandButtons, #collapsible {
-  border: solid 1px rgb(134,134,134);
+.expandButtons,
+#collapsible {
+  border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   text-align: center;
   padding: 10px;
-  width:8em;
+  width: 8em;
   margin: 4vh auto;
 }
-.expandButtons:hover, #collapsible:hover {
+.expandButtons:hover,
+#collapsible:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
@@ -574,7 +617,6 @@ button#hippo {
 #hidden-text {
   display: none;
 }
-
 
 .pinkText {
   color: #db433e;
