@@ -535,6 +535,7 @@ button#hippo {
   flex-direction: row;
   margin-bottom: 10vh;
   width: 60vw;
+  justify-content: space-between;
 }
 
 .SLA {
