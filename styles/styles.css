@@ -552,7 +552,7 @@ button#hippo {
 
 .quotes {
   max-width:60%;
-  margin: 2em auto;
+  margin-top:2em;
   display: flex;
   flex-direction: row;
 }
@@ -561,7 +561,7 @@ button#hippo {
   max-width: 3em;
   max-height:3em;
   border-radius: 1.5em;
-  margin: 2em;
+  margin-right: 2em;
 }
 
 #plusSignPos {
