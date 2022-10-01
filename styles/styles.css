@@ -20,8 +20,16 @@ h3 {
   font-size: 60px;
 }
 
+h4{
+  font-size:50px;
+}
+
 h5 {
   font-size: 40px;
+}
+
+h6{
+  font-size:18px;
 }
 
 p {
@@ -514,6 +522,7 @@ button#hippo {
   gap: 5vw;
   width: 60vw;
   border-top: 1px solid #c4c4c4;
+  max-width: 1000px;
 }
 
 .bold {
@@ -536,6 +545,7 @@ button#hippo {
   margin-bottom: 10vh;
   width: 60vw;
   justify-content: space-between;
+  max-width: 1000px;
 }
 
 .SLA {
