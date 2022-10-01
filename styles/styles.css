@@ -347,12 +347,10 @@ a:hover {
 
 /* ----- Introduction ----- */
 .introduction {
-  margin: 5vh auto;
   padding-top: 20vh;
   width: 60vw;
   max-width: 1000px;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 /* ----- Hippo Animation ----- */
@@ -515,7 +513,7 @@ button#hippo {
 }
 
 .section {
-  margin: 25vh auto;
+  margin: 10vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,6 +521,10 @@ button#hippo {
   width: 60vw;
   border-top: 1px solid #c4c4c4;
   max-width: 1000px;
+}
+
+.sectionTitles{
+  margin-top:10vh;
 }
 
 .bold {
