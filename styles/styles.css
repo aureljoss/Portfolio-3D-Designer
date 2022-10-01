@@ -561,10 +561,11 @@ button#hippo {
 }
 
 .quotes {
-  max-width:60%;
-  margin-top:2em;
+  max-width: 600px;
+  margin:1 auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .portrait{
