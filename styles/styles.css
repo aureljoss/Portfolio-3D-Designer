@@ -147,15 +147,6 @@ header {
   }
 }
 
-#socialIcon {
-  position: fixed;
-  right: 5px;
-  height: 15vh;
-  top: 45vh;
-  display: flex;
-  flex-direction: column;
-}
-
 @keyframes menu {
   0% {
     transform: translateX(0vw) rotate(-90deg);
@@ -171,15 +162,6 @@ header {
   text-decoration: underline;
   transition: transform 0.7s;
   cursor: pointer;
-}
-
-.hoverIcon:hover {
-  animation: social 0.5s forwards;
-  cursor: pointer;
-}
-
-.hoverIcon {
-  height: 40px;
 }
 
 #menuText {
@@ -546,8 +528,9 @@ button#hippo {
   display: flex;
   flex-direction: row;
   margin-bottom: 10vh;
-  max-width: 60vw;
+  width: 60vw;
   justify-content: space-between;
+}
 
 .SLA {
   display: flex;
@@ -571,8 +554,8 @@ button#hippo {
 }
 
 .portrait{
-  max-width: 15px;
-  max-height:15px;
+  max-width: 3em;
+  max-height:3em;
   border-radius: 1.5em;
   margin-right: 2em;
 }
@@ -660,9 +643,29 @@ button#hippo {
   background: #000000;
 }
 
+
+#socialIcon {
+  position: fixed;
+  right: 5px;
+  top: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hoverIcon:hover {
+  animation: social 0.5s forwards;
+  cursor: pointer;
+}
+
+.hoverIcon {
+  height: 40px;
+}
+
+
 #madeWithLove {
   position: fixed;
-  bottom: 10vh;
-  right: -4vw;
+  right: 38px;
+  height: 15vh;
+  bottom: 4vh;
   transform: rotate(90deg);
 }
