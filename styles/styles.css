@@ -546,10 +546,8 @@ button#hippo {
   display: flex;
   flex-direction: row;
   margin-bottom: 10vh;
-  width: 60vw;
+  max-width: 60vw;
   justify-content: space-between;
-  max-width: 1000px;
-}
 
 .SLA {
   display: flex;
@@ -559,8 +557,9 @@ button#hippo {
   flex-wrap: nowrap;
 }
 
-#quotes-group {
-  width: 60vw;
+#quotes-group{
+  width: 50%;
+  margin: 0 auto;
 }
 
 .quotes {
@@ -572,8 +571,8 @@ button#hippo {
 }
 
 .portrait{
-  max-width: 3em;
-  max-height:3em;
+  max-width: 15px;
+  max-height:15px;
   border-radius: 1.5em;
   margin-right: 2em;
 }
