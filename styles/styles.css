@@ -137,8 +137,8 @@ header {
   top: 1vh;
   height: 3vh;
   right: 5vw;
-  animation: emoji 1.5s linear;
-  animation-iteration-count: 10;
+  animation: emoji 2s linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes emoji {
@@ -260,6 +260,7 @@ a:hover {
   color: white;
   font-size: 1.2em;
   animation: introTextAnimation 1.2s ease-in-out;
+  max-width:600px;
 }
 
 @keyframes introTextAnimation {
@@ -275,7 +276,7 @@ a:hover {
 }
 
 #intro {
-  max-width: 30vw;
+  width: 40vw;
   margin: auto;
   margin-left: 5vw;
   margin-right: 5vw;
