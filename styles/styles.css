@@ -529,6 +529,7 @@ button#hippo {
   flex-direction: row;
   margin-bottom: 10vh;
   width: 60vw;
+  max-width: 1000px;
   justify-content: space-between;
 }
 
