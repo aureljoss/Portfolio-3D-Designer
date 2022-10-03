@@ -561,6 +561,25 @@ button#hippo {
   margin-right: 2em;
 }
 
+.resumeUl{
+  list-style: none;
+  margin-left:-2.5em;
+  margin-bottom:3em;
+}
+
+/* ul.resumeUl li:before {
+    width: 0.35em;
+    content: '';
+    height: 0.35em;
+    margin-right: 0.5em;
+    vertical-align: 10%;
+    display: inline-block;
+    background: rgb(53, 53, 53);}*/
+
+.resumeUL,li{
+  margin-bottom:1.2em;
+}
+
 #plusSignPos {
   position: absolute;
   min-width: 1200px;
