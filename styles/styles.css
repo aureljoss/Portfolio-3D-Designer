@@ -576,7 +576,7 @@ button#hippo {
     display: inline-block;
     background: rgb(53, 53, 53);}*/
 
-.resumeUL,li{
+.resumeUl li{
   margin-bottom:1.2em;
 }
 
@@ -601,6 +601,10 @@ button#hippo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacts{
+  font-weight: 600;
 }
 
 .images {
