@@ -330,7 +330,7 @@ a:hover {
 
 /* ----- Introduction ----- */
 .introduction {
-  padding-top: 20vh;
+  padding-top: 10vh;
   width: 60vw;
   max-width: 1000px;
   margin: 0 auto;
@@ -527,7 +527,6 @@ button#hippo {
 #listSkills {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10vh;
   width: 60vw;
   max-width: 1000px;
   justify-content: space-between;
@@ -544,6 +543,7 @@ button#hippo {
 #quotes-group{
   width: 50%;
   margin: 0 auto;
+  margin-top: 10vh;
 }
 
 .quotes {
