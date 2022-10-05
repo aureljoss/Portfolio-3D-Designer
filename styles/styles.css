@@ -688,7 +688,7 @@ button#hippo {
 
 #madeWithLove {
   position: fixed;
-  right: 38px;
+  right: -5px;
   height: 15vh;
   bottom: 4vh;
   transform: rotate(90deg);
