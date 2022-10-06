@@ -625,12 +625,8 @@ button#hippo {
   }
 }
 
-#sayHello{
-  font-size:18px;
-}
-
 .expandButtons,
-#collapsible, #sayHello {
+#collapsible {
   border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   text-align: center;
@@ -641,10 +637,27 @@ button#hippo {
   color:black;
 }
 .expandButtons:hover,
-#collapsible:hover, #sayHello:hover {
+#collapsible:hover, .resume-email:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
+}
+
+.resume-email{
+  font-size:18px;
+  width:100px;
+  margin: 10vh auto;
+  border: solid 1px rgb(134, 134, 134);
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color:black;
+}
+
+#contact-me{
+  margin: 6vh auto;
+  width: 50%;
 }
 
 #hidden-text {
