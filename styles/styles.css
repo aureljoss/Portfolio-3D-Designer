@@ -352,7 +352,7 @@ button {
 }
 
 button#hippo {
-  padding: 5em;
+  padding: 3.5em;
 }
 
 #lapi {
@@ -365,16 +365,6 @@ button#hippo {
 #Drink {
   transform: scale(1.2);
 }
-
-.illustrations {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-}
-
 .cls-1 {
   fill: #2b91e3;
   stroke-width: 3px;

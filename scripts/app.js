@@ -187,7 +187,6 @@ gsap.from("#lapi", {
   },
   x: 200,
   autoAlpha: 0,
-  delay: 2,
 });
 gsap.to("#lapi", {
   scrollTrigger: {
@@ -199,7 +198,6 @@ gsap.to("#lapi", {
   x: 0,
   duration: 2,
   ease: "bounce.out",
-  delay: 2,
 });
 
 // -- Starfish Walking Lapi Project--//
