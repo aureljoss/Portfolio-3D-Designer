@@ -358,7 +358,6 @@ button#hippo {
 #lapi {
   background-color: #dba601;
   border-radius: 50px;
-  visibility: hidden;
 }
 
 #Chair,
@@ -367,7 +366,7 @@ button#hippo {
   transform: scale(1.2);
 }
 
-#illustrations {
+.illustrations {
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -656,7 +655,7 @@ button#hippo {
 }
 
 #contact-me{
-  margin: 6vh auto;
+  margin: 10vh auto;
   width: 50%;
 }
 
