@@ -177,7 +177,6 @@ window.setInterval(() => earWiggle.play(0), 1500);
 // ------ LapiProject ----- //
 
 // -- GSAP scroll trigger -- //
-gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("#lapi", {
   scrollTrigger: {
@@ -213,13 +212,13 @@ SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -20, x:50 }, 0
 
 const Starfish = document.getElementById("lapi");
 
-Starfish.addEventListener("mouseenter", enterButton);
-Starfish.addEventListener("mouseleave", leaveButton);
+Starfish.addEventListener("mouseenter", enterLapi);
+Starfish.addEventListener("mouseleave", leaveLapi);
 
-function enterButton() {
+function enterLapi() {
   SFwalking .play();
 }
-function leaveButton() {
+function leaveLapi() {
   SFwalking .reverse();
 }
 
