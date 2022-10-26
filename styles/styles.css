@@ -20,16 +20,16 @@ h3 {
   font-size: 60px;
 }
 
-h4{
-  font-size:50px;
+h4 {
+  font-size: 50px;
 }
 
 h5 {
   font-size: 40px;
 }
 
-h6{
-  font-size:18px;
+h6 {
+  font-size: 18px;
 }
 
 p {
@@ -242,7 +242,7 @@ a:hover {
   color: white;
   font-size: 1.2em;
   animation: introTextAnimation 1.2s ease-in-out;
-  max-width:600px;
+  max-width: 600px;
 }
 
 @keyframes introTextAnimation {
@@ -341,6 +341,7 @@ a:hover {
 #hippo {
   background: #1e313f;
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 button {
@@ -351,6 +352,17 @@ button {
   width: 400px;
 }
 
+.illustrations {
+  width: 60vw;
+  margin: 10vh auto;
+  max-width: 1000px;
+}
+
+.svgIllustrations {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 button#hippo {
   padding: 3.5em;
 }
@@ -358,6 +370,7 @@ button#hippo {
 #lapi {
   background-color: #dba601;
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 #Chair,
@@ -495,8 +508,8 @@ button#hippo {
   max-width: 1000px;
 }
 
-.sectionTitles{
-  margin-top:10vh;
+.sectionTitles {
+  margin-top: 10vh;
 }
 
 .bold {
@@ -529,7 +542,7 @@ button#hippo {
   flex-wrap: nowrap;
 }
 
-#quotes-group{
+#quotes-group {
   width: 50%;
   margin: 0 auto;
   margin-top: 10vh;
@@ -537,23 +550,23 @@ button#hippo {
 
 .quotes {
   max-width: 600px;
-  margin:1 auto;
+  margin: 1 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.portrait{
+.portrait {
   max-width: 3em;
-  max-height:3em;
+  max-height: 3em;
   border-radius: 1.5em;
   margin-right: 2em;
 }
 
-.resumeUl{
+.resumeUl {
   list-style: none;
-  margin-left:-2.5em;
-  margin-bottom:3em;
+  margin-left: -2.5em;
+  margin-bottom: 3em;
 }
 
 /* ul.resumeUl li:before {
@@ -565,8 +578,8 @@ button#hippo {
     display: inline-block;
     background: rgb(53, 53, 53);}*/
 
-.resumeUl li{
-  margin-bottom:1.2em;
+.resumeUl li {
+  margin-bottom: 1.2em;
 }
 
 #plusSignPos {
@@ -592,7 +605,7 @@ button#hippo {
   align-items: center;
 }
 
-.contacts{
+.contacts {
   font-weight: 600;
 }
 
@@ -623,28 +636,44 @@ button#hippo {
   width: 8em;
   margin: 4vh auto;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 .expandButtons:hover,
-#collapsible:hover, .resume-email:hover {
+#collapsible:hover,
+.resume-email:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(170, 170, 170);
   transform: translateY(-2px);
 }
 
-.resume-email{
-  font-size:18px;
-  width:100px;
+.resume-email {
+  font-size: 18px;
+  width: 100px;
   margin: 10vh auto;
   border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-#contact-me{
+.work-portfolio {
+  display: flex;
+}
+
+.portfolio-preview {
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  border: 1px solid rgb(134, 134, 134);
+}
+
+.portfolio-preview:hover {
+  box-shadow: 3px 4px #a9a7a7;
+}
+
+#contact-me {
   margin: 10vh auto;
   width: 50%;
 }
@@ -675,7 +704,6 @@ button#hippo {
   background: #000000;
 }
 
-
 #socialIcon {
   position: fixed;
   right: 5px;
@@ -692,7 +720,6 @@ button#hippo {
 .hoverIcon {
   height: 40px;
 }
-
 
 #madeWithLove {
   position: fixed;
