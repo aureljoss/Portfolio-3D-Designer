@@ -105,7 +105,7 @@ gsap.to(".introduction", {
 // -- GSAP scroll trigger -- //
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#hippo", {
+/*gsap.from("#hippo", {
   scrollTrigger: {
     trigger: "#hippo",
     toggleActions: "restart pause reverse pause",
@@ -124,7 +124,7 @@ gsap.to("#hippo", {
   x: 0,
   duration: 2,
   ease: "bounce.out",
-});
+});*/
 
 // -- Hippo Hover Animation -- //
 

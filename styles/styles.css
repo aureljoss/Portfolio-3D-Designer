@@ -372,6 +372,12 @@ button#hippo {
   background-color: #dba601;
   border-radius: 50px;
   margin: 0 auto;
+  border: 0;
+  cursor: pointer;
+  height: 600px;
+  width: 400px;
+  padding:0px;
+  
 }
 
 #Chair,
@@ -498,9 +504,19 @@ button#hippo {
   fill: #ffffe1;
 }
 
-.section {
+.section-flex {
   margin: 10vh auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  width: 60vw;
+  border-top: 1px solid #c4c4c4;
+  max-width: 1000px;
+}
+
+.section-block{
+  margin: 10vh auto;
   justify-content: center;
   align-items: center;
   gap: 5vw;
@@ -549,8 +565,10 @@ button#hippo {
   min-width: 200px;
   flex-wrap: nowrap;
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 1.6em;
+  padding: 28px;
+  border-radius: 1.2em;
+  border: solid 1px #c4c4c4;
+
 }
 
 .SLA h6 {
@@ -676,6 +694,8 @@ button#hippo {
 
 .work-portfolio {
   display: flex;
+  margin:4em auto;
+  justify-content: center;
 }
 
 .portfolio-preview {
@@ -686,7 +706,7 @@ button#hippo {
 }
 
 .portfolio-preview:hover {
-  box-shadow: 3px 4px #a9a7a7;
+  box-shadow: 4px 4px #c9c9c9;
 }
 
 #contact-me {
