@@ -42,7 +42,7 @@ h6 {
 
 body {
   margin: auto 5vw;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 header {
@@ -346,15 +346,9 @@ a:hover {
 button {
   background: transparent;
   border: 0;
-  cursor: pointer;
   height: 550px;
-  width: 333px;
-}
-
-.illustrations {
-  width: 60vw;
-  margin: 10vh auto;
-  max-width: 1000px;
+  width: 33%;
+  min-width:330px;
 }
 
 button#hippo {
@@ -365,9 +359,7 @@ button#hippo {
 
 #lapi {
   background-color: #dba601;
-  cursor: pointer;
-  padding:0px;
-  width:333px;
+  padding: 0px;
 }
 
 #Chair,
@@ -376,23 +368,25 @@ button#hippo {
   transform: scale(1.2);
 }
 
-#Chair,#Lapipiou, #Drink{  
-  transform:translateX(80px);
-  transform:translateY(300px);
+#Chair,
+#Lapipiou,
+#Drink {
+  transform: translateX(80px);
+  transform: translateY(300px);
 }
 
-#Wave{
-  transform:translateX(-20px);
-  transform:translateY(300px);
+#Wave {
+  transform: translateX(-20px);
+  transform: translateY(300px);
   animation: wave 2s linear;
   animation-iteration-count: infinite;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 
-@keyframes wave{
-  to{
-transform: translateY(250px);
-}
+@keyframes wave {
+  to {
+    transform: translateY(250px);
+  }
 }
 
 .cls-1 {
@@ -525,14 +519,13 @@ transform: translateY(250px);
   max-width: 1000px;
 }
 
-.section-block{
+.section-block {
   margin: 10vh auto;
   justify-content: center;
   align-items: center;
   gap: 5vw;
   width: 60vw;
   border-top: 1px solid #c4c4c4;
-  max-width: 1000px;
 }
 
 .sectionTitles {
@@ -578,12 +571,11 @@ transform: translateY(250px);
   padding: 28px;
   border-radius: 1.2em;
   border: solid 1px #c4c4c4;
-
 }
 
 .SLA h6 {
-  margin-top:10px;
-  margin-bottom:20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #quotes-group {
@@ -693,7 +685,7 @@ transform: translateY(250px);
 .resume-email {
   font-size: 18px;
   width: 100px;
-  margin: 10vh auto;
+  margin: 30vh auto;
   border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   text-align: center;
@@ -704,7 +696,7 @@ transform: translateY(250px);
 
 .work-portfolio {
   display: flex;
-  margin:4em auto;
+  margin: 4em auto;
   justify-content: center;
 }
 
@@ -720,8 +712,10 @@ transform: translateY(250px);
 }
 
 #contact-me {
-  margin: 10vh auto;
   width: 50%;
+  min-width:500px;
+  align-items: center;
+  justify-content: center;
 }
 
 #hidden-text {
@@ -775,6 +769,7 @@ transform: translateY(250px);
   transform: rotate(90deg);
 }
 
+
 /*Lapi in space illustration */
 .Moon-Outline {
   fill: #f3e9db;
@@ -784,7 +779,9 @@ transform: translateY(250px);
   fill: #d3ccc1;
 }
 
-.eyes-lapi, .cls-4, .lapi-body {
+.eyes-lapi,
+.cls-4,
+.lapi-body {
   stroke: #010101;
   stroke-miterlimit: 10;
   stroke-width: 2px;
@@ -792,7 +789,7 @@ transform: translateY(250px);
 
 .helmet {
   fill: #39c6f4;
-  opacity: .42;
+  opacity: 0.42;
 }
 
 .nose {
@@ -815,28 +812,27 @@ transform: translateY(250px);
   fill: #d8c2c0;
 }
 
-#lapi-in-space{
+#lapi-in-space {
   width: 330px;
-  height:100%;
-  background:#232559;
+  height: 100%;
+  background: #232559;
 }
 
-#space-lapi{
+#space-lapi {
   animation: lapi-in-space 4s linear;
   animation-iteration-count: infinite;
   transform-origin: 317px 376px;
 }
 
-@keyframes lapi-in-space{
-  to{transform:rotate(-360deg);
+@keyframes lapi-in-space {
+  to {
+    transform: rotate(-360deg);
   }
 }
 
-#space, #space-lapi, #moon, #spots{
-}
-
-
-.svgIllustrations{
-  display:flex;
-  height:550px;
+.svgIllustrations {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 550px;
+  width:80vw;
 }
