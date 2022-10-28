@@ -764,3 +764,60 @@ button#hippo {
   bottom: 4vh;
   transform: rotate(90deg);
 }
+
+/*Lapi in space illustration */
+.Moon-Outline {
+  fill: #f3e9db;
+}
+
+.moon {
+  fill: #d3ccc1;
+}
+
+.eyes-lapi, .cls-4, .lapi-body {
+  stroke: #010101;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.helmet {
+  fill: #39c6f4;
+  opacity: .42;
+}
+
+.nose {
+  fill: #ee64a2;
+}
+
+.moon-dark {
+  clip-path: url(#clippath);
+}
+
+.background {
+  fill: none;
+}
+
+.cls-9 {
+  fill: none;
+}
+
+.lapi-body {
+  fill: #d8c2c0;
+}
+
+#lapi-in-space{
+  width:300px;
+  height: 400px;
+  background:#232559;
+}
+
+#space-lapi{
+  animation: lapi-in-space 5s linear;
+  animation-iteration-count: infinite;
+  transform-origin: 317px 376px;
+}
+
+@keyframes lapi-in-space{
+  to{transform:rotate(-360deg);
+  }
+}
