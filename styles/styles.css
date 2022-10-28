@@ -341,15 +341,13 @@ a:hover {
 
 #hippo {
   background: #1e313f;
-  border-radius: 50px;
-  margin: 0 auto;
 }
 
 button {
   background: transparent;
   border: 0;
   cursor: pointer;
-  height: 600px;
+  height: 550px;
   width: 400px;
 }
 
@@ -357,11 +355,6 @@ button {
   width: 60vw;
   margin: 10vh auto;
   max-width: 1000px;
-}
-
-.svgIllustrations {
-  width: 1000px;
-  margin: 0 auto;
 }
 
 button#hippo {
@@ -806,13 +799,13 @@ button#hippo {
 }
 
 #lapi-in-space{
-  width:300px;
-  height: 400px;
+  width:400px;
+  height:550px;
   background:#232559;
 }
 
 #space-lapi{
-  animation: lapi-in-space 5s linear;
+  animation: lapi-in-space 4s linear;
   animation-iteration-count: infinite;
   transform-origin: 317px 376px;
 }
@@ -820,4 +813,12 @@ button#hippo {
 @keyframes lapi-in-space{
   to{transform:rotate(-360deg);
   }
+}
+
+#space, #space-lapi, #moon, #spots{
+}
+
+
+.svgIllustrations{
+  display:flex;
 }
