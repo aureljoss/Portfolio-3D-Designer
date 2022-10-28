@@ -178,7 +178,7 @@ window.setInterval(() => earWiggle.play(0), 1500);
 
 // -- GSAP scroll trigger -- //
 
-gsap.from("#lapi", {
+/*gsap.from("#lapi", {
   scrollTrigger: {
     trigger: "#lapi",
     toggleActions: "restart pause reverse pause",
@@ -198,13 +198,13 @@ gsap.to("#lapi", {
   x: 0,
   duration: 2,
   ease: "bounce.out",
-});
+});*/
 
 // -- Starfish Walking Lapi Project--//
 const SFwalking = gsap.timeline({ paused: true });
 const SFSpeed = 0.5;
 
-SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -20, x:50 }, 0);
+SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -120, x:50 }, 0);
 
 // ---- Mouse Hover Lapi Project--//
 

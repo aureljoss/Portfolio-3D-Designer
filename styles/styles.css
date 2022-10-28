@@ -348,7 +348,7 @@ button {
   border: 0;
   cursor: pointer;
   height: 550px;
-  width: 400px;
+  width: 333px;
 }
 
 .illustrations {
@@ -358,19 +358,16 @@ button {
 }
 
 button#hippo {
-  padding: 3.5em;
+  padding: 2em;
 }
+
+/* Lapi in Yelapa Animation */
 
 #lapi {
   background-color: #dba601;
-  border-radius: 50px;
-  margin: 0 auto;
-  border: 0;
   cursor: pointer;
-  height: 600px;
-  width: 400px;
   padding:0px;
-  
+  width:333px;
 }
 
 #Chair,
@@ -378,6 +375,26 @@ button#hippo {
 #Drink {
   transform: scale(1.2);
 }
+
+#Chair,#Lapipiou, #Drink{  
+  transform:translateX(80px);
+  transform:translateY(300px);
+}
+
+#Wave{
+  transform:translateX(-20px);
+  transform:translateY(300px);
+  animation: wave 2s linear;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes wave{
+  to{
+transform: translateY(250px);
+}
+}
+
 .cls-1 {
   fill: #2b91e3;
   stroke-width: 3px;
@@ -799,8 +816,8 @@ button#hippo {
 }
 
 #lapi-in-space{
-  width:400px;
-  height:550px;
+  width: 330px;
+  height:100%;
   background:#232559;
 }
 
@@ -821,4 +838,5 @@ button#hippo {
 
 .svgIllustrations{
   display:flex;
+  height:550px;
 }
