@@ -392,6 +392,33 @@ button#hippo {
   }
 }
 
+.carrot-fill, .carrot-head{
+  animation: carrots 6s linear;
+  animation-iteration-count:infinite;
+}
+
+@keyframes carrots {
+  from{
+    transform:translateX(-400px);
+  }
+  to {
+    transform: translateX(600px);
+  }
+}
+
+.carrot-fill {
+  fill: #f68521;
+}
+
+.carrot-fill, .carrot-head {
+  stroke: #231f20;
+  stroke-width: 2px;
+}
+
+.carrot-head {
+  fill: #189547;
+}
+
 .cls-1 {
   fill: #2b91e3;
   stroke-width: 3px;
