@@ -80,7 +80,7 @@ header {
 #menu {
   position: fixed;
   left: 5px;
-  top: 50%;
+  top: 50vh;
   animation: menu 1s forwards;
   height: 4vh;
 }
@@ -92,7 +92,20 @@ header {
   height: 100%;
   z-index: 1;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(253, 253, 253,0.65);
+}
+
+#menu-black-box{
+  position:fixed;
+  background-color: black;
+  width:30vw;
+  height:45vh;
+  left:0px;
+  z-index:-1;
+}
+
+#contactLink{
+  line-height: 3em;
 }
 
 #nav {
@@ -118,6 +131,7 @@ header {
   z-index: 1;
   font-size: 2em;
   font-weight: 700;
+  color:white;
 }
 
 #cross:hover {
@@ -691,13 +705,19 @@ button#hippo {
 .resume-email {
   font-size: 18px;
   width: 100px;
-  margin: 30vh auto;
   border: solid 1px rgb(134, 134, 134);
   border-radius: 40px;
   text-align: center;
   padding: 10px;
   text-decoration: none;
   color: black;
+}
+
+#contact-me{
+  margin: 5vh auto;
+  list-style: none;
+  line-height: 4em;
+  text-align: center;
 }
 
 .work-portfolio {
@@ -717,13 +737,6 @@ button#hippo {
   border-radius: 20px;
   box-shadow: 10px 5px 8px lightgray;
   animation: images 0.3s forwards;
-}
-
-#contact-me {
-  width: 50%;
-  min-width: 500px;
-  align-items: center;
-  justify-content: center;
 }
 
 #hidden-text {

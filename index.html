@@ -20,15 +20,18 @@
                 </div>
             </nav>
             <div id="emoji">
-                <img class="emoji" src="images/Smiley-Face.svg" alt="smiley face">
+                <a id="myName" href="#start"><img class="emoji" src="images/Smiley-Face.svg" alt="smiley face"></a>
             </div>
 
             <div id="menuOptions">
                 <ul id="nav">
                     <li><a href="#description" id="aboutLink"> About. </a> </li>
-                    <li><a href="#skills" id="skillsLink"> Skills. </a></li>
+                    <li><a href="#listSkills" id="skillsLink"> Skills. </a></li>
+                    <li><a href="#resume" id="resumeLink"> Resume. </a></li>
+                    <li><a href="#work" id="workLink"> Work. </a></li>
                     <li><a href="#contact" id="contactLink">Contact.</a></li>
                 </ul>
+                <div id="menu-black-box"></div>
             </div>
         </div>
         <div id="menu">
@@ -49,7 +52,7 @@
         </div>
         <div id="scroll">
             <p id="scrollText"> Scroll</p>
-            <span id="scrollArrow">&#10230;</span>
+            <span id="scrollArrow">&#10230;</span>f
         </div>
     </header>
 
@@ -93,7 +96,7 @@
                     </div>                   
                 </div>
                 <div>
-                    <img class="images" src="images/1635446082155.jpg" alt="Portrait">
+                    <a href="https://www.linkedin.com/in/aurelie-josserand"><img class="images" src="images/1635446082155.jpg" alt="Portrait"></a>
                 </div>
             </div>
         </section>    
@@ -158,7 +161,7 @@
         </section>
 
         <section class="section-flex">
-            <div>
+            <div id="resume">
                 <h2 class="sectionTitles"> 03. Where I’ve Worked</h2>
                 <p> <strong class="pinkText">SMITHGROUP</strong> <strong class="bold">/ Project Architect and Designer </strong> </p>
                 <div>
@@ -191,7 +194,7 @@
         </section>
 
         <section class="section-block">
-            <div>
+            <div id="work">
                 <h2 class="sectionTitles">04. Some Things I've built</h2>
                 <p>A landing page for a digital design agency using VS Code, HTML and CSS, and a sprinkle of Javascript.
                     <br> A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
@@ -424,10 +427,12 @@
         <section class="section-block">
             <div id="contact">
                 <h2 class="sectionTitles"> 06. What's Next?</h2>
-                <div id="contact-me">
+                <div>
                     <p> Whether you have a job opportunity, want to work together, or just want to say hi, I'd love to hear from you!</p>
-                    <a href="/Resume - Aurelie Josserand.pdf" target="_blank" class="resume-email">See and download my resume</a>
-                    <a href="mailto:josserand.n.aurelie@gmail.com" class="resume-email">Say Hello</a>
+                    <ul  id="contact-me">
+                        <li><a href="/Resume - Aurelie Josserand.pdf" target="_blank" class="resume-email">See and download my resume</a></li>
+                        <li><a href="mailto:josserand.n.aurelie@gmail.com" class="resume-email">Say Hello</a></li>
+                    </ul>
                 </div>
             </div>
              <!--<div>
