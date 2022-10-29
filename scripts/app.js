@@ -1,3 +1,19 @@
+
+// ----- Scroll Indicator ----- //
+
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight -document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+// ---- //
+
 var text = document.querySelector("h1");
 document.addEventListener("scroll", () => {
   text.style.left = window.scrollY * 5 + "px";
@@ -218,33 +234,4 @@ function enterLapi() {
 }
 function leaveLapi() {
   SFwalking .reverse();
-}
-
-
-// ------ Social ----- //
-
-const sayHello = document.getElementById("sayHello");
-const social = document.getElementById("socialIcon");
-
-sayHello.addEventListener("mouseenter", enterHello);
-sayHello.addEventListener("mouseleave", leaveHello);
-
-function enterHello() {
-  social.style.transform = "scale(2)";
-}
-function leaveHello() {
-  social.style.transform = "scale(1)";
-}
-
-// ----- Scroll Indicator ----- //
-
-window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight -document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
 }
