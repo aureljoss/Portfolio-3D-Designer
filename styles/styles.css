@@ -368,22 +368,27 @@ button#hippo {
 
 #Chair,
 #Lapipiou,
-#Drink {
+#Drink,
+.Starfish {
   transform: translateX(80px);
   transform: translateY(300px);
 }
 
-#Wave {
+.cls-11 {
   transform: translateX(-20px);
-  transform: translateY(300px);
-  animation: wave 2s linear;
+  animation: wave 1.5s linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
+#Wave {
+  transform: translateY(200px);
+}
+
 @keyframes wave {
   to {
-    transform: translateY(250px);
+    transform:translateX(-100px);
+    transform: translateY(60px);
   }
 }
 

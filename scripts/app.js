@@ -202,9 +202,9 @@ gsap.to("#lapi", {
 
 // -- Starfish Walking Lapi Project--//
 const SFwalking = gsap.timeline({ paused: true });
-const SFSpeed = 0.5;
+const SFSpeed = 2;
 
-SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: -120, x:50 }, 0);
+SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: 60, x:50 }, 0);
 
 // ---- Mouse Hover Lapi Project--//
 
