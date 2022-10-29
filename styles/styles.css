@@ -49,6 +49,8 @@ header {
   margin-right: 5vw;
 }
 
+/* Starting screen */
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -325,10 +327,6 @@ a:hover {
   }
 }
 
-#firstGallery {
-  margin: 4vw;
-}
-
 /* ----- Introduction ----- */
 .introduction {
   padding-top: 10vh;
@@ -348,7 +346,7 @@ button {
   border: 0;
   height: 550px;
   width: 33%;
-  min-width:330px;
+  min-width: 330px;
 }
 
 button#hippo {
@@ -508,6 +506,8 @@ button#hippo {
   fill: #ffffe1;
 }
 
+/* ----- General CSS rules ----- */
+
 .section-flex {
   margin: 10vh auto;
   display: flex;
@@ -618,33 +618,6 @@ button#hippo {
   margin-bottom: 1.2em;
 }
 
-#plusSignPos {
-  position: absolute;
-  min-width: 1200px;
-}
-
-#plusSign {
-  width: 3em;
-}
-
-#getInTouch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  margin-top: 100px;
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacts {
-  font-weight: 600;
-}
-
 .images {
   border-radius: 20px;
   max-width: 400px;
@@ -708,12 +681,14 @@ button#hippo {
 }
 
 .portfolio-preview:hover {
-  box-shadow: 4px 4px #c9c9c9;
+  border-radius: 20px;
+  box-shadow: 10px 5px 8px lightgray;
+  animation: images 0.3s forwards;
 }
 
 #contact-me {
   width: 50%;
-  min-width:500px;
+  min-width: 500px;
   align-items: center;
   justify-content: center;
 }
@@ -726,49 +701,23 @@ button#hippo {
   color: #db433e;
 }
 
+/* Progress bar */
+
 .progress {
   position: fixed;
   z-index: 1;
   width: 89vw;
 }
 
-/* The progress container (grey background) */
 .progress-container {
   height: 1px;
   background: rgb(119, 119, 119);
 }
 
-/* The progress bar (scroll indicator) */
 .progress-bar {
   height: 4px;
   background: #000000;
 }
-
-#socialIcon {
-  position: fixed;
-  right: 5px;
-  top: 50vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.hoverIcon:hover {
-  animation: social 0.5s forwards;
-  cursor: pointer;
-}
-
-.hoverIcon {
-  height: 40px;
-}
-
-#madeWithLove {
-  position: fixed;
-  right: -5px;
-  height: 15vh;
-  bottom: 4vh;
-  transform: rotate(90deg);
-}
-
 
 /*Lapi in space illustration */
 .Moon-Outline {
@@ -834,5 +783,38 @@ button#hippo {
   display: flex;
   flex-wrap: wrap;
   min-height: 550px;
-  width:80vw;
+  width: 80vw;
+}
+
+/* ----- Side bar - social media ----- */
+
+#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialIcon {
+  position: fixed;
+  right: 5px;
+  top: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hoverIcon:hover {
+  animation: social 0.5s forwards;
+  cursor: pointer;
+}
+
+.hoverIcon {
+  height: 40px;
+}
+
+#madeWithLove {
+  position: fixed;
+  right: -5px;
+  height: 15vh;
+  bottom: 4vh;
+  transform: rotate(90deg);
 }
