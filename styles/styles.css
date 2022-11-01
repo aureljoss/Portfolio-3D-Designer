@@ -915,8 +915,44 @@ button#hippo {
   }
 
   #bonjour{
-    margin:10vw;
+    margin:5vh 10vw;
   }
 
-  .section-flex{display:block;}
+  .whiteText{
+    margin-top:15px;
+  }
+
+  .section-flex{display:block;  
+  }
+
+  .images {
+    display: block;
+    border-radius: 150px;
+    max-width: 70%;
+    margin: 5vh auto;
+  }
+
+  .SLA h6 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  button, #lapi-in-space {
+    border-radius: 15px;
+    height: 300px;
+    width: 33%;
+    min-width: 200px;
+  }
+
+  #Wave {
+    transform: translateY(30px);
+  }
+  
+  @keyframes wave {
+    to {
+      transform:translateX(0px);
+      transform: translateY(0px);
+    }
+  }
+
 }
