@@ -16,14 +16,6 @@ h2 {
   font-size: 70px;
 }
 
-h3 {
-  font-size: 60px;
-}
-
-h4 {
-  font-size: 50px;
-}
-
 h5 {
   font-size: 40px;
 }
@@ -303,7 +295,7 @@ a:hover {
   animation: bonjour 3s;
 }
 
-#x {
+#exclem {
   font-size: 120px;
   transition: transform 1s;
   font-weight: 800;
@@ -606,18 +598,21 @@ button#hippo {
   width: 60vw;
   max-width: 1000px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .SLA {
   display: flex;
   flex-direction: column;
   width: 26%;
-  min-width: 200px;
-  flex-wrap: nowrap;
+  min-width: 180px;
+  height: 300px;
   background-color: #ffffff;
-  padding: 28px;
+  padding-left: 28px;
   border-radius: 1.2em;
   border: solid 1px #c4c4c4;
+  justify-content: center;
 }
 
 .SLA h6 {
@@ -830,6 +825,7 @@ button#hippo {
   flex-wrap: wrap;
   min-height: 550px;
   width: 80vw;
+  row-gap: 15px;
 }
 
 /* ----- Side bar - social media ----- */
@@ -863,4 +859,64 @@ button#hippo {
   height: 15vh;
   bottom: 4vh;
   transform: rotate(90deg);
+}
+
+
+/* Media Queries */
+
+/*Mobile - 480px breakpoint */
+
+@media screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+  
+  h6 {
+    font-size: 18px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  h6 {
+    font-size: 20px;
+  }
+
+  .progress{
+    display:none;
+  }
+
+  #start{
+    display:block;
+  }
+
+  #intro {
+    width:70vw;
+    margin:10vw;
+    height:50vh;
+    position: absolute;
+    top:30vh;
+  }
+
+  #exclem {
+    font-size: 65px;
+  }
+
+  #bonjour{
+    margin:10vw;
+  }
+
+  .section-flex{display:block;}
 }
