@@ -65,7 +65,7 @@ header {
 }
 
 #introName {
-  font-size: 2em;
+  font-size: 1.7em;
   animation: introAnimation 1s ease-in-out;
 }
 
@@ -855,7 +855,7 @@ button#hippo {
 
 #madeWithLove {
   position: fixed;
-  right: -5px;
+  right: -36px;
   height: 15vh;
   bottom: 4vh;
   transform: rotate(90deg);
@@ -869,9 +869,9 @@ button#hippo {
 @media screen and (max-width: 480px) {
 
   h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
-    line-height: 60px;
+    line-height: 70px;
   }
   
   h2 {
@@ -911,11 +911,13 @@ button#hippo {
   }
 
   #exclem {
-    font-size: 65px;
+    font-size: 70px;
+    margin-top: 16vh;
   }
 
   #bonjour{
-    margin:5vh 10vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
   }
 
   .whiteText{
@@ -955,4 +957,21 @@ button#hippo {
     }
   }
 
+  #socialIcon {
+    justify-content: center;
+    right: 28vw;
+    top: 90vh;
+    flex-direction: row;
+  }
+
+  #madeWithLove {
+    right: -38px;
+    height: 15vh;
+    bottom: 6vh;
+    transform: rotate(90deg);
+  }
+
+  .resume-email{
+    font-size: 14px;
+  }
 }
