@@ -921,7 +921,7 @@ button#hippo {
   }
 
   .whiteText{
-    margin-top:15px;
+    margin: top 48px;
   }
 
   .section-flex{display:block;  
@@ -960,18 +960,23 @@ button#hippo {
   #socialIcon {
     justify-content: center;
     right: 28vw;
-    top: 90vh;
+    top:auto;
+    bottom:5vh;
     flex-direction: row;
   }
+  
+  footer{width: 100vw;}
 
   #madeWithLove {
-    right: -38px;
-    height: 15vh;
     bottom: 6vh;
     transform: rotate(90deg);
   }
 
   .resume-email{
     font-size: 14px;
+  }
+
+  #download-email{
+    margin-bottom: 15vh;
   }
 }
