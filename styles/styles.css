@@ -34,7 +34,7 @@ h6 {
 
 body {
   margin: auto 5vw;
-  background-color: #f9f9f9;
+  background-color: #efefef;
 }
 
 header {
@@ -48,7 +48,8 @@ header {
   width: 100%;
   top: 0;
   height: 5vh;
-  background-color: white;
+  background-color: #efefef;
+  z-index:1;
 }
 
 #myName {
@@ -75,6 +76,7 @@ header {
   top: 50vh;
   animation: menu 1s forwards;
   height: 4vh;
+  z-index: 2;
 }
 
 #menuOptions {
@@ -644,6 +646,12 @@ button#hippo {
   margin-right: 2em;
 }
 
+.timeline{
+  font-style: italic;
+  margin-top: -1em;
+  font-size: 14px;
+}
+
 .resumeUl {
   list-style: none;
   margin-left: -2.5em;
@@ -982,4 +990,24 @@ button#hippo {
   #download-email{
     margin-bottom: 15vh;
   }
+
+  #emoji{
+    display: none;
+  }
+
+  #menu {
+    position: fixed;
+    left: auto;
+    right:6vw;
+    top: 1vh;
+  }
+
+  #menuText{
+    display:none;
+  }
+
+  .lines {
+    border-left: 2px solid rgb(0, 0, 0);
+  }
+
 }
