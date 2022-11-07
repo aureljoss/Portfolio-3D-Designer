@@ -215,6 +215,9 @@ header {
 #scrollText {
   font-size: 9px;
   transform: rotate(-90deg);
+  color:white;
+  text-decoration: none;
+  margin-bottom: 1em;
 }
 
 @keyframes scrollArrow {
