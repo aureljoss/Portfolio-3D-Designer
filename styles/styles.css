@@ -683,8 +683,9 @@ button#hippo {
 
 .images {
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 300px;
   margin:1vh 2vw;
+  right:0px;
 }
 
 .images:hover {
