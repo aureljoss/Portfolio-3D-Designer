@@ -572,8 +572,13 @@ button#hippo {
   border-top: 1px solid #c4c4c4;
 }
 
-#description{
+#about{
   display: flex;
+}
+
+#description{
+  max-width:400px;
+  top:0px;
 }
 
 .sectionTitles {
@@ -677,8 +682,8 @@ button#hippo {
 
 .images {
   border-radius: 20px;
-  max-width: 300px;
-  margin:0vh auto;
+  max-width: 400px;
+  margin:1vh 2vw;
 }
 
 .images:hover {
