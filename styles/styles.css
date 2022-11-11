@@ -189,7 +189,7 @@ header {
 #scroll {
   position: absolute;
   bottom: 8vh;
-  left: 50%;
+  left: 50vw;
   color: white;
   display: flex;
   flex-direction: column;
@@ -981,10 +981,11 @@ button#hippo {
   }
 
   #socialIcon {
+    margin:auto;
     justify-content: center;
-    right: 28vw;
+    right: auto;
     top:auto;
-    bottom:5vh;
+    bottom: 2vh;
     flex-direction: row;
   }
   
@@ -992,6 +993,7 @@ button#hippo {
 
   #madeWithLove {
     bottom: 6vh;
+    right:0px;
     transform: rotate(90deg);
   }
 
@@ -1020,6 +1022,10 @@ button#hippo {
 
   .lines {
     border-left: 2px solid rgb(0, 0, 0);
+  }
+
+  #menu-black-box{
+    width:60vw;
   }
 
 }
