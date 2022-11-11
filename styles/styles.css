@@ -553,7 +553,7 @@ button#hippo {
 /* ----- General CSS rules ----- */
 
 .section-flex {
-  margin: 10vh auto;
+  margin: 15vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,7 +564,7 @@ button#hippo {
 }
 
 .section-block {
-  margin: 10vh auto;
+  margin: 15vh auto;
   justify-content: center;
   align-items: center;
   gap: 5vw;
