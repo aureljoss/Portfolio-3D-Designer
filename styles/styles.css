@@ -896,7 +896,7 @@ button#hippo {
 @media screen and (max-width: 480px) {
 
   h1 {
-    font-size: 70px;
+    font-size: 45px;
     font-weight: 800;
     line-height: 70px;
   }
@@ -947,7 +947,8 @@ button#hippo {
   }
 
   #bonjour-mobile{
-    display: static;
+    display: block;
+    top:40vh;
   }
 
   .whiteText{
@@ -955,13 +956,13 @@ button#hippo {
   }
 
   .section-flex{
-    margin: 5vh auto;
+    margin: 8vh auto;
     display:block;  
     width: 80vw;
   }
 
   .section-block {
-    margin: 5vh auto;
+    margin: 8vh auto;
     width:80vw;
   }
 
@@ -1061,7 +1062,7 @@ button#hippo {
 
   .sectionTitles {
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
 
   .skills-vignette{
@@ -1070,6 +1071,10 @@ button#hippo {
 
   #listSkills {
     margin:auto;
+  }
+
+  .svgIllustrations {
+    justify-content: center;
   }
 
 }
