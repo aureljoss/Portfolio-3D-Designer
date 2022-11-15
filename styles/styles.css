@@ -948,7 +948,20 @@ button#hippo {
 
   #bonjour-mobile{
     display: block;
-    top:40vh;
+    padding-top: 16vh;
+    margin-left: 10vw;
+    animation: mobile 3s ease-in-out;
+  }
+  @keyframes mobile{
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
   }
 
   .whiteText{
@@ -1006,7 +1019,7 @@ button#hippo {
   footer{width: 100vw;}
 
   #madeWithLove {
-    right: -36px;
+    right: -8px;
     height: 15vh;
     bottom: 4vh;
     transform: rotate(90deg);
