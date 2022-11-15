@@ -300,6 +300,10 @@ a:hover {
   animation: bonjour 3s;
 }
 
+#bonjour-mobile{
+  display: none;
+}
+
 #exclem {
   font-size: 120px;
   transition: transform 1s;
@@ -938,9 +942,12 @@ button#hippo {
     margin-top: 16vh;
   }
 
-  #bonjour{
-    margin-left: 10vw;
-    margin-top: 5vh;
+  #bonjourMain{
+    display: none;
+  }
+
+  #bonjour-mobile{
+    display: static;
   }
 
   .whiteText{
@@ -981,19 +988,18 @@ button#hippo {
   }
 
   #socialIcon {
-    margin:auto;
+    position: static;
     justify-content: center;
-    right: auto;
-    top:auto;
-    bottom: 2vh;
     flex-direction: row;
   }
+
   
   footer{width: 100vw;}
 
   #madeWithLove {
-    bottom: 6vh;
-    right:0px;
+    right: -36px;
+    height: 15vh;
+    bottom: 4vh;
     transform: rotate(90deg);
   }
 
@@ -1002,7 +1008,7 @@ button#hippo {
   }
 
   #download-email{
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
   }
 
   #emoji{
