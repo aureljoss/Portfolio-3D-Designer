@@ -1024,8 +1024,15 @@ button#hippo {
     border-left: 2px solid rgb(0, 0, 0);
   }
 
+  #menuOptions {
+    margin-left:10vw;
+    display: none;
+    position: fixed;
+  }
+
   #menu-black-box{
-    width:60vw;
+    width:100vw;
+    height:100vh;
   }
 
 }
