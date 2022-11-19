@@ -753,12 +753,39 @@ button#hippo {
   width: 200px;
   border-radius: 15px;
   border: 1px solid rgb(134, 134, 134);
+  margin: 1em;
 }
 
 .portfolio-preview:hover {
   border-radius: 20px;
   box-shadow: 10px 5px 8px lightgray;
   animation: images 0.3s forwards;
+}
+
+.vignettes{
+  text-align: center;
+}
+
+.github{
+  width:30px;
+  height:auto;
+  margin: auto 5px;
+}
+
+.external{
+  width:23px;
+  height:auto;
+  position:relative;
+  top:-3px;
+  margin: auto 5px;
+}
+
+.portfolio-link{
+  fill:#484848;
+}
+
+.github:hover, .external:hover{
+  animation: social 0.5s forwards;
 }
 
 #hidden-text {
