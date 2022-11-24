@@ -877,7 +877,6 @@ button#hippo {
   flex-wrap: wrap;
   min-height: 550px;
   width: 80vw;
-  row-gap: 15px;
 }
 
 /* ----- Side bar - social media ----- */
