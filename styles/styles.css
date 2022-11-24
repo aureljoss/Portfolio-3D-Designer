@@ -767,17 +767,15 @@ button#hippo {
 }
 
 .github{
-  width:30px;
+  width:26px;
   height:auto;
-  margin: auto 5px;
 }
 
 .external{
-  width:23px;
+  width:20px;
   height:auto;
   position:relative;
   top:-3px;
-  margin: auto 5px;
 }
 
 .portfolio-link{
@@ -1114,6 +1112,12 @@ button#hippo {
   }
 
   .svgIllustrations {
+    justify-content: center;
+  }
+
+  .work-portfolio {
+    display:block;
+    margin: 4em auto;
     justify-content: center;
   }
 
