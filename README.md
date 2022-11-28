@@ -37,7 +37,7 @@ Last but not least, I have used a variety of 3D modeling and animation softwares
 
 ## How about Some Bullet Points?
 - I am currently learning React and Redux. 
-- I am also working on a couple of Frontend Mentor and my portfolio.
+- I am also working on a couple of Frontend Mentor projects along with building my portfolio.
 - You can contact me through [email](mailto:josserand.n.aurelie@gmail.com).
 - You can connect with me on [LinkedIn](https://www.linkedin.com/in/aurelie-josserand).
 - You can view my [GitHub repositories and contributions](https://github.com/aureljoss?tab=overview&from=2022-11-01&to=2022-11-27).
