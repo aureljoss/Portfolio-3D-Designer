@@ -24,4 +24,20 @@ In my downtime, you can find me eating tacos, biking or at the dog park. 😉
 - Mocha - The JavaScript test framework.
 - Figma - Design tool. I use Figma when I am working with a design file.
 - Visual Studio Code - Code editor. I love this tool. It has everything that I need to write code.
-- Adobe Suite - Photoshop, Illustor, Indesign. All design tools to help me create edit images, create illustrations, or put together a well organized presentation. 
+- Adobe Suite - Photoshop, Illustor, Indesign. All design tools to help me create edit images, create illustrations, or put together a well organized presentation.
+
+\
+Last but not least, I have used the following 3D modeling or animation softwares during my carreer as an architect, some include AR/VR capabilities that I am familiar with:
+- 3DSMAX
+- Sketchup
+- VRay
+- Corona
+- Lumion
+- TwinMotion
+
+## How about Some Bullet Points?
+- I am currently learning React and Redux. 
+- I am currently working on a couple of Frontend Mentor (checkout my github repos).
+- You can contact me through [email](mailto:josserand.n.aurelie@gmail.com).
+- You can connect with me on [LinkedIn](https://www.linkedin.com/in/aurelie-josserand).
+- You can view my [GitHub repositories and contributions](https://github.com/aureljoss?tab=overview&from=2022-11-01&to=2022-11-27).
