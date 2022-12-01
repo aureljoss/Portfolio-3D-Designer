@@ -16,6 +16,8 @@ h2 {
   font-size: 70px;
 }
 
+h3{font-size:50px;}
+
 h5 {
   font-size: 40px;
 }
@@ -557,7 +559,7 @@ button#hippo {
 /* ----- General CSS rules ----- */
 
 .section-flex {
-  margin: 15vh auto;
+  margin: 12vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +570,7 @@ button#hippo {
 }
 
 .section-block {
-  margin: 15vh auto;
+  margin: 12vh auto;
   justify-content: center;
   align-items: center;
   gap: 5vw;
@@ -588,6 +590,7 @@ button#hippo {
 
 .sectionTitles {
   margin-top: 10vh;
+  margin-bottom: 12vh;;
 }
 
 .bold {
@@ -601,7 +604,6 @@ button#hippo {
 }
 
 .list li::before {
-  color: #ff4848;
   content: "\25B7";
   display: inline-block;
   width: 2em;
@@ -618,7 +620,6 @@ button#hippo {
   max-width: 1000px;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .skills-vignette {
@@ -626,12 +627,12 @@ button#hippo {
   flex-direction: column;
   width: 26%;
   min-width: 180px;
-  height: 300px;
-  background-color: #ffffff;
+  height: 360px;
   padding-left: 28px;
   border-radius: 1.2em;
-  border: solid 1px #c4c4c4;
+  border: 1px solid rgb(130, 130, 130);
   justify-content: center;
+  
 }
 
 .skills-vignette h6 {
@@ -728,11 +729,15 @@ button#hippo {
   font-size: 18px;
   width: 100px;
   border: solid 1px rgb(134, 134, 134);
-  border-radius: 40px;
+  border-radius: 60px;
   text-align: center;
-  padding: 10px;
+  padding: 26px 9vw;
   text-decoration: none;
   color: black;
+}
+
+#talk-text{
+  text-align: center;
 }
 
 #contact-me{
@@ -740,12 +745,17 @@ button#hippo {
   list-style: none;
   line-height: 4em;
   text-align: center;
+  display:flex;
+  justify-content:space-between
 }
+
+
 
 .work-portfolio {
   display: flex;
   margin: 4em auto;
   justify-content: center;
+;
 }
 
 .portfolio-preview {
@@ -793,6 +803,12 @@ button#hippo {
 .pinkText {
   color: #db433e;
 }
+
+.pinkNumbers{
+  color: #db433e;
+  font-size: 46px;
+}
+
 
 /* Progress bar */
 
