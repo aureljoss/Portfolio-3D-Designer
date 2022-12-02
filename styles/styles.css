@@ -727,7 +727,6 @@ button#hippo {
 
 .resume-email {
   font-size: 18px;
-  width: 100px;
   border: solid 1px rgb(134, 134, 134);
   border-radius: 60px;
   text-align: center;
@@ -743,10 +742,11 @@ button#hippo {
 #contact-me{
   margin: 5vh auto;
   list-style: none;
-  line-height: 4em;
+  line-height: 8em;
   text-align: center;
   display:flex;
-  justify-content:space-between
+  justify-content:space-between;
+  flex-direction: column;
 }
 
 
