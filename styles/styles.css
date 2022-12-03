@@ -581,6 +581,7 @@ button#hippo {
 #about{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #description{
@@ -625,7 +626,7 @@ button#hippo {
 .skills-vignette {
   display: flex;
   flex-direction: column;
-  width: 26%;
+  width: 28%;
   min-width: 180px;
   height: 360px;
   padding-left: 28px;
@@ -922,7 +923,7 @@ button#hippo {
 
 #madeWithLove {
   position: fixed;
-  right: -36px;
+  right: -30px;
   height: 15vh;
   bottom: 4vh;
   transform: rotate(90deg);
