@@ -58,8 +58,26 @@ skillsLink.addEventListener("click", () => {
   cross.style.display = "none";
 });
 
+const resumeLink = document.getElementById("resumeLink");
+resumeLink.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
+});
+
+const workLink = document.getElementById("workLink");
+workLink.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
+});
+
+
+
 const playgroundLink = document.getElementById("playgroundLink");
-skillsLink.addEventListener("click", () => {
+playgroundLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
   menu.style.display = "flex";
   menuLines.style.display = "block";
