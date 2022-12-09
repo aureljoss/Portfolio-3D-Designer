@@ -58,6 +58,14 @@ skillsLink.addEventListener("click", () => {
   cross.style.display = "none";
 });
 
+const playgroundLink = document.getElementById("playgroundLink");
+skillsLink.addEventListener("click", () => {
+  menuOptions.style.display = "none";
+  menu.style.display = "flex";
+  menuLines.style.display = "block";
+  cross.style.display = "none";
+});
+
 const contact = document.getElementById("contactLink");
 contact.addEventListener("click", () => {
   menuOptions.style.display = "none";
