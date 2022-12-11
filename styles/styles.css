@@ -279,7 +279,7 @@ a:hover {
   margin: auto;
   margin-left: 5vw;
   margin-right: 5vw;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 
 @keyframes introAnimation {
@@ -923,10 +923,11 @@ button#hippo {
 
 #madeWithLove {
   position: fixed;
-  right: -30px;
+  right: -6px;
   height: 15vh;
-  bottom: 4vh;
+  bottom: 9vh;
   transform: rotate(90deg);
+  margin:0px;
 }
 
 
