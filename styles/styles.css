@@ -356,7 +356,7 @@ a:hover {
 /* ----- Hippo Animation ----- */
 
 #hippo {
-  background: #920c87;
+  background: #8412b5;
 }
 
 button {
@@ -922,12 +922,7 @@ button#hippo {
 }
 
 #madeWithLove {
-  position: fixed;
-  right: -6px;
-  height: 15vh;
-  bottom: 9vh;
-  transform: rotate(90deg);
-  margin:0px;
+  display:none;
 }
 
 
@@ -1040,6 +1035,10 @@ button#hippo {
     min-width: 200px;
   }
 
+  button{
+    margin:2vh auto;
+  }
+
   #Wave {
     transform: translateY(30px);
   }
@@ -1061,10 +1060,7 @@ button#hippo {
   footer{width: 100vw;}
 
   #madeWithLove {
-    right: -8px;
-    height: 15vh;
-    bottom: 4vh;
-    transform: rotate(90deg);
+    display:none;
   }
 
   .resume-email{
@@ -1122,10 +1118,11 @@ button#hippo {
 
   .skills-vignette{
     height:270px;
+    margin: 1vh auto;
   }
 
   #listSkills {
-    margin:auto;
+    margin:auto ;
   }
 
   .svgIllustrations {
