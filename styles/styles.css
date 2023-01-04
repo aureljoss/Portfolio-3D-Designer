@@ -4,7 +4,7 @@ html {
 
 * {
   font-size: 16px;
-  font-family: "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Open Sans', "Noto Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -14,24 +14,26 @@ h1 {
 
 h2 {
   font-size: 70px;
+  font-weight: 800;
 }
 
 h3{font-size:50px;}
 
+h4{font-size:40px;}
+
 h5 {
-  font-size: 40px;
-}
-
-h6 {
-  font-size: 18px;
-}
-
-p {
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7em;
 }
 
 h6 {
   font-size: 20px;
+
+}
+
+p {
+  line-height: 1.5;
 }
 
 body {
@@ -68,7 +70,8 @@ header {
 }
 
 #introName {
-  font-size: 1.7em;
+  font-size: 1.8em;
+  font-weight: 800;
   animation: introAnimation 1s ease-in-out;
 }
 
@@ -95,6 +98,7 @@ header {
   position:fixed;
   background-color: black;
   width:30vw;
+  min-width: 340px;
   height:55vh;
   left:0px;
   z-index:-1;
@@ -257,7 +261,6 @@ a:hover {
 
 .whiteText {
   color: white;
-  font-size: 1.2em;
   animation: introTextAnimation 1.2s ease-in-out;
   max-width: 600px;
 }
