@@ -4,7 +4,7 @@ html {
 
 * {
   font-size: 16px;
-  font-family: 'Open Sans', "Noto Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Noto Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -17,9 +17,13 @@ h2 {
   font-weight: 800;
 }
 
-h3{font-size:50px;}
+h3 {
+  font-size: 50px;
+}
 
-h4{font-size:40px;}
+h4 {
+  font-size: 36px;
+}
 
 h5 {
   font-size: 16px;
@@ -29,7 +33,6 @@ h5 {
 
 h6 {
   font-size: 20px;
-
 }
 
 p {
@@ -53,7 +56,7 @@ header {
   top: 0;
   height: 5vh;
   background-color: #efefef;
-  z-index:1;
+  z-index: 1;
 }
 
 #myName {
@@ -91,20 +94,20 @@ header {
   height: 100%;
   z-index: 1;
   align-items: center;
-  background-color: rgba(253, 253, 253,0.65);
+  background-color: rgba(253, 253, 253, 0.65);
 }
 
-#menu-black-box{
-  position:fixed;
+#menu-black-box {
+  position: fixed;
   background-color: black;
-  width:30vw;
+  width: 30vw;
   min-width: 340px;
-  height:55vh;
-  left:0px;
-  z-index:-1;
+  height: 55vh;
+  left: 0px;
+  z-index: -1;
 }
 
-#contactLink{
+#contactLink {
   line-height: 3em;
 }
 
@@ -131,7 +134,7 @@ header {
   z-index: 1;
   font-size: 2em;
   font-weight: 700;
-  color:white;
+  color: white;
 }
 
 #cross:hover {
@@ -218,12 +221,14 @@ header {
   margin-top: 0.2em;
   margin-left: 0.4em;
   animation: scrollArrow 0.7s infinite alternate;
+  color: white;
+  text-decoration: none;
 }
 
 #scrollText {
   font-size: 9px;
   transform: rotate(-90deg);
-  color:white;
+  color: white;
   text-decoration: none;
   margin-bottom: 1em;
 }
@@ -305,7 +310,7 @@ a:hover {
   animation: bonjour 3s;
 }
 
-#bonjour-mobile{
+#bonjour-mobile {
   display: none;
 }
 
@@ -349,7 +354,7 @@ a:hover {
 }
 
 /* ----- Introduction ----- */
-.introduction {
+#introduction {
   padding-top: 10vh;
   width: 60vw;
   max-width: 1000px;
@@ -408,19 +413,20 @@ button#hippo {
 
 @keyframes wave {
   to {
-    transform:translateX(-100px);
+    transform: translateX(-100px);
     transform: translateY(60px);
   }
 }
 
-.carrot-fill, .carrot-head{
+.carrot-fill,
+.carrot-head {
   animation: carrots 6s linear;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
 }
 
 @keyframes carrots {
-  from{
-    transform:translateX(-400px);
+  from {
+    transform: translateX(-400px);
   }
   to {
     transform: translateX(600px);
@@ -431,7 +437,8 @@ button#hippo {
   fill: #f68521;
 }
 
-.carrot-fill, .carrot-head {
+.carrot-fill,
+.carrot-head {
   stroke: #231f20;
   stroke-width: 2px;
 }
@@ -581,20 +588,20 @@ button#hippo {
   border-top: 1px solid #c4c4c4;
 }
 
-#about{
+#about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#description{
-  max-width:400px;
-  top:0px;
+#description {
+  max-width: 400px;
+  top: 0px;
 }
 
 .sectionTitles {
   margin-top: 10vh;
-  margin-bottom: 12vh;;
+  margin-bottom: 12vh;
 }
 
 .bold {
@@ -637,7 +644,6 @@ button#hippo {
   border: 1px solid rgb(130, 130, 130);
   justify-content: center;
   margin-bottom: 1rem;
-  
 }
 
 .skills-vignette h6 {
@@ -666,7 +672,7 @@ button#hippo {
   margin-right: 2em;
 }
 
-.timeline{
+.timeline {
   font-style: italic;
   margin-top: -1em;
   font-size: 13px;
@@ -694,8 +700,8 @@ button#hippo {
 .my-portrait {
   border-radius: 20px;
   max-width: 300px;
-  margin:1vh 2vw;
-  right:0px;
+  margin: 1vh 2vw;
+  right: 0px;
 }
 
 .my-portrait:hover {
@@ -740,27 +746,24 @@ button#hippo {
   color: black;
 }
 
-#talk-text{
+#talk-text {
   text-align: center;
 }
 
-#contact-me{
+#contact-me {
   margin: 5vh auto;
   list-style: none;
   line-height: 8em;
   text-align: center;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
-
-
 
 .work-portfolio {
   display: flex;
   margin: 4em auto;
   justify-content: center;
-;
 }
 
 .portfolio-preview {
@@ -777,27 +780,28 @@ button#hippo {
   animation: images 0.3s forwards;
 }
 
-.vignettes{
+.vignettes {
   text-align: center;
 }
 
-.github{
-  width:26px;
-  height:auto;
+.github {
+  width: 26px;
+  height: auto;
 }
 
-.external{
-  width:20px;
-  height:auto;
-  position:relative;
-  top:-3px;
+.external {
+  width: 20px;
+  height: auto;
+  position: relative;
+  top: -3px;
 }
 
-.portfolio-link{
-  fill:#000000;
+.portfolio-link {
+  fill: #000000;
 }
 
-.github:hover, .external:hover{
+.github:hover,
+.external:hover {
   animation: social 0.5s forwards;
 }
 
@@ -809,11 +813,10 @@ button#hippo {
   color: #db433e;
 }
 
-.pinkNumbers{
+.pinkNumbers {
   color: #db433e;
-  font-size: 46px;
+  font-size: 50px;
 }
-
 
 /* Progress bar */
 
@@ -926,22 +929,20 @@ button#hippo {
 }
 
 #madeWithLove {
-  display:none;
+  display: none;
 }
-
 
 /* Media Queries */
 
 /*Mobile - 480px breakpoint */
 
 @media screen and (max-width: 480px) {
-
   h1 {
     font-size: 45px;
     font-weight: 800;
     line-height: 70px;
   }
-  
+
   h2 {
     font-size: 40px;
   }
@@ -949,33 +950,33 @@ button#hippo {
   h5 {
     font-size: 22px;
   }
-  
+
   h6 {
     font-size: 18px;
   }
-  
+
   p {
     line-height: 1.5;
   }
-  
+
   h6 {
     font-size: 20px;
   }
 
-  .progress{
-    display:none;
+  .progress {
+    display: none;
   }
 
-  #start{
-    display:block;
+  #start {
+    display: block;
   }
 
   #intro {
-    width:70vw;
-    margin:10vw;
-    height:50vh;
+    width: 70vw;
+    margin: 10vw;
+    height: 50vh;
     position: absolute;
-    top:30vh;
+    top: 30vh;
   }
 
   #exclem {
@@ -983,17 +984,17 @@ button#hippo {
     margin-top: 16vh;
   }
 
-  #bonjourMain{
+  #bonjourMain {
     display: none;
   }
 
-  #bonjour-mobile{
+  #bonjour-mobile {
     display: block;
     padding-top: 16vh;
     margin-left: 10vw;
     animation: mobile 3s ease-in-out;
   }
-  @keyframes mobile{
+  @keyframes mobile {
     0% {
       opacity: 0;
     }
@@ -1005,19 +1006,19 @@ button#hippo {
     }
   }
 
-  .whiteText{
+  .whiteText {
     margin: top 48px;
   }
 
-  .section-flex{
+  .section-flex {
     margin: 8vh auto;
-    display:block;  
+    display: block;
     width: 80vw;
   }
 
   .section-block {
     margin: 8vh auto;
-    width:80vw;
+    width: 80vw;
   }
 
   .my-portrait {
@@ -1032,24 +1033,25 @@ button#hippo {
     margin-bottom: 10px;
   }
 
-  button, #lapi-in-space {
+  button,
+  #lapi-in-space {
     border-radius: 15px;
     height: 300px;
     width: 33%;
     min-width: 200px;
   }
 
-  button{
-    margin:2vh auto;
+  button {
+    margin: 2vh auto;
   }
 
   #Wave {
     transform: translateY(30px);
   }
-  
+
   @keyframes wave {
     to {
-      transform:translateX(0px);
+      transform: translateX(0px);
       transform: translateY(0px);
     }
   }
@@ -1060,34 +1062,35 @@ button#hippo {
     flex-direction: row;
   }
 
-  
-  footer{width: 100vw;}
-
-  #madeWithLove {
-    display:none;
+  footer {
+    width: 100vw;
   }
 
-  .resume-email{
+  #madeWithLove {
+    display: none;
+  }
+
+  .resume-email {
     font-size: 14px;
   }
 
-  #download-email{
+  #download-email {
     margin-bottom: 8vh;
   }
 
-  #emoji{
+  #emoji {
     display: none;
   }
 
   #menu {
     position: fixed;
     left: auto;
-    right:6vw;
+    right: 6vw;
     top: 1vh;
   }
 
-  #menuText{
-    display:none;
+  #menuText {
+    display: none;
   }
 
   .lines {
@@ -1095,23 +1098,23 @@ button#hippo {
   }
 
   #menuOptions {
-    margin-left:10vw;
+    margin-left: 10vw;
     display: none;
     position: fixed;
   }
 
-  #menu-black-box{
-    width:100vw;
-    height:100vh;
+  #menu-black-box {
+    width: 100vw;
+    height: 100vh;
   }
 
   .my-portrait {
     border-radius: 100px;
     max-width: 200px;
-    margin:8vh auto;
+    margin: 8vh auto;
   }
-  
-  #about{
+
+  #about {
     display: block;
   }
 
@@ -1120,13 +1123,13 @@ button#hippo {
     margin-top: 8vh;
   }
 
-  .skills-vignette{
-    height:270px;
+  .skills-vignette {
+    height: 270px;
     margin: 1vh auto;
   }
 
   #listSkills {
-    margin:auto ;
+    margin: auto;
   }
 
   .svgIllustrations {
@@ -1134,9 +1137,8 @@ button#hippo {
   }
 
   .work-portfolio {
-    display:block;
+    display: block;
     margin: 4em auto;
     justify-content: center;
   }
-
 }
