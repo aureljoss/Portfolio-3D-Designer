@@ -200,7 +200,7 @@ header {
 #scroll {
   position: absolute;
   bottom: 12vh;
-  left: 49vw;
+  left: 48vw;
   color: white;
   display: flex;
   flex-direction: column;
@@ -275,11 +275,6 @@ a:hover {
     margin-left: 0vw;
   }
 
-  30% {
-    width:90vw;
-    margin-left: 0vw;
-  }
-
   100%{
     width: 45vw;
     margin-left: 0vw;
@@ -305,10 +300,10 @@ a:hover {
 }
 
 #intro {
-  width: 33vw;
   margin: auto;
   margin-left: 5vw;
   margin-right: 17vw;
+  width:20vw;
 }
 
 @keyframes introAnimation {
@@ -322,13 +317,18 @@ a:hover {
 
 #bonjourMain {
   display: flex;
-  width: 40vw;
   align-items: center;
+  justify-content: center;
+  position:absolute;
+  left:42vw;
+  height:100vh;
+  width:20vw;
 }
 
 #bonjour {
   line-height: 7rem;
-  animation: bonjour 3s;
+  animation: bonjour 3s  ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 #bonjour-mobile {
@@ -339,7 +339,8 @@ a:hover {
   font-size: 200px;
   transition: transform 1s;
   font-weight: 800;
-  animation: ex 3s ease-in-out;
+  animation: ex 3.5s ease-in-out;
+  animation-fill-mode: forwards;
   margin-bottom: 0.75em;
   margin-left: 0.2em;
   color: #ff5851;
@@ -348,26 +349,26 @@ a:hover {
 @keyframes bonjour {
   0% {
     opacity: 0;
-    transform: translateX(20vw);
+    transform: translateX(40vw);
   }
-  30% {
+  60% {
     opacity: 0;
-    transform: translateX(20vw);
+    transform: translateX(40vw);
   }
   100% {
     visibility: visible;
-    transform: translateX(10vw);
+    transform: translateX(0vw);
   }
 }
 
 @keyframes ex {
   0% {
     opacity: 0;
-    transform: translateX(10vw);
+    transform: translateX(40vw);
   }
-  50% {
+  80% {
     opacity: 0;
-    transform: translateX(10vw);
+    transform: translateX(30vw);
   }
   100% {
     visibility: visible;
@@ -377,10 +378,9 @@ a:hover {
 
 /* ----- Introduction ----- */
 .introduction {
-  padding-top: 10vh;
   width: 60vw;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20vh auto;
 }
 
 /* ----- Hippo Animation ----- */
@@ -999,7 +999,7 @@ button#hippo {
     height: 50vh;
     position: absolute;
     top: 30vh;
-  }
+    }
 
   #exclem {
     font-size: 70px;

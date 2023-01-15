@@ -127,7 +127,7 @@ gsap.from(".introduction", {
     start: "top center",
     once: true,
   },
-  x: -100,
+  x: -150,
 });
 gsap.to(".introduction", {
   opacity: 1,
