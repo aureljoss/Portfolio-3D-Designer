@@ -26,7 +26,7 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.7em;
 }
@@ -81,15 +81,21 @@ header {
 }
 
 #introName {
-  font-size: 1.4em;
-  font-weight: 800;
+  font-weight: 300;
   animation: introAnimation 1s ease-in-out;
+}
+
+.nameBold{
+  font-weight:800;
+  font-size: 1em;
+  animation: introTextAnimation 1.2s ease-in-out;
 }
 
 #menu {
   position: fixed;
   left: 5px;
-  top: 50vh;
+  height:100vh;
+  top: 48vh;
   animation: menu 1s forwards;
   height: 4vh;
   z-index: 2;
@@ -267,7 +273,7 @@ a:hover {
 
 #start {
   background-color: #ff5851;
-  margin: auto;
+  margin: 5vh auto;
   color: #121214;
   height: 90vh;
   width:90vw;
@@ -308,11 +314,11 @@ a:hover {
 }
 
 #intro {
-  margin-top:40vh;
   margin-left: 5vw;
-  margin-right: 17vw;
+  display: flex;
   width:20vw;
-  height:20vh;
+  height:90vh;
+  align-items: center;
 }
 
 @keyframes introAnimation {
@@ -330,7 +336,7 @@ a:hover {
   justify-content: center;
   position:absolute;
   left:42vw;
-  height:100vh;
+  height:90vh;
   width:20vw;
 }
 
@@ -389,6 +395,17 @@ a:hover {
   width: 60vw;
   max-width: 1000px;
   margin: 20vh auto;
+}
+
+#openToWork{
+  display: flex;
+  width:15vw;
+  height:90vh;
+  align-items: center;
+  position: absolute;
+  right:5vw;
+  animation: introTextAnimation 2s 3s ease-in-out backwards;
+
 }
 
 /* ----- Hippo Animation ----- */
