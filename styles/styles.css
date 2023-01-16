@@ -26,7 +26,7 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.7em;
 }
@@ -62,7 +62,6 @@ header {
 }
 
 #myBar{
-  margin:5vh 0;
   left:5vw;
 }
 
@@ -82,13 +81,15 @@ header {
 
 #introName {
   font-weight: 300;
-  animation: introAnimation 1s ease-in-out;
+  animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
 .nameBold{
   font-weight:800;
   font-size: 1em;
-  animation: introTextAnimation 1.2s ease-in-out;
+  animation: introTextAnimation 1.2s 4.5s ease-in-out backwards;
+  text-transform: uppercase;
+
 }
 
 #menu {
@@ -314,7 +315,7 @@ a:hover {
 }
 
 #intro {
-  margin-left: 5vw;
+  margin-left: 3vw;
   display: flex;
   width:20vw;
   height:90vh;
@@ -403,9 +404,12 @@ a:hover {
   height:90vh;
   align-items: center;
   position: absolute;
-  right:5vw;
-  animation: introTextAnimation 2s 3s ease-in-out backwards;
+  right:8vw;
+  animation: introTextAnimation 2s 5s ease-in-out backwards;
+}
 
+#otw{
+  font-weight: 300;
 }
 
 /* ----- Hippo Animation ----- */
@@ -976,7 +980,7 @@ button#hippo {
 }
 
 #madeWithLove {
-  display: none;
+  display: fixed;
 }
 
 /* Media Queries */
