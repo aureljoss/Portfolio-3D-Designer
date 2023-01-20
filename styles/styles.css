@@ -973,6 +973,10 @@ button#hippo {
     font-size: 40px;
   }
 
+  h4{
+    font-size: 20px;
+  }
+
   h5 {
     font-size: 16px;
   }
@@ -1011,7 +1015,7 @@ button#hippo {
 
   .period {
     font-size: 70px;
-    margin-top: 16vh;
+    margin-top: 13vh;
   }
 
   @keyframes mobile {
@@ -1029,6 +1033,16 @@ button#hippo {
   .period {
     margin-bottom: 0.71em;
     margin-left: 0.1em;
+  }
+
+  #scroll {
+    left: 42vw;
+    bottom:8vh;
+  }
+
+  .introduction {
+    width: 60vw;
+    margin: 10vh auto;
   }
 
   .section-flex {
