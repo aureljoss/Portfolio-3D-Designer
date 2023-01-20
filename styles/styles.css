@@ -87,7 +87,6 @@ header {
 .nameBold {
   font-weight: 800;
   font-size: 1em;
-  animation: introTextAnimation 1.2s 4.5s ease-in-out backwards;
   text-transform: uppercase;
 }
 
@@ -294,25 +293,6 @@ a:hover {
   }
 }
 
-.whiteText {
-  color: white;
-  animation: introTextAnimation 1.2s ease-in-out;
-  max-width: 600px;
-  font-size: 1em;
-}
-
-@keyframes introTextAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-
 #intro {
   margin-left: 3vw;
   display: flex;
@@ -400,7 +380,7 @@ a:hover {
   align-items: center;
   position: absolute;
   right: 8vw;
-  animation: introTextAnimation 2s 5s ease-in-out backwards;
+  animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
 #otw {
@@ -1016,15 +996,17 @@ button#hippo {
 
   #intro {
     width: 60vw;
-    margin-left: 20vw;
     height: 50vh;
     position: absolute;
+    left:20vw;
+    top:0vh;
   }
 
   #openToWork {
     width: 60vw;
     position: absolute;
-    top:25vh;
+    top:30vh;
+    left:23vw;
   }
 
   .period {
