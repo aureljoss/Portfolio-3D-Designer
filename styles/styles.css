@@ -8,7 +8,7 @@ html {
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 800;
 }
 
@@ -57,6 +57,7 @@ header {
   top: 0;
   left: 0;
   height: 5vh;
+  width: 90vw;
   background-color: #efefef;
   z-index: 1;
 }
@@ -77,11 +78,6 @@ header {
   text-decoration: none;
   font-size: 15px;
   font-weight: 800;
-}
-
-#introName {
-  font-weight: 300;
-  animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
 .nameBold {
@@ -170,7 +166,8 @@ header {
   position: fixed;
   top: 1vh;
   height: 2.8vh;
-  right: 5vw;
+  width: 64px;
+  right: 0vw;
   animation: emoji 2s linear;
   animation-iteration-count: infinite;
   z-index: 3;
@@ -211,8 +208,9 @@ header {
 
 #scroll {
   position: absolute;
-  bottom: 12vh;
-  left: 48vw;
+  bottom: 10vh;
+  right: 5px;
+  width: 64px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -235,14 +233,14 @@ header {
   margin-top: 0.2em;
   margin-left: 0.4em;
   animation: scrollArrow 0.7s infinite alternate;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 #scrollText {
   font-size: 9px;
   transform: rotate(-90deg);
-  color: white;
+  color: black;
   text-decoration: none;
   margin-bottom: 1em;
 }
@@ -270,6 +268,8 @@ a:hover {
   color: #121214;
 }
 
+/* ----- Introduction ----- */
+
 #start {
   background-color: #ff5851;
   margin: 5vh auto;
@@ -277,8 +277,111 @@ a:hover {
   height: 90vh;
   width: 90vw;
   display: flex;
-  animation: redBackground 2s ease-in-out;
+  animation: redBackground 1s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+@keyframes introAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.introduction {
+  width: 60vw;
+  max-width: 1000px;
+  margin: 20vh auto;
+}
+
+#text-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5vw;
+  width: 42vw;
+  height: 10vh;
+  position: absolute;
+  top: 80vh;
+  align-items: flex-end;
+}
+
+#introName {
+  font-weight: 300;
+  animation: introAnimation 1s 2.5s ease-in-out backwards;
+}
+
+#intro {
+  width: 20vw;
+}
+
+#openToWork {
+  width: 20vw;
+  animation: introAnimation 1s 2.5s ease-in-out backwards;
+}
+
+#otw {
+  font-weight: 300;
+}
+
+.link-intro{
+  text-decoration: none;
+  color:black;
+  font-size: 14px;
+}
+
+.link-intro:hover{
+  cursor:grab;
+}
+
+#bonjourMain {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  max-height: 40vh;
+  position: absolute;
+  top: -5vh;
+}
+
+#bonjour {
+  line-height: 10rem;
+  animation: bonjour 1.5s 1s ease-in-out backwards;
+  letter-spacing: -8px;
+}
+
+.period {
+  font-size: 300px;
+  transition: transform 1s;
+  animation: bonjour 1.5s 1s ease-in-out backwards;
+  color: #ffffff;
+  max-height: 40vh;
+  margin-top: 12vh;
+}
+
+@keyframes bonjour {
+  0% {
+    opacity: 0;
+    transform: translateX(60vw);
+  }
+
+  100% {
+    visibility: visible;
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes ex {
+  0% {
+    opacity: 0;
+    transform: translateX(60vw);
+  }
+
+  100% {
+    visibility: visible;
+    transform: translateX(0vw);
+  }
 }
 
 @keyframes redBackground {
@@ -291,102 +394,6 @@ a:hover {
     width: 65vw;
     margin-left: 0vw;
   }
-}
-
-/* Intro */
-
-#intro {
-  margin-left: 3vw;
-  display: flex;
-  width: 20vw;
-  height: 90vh;
-  align-items: flex-end;
-}
-
-@keyframes introAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
-
-#bonjourMain {
-  display: flex;
-  position: absolute;
-  left: 0vw;
-  top: 0vh;
-  height: 90vh;
-  width: 20vw;
-}
-
-#bonjour {
-  line-height: 11rem;
-  animation: bonjour 3s ease-in-out;
-  animation-fill-mode: forwards;
-  letter-spacing: -8px;
-}
-
-.period {
-  font-size: 368px;
-  transition: transform 1s;
-  animation: ex 3.5s ease-in-out;
-  animation-fill-mode: forwards;
-  margin-bottom: 0.89em;
-  color: #ff5851;
-}
-
-@keyframes bonjour {
-  0% {
-    opacity: 0;
-    transform: translateX(40vw);
-  }
-  60% {
-    opacity: 0;
-    transform: translateX(40vw);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(10vw);
-  }
-}
-
-@keyframes ex {
-  0% {
-    opacity: 0;
-    transform: translateX(40vw);
-  }
-  80% {
-    opacity: 0;
-    transform: translateX(30vw);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(0vw);
-  }
-}
-
-/* ----- Introduction ----- */
-.introduction {
-  width: 60vw;
-  max-width: 1000px;
-  margin: 20vh auto;
-}
-
-#text-intro{
-  display:flex;
-  flex-direction: row;
-}
-
-#openToWork {
-  align-items: center;
-  position: absolute;
-  animation: introAnimation 1s 4s ease-in-out backwards;
-}
-
-#otw {
-  font-weight: 300;
 }
 
 /* ----- Hippo Animation ----- */
@@ -726,22 +733,31 @@ button#hippo {
 }
 
 .my-portrait {
-  max-width: 20vw;
+  max-width: 21vw;
   position: absolute;
-  left:60vw;
-  top:30vh;
-  border-radius: 10vw;
+  left: 59vw;
+  top: 15vh;
+  border-radius: 6px;
+  animation: introAnimation 1s 2.5s ease-in-out backwards;
+}
+
+#pink-background{
+  background-color: rgb(204, 204, 204);
+  animation: introAnimation 1s 2.5s ease-in-out backwards;
+  position:absolute;
+  height:90vh;
+  width:90vw;
+  z-index: -2;
 }
 
 .my-portrait:hover {
-  animation: images 0.3s forwards;
+  /* animation: images 0.3s; */
   cursor: grab;
 }
 
 @keyframes images {
   to {
-    transform: translateY(5px);
-    transform: translateX(5px);
+    transform: scale(1.05);
   }
 }
 
@@ -942,7 +958,8 @@ button#hippo {
 #socialIcon {
   position: fixed;
   right: 5px;
-  top: 50vh;
+  top: 45vh;
+  width: 64px;
   display: flex;
   flex-direction: column;
 }
@@ -1035,8 +1052,8 @@ button#hippo {
   }
 
   #scroll {
-    left: 42vw;
-    bottom: 8vh;
+    right: 5vw;
+    bottom: 0vh;
   }
 
   .introduction {
