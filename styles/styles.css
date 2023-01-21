@@ -973,7 +973,7 @@ button#hippo {
     font-size: 40px;
   }
 
-  h4{
+  h4 {
     font-size: 20px;
   }
 
@@ -1002,15 +1002,15 @@ button#hippo {
     width: 60vw;
     height: 50vh;
     position: absolute;
-    left:20vw;
-    top:0vh;
+    left: 20vw;
+    top: 0vh;
   }
 
   #openToWork {
     width: 60vw;
     position: absolute;
-    top:30vh;
-    left:23vw;
+    top: 30vh;
+    left: 23vw;
   }
 
   .period {
@@ -1037,7 +1037,7 @@ button#hippo {
 
   #scroll {
     left: 42vw;
-    bottom:8vh;
+    bottom: 8vh;
   }
 
   .introduction {
@@ -1141,6 +1141,11 @@ button#hippo {
   #menu-black-box {
     width: 100vw;
     height: 100vh;
+    top: 0px;
+  }
+
+  #cross {
+    top: 40vh;
   }
 
   .my-portrait {
@@ -1175,5 +1180,11 @@ button#hippo {
     display: block;
     margin: 4em auto;
     justify-content: center;
+  }
+}
+
+@media only screen (min-width: 480px) and(max-width: 1200px) {
+  h1 {
+    font-size: 40px;
   }
 }
