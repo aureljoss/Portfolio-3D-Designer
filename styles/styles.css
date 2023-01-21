@@ -1014,8 +1014,10 @@ button#hippo {
   }
 
   .period {
-    font-size: 70px;
-    margin-top: 13vh;
+    font-size: 140px;
+    margin-top: 15vh;
+    margin-bottom: 0.71em;
+    margin-left: 0.1em;
   }
 
   @keyframes mobile {
@@ -1030,10 +1032,6 @@ button#hippo {
     }
   }
 
-  .period {
-    margin-bottom: 0.71em;
-    margin-left: 0.1em;
-  }
 
   #scroll {
     left: 42vw;
@@ -1183,8 +1181,18 @@ button#hippo {
   }
 }
 
-@media only screen (min-width: 480px) and(max-width: 1200px) {
+/*Mobile - 1200px breakpoint */
+
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
   h1 {
-    font-size: 40px;
+    font-size: 70px;
+    line-height: 60px;
   }
+
+  .period {
+    font-size: 140px;
+    margin-top: 19vh;
+    margin-left:1vw;
+  }
+
 }
