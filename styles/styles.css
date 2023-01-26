@@ -70,7 +70,7 @@ header {
   display: flex;
   text-transform: uppercase;
   width: auto;
-  top: 1.5vh;
+  right: 1.5vh;
   left: 5vw;
   margin: auto;
   color: black;
@@ -293,23 +293,6 @@ a:hover {
   }
 }
 
-#intro {
-  margin-left: 3vw;
-  display: flex;
-  width: 20vw;
-  height: 90vh;
-  align-items: center;
-}
-
-@keyframes introAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
-
 #bonjourMain {
   display: flex;
   align-items: center;
@@ -373,13 +356,32 @@ a:hover {
   margin: 20vh auto;
 }
 
+#intro {
+  position:absolute;
+  display: flex;
+  width: 20vw;
+  bottom:0vh;
+  right:25vw;
+  align-items: center;
+}
+
+@keyframes introAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
 #openToWork {
   display: flex;
   width: 15vw;
-  height: 90vh;
   align-items: center;
   position: absolute;
-  right: 8vw;
+  right:8vw;
+  margin:auto;
+  bottom:0vh;
   animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
@@ -995,12 +997,13 @@ button#hippo {
   }
 
   #start {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   #intro {
     width: 60vw;
-    height: 50vh;
+    height: 20vh;
     position: absolute;
     left: 20vw;
     top: 0vh;
