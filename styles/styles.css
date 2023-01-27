@@ -362,6 +362,7 @@ a:hover {
   width: 20vw;
   bottom:0vh;
   right:25vw;
+  min-width:200px;
   align-items: center;
 }
 
@@ -379,9 +380,10 @@ a:hover {
   width: 15vw;
   align-items: center;
   position: absolute;
-  right:8vw;
+  right:6vw;
   margin:auto;
   bottom:0vh;
+  min-width:200px;
   animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
