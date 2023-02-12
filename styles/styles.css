@@ -1048,6 +1048,14 @@ button#hippo {
     margin: 10vh auto;
   }
 
+  #otw{
+    display:none;
+  }
+
+  #introName{
+  display:none;
+  }
+
   .section-flex {
     margin: 8vh auto;
     display: block;
@@ -1095,9 +1103,16 @@ button#hippo {
   }
 
   #socialIcon {
-    position: static;
-    justify-content: center;
-    flex-direction: row;
+    right: 0px;
+    width:50px;
+    top:auto;
+    bottom:5vh;
+  }
+
+  #socialIcon svg{
+    width:60%;
+    height:auto;
+    margin-top:4px;
   }
 
   footer {
