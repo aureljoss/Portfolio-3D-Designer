@@ -77,6 +77,8 @@ header {
   text-decoration: none;
   font-size: 15px;
   font-weight: 800;
+  height:5vh;
+  align-items: center;
 }
 
 #introName {
@@ -274,7 +276,7 @@ a:hover {
   background-color: #ff5851;
   margin: 5vh auto;
   color: #121214;
-  height: 90vh;
+  height: 88vh;
   width: 90vw;
   display: flex;
   animation: redBackground 2s ease-in-out;
@@ -360,7 +362,7 @@ a:hover {
   position:absolute;
   display: flex;
   width: 20vw;
-  bottom:0vh;
+  bottom:2vh;
   right:25vw;
   min-width:200px;
   align-items: center;
@@ -382,7 +384,7 @@ a:hover {
   position: absolute;
   right:6vw;
   margin:auto;
-  bottom:0vh;
+  bottom:2vh;
   min-width:200px;
   animation: introAnimation 1s 4s ease-in-out backwards;
 }
@@ -958,9 +960,20 @@ button#hippo {
   height: 40px;
 }
 
-#madeWithLove {
-  display: fixed;
+footer{
+  position:fixed;
+  bottom:0vh;
+  height:5vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
 }
+
+#madeWithLove{
+  font-size:12px;
+}
+
 
 /* Media Queries */
 
@@ -1044,8 +1057,9 @@ button#hippo {
   }
 
   .introduction {
-    width: 60vw;
+    width: 80vw;
     margin: 10vh auto;
+    text-align: center;
   }
 
   #otw{
@@ -1057,21 +1071,21 @@ button#hippo {
   }
 
   .section-flex {
-    margin: 8vh auto;
+    margin: 0vh auto;
     display: block;
     width: 80vw;
   }
 
   .section-block {
-    margin: 8vh auto;
+    margin: 0vh auto;
     width: 80vw;
   }
 
   .my-portrait {
     display: block;
-    border-radius: 150px;
-    max-width: 70%;
-    margin: 5vh auto;
+    border-radius: 100px;
+    max-width: 200px;
+    margin:8vh auto;
   }
 
   .skills-vignette h6 {
@@ -1103,32 +1117,44 @@ button#hippo {
   }
 
   #socialIcon {
-    right: 0px;
-    width:50px;
+    display:none;
+    width: 100vw;
+    background-color: white;
     top:auto;
-    bottom:5vh;
+    bottom: 0vh;
+    flex-direction: row;
   }
 
   #socialIcon svg{
-    width:60%;
+    width:10vw;
     height:auto;
     margin-top:4px;
   }
 
   footer {
     width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
 
-  #madeWithLove {
-    display: none;
+  #madeWithLove{
+    display:block;
+    margin:auto;
+    width:50vw;
   }
 
   .resume-email {
     font-size: 14px;
+    border: solid 1px rgb(134, 134, 134);
+    border-radius: 60px;
+    text-align: center;
+    padding: 20px 4vw;
+    text-decoration: none;
+    color: black;
   }
 
   #download-email {
-    margin-bottom: 8vh;
+    margin-bottom: 0vh;
   }
 
   #emoji {
@@ -1139,7 +1165,8 @@ button#hippo {
     position: fixed;
     left: auto;
     right: 6vw;
-    top: 1vh;
+    top: 0vh;
+    height:5vh;
   }
 
   #menuText {
@@ -1166,12 +1193,6 @@ button#hippo {
     top: 40vh;
   }
 
-  .my-portrait {
-    border-radius: 100px;
-    max-width: 200px;
-    margin: 8vh auto;
-  }
-
   #about {
     display: block;
   }
@@ -1184,10 +1205,13 @@ button#hippo {
   .skills-vignette {
     height: 270px;
     margin: 1vh auto;
+    width:60vw;
   }
 
   #listSkills {
     margin: auto;
+    max-width: 1000px;
+    margin-bottom: 6vh;
   }
 
   .svgIllustrations {
