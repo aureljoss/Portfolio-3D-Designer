@@ -1085,7 +1085,7 @@ footer{
 
   #scroll {
     left: 42vw;
-    bottom: 8vh;
+    bottom: 10vh;
   }
 
   .introduction {
@@ -1251,18 +1251,35 @@ footer{
   }
 }
 
-/*Mobile - 1200px breakpoint */
+/*Mobile - 1024px breakpoint */
 
-@media only screen and (min-width: 480px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   h1 {
-    font-size: 70px;
-    line-height: 60px;
+    font-size: 90px;
+    line-height: 78px;
   }
 
   .period {
-    font-size: 140px;
-    margin-top: 19vh;
+    font-size: 180px;
+    margin-bottom: 25vh;
     margin-left:1vw;
+  }
+
+  #openToWork{
+    display: none;
+  }
+
+  #intro { 
+    right: 5vw;
+  }
+
+  #scroll {
+    left: 46vw;
+    bottom: 8vh;
+  }
+
+  #menuText{
+    display:none;
   }
 
 }
