@@ -1270,7 +1270,7 @@ footer{
   }
 
   #intro { 
-    right: 5vw;
+    right: 10vw;
   }
 
   #scroll {
@@ -1278,8 +1278,25 @@ footer{
     bottom: 8vh;
   }
 
-  #menuText{
-    display:none;
+
+  .my-portrait {
+    display: block;
+    border-radius: 100px;
+    max-width: 200px;
+    margin:8vh auto;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  .my-portrait:hover {
+    border-radius: 100px;
+    cursor: grab;
+  }
+
+  #description {
+    max-width: none;
   }
 
 }
