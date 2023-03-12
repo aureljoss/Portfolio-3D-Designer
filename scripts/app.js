@@ -74,6 +74,13 @@ workLink.addEventListener("click", () => {
   cross.style.display = "none";
 });
 
+menuOptions.addEventListener("click",()=>{
+  menuOptions.style.display="none";
+  cross.style.display="none";
+  menu.style.display="flex";
+  menuLines.style.display="block";
+});
+
 
 
 const playgroundLink = document.getElementById("playgroundLink");

@@ -8,7 +8,7 @@ html {
 }
 
 h1 {
-  font-size: 180px;
+  font-size: 200px;
   font-weight: 800;
 }
 
@@ -57,7 +57,6 @@ header {
   top: 0;
   left: 0;
   height: 5vh;
-  width: 90vw;
   background-color: #efefef;
   z-index: 1;
 }
@@ -71,13 +70,20 @@ header {
   display: flex;
   text-transform: uppercase;
   width: auto;
-  top: 1.5vh;
+  right: 1.5vh;
   left: 5vw;
   margin: auto;
   color: black;
   text-decoration: none;
   font-size: 15px;
   font-weight: 800;
+  height:5vh;
+  align-items: center;
+}
+
+#introName {
+  font-weight: 300;
+  animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
 .nameBold {
@@ -166,8 +172,7 @@ header {
   position: fixed;
   top: 1vh;
   height: 2.8vh;
-  width: 64px;
-  right: 0vw;
+  right: 5vw;
   animation: emoji 2s linear;
   animation-iteration-count: infinite;
   z-index: 3;
@@ -208,9 +213,8 @@ header {
 
 #scroll {
   position: absolute;
-  bottom: 10vh;
-  right: 5px;
-  width: 64px;
+  bottom: 12vh;
+  left: 48vw;
   color: white;
   display: flex;
   flex-direction: column;
@@ -233,14 +237,14 @@ header {
   margin-top: 0.2em;
   margin-left: 0.4em;
   animation: scrollArrow 0.7s infinite alternate;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 #scrollText {
   font-size: 9px;
   transform: rotate(-90deg);
-  color: black;
+  color: white;
   text-decoration: none;
   margin-bottom: 1em;
 }
@@ -274,11 +278,96 @@ a:hover {
   background-color: #ff5851;
   margin: 5vh auto;
   color: #121214;
-  height: 90vh;
+  height: 88vh;
   width: 90vw;
   display: flex;
-  animation: redBackground 1s ease-in-out;
+  animation: redBackground 2s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+@keyframes redBackground {
+  0% {
+    width: 90vw;
+    margin-left: 0vw;
+  }
+
+  100% {
+    width: 45vw;
+    margin-left: 0vw;
+  }}
+
+
+#bonjourMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 42vw;
+  height: 90vh;
+  width: 20vw;
+}
+
+#bonjour {
+  line-height: 11rem;
+  animation: bonjour 3s ease-in-out;
+  animation-fill-mode: forwards;
+  letter-spacing: -8px;
+}
+
+.period {
+  font-size: 368px;
+  transition: transform 1s;
+  animation: ex 3.5s ease-in-out;
+  animation-fill-mode: forwards;
+  margin-bottom: 0.89em;
+  color: #ff5851;
+}
+
+@keyframes bonjour {
+  0% {
+    opacity: 0;
+    transform: translateX(40vw);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(40vw);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes ex {
+  0% {
+    opacity: 0;
+    transform: translateX(40vw);
+  }
+  80% {
+    opacity: 0;
+    transform: translateX(30vw);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0vw);
+  }
+}
+
+/* ----- Introduction ----- */
+.introduction {
+  width: 60vw;
+  max-width: 1000px;
+  margin: 20vh auto;
+}
+
+#intro {
+  position:absolute;
+  display: flex;
+  width: 20vw;
+  bottom:2vh;
+  right:25vw;
+  min-width:200px;
+  align-items: center;
 }
 
 @keyframes introAnimation {
@@ -290,110 +379,20 @@ a:hover {
   }
 }
 
-.introduction {
-  width: 60vw;
-  max-width: 1000px;
-  margin: 20vh auto;
-}
-
-#text-intro {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 5vw;
-  width: 42vw;
-  height: 10vh;
-  position: absolute;
-  top: 80vh;
-  align-items: flex-end;
-}
-
-#introName {
-  font-weight: 300;
-  animation: introAnimation 1s 2.5s ease-in-out backwards;
-}
-
-#intro {
-  width: 20vw;
-}
-
 #openToWork {
-  width: 20vw;
-  animation: introAnimation 1s 2.5s ease-in-out backwards;
+  display: flex;
+  width: 15vw;
+  align-items: center;
+  position: absolute;
+  right:6vw;
+  margin:auto;
+  bottom:2vh;
+  min-width:200px;
+  animation: introAnimation 1s 4s ease-in-out backwards;
 }
 
 #otw {
   font-weight: 300;
-}
-
-.link-intro{
-  text-decoration: none;
-  color:black;
-  font-size: 14px;
-}
-
-.link-intro:hover{
-  cursor:grab;
-}
-
-#bonjourMain {
-  display: flex;
-  flex-direction: row;
-  margin-left: 5vw;
-  max-height: 40vh;
-  position: absolute;
-  top: -5vh;
-}
-
-#bonjour {
-  line-height: 10rem;
-  animation: bonjour 1.5s 1s ease-in-out backwards;
-  letter-spacing: -8px;
-}
-
-.period {
-  font-size: 300px;
-  transition: transform 1s;
-  animation: bonjour 1.5s 1s ease-in-out backwards;
-  color: #ffffff;
-  max-height: 40vh;
-  margin-top: 12vh;
-}
-
-@keyframes bonjour {
-  0% {
-    opacity: 0;
-    transform: translateX(60vw);
-  }
-
-  100% {
-    visibility: visible;
-    transform: translateX(0vw);
-  }
-}
-
-@keyframes ex {
-  0% {
-    opacity: 0;
-    transform: translateX(60vw);
-  }
-
-  100% {
-    visibility: visible;
-    transform: translateX(0vw);
-  }
-}
-
-@keyframes redBackground {
-  0% {
-    width: 90vw;
-    margin-left: 0vw;
-  }
-
-  100% {
-    width: 65vw;
-    margin-left: 0vw;
-  }
 }
 
 /* ----- Hippo Animation ----- */
@@ -630,6 +629,7 @@ button#hippo {
 }
 
 #description {
+  max-width: 400px;
   top: 0px;
 }
 
@@ -732,31 +732,22 @@ button#hippo {
 }
 
 .my-portrait {
-  max-width: 21vw;
-  position: absolute;
-  left: 59vw;
-  top: 15vh;
-  border-radius: 6px;
-  animation: introAnimation 1s 2.5s ease-in-out backwards;
-}
-
-#pink-background{
-  background-color: rgb(204, 204, 204);
-  animation: introAnimation 1s 2.5s ease-in-out backwards;
-  position:absolute;
-  height:90vh;
-  width:90vw;
-  z-index: -2;
+  border-radius: 20px;
+  max-width: 300px;
+  margin: 1vh 2vw;
+  right: 0px;
 }
 
 .my-portrait:hover {
-  /* animation: images 0.3s; */
+  border-radius: 20px;
+  box-shadow: 10px 5px 8px lightgray;
+  animation: images 0.3s forwards;
   cursor: grab;
 }
 
 @keyframes images {
   to {
-    transform: scale(1.05);
+    transform: translateY(-5px);
   }
 }
 
@@ -787,6 +778,7 @@ button#hippo {
   padding: 26px 9vw;
   text-decoration: none;
   color: black;
+  margin:auto;
 }
 
 #talk-text {
@@ -796,11 +788,10 @@ button#hippo {
 #contact-me {
   margin: 5vh auto;
   list-style: none;
-  line-height: 8em;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 8em;
 }
 
 .work-portfolio {
@@ -957,8 +948,7 @@ button#hippo {
 #socialIcon {
   position: fixed;
   right: 5px;
-  top: 45vh;
-  width: 64px;
+  top: 50vh;
   display: flex;
   flex-direction: column;
 }
@@ -972,9 +962,22 @@ button#hippo {
   height: 40px;
 }
 
-#madeWithLove {
-  display: fixed;
+footer{
+  position:fixed;
+  bottom:0vh;
+  left:0vh;
+  height:5vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
 }
+
+#madeWithLove{
+  font-size:12px;
+  margin-left: 5vw;
+}
+
 
 /* Media Queries */
 
@@ -1013,15 +1016,46 @@ button#hippo {
   }
 
   #start {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   #intro {
     width: 60vw;
-    height: 50vh;
+    height: 20vh;
     position: absolute;
     left: 20vw;
     top: 0vh;
+  }
+
+  @keyframes bonjour {
+    0% {
+      opacity: 0;
+      transform: translateX(20vw);
+    }
+    60% {
+      opacity: 0;
+      transform: translateX(20vw);
+    }
+    100% {
+      visibility: visible;
+      transform: translateX(0vw);
+    }
+  }
+
+  @keyframes ex {
+    0% {
+      opacity: 0;
+      transform: translateX(5vw);
+    }
+    80% {
+      opacity: 0;
+      transform: translateX(10vw);
+    }
+    100% {
+      visibility: visible;
+      transform: translateX(0vw);
+    }
   }
 
   #openToWork {
@@ -1051,23 +1085,32 @@ button#hippo {
   }
 
   #scroll {
-    right: 5vw;
-    bottom: 0vh;
+    left: 42vw;
+    bottom: 10vh;
   }
 
   .introduction {
-    width: 60vw;
+    width: 80vw;
     margin: 10vh auto;
+    text-align: center;
+  }
+
+  #otw{
+    display:none;
+  }
+
+  #introName{
+  display:none;
   }
 
   .section-flex {
-    margin: 8vh auto;
+    margin: 0vh auto;
     display: block;
     width: 80vw;
   }
 
   .section-block {
-    margin: 8vh auto;
+    margin: 0vh auto;
     width: 80vw;
   }
 
@@ -1075,7 +1118,7 @@ button#hippo {
     display: block;
     border-radius: 100px;
     max-width: 200px;
-    margin: 8vh auto;
+    margin:8vh auto;
   }
 
   .skills-vignette h6 {
@@ -1107,25 +1150,38 @@ button#hippo {
   }
 
   #socialIcon {
-    position: static;
-    justify-content: center;
+    display:none;
+    width: 100vw;
+    background-color: white;
+    top:auto;
+    bottom: 0vh;
     flex-direction: row;
   }
 
-  footer {
-    width: 100vw;
+  #socialIcon svg{
+    width:10vw;
+    height:auto;
+    margin-top:4px;
   }
 
-  #madeWithLove {
-    display: none;
+  #madeWithLove{
+    display:block;
+    margin:auto;
+    text-align: center;
   }
 
   .resume-email {
     font-size: 14px;
+    border: solid 1px rgb(134, 134, 134);
+    border-radius: 60px;
+    text-align: center;
+    padding: 20px 4vw;
+    text-decoration: none;
+    color: black;
   }
 
   #download-email {
-    margin-bottom: 8vh;
+    margin-bottom: 0vh;
   }
 
   #emoji {
@@ -1136,7 +1192,8 @@ button#hippo {
     position: fixed;
     left: auto;
     right: 6vw;
-    top: 1vh;
+    top: 0vh;
+    height:5vh;
   }
 
   #menuText {
@@ -1175,10 +1232,13 @@ button#hippo {
   .skills-vignette {
     height: 270px;
     margin: 1vh auto;
+    width:60vw;
   }
 
   #listSkills {
     margin: auto;
+    max-width: 1000px;
+    margin-bottom: 6vh;
   }
 
   .svgIllustrations {
@@ -1192,17 +1252,52 @@ button#hippo {
   }
 }
 
-/*Mobile - 1200px breakpoint */
+/*Mobile - 1024px breakpoint */
 
-@media only screen and (min-width: 480px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   h1 {
-    font-size: 70px;
-    line-height: 60px;
+    font-size: 90px;
+    line-height: 78px;
   }
 
   .period {
-    font-size: 140px;
-    margin-top: 19vh;
-    margin-left: 1vw;
+    font-size: 180px;
+    margin-bottom: 25vh;
+    margin-left:1vw;
   }
+
+  #openToWork{
+    display: none;
+  }
+
+  #intro { 
+    right: 10vw;
+  }
+
+  #scroll {
+    left: 46vw;
+    bottom: 8vh;
+  }
+
+
+  .my-portrait {
+    display: block;
+    border-radius: 100px;
+    max-width: 200px;
+    margin:8vh auto;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  .my-portrait:hover {
+    border-radius: 100px;
+    cursor: grab;
+  }
+
+  #description {
+    max-width: none;
+  }
+
 }
