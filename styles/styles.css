@@ -944,6 +944,7 @@ button#hippo {
 .svgIllustrations {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text-break {
