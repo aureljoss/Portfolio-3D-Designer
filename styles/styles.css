@@ -450,8 +450,8 @@ button#hippo {
   animation-direction: alternate;
 }
 
-#Wave {
-  transform: translateY(200px);
+/* #Wave {
+  transform: translateY(00px);
 }
 
 @keyframes wave {
@@ -459,7 +459,7 @@ button#hippo {
     transform: translateX(-100px);
     transform: translateY(60px);
   }
-}
+} */
 
 .carrot-fill,
 .carrot-head {
