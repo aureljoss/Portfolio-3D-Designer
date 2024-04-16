@@ -213,7 +213,7 @@ header {
 
 #scroll {
   position: absolute;
-  bottom: 12vh;
+  bottom: 9vh;
   left: 48vw;
   color: white;
   display: flex;
