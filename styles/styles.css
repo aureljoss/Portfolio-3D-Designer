@@ -411,8 +411,8 @@ a:hover {
 
 button {
   background: transparent;
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 280px;
   border-radius: 15px;
   border: 1px solid rgb(134, 134, 134);
   margin: 1em;
@@ -811,8 +811,8 @@ button#hippo {
 }
 
 .portfolio-preview {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 280px;
   border-radius: 15px;
   border: 1px solid rgb(134, 134, 134);
   margin: 1em;
@@ -923,8 +923,8 @@ button#hippo {
 }
 
 #lapi-in-space {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 280px;
   border-radius: 15px;
   background: #213092;
 }
