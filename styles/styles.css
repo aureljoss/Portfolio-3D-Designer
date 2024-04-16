@@ -364,7 +364,7 @@ a:hover {
   position: absolute;
   display: flex;
   width: 20vw;
-  bottom: 2vh;
+  bottom: 5vh;
   right: 25vw;
   min-width: 200px;
   align-items: center;
@@ -386,7 +386,7 @@ a:hover {
   position: absolute;
   right: 6vw;
   margin: auto;
-  bottom: 2vh;
+  bottom: 5vh;
   min-width: 200px;
   animation: introAnimation 1s 4s ease-in-out backwards;
 }
@@ -401,13 +401,13 @@ a:hover {
   background: #8412b5;
 }
 
-/* button {
+button {
   background: transparent;
   border: 0;
   height: 550px;
   width: 33%;
   min-width: 330px;
-} */
+}
 
 button {
   background: transparent;
@@ -618,6 +618,7 @@ button#hippo {
   align-items: center;
   gap: 5vw;
   width: 60vw;
+  max-width: 1000px;
   border-top: 1px solid #c4c4c4;
   max-width: 1000px;
 }
@@ -628,6 +629,7 @@ button#hippo {
   align-items: center;
   gap: 5vw;
   width: 60vw;
+  max-width: 1000px;
   border-top: 1px solid #c4c4c4;
 }
 
@@ -953,6 +955,7 @@ button#hippo {
 
 #portfolio-projects-section{
   width:60vw;
+  max-width: 1200px;
 }
 
 .portfolio-projects{
@@ -1064,7 +1067,22 @@ footer {
     height: 20vh;
     position: absolute;
     left: 20vw;
-    top: 0vh;
+    align-self: flex-end;
+    margin-bottom: 10vh;
+  }
+
+  .introduction {
+    width: 80vw;
+    margin: 10vh auto;
+    text-align: center;
+  }
+
+  #otw {
+    display: none;
+  }
+
+  #introName {
+    display: none;
   }
 
   @keyframes bonjour {
@@ -1126,20 +1144,6 @@ footer {
   #scroll {
     left: 42vw;
     bottom: 10vh;
-  }
-
-  .introduction {
-    width: 80vw;
-    margin: 10vh auto;
-    text-align: center;
-  }
-
-  #otw {
-    display: none;
-  }
-
-  #introName {
-    display: none;
   }
 
   .section-flex {
