@@ -951,6 +951,13 @@ button#hippo {
   margin: 6rem auto;
 }
 
+.main-images {
+  justify-self: center;
+  align-self: center;
+  width: 80vw;
+  margin: auto;
+}
+
 /* ----- Side bar - social media ----- */
 
 #social {
