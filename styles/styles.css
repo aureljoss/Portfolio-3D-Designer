@@ -92,6 +92,14 @@ header {
   text-transform: uppercase;
 }
 
+.href-links{
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1em;
+  color:black;
+  text-transform: uppercase;
+}
+
 #menu {
   position: fixed;
   left: 5px;
