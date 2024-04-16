@@ -373,7 +373,7 @@ a:hover {
 /* ----- Introduction ----- */
 .introduction {
   width: 60vw;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 20vh auto;
 }
 
@@ -627,9 +627,9 @@ button#hippo {
   align-items: center;
   gap: 5vw;
   width: 60vw;
-  max-width: 1000px;
+  max-width: 1200px;
   border-top: 1px solid #c4c4c4;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .section-block {
@@ -638,7 +638,7 @@ button#hippo {
   align-items: center;
   gap: 5vw;
   width: 60vw;
-  max-width: 1000px;
+  max-width: 1200px;
   border-top: 1px solid #c4c4c4;
 }
 
@@ -682,7 +682,7 @@ button#hippo {
   display: flex;
   flex-direction: row;
   width: 60vw;
-  max-width: 1000px;
+  max-width: 1200px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -972,10 +972,27 @@ button#hippo {
   display: flex;
   width: 100%;
   margin: 10rem 0rem;
+  gap:1rem;
+}
+
+div.portfolio-projects div, div.portfolio-projects p{
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  line-height: 0rem;
+}
+
+div.portfolio-projects a{
+  max-width: 70%;
+}
+
+div.portfolio-projects h6{
+  margin-bottom: 0rem;
 }
 
 .portfolio-vignettes {
-  width: 80%;
+  width: 100%;
   border-radius: 40px;
 }
 
