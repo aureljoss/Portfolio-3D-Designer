@@ -375,6 +375,7 @@ a:hover {
   width: 60vw;
   max-width: 1200px;
   margin: 20vh auto;
+  text-align: center;
 }
 
 #intro {
@@ -420,8 +421,8 @@ a:hover {
 
 button {
   background: transparent;
-  height: 400px;
-  width: 280px;
+  height: 360px;
+  width: 240px;
   border-radius: 15px;
   border: 1px solid rgb(134, 134, 134);
   margin: 1em;
@@ -815,18 +816,12 @@ button#hippo {
   flex-direction: row;
 }
 
-.work-portfolio {
-  display: flex;
-  margin: 4em auto;
-  justify-content: center;
-}
-
 .portfolio-preview {
-  height: 400px;
-  width: 280px;
+  height: 360px;
+  width: 240px;
   border-radius: 15px;
   border: 1px solid rgb(134, 134, 134);
-  margin: 1em;
+  margin: 5em 1em 1em;
 }
 
 .portfolio-preview:hover {
@@ -834,10 +829,6 @@ button#hippo {
   box-shadow: 10px 5px 8px lightgray;
   animation: images 0.5s forwards;
   cursor: pointer;
-}
-
-.vignettes {
-  text-align: center;
 }
 
 .github {
@@ -935,8 +926,8 @@ button#hippo {
 }
 
 #lapi-in-space {
-  height: 400px;
-  width: 280px;
+  height: 360px;
+  width: 240px;
   border-radius: 15px;
   background: #213092;
 }
@@ -953,10 +944,16 @@ button#hippo {
   }
 }
 
-.svgIllustrations {
+.svgIllustrations, .work-portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1200px;
+}
+
+.social{
+  width:60px;
+  margin: auto;
 }
 
 .text-break {
@@ -1323,7 +1320,8 @@ footer {
   }
 
   .work-portfolio {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 4em auto;
     justify-content: center;
   }
