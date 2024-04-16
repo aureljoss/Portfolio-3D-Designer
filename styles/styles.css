@@ -951,6 +951,25 @@ button#hippo {
   margin: 6rem auto;
 }
 
+#portfolio-projects-section{
+  width:60vw;
+}
+
+.portfolio-projects{
+  display: flex;
+  width:100%;
+  margin: 10rem 0rem;
+}
+
+.portfolio-vignettes{
+  width:80%;
+  border-radius: 40px;
+}
+
+.porfolio-titles{
+  align-self: end;
+}
+
 .main-images {
   justify-self: center;
   align-self: center;
