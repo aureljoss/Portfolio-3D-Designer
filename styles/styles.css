@@ -944,20 +944,21 @@ button#hippo {
   }
 }
 
-.svgIllustrations, .work-portfolio {
+.svgIllustrations,
+.work-portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
 }
 
-.social{
-  width:60px;
+.social {
+  width: 60px;
   margin: auto;
 }
 
 .text-break {
-  margin: 6rem auto;
+  margin: 10rem auto 6rem;
 }
 
 #portfolio-projects-section {
@@ -969,10 +970,11 @@ button#hippo {
   display: flex;
   width: 100%;
   margin: 10rem 0rem;
-  gap:1rem;
+  gap: 1rem;
 }
 
-div.portfolio-projects div, div.portfolio-projects p{
+div.portfolio-projects div,
+div.portfolio-projects p {
   justify-content: end;
   display: flex;
   flex-direction: column;
@@ -980,11 +982,11 @@ div.portfolio-projects div, div.portfolio-projects p{
   line-height: 0rem;
 }
 
-div.portfolio-projects a{
+div.portfolio-projects a {
   max-width: 70%;
 }
 
-div.portfolio-projects h6{
+div.portfolio-projects h6 {
   margin-bottom: 0rem;
 }
 
@@ -1005,10 +1007,17 @@ div.portfolio-projects h6{
 }
 
 .main-images {
-  justify-self: center;
-  align-self: center;
-  width: 80vw;
-  margin: auto;
+  width: 100vw;
+  margin: 6rem auto;
+  left:0;
+}
+
+.KSU-site-diagrams{
+  width:40%;
+  border-radius: 15px;
+  margin: 1rem 1rem;
+  border-radius: 1.2em;
+  border: 1px solid rgb(130, 130, 130);
 }
 
 /* ----- Side bar - social media ----- */
