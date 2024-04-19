@@ -993,7 +993,7 @@ div.portfolio-projects h6 {
 
 .portfolio-vignettes {
   width: 100%;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .portfolio-vignettes:hover {
@@ -1009,7 +1009,7 @@ div.portfolio-projects h6 {
 
 .main-images {
   width: 100vw;
-  margin: 6rem auto;
+  margin: 6rem auto auto auto;
   left:-5vw;
   position: relative;
 }
