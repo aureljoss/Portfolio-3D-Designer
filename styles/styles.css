@@ -1014,6 +1014,12 @@ div.portfolio-projects h6 {
   position: relative;
 }
 
+.secondary-images{
+  max-width:80%;
+  display: block;
+  margin:3rem auto;
+}
+
 .KSU-site-diagrams{
   width:40%;
   border-radius: 15px;
