@@ -631,7 +631,6 @@ button#hippo {
   width: 60vw;
   max-width: 1200px;
   border-top: 1px solid #c4c4c4;
-  max-width: 1200px;
 }
 
 .section-block {
@@ -642,6 +641,12 @@ button#hippo {
   width: 60vw;
   max-width: 1200px;
   border-top: 1px solid #c4c4c4;
+}
+
+.section-portfolio{
+  border-top: 1px solid #c4c4c4;
+  margin: 12vh auto auto;
+  line-height: 6em;
 }
 
 #about {
@@ -1042,6 +1047,21 @@ div.portfolio-projects h6 {
 
 .research-items{
   height:160px;
+}
+
+#portfolio-images{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-portfolio{
+  width: 40%;
+  margin:10px;
+  border-radius: 15px;
 }
 
 /* ----- Side bar - social media ----- */
