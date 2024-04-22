@@ -1019,6 +1019,14 @@ div.portfolio-projects h6 {
   position: relative;
 }
 
+#project-title{
+  position: absolute;
+  top:12rem;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .secondary-images{
   max-width:80%;
   display: block;
