@@ -261,15 +261,6 @@ header {
   text-decoration: none;
 }
 
-#scrollArrow-VR{
-  display: inline-block;
-  margin-top: 0.2em;
-  margin-left: 0.4em;
-  animation: scrollArrow 0.7s infinite alternate;
-  color: black;
-  text-decoration: none;
-}
-
 #scrollText {
   font-size: 9px;
   transform: rotate(-90deg);
@@ -321,7 +312,7 @@ a:hover {
   }
 
   100% {
-    width: 45vw;
+    width: 50vw;
     margin-left: 0vw;
   }
 }
@@ -815,7 +806,7 @@ button#hippo {
 #jump-end{
   font-weight: 800;
   padding: 10px 20px;
-  position: absolute;
+  margin-bottom: 0px;
 }
 
 .resume-email {
@@ -1024,6 +1015,7 @@ div.portfolio-projects h6 {
 }
 
 .portfolio-vignettes {
+  margin: 2rem 0rem;
   width: 100%;
   border-radius: 30px;
 }
@@ -1048,7 +1040,7 @@ div.portfolio-projects h6 {
 #project-title {
   position: absolute;
   top: 6rem;
-  width: 80%;
+  width: 100%;
   text-align: center;
   line-height: 1rem;
 }
@@ -1091,12 +1083,6 @@ div.portfolio-projects h6 {
   margin: auto;
   justify-content: center;
   align-items: center;
-}
-
-.project-portfolio {
-  width: 40%;
-  margin: 10px;
-  border-radius: 15px;
 }
 
 /* ----- Side bar - social media ----- */
