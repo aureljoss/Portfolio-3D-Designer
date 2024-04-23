@@ -643,9 +643,9 @@ button#hippo {
   border-top: 1px solid #c4c4c4;
 }
 
-.section-portfolio{
+.section-portfolio {
   border-top: 1px solid #c4c4c4;
-  margin: 12vh auto auto;
+  margin: 8vh auto auto;
   line-height: 6em;
 }
 
@@ -873,10 +873,15 @@ button#hippo {
 
 /* Progress bar */
 
-.progress {
+.progress,
+.progress-portfolio {
   position: fixed;
   z-index: 1;
   width: 90vw;
+}
+
+.progress-portfolio {
+  top: 5vh;
 }
 
 /* .progress-container {
@@ -1014,61 +1019,62 @@ div.portfolio-projects h6 {
 
 .main-images {
   width: 100vw;
-  margin: 6rem auto auto auto;
-  left:-5vw;
+  margin: 5vh auto auto auto;
+  left: -5vw;
   position: relative;
 }
 
-#project-title{
+#project-title {
   position: absolute;
-  top:12rem;
-  left:50%;
-  transform: translate(-50%, -50%);
+  top: 6rem;
+  width: 100vw;
+  text-align: center;
+  line-height: 1rem;
 }
 
-
-.secondary-images{
-  max-width:80%;
+.secondary-images {
+  max-width: 80%;
   display: block;
-  margin:3rem auto;
+  margin: 3rem auto;
+  border-radius: 15px;
 }
 
-.KSU-site-diagrams{
-  width:40%;
+.KSU-site-diagrams {
+  width: 40%;
   border-radius: 15px;
   margin: 1rem 1rem;
   border-radius: 1.2em;
   border: 1px solid rgb(130, 130, 130);
 }
 
-.research-icons{
+.research-icons {
   width: 80px;
 }
 
-#research-findings{
+#research-findings {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  width:60%;
+  width: 60%;
   margin: 5em auto auto auto;
 }
 
-.research-items{
-  height:160px;
+.research-items {
+  height: 160px;
 }
 
-#portfolio-images{
+#portfolio-images {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
 
-.project-portfolio{
+.project-portfolio {
   width: 40%;
-  margin:10px;
+  margin: 10px;
   border-radius: 15px;
 }
 
