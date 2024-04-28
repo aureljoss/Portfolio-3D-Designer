@@ -1044,7 +1044,8 @@ div.portfolio-projects h6 {
   border-radius: 30px;
 }
 
-.portfolio-vignettes:hover, .link-portfolio-renderings:hover {
+.portfolio-vignettes:hover,
+.link-portfolio-renderings:hover {
   cursor: pointer;
   box-shadow: 10px 5px 8px lightgray;
   animation: images 0.5s forwards;
@@ -1114,6 +1115,11 @@ div.portfolio-projects h6 {
   margin: auto;
   justify-content: center;
   align-items: center;
+}
+
+.VRviewer {
+  width: 1000px;
+  height: 600px;
 }
 
 /* ----- Side bar - social media ----- */
