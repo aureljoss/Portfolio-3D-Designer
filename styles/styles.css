@@ -1058,13 +1058,11 @@ div.portfolio-projects h6 {
 
 .main-images {
   width: 100%;
-  margin: 5vh 0 0 0;
-  position: relative;
+  margin: 2vh 0 0 0;
 }
 
 #project-title {
-  position: absolute;
-  top: 6rem;
+  margin-top: 10vh;
   width: 100%;
   text-align: center;
   line-height: 1rem;
