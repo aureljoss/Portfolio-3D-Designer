@@ -1123,7 +1123,7 @@ div.portfolio-projects h6 {
   margin: 4rem auto;
 }
 
-#viewer {
+#viewer, #loft, #lobby, #roof {
   width:100%;
   height: 600px;
 }

@@ -105,7 +105,7 @@
       <section class="section-block">
         <div class="VRviewer">
           <div class="VRblock">
-            <div id="viewer">
+            <div id="lobby">
               <h6>Lobby</h6>
             </div>
             <script type="importmap">
@@ -120,7 +120,7 @@
                 import { Viewer } from "@photo-sphere-viewer/core";
 
                 const viewer = new Viewer({
-                  container: document.querySelector("#viewer"),
+                  container: document.querySelector("#lobby"),
                   panorama: '/images/VT/Lobby 2.jpg',
                   navbar:['zoom', 'move'], 
                 });
@@ -128,16 +128,28 @@
           </div>
           <div>
             <h6>Loft</h6>
-            <div id="viewer"></div>
+            <div id="loft"></div>
               <script type="module">
                 import { Viewer } from "@photo-sphere-viewer/core";
                 const viewer = new Viewer({
-                  container: document.querySelector("#viewer"),
+                  container: document.querySelector("#loft"),
                   panorama: '/images/VT/Loft.jpg',
                   navbar:['zoom', 'move'], 
                 });
             </script>
             </div>
+            <div>
+              <h6>Roof</h6>
+              <div id="roof"></div>
+                <script type="module">
+                  import { Viewer } from "@photo-sphere-viewer/core";
+                  const viewer = new Viewer({
+                    container: document.querySelector("#roof"),
+                    panorama: '/images/VT/Roof.jpg',
+                    navbar:['zoom', 'move'], 
+                  });
+              </script>
+              </div>
           </div>
           
     </section>
