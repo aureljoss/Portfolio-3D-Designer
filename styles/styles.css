@@ -811,7 +811,7 @@ button#hippo {
 .jump-end {
   font-weight: 800;
   padding: 10px 20px;
-  margin-bottom: 0px;
+  margin: 3rem auto 0px;
 }
 
 .resume-email {
@@ -1034,6 +1034,7 @@ div.portfolio-projects h6 {
 
 .portfolio-vignettes {
   width: 100%;
+  min-width: 600px;
   border-radius: 30px;
 }
 
