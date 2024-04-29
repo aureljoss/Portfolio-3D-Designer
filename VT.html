@@ -101,40 +101,56 @@
             <h4 class="introduction" id="introSection"> TRANSFORMING AND SUSTAINING THE GREATER WASHINGTON D.C. METRO AREA AS THE NEXT EMERGING TECH HUB FOR TALENT AND INNOVATION. </h4>
           </div>
       </section>
-      <section class="section-block">
-        <div>
-          <h6>The problem</h6>
-          <p>
-            The building is a revitalization of the former Newseum building acquired by Johns Hopkins University. 
-            Originally designed to accommodate the museum’s highly specialized and linear exhibit experience, the interior spaces are not conducive to an academic setting.</p>
-            <p>From an exterior perspective, the existing building has a strong relationship with the historical context of the National Mall but does not reflect the university’s institutional identity. </p>
-          </p>
-      </section>
 
       <section class="section-block">
-        <div id="viewer" style="width: 60vw; height: 50vh"></div>
-          <script type="importmap">
-              {
-                "imports": {
-                  "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
-                  "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+        <div class="VRviewer">
+          <div class="VRblock">
+            <div id="viewer">
+              <h6>Lobby</h6>
+            </div>
+            <script type="importmap">
+                {
+                  "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                    "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+                  }
                 }
-              }
-          </script>
-          <script type="module">
-              import { Viewer } from "@photo-sphere-viewer/core";
+            </script>
+            <script type="module">
+                import { Viewer } from "@photo-sphere-viewer/core";
 
-              const viewer = new Viewer({
-                container: document.querySelector("#viewer"),
-                panorama: '/images/VT/Lobby 2.jpg',
-              });
-          </script>
+                const viewer = new Viewer({
+                  container: document.querySelector("#viewer"),
+                  panorama: '/images/VT/Lobby 2.jpg',
+                  navbar:['zoom', 'move'], 
+                });
+            </script>
+          </div>
+          <div>
+            <h6>Loft</h6>
+            <div id="viewer"></div>
+              <script type="module">
+                import { Viewer } from "@photo-sphere-viewer/core";
+                const viewer = new Viewer({
+                  container: document.querySelector("#viewer"),
+                  panorama: '/images/VT/Loft.jpg',
+                  navbar:['zoom', 'move'], 
+                });
+            </script>
+            </div>
+          </div>
+          
     </section>
 
       <section class="section-block">
         <div>
-          <h6>Final Photography</h6>
-          <img src="images/JHU/JHU555interioratriumandentrance_alanK_1699040853_1440x810.jpg" class="secondary-images">
+          <h6>2D RENDERINGS</h6>
+          <img src="/images/VT/L5 Learning Commons View1_med.jpg" class="secondary-images">
+          <img src="/images/VT/L3 Cyber-Physical Lab 2022-0209_med.jpg" class="secondary-images">
+          <img src="/images/VT/L3 Cyber-Pysical Lab 2022-0307_med.jpg" class="secondary-images">
+          <img src="/images/VT/L3 Drone Cage 2022-0307_med.jpg" class="secondary-images">
+
+
         </div>
       <div>
       </section>
