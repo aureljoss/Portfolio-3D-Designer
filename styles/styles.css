@@ -1120,7 +1120,7 @@ div.portfolio-projects h6 {
 .VRviewer{
   display:grid;
   gap:4rem;
-  margin: 4rem auto;
+  margin: auto;
 }
 
 #viewer, #loft, #lobby, #roof {

@@ -104,17 +104,25 @@
       </section>
 
       <section class="section-block">
-        <h6>Overview</h6>
-        <p>The Virginia Tech Innovation Campus and Academic Building (ICAB) is centered around principles of sustainability, health and wellness, green and social spaces, accessibility, flexibility, and integrated technology. 
+        <h6>Project Overview</h6>
+        <p>The Virginia Tech Innovation Campus and Academic Building (ICAB) is centered around principles of sustainability, accessibility, flexibility, and integrated technology. 
           When completed, the 300,000-square-foot building will provide instruction, research, office, and support spaces for graduate-level programs in Computer Science and Computer Engineering, as well as select other programs.</p>
-        <p>I was brought in during the Construction Documentation phase to model, render, integrate and deploy VR experiences to enhance the immersive experience for a client's fundraiser.</p>
+        <p>I was brought in during the construction documentation phase to model, render, integrate and deploy VR experiences. The final product was used to create an immersive experience for a client's fundraiser and to enhance the client's understanding of the design.</p>
+      </section>
+
+      <section class="section-block">
+        <h6>The Process</h6>
+        <p>The renderings and immersive scenes below were all created using the <span class="bold">Revit</span> model developed by the team for construction documentation. 
+          The model was exported to <span class="bold">CAD</span> format then imported into <span class="bold">Sketchup</span>. Revit models typically focus on the 2D documentation so a lot of the scene’s details still needed to be modeled in Sketchup. 
+          For interior scenes, materials were added to the Sketchup model and the <span class="bold"> Enscape</span> was used to render and export the scene to 360 photos. 
+          For exterior scenes, Sketchup scenes were exported directly to <span class="bold">Lumion</span> where materials and textures were mapped prior to rendering the 360 photos. </p>
       </section>
 
       <section class="section-block">
         <div class="VRviewer">
-          <div class="VRblock">
+          <div>
             <div id="lobby">
-              <h6>Lobby</h6>
+              <h6>360 images used for VR</h6>
             </div>
             <script type="importmap">
                 {
@@ -130,23 +138,25 @@
                 const viewer = new Viewer({
                   container: document.querySelector("#lobby"),
                   panorama: '/images/VT/Lobby 2.jpg',
-                  navbar:['zoom', 'move'], 
+                  caption:'Main Lobby',
+                  navbar:['zoom', 'move', 'caption'], 
                 });
             </script>
           </div>
           <div>
-            <h6>Loft</h6>
+            <h6></h6>
             <div id="loft"></div>
               <script type="module">
                 import { Viewer } from "@photo-sphere-viewer/core";
                 const viewer = new Viewer({
                   container: document.querySelector("#loft"),
                   panorama: '/images/VT/Loft.jpg',
-                  navbar:['zoom', 'move'], 
+                  caption:'The Loft',
+                  navbar:['zoom', 'move','caption'], 
                 });
             </script>
             </div>
-            <div>
+            <!-- <div>
               <h6>Roof</h6>
               <div id="roof"></div>
                 <script type="module">
@@ -157,7 +167,7 @@
                     navbar:['zoom', 'move'], 
                   });
               </script>
-              </div>
+              </div> -->
           </div>
           
     </section>
