@@ -1032,6 +1032,10 @@ div.portfolio-projects h6 {
   margin-bottom: 0rem;
 }
 
+.mobile-portfolio-title{
+  display:none;
+}
+
 .portfolio-vignettes {
   width: 100%;
   min-width: 600px;
@@ -1053,7 +1057,7 @@ div.portfolio-projects h6 {
   cursor: pointer;
 }
 
-.porfolio-titles {
+.portfolio-titles {
   align-self: end;
 }
 
@@ -1438,6 +1442,26 @@ footer {
     margin: 4em auto;
     justify-content: center;
   }
+
+  
+.portfolio-vignettes{
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.portfolio-projects {
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.mobile-portfolio-title{
+  display: block;
+  text-align:center ;
+}
+
+.desktop-portfolio-title{
+  display:none ;
+}
 }
 
 /*Mobile - 1024px breakpoint */
@@ -1485,5 +1509,25 @@ footer {
 
   #description {
     max-width: none;
+  }
+
+
+  .portfolio-vignettes{
+    min-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .portfolio-projects {
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+  
+  .mobile-portfolio-title {
+    display: block;
+    text-align:center ;
+  }
+  
+  .desktop-portfolio-title{
+    display:none;
   }
 }
