@@ -279,6 +279,29 @@ header {
   }
 }
 
+.more-Arrow {
+  animation: moreArrow 0.7s infinite alternate;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.more-Text {
+  font-size: 9px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+@keyframes moreArrow {
+  0% {
+    transform: translateX(0.2em);
+  }
+  100% {
+    transform: translateX(0em);
+  }
+}
+
 .lines {
   border-left: 4px solid black;
   margin: 2px;
@@ -626,7 +649,7 @@ button#hippo {
 /* ----- General CSS rules ----- */
 
 .section-flex {
-  margin: 12vh auto;
+  margin: 12vh auto 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,7 +660,7 @@ button#hippo {
 }
 
 .section-block {
-  margin: 12vh auto;
+  margin: 12vh auto 12vh;
   justify-content: center;
   align-items: center;
   gap: 5vw;
@@ -665,7 +688,7 @@ button#hippo {
 
 .sectionTitles {
   margin-top: 10vh;
-  margin-bottom: 12vh;
+  margin-bottom: 10vh;
 }
 
 .section {
@@ -1009,7 +1032,6 @@ button#hippo {
 }
 
 .portfolio-projects {
-  display: flex;
   width: 100%;
   margin: 6rem 0rem;
   gap: 1rem;
@@ -1142,7 +1164,8 @@ div.portfolio-projects h6 {
 #socialIcon {
   position: fixed;
   right: 5px;
-  top: 50vh;
+  height:80px;
+  top: 48%;
   display: flex;
   flex-direction: column;
 }
@@ -1454,16 +1477,6 @@ footer {
   margin: 2rem auto;
 }
 
-.mobile-portfolio-title{
-  display: block;
-  text-align:center ;
-}
-
-.desktop-portfolio-title{
-  display:none ;
-}
-}
-
 /*Mobile - 1024px breakpoint */
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
@@ -1520,14 +1533,5 @@ footer {
   .portfolio-projects {
     flex-direction: column;
     margin: 2rem auto;
-  }
-  
-  .mobile-portfolio-title {
-    display: block;
-    text-align:center ;
-  }
-  
-  .desktop-portfolio-title{
-    display:none;
   }
 }
