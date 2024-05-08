@@ -289,7 +289,7 @@ header {
 .project-details{
   text-decoration: none;
   color:black;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 .more-Arrow {
@@ -299,6 +299,10 @@ header {
   font-weight: 800;
   font-size: 30px;
   padding-left: 1rem;
+}
+
+.project-details:hover, .more-Arrow:hover{
+  cursor: pointer;
 }
 
 .more-Text {
@@ -853,9 +857,12 @@ button#hippo {
 }
 
 .jump-end {
-  font-weight: 800;
+  font-weight: 600;
   padding: 10px 20px;
-  margin: 3rem auto 0px;
+  margin: auto 2rem;
+  align-items: center;
+  justify-content: center;
+  line-height: 1rem;
 }
 
 .resume-email {
@@ -1054,8 +1061,7 @@ button#hippo {
 
 .portfolio-projects {
   width: 100%;
-  margin: 6rem 0rem;
-  gap: 1rem;
+  margin: 4rem 0rem;
 }
 
 div.portfolio-projects h6 {
@@ -1102,6 +1108,18 @@ div.portfolio-projects h6 {
   width: 100%;
   text-align: center;
   line-height: 1rem;
+}
+
+#project-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:2rem;
+}
+
+#project-tools{
+  text-align: left;
+  line-height: 0px;
 }
 
 .secondary-images {
