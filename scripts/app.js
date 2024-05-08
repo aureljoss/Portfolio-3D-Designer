@@ -50,14 +50,6 @@ aboutLink.addEventListener("click", () => {
   cross.style.display = "none";
 });
 
-const skillsLink = document.getElementById("skillsLink");
-skillsLink.addEventListener("click", () => {
-  menuOptions.style.display = "none";
-  menu.style.display = "flex";
-  menuLines.style.display = "block";
-  cross.style.display = "none";
-});
-
 const resumeLink = document.getElementById("resumeLink");
 resumeLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
@@ -67,7 +59,7 @@ resumeLink.addEventListener("click", () => {
 });
 
 const workLink = document.getElementById("workLink");
-workLink.addEventListener("click", () => {
+  workLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
   menu.style.display = "flex";
   menuLines.style.display = "block";
@@ -79,24 +71,6 @@ menuOptions.addEventListener("click",()=>{
   cross.style.display="none";
   menu.style.display="flex";
   menuLines.style.display="block";
-});
-
-
-
-const playgroundLink = document.getElementById("playgroundLink");
-playgroundLink.addEventListener("click", () => {
-  menuOptions.style.display = "none";
-  menu.style.display = "flex";
-  menuLines.style.display = "block";
-  cross.style.display = "none";
-});
-
-const contact = document.getElementById("contactLink");
-contact.addEventListener("click", () => {
-  menuOptions.style.display = "none";
-  menu.style.display = "flex";
-  menuLines.style.display = "block";
-  cross.style.display = "none";
 });
 
 cross.addEventListener("click", () => {

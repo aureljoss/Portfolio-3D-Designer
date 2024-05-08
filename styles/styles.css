@@ -116,8 +116,8 @@ header {
 #menu {
   position: fixed;
   left: 5px;
-  height: 100vh;
-  top: 48vh;
+  height: 80px;
+  top: 48%;
   animation: menu 1s forwards;
   height: 4vh;
   z-index: 2;
@@ -130,7 +130,7 @@ header {
   height: 100%;
   z-index: 1;
   align-items: center;
-  background-color: rgba(253, 253, 253, 0.65);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 #menu-black-box {
@@ -138,9 +138,13 @@ header {
   background-color: black;
   width: 30vw;
   min-width: 340px;
-  height: 55vh;
+  height: 50%;
   left: 0px;
   z-index: -1;
+}
+
+#menu-black-box:hover{
+  cursor:auto;
 }
 
 #contactLink {
@@ -149,11 +153,12 @@ header {
 
 #nav {
   list-style-type: none;
+  margin-left:2rem;
 }
 
 #nav li {
   font-weight: 800;
-  line-height: 40px;
+  line-height: 45px;
 }
 
 #nav li a {
@@ -162,11 +167,19 @@ header {
   font-size: 2em;
 }
 
+#nav li:hover {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  text-decoration: underline wavy white 3px;
+  cursor: auto;
+}
+
 #cross {
   display: none;
   position: fixed;
   left: 12px;
-  top: 50vh;
+  top: 50%;
+  transform: translateY(0,-50%);
   z-index: 1;
   font-size: 2em;
   font-weight: 700;
@@ -181,12 +194,6 @@ header {
 #lines:hover {
   transform: scale(1.2);
   transition: all 0.5s;
-}
-
-#nav li:hover {
-  transform: translateX(10px);
-  transition: all 0.5s;
-  text-decoration: underline wavy 3px;
 }
 
 .emoji {
@@ -279,11 +286,19 @@ header {
   }
 }
 
+.project-details{
+  text-decoration: none;
+  color:black;
+  max-width: 50%;
+}
+
 .more-Arrow {
   animation: moreArrow 0.7s infinite alternate;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 30px;
+  padding-left: 1rem;
 }
 
 .more-Text {
@@ -300,6 +315,12 @@ header {
   100% {
     transform: translateX(0em);
   }
+}
+
+.project-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .lines {
@@ -1037,21 +1058,9 @@ button#hippo {
   gap: 1rem;
 }
 
-div.portfolio-projects div,
-div.portfolio-projects p {
-  justify-content: end;
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
-  line-height: 0rem;
-}
-
-div.portfolio-projects a {
-  max-width: 70%;
-}
-
 div.portfolio-projects h6 {
   margin-bottom: 0rem;
+  margin-top: 0.5rem;
 }
 
 .mobile-portfolio-title{
