@@ -29,23 +29,31 @@ new kursor({
 
 // ------ Menu ----- //
 
-const menu = document.getElementById("menuText");
+const menuText = document.getElementById("menuText");
 const menuOptions = document.getElementById("menuOptions");
 const menuLines = document.getElementById("lines");
 const cross = document.getElementById("cross");
+const aboutLink = document.getElementById("aboutLink");
 
-menu.addEventListener("click", () => {
-  menu.style.display = "none";
+menuText.addEventListener("click", () => {
+  menuText.style.display = "none";
   menuLines.style.display = "none";
   cross.style.display = "block";
   menuOptions.style.display = "flex";
   menuOptions.style.alignItems = "center";
 });
 
-const aboutLink = document.getElementById("aboutLink");
+menuLines.addEventListener("click", () => {
+  menuText.style.display = "none";
+  menuLines.style.display = "none";
+  cross.style.display = "block";
+  menuOptions.style.display = "flex";
+  menuOptions.style.alignItems = "center";
+});
+
 aboutLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
-  menu.style.display = "flex";
+  menuText.style.display = "flex";
   menuLines.style.display = "block";
   cross.style.display = "none";
 });
@@ -53,7 +61,7 @@ aboutLink.addEventListener("click", () => {
 const resumeLink = document.getElementById("resumeLink");
 resumeLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
-  menu.style.display = "flex";
+  menuText.style.display = "flex";
   menuLines.style.display = "block";
   cross.style.display = "none";
 });
@@ -61,7 +69,7 @@ resumeLink.addEventListener("click", () => {
 const workLink = document.getElementById("workLink");
   workLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
-  menu.style.display = "flex";
+  menuText.style.display = "flex";
   menuLines.style.display = "block";
   cross.style.display = "none";
 });
@@ -69,35 +77,27 @@ const workLink = document.getElementById("workLink");
 menuOptions.addEventListener("click",()=>{
   menuOptions.style.display="none";
   cross.style.display="none";
-  menu.style.display="flex";
+  menuText.style.display="flex";
   menuLines.style.display="block";
 });
 
 cross.addEventListener("click", () => {
   menuOptions.style.display = "none";
-  menu.style.removeProperty("display");
+  menuText.style.removeProperty("display");
   cross.style.display = "none";
   menuLines.style.removeProperty("display");
 });
 
-menuLines.addEventListener("click", () => {
-  menu.style.display = "none";
-  menuLines.style.display = "none";
-  cross.style.display = "flex";
-  menuOptions.style.display = "flex";
-  menuOptions.style.alignItems = "center";
-});
+// // ------ About me button ----- //
 
-// ------ About me button ----- //
+// const btn = document.getElementById("collapsible");
 
-const btn = document.getElementById("collapsible");
+// btn.addEventListener("click", () => {
+//   btn.style.display = "none";
 
-btn.addEventListener("click", () => {
-  btn.style.display = "none";
-
-  const box = document.getElementById("hidden-text");
-  box.style.display = "block";
-});
+//   const box = document.getElementById("hidden-text");
+//   box.style.display = "block";
+// });
 
 // ------ Intro with GSAP Scroll Trigger ------//
 gsap.from(".introduction", {
