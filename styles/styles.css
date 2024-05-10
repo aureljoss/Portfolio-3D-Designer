@@ -762,6 +762,17 @@ button#hippo {
   top: 0px;
 }
 
+#photos-about-me{
+  display:flex;
+  margin: 4rem auto;
+}
+
+.photos-about{
+  width:300px;
+  height:auto;
+  padding:0.5rem;
+}
+
 .sectionTitles {
   margin-top: 6vh;
   margin-bottom: 6vh;
