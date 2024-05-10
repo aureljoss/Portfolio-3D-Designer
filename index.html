@@ -57,7 +57,6 @@
             <p id="cross">X</p>
         </div>
         <div id="scroll">
-            <a href="#introSection" id="scrollText"> Scroll</a>
             <a href="#introSection" id="scrollArrow">&#10230;</a>
         </div>
     </header>
@@ -98,8 +97,8 @@
             </div>
         </div>
         <section>
-            <div class="section">
-                <h2 class="introduction" id="introSection"> My name is Aurelie. I am a multi-faceted 3D designer who uniquely blends my architectural background with a tech-driven focus. </h2>
+            <div class="section" id="introduction">
+                <h2 id="introSection"> My name is Aurelie. I am a multi-faceted 3D designer who uniquely blends an architectural background with a tech-driven focus. </h2>
             </div>
         </section>
 
@@ -115,7 +114,10 @@
                         <h6>KSU INTERDISCIPLINARY STEM BUILDING</h6>
                         <div class="project-info">
                             <a href="KSU.html" class="project-details">Augmented Reality, Project Design, Systems Coordination, 3D Modeling</a>
-                            <a href="KSU.html" class="more-Arrow">&#10230;</a>
+                            <div class="button">
+                                <a href="KSU.html" class="button-text">View Project</a>
+                                <a href="KSU.html" class="more-Arrow">&#10230;</a>
+                            </div>
                         </div>
                 </div>
                 <div class="portfolio-projects">
@@ -123,7 +125,10 @@
                         <h6 class="porfolio-titles">VIRGINIA TECH ICAB</h6>
                         <div class="project-info">
                             <a href="VT.html" class="project-details">Augmented Reality, 3D Modeling, Project documentation</a>
-                            <a href="VT.html" class="more-Arrow">&#10230;</a>
+                            <div class="button">
+                                <a href="VT.html" class="button-text">View Project</a>
+                                <a href="VT.html" class="more-Arrow">&#10230;</a>
+                            </div>
                         </div>
                 </div>
 
@@ -132,14 +137,17 @@
                         <h6 class="porfolio-titles">JOHNS HOPKINS BLOOMBERG CENTER</h6>
                         <div class="project-info">
                             <a href="JHU.html" class="project-details">Project Design, BIM Leadership, 3D Modeling, Systems Coordination</a>
-                            <a href="JHU.html" class="more-Arrow">&#10230;</a>
+                            <div class="button">
+                                <a href="JHU.html" class="button-text">View Project</a>
+                                <a href="JHU.html" class="more-Arrow">&#10230;</a>
+                            </div>
                         </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="section-flex">
+            <div class="section-flex" id="skills">
                 <div>
                 <h3 class="sectionTitles"> <strong class="pinkNumbers">02.</strong> My Skills</h3>
                     <div id="listSkills">
@@ -169,6 +177,9 @@
                                 <li>Lumion</li>
                             </ul>
                         </div>
+                        <img src="./images/3D-objects-background.png" id="objects-background">
+                        <img src="./images/Sphere.png" id="objects-sphere">
+                        <img src="./images/objects-playground.png" id="objects-playground">
                         <div class="skills-vignette">
                             <h6>Tools</h6>
                             <ul class="list">
@@ -180,53 +191,14 @@
                                 <li>Mocha</li>
                                 <li>GIT</li>
                                 <li>LiDAR & Point Clouds</li>
-                                </ul>
+                            </ul>
                         </div>
                     </div>
             </div>
             </div>
         </section> 
 
-        <section class="section-block">
-            <h3 class="sectionTitles"><strong class=pinkNumbers>03.</strong>About Me</h3>
-            <div id="about">
-                <div id="description">
-                  <p>
-                    Over the past ten years, I've built products for companies,
-                    businesses and government entities around the globe with a focus
-                    on
-                    <span class="bold"
-                      >design, usability, accessibility and inclusivity.</span
-                    >
-                  </p>
-                  <p>
-                    While the products I design have been in the built environment,
-                    the skills I have learned as an architect and designer are all
-                    applicable to the <span class="bold">digital world</span>. From
-                    working with multi-disciplinary teams, to iterating through
-                    design concepts and working with stakeholders, I am committed to
-                    meeting client expectations while creating great
-                    <span class="bold">user experiences</span>.
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="https://www.linkedin.com/in/aurelie-josserand"
-                    target="_blank"
-                    ><img
-                      class="my-portrait"
-                      src="images/1635446082155.jpg"
-                      alt="Portrait"
-                  /></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <a href="About.html" class="project-details" style="font-weight: 800;">Get to know me</a>
-                <a href="About.html" class="more-Arrow">&#10230;</a>
-            </div>
-        </section>
-
-        <section class="section-block">
+        <section class="section-block" id="playground">
             <h3 class="sectionTitles"><strong class="pinkNumbers">03.</strong> My Playground</h3>
             <p>Driven by a desire to constantly learn new technologies, and my passion for a <span class="bold">holistic approach to design and development</span>, I also learned front-end development skills.
                 Check out the game of tenzies, the tip calculator app, or the product launch countdown page, all developed using <span class="bold">GIT, HTML, CSS, Javascript and a sprinkle of React.</span>
@@ -472,6 +444,46 @@
 
             </div>
         </section>
+
+        <section class="section-block">
+            <h3 class="sectionTitles"><strong class=pinkNumbers>03.</strong>My Journey</h3>
+            <div id="about">
+                <div id="description">
+                  <p>
+                    Over the past ten years, I've built products for companies,
+                    businesses and government entities around the globe with a focus
+                    on
+                    <span class="bold"
+                      >design, usability, accessibility and inclusivity.</span
+                    >
+                  </p>
+                  <p>
+                    While the products I design have been in the built environment,
+                    the skills I have learned as an architect and designer are all
+                    applicable to the <span class="bold">digital world</span>. From
+                    working with multi-disciplinary teams, to iterating through
+                    design concepts and working with stakeholders, I am committed to
+                    meeting client expectations while creating great
+                    <span class="bold">user experiences</span>.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/aurelie-josserand"
+                    target="_blank"
+                    ><img
+                      class="my-portrait"
+                      src="images/1635446082155.jpg"
+                      alt="Portrait"
+                  /></a>
+                </div>
+              </div>
+              <div class="button">
+                <a href="About.html" class="button-text">Read More</a>
+                <a href="About.html" class="more-Arrow">&#10230;</a>
+            </div>
+        </section>
+
 
         <div id="socialIcon">
             <svg class="hoverIcon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 72 72" width="67px" height="74px"><a xlink:href="https://github.com/aureljoss" target="_blank"><path d="M55.1,22.9v-0.3c0-3-2.4-5.4-5.4-5.4H16c-3,0-5.4,2.4-5.4,5.4v0.3l18.9,7.8c2.1,0.9,4.4,0.9,6.5,0L55.1,22.9z"/><path d="M36.3,33.1c-2.2,1-4.7,1-6.8,0l-18.8-7.8v18.2c0,3,2.4,5.4,5.4,5.4h33.7c3,0,5.4-2.4,5.4-5.4V25.3L36.3,33.1z"/></a></svg>

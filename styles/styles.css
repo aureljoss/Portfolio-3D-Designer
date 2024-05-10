@@ -299,11 +299,11 @@ header {
 
 #scrollArrow {
   display: inline-block;
-  margin-top: 0.2em;
-  margin-left: 0.4em;
+  margin: 0.3em auto;
   animation: scrollArrow 0.7s infinite alternate;
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #scrollText {
@@ -329,12 +329,34 @@ header {
   max-width: 80%;
 }
 
+.button{
+  display:flex;
+  width:150px;
+  height:45px;
+  padding: 0 0.5rem;
+  border-radius: 100px;;
+  align-items: center;
+  background-color: #000;
+  color:#efefef;
+  justify-content: center;
+}
+
+.button-text{
+  font-size:12px;
+  color:#efefef;
+  text-decoration: none;
+}
+
+.button-text:hover{
+  cursor: pointer;
+}
+
 .more-Arrow {
   animation: moreArrow 0.7s infinite alternate;
-  color: rgb(0, 0, 0);
+  color: #efefef;
   text-decoration: none;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 24px;
   padding-left: 1rem;
 }
 
@@ -362,6 +384,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width:100%;
+  justify-content: space-between;
 }
 
 .lines {
@@ -460,10 +484,10 @@ a:hover {
 }
 
 /* ----- Introduction ----- */
-.introduction {
+#introduction {
   width: 60vw;
   max-width: 1200px;
-  margin: 20vh auto;
+  margin: 26vh auto;
   text-align: center;
 }
 
@@ -718,17 +742,17 @@ button#hippo {
   gap: 5vw;
   width: 60vw;
   max-width: 1200px;
-  border-top: 1px solid #c4c4c4;
+  /* border-top: 1px solid #c4c4c4; */
 }
 
 .section-block {
-  margin: 12vh auto 12vh;
+  margin: auto auto 12vh;
   justify-content: center;
   align-items: center;
   gap: 5vw;
   width: 60vw;
   max-width: 1200px;
-  border-top: 1px solid #c4c4c4;
+  /* border-top: 1px solid #c4c4c4; */
 }
 
 .section-about{
@@ -760,6 +784,7 @@ button#hippo {
 #description {
   max-width: 400px;
   top: 0px;
+  margin-bottom: 4vh;
 }
 
 #photos-about-me{
@@ -790,13 +815,14 @@ button#hippo {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
-.list li::before {
+/* .list li::before {
   content: "\25B7";
   display: inline-block;
   width: 2em;
-}
+} */
 
 .list li {
   line-height: 2em;
@@ -809,6 +835,7 @@ button#hippo {
   max-width: 1200px;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .skills-vignette {
@@ -818,10 +845,12 @@ button#hippo {
   min-width: 180px;
   height: 360px;
   padding-left: 28px;
-  border-radius: 1.2em;
-  /* border: 1px solid rgb(130, 130, 130); */
+  border-radius: 10px;
   justify-content: center;
   margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  position:relative;
+  z-index: 3;
 }
 
 .skills-vignette h6 {
@@ -829,10 +858,48 @@ button#hippo {
   margin-bottom: 20px;
 }
 
+#skills{
+  background-color: #D7E5FE;
+  margin:0;
+  padding-bottom: 12vh;
+  width:100vw;
+  max-width: 100vw;
+  z-index: 0;
+  position:relative;
+}
+
+#objects-background{
+  position: absolute;
+  top:-40%;
+  right:-16%;
+  max-width:300px;
+  z-index: 2;
+}
+
+#objects-sphere{
+  position: absolute;
+  top:-20%;
+  right:-1.5%;
+  max-width:150px;
+  z-index: 4;
+}
+
+#objects-playground{
+  position: absolute;
+  bottom:-75%;
+  left:-15%;
+  max-width:150px;
+  z-index: 4;
+}
+
 #quotes-group {
   width: 50%;
   margin: 0 auto;
   margin-top: 10vh;
+}
+
+#playground{
+  margin-top: 12vh;
 }
 
 .quotes {
@@ -1036,8 +1103,14 @@ button#hippo {
 }
 
 .pinkNumbers {
-  color: #db433e;
-  font-size: 46px;
+  color: white;
+  font-size: 36px;
+  background-image: url("../images/Number-background.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 3rem;
+  padding:20px;
 }
 
 /* Progress bar */
@@ -1145,7 +1218,7 @@ button#hippo {
 }
 
 .svgIllustrations{
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 
 .svgIllustrations,
@@ -1187,7 +1260,7 @@ div.portfolio-projects h6 {
 .portfolio-vignettes {
   width: 100%;
   min-width: 600px;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .portfolio-renderings,
@@ -1371,6 +1444,7 @@ div.portfolio-projects h6 {
     width: 80vw;
     margin: 10vh auto;
     text-align: center;
+
   }
 
   #otw {
