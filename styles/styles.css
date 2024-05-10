@@ -22,12 +22,12 @@ h1 {
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 800;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 46px;
 }
 
 h4 {
@@ -56,8 +56,10 @@ header {
 /* Starting screen */
 
 #navbar {
-  position: fixed;
-  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  margin: auto 9vw auto 5vw;
+  width:90vw;
   top: 0;
   left: 0;
   height: 5vh;
@@ -65,16 +67,38 @@ header {
   z-index: 1;
 }
 
+.secondary-nav{
+  /* position: fixed; */
+  /* width: 80vw; */
+  /* right:9vw; */
+  margin: auto;
+  margin-right:5vw;
+  display: flex;
+  /* height: 5vh; */
+}
+
+.secondary-nav-link{
+  text-transform: uppercase;
+  margin: auto;
+  margin-left: 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  align-items: center;
+  cursor: pointer;
+}
+
 #myBar {
   left: 5vw;
 }
 
 #myName {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   text-transform: uppercase;
-  width: 80vw;
-  left: 5vw;
+  /* width: 80vw; */
+  /* left: 5vw; */
   margin: auto;
   color: black;
   text-decoration: none;
@@ -153,7 +177,6 @@ header {
 
 #nav {
   list-style-type: none;
-  margin-left:2rem;
 }
 
 #nav li {
@@ -345,7 +368,8 @@ a:hover {
 
 #start {
   background-color: #562fff;
-  margin: 5vh auto;
+  margin: auto;
+  margin-bottom: 5vh;
   color: #121214;
   height: 88vh;
   width: 90vw;
@@ -726,8 +750,8 @@ button#hippo {
 }
 
 .sectionTitles {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
 .section {
@@ -771,7 +795,7 @@ button#hippo {
   height: 360px;
   padding-left: 28px;
   border-radius: 1.2em;
-  border: 1px solid rgb(130, 130, 130);
+  /* border: 1px solid rgb(130, 130, 130); */
   justify-content: center;
   margin-bottom: 1rem;
 }
@@ -989,7 +1013,7 @@ button#hippo {
 
 .pinkNumbers {
   color: #db433e;
-  font-size: 50px;
+  font-size: 46px;
 }
 
 /* Progress bar */
@@ -1000,6 +1024,7 @@ button#hippo {
   z-index: 1;
   width: 90vw;
   left: 5vw;
+  top:5vh;
 }
 
 .progress-portfolio {
@@ -1010,6 +1035,19 @@ button#hippo {
   height: 1px;
   background: rgb(119, 119, 119);
 } */
+
+/* Up arrow */
+#up-arrow{
+  width:40px;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom:5vh;
+  right:12px;
+}
+
+#svg-up-arrow:hover {
+  cursor: pointer;
+}
 
 .progress-bar {
   height: 4px;
@@ -1248,12 +1286,6 @@ div.portfolio-projects h6 {
 
 .hoverIcon {
   height: 40px;
-}
-
-#madeWithLove {
-  font-size: 12px;
-  margin-left: 5vw;
-  max-width: 200px;
 }
 
 /* Media Queries */

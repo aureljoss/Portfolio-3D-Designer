@@ -123,6 +123,25 @@ gsap.to(".introduction", {
   ease: "bounce.out",
 });
 
+// Up arrow scroll trigger //
+
+gsap.from('#up-arrow',{
+  opacity:0,
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top center",
+  },
+})
+
+gsap.to('#up-arrow',{
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top bottom",
+  },
+  duration: 1,
+})
+
 // ------ HippoProject ----- //
 
 // -- GSAP scroll trigger -- //
