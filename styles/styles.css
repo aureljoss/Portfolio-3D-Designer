@@ -55,26 +55,31 @@ header {
 
 /* Starting screen */
 
+#nav{
+  width:100%;
+  background-color: #efefef;
+  height:5vh;
+  position:fixed;
+  top:0;
+}
+
 #navbar {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   margin: auto 9vw auto 5vw;
-  width:90vw;
   top: 0;
   left: 0;
   height: 5vh;
-  background-color: #efefef;
   z-index: 1;
 }
 
 .secondary-nav{
-  /* position: fixed; */
-  /* width: 80vw; */
-  /* right:9vw; */
+  position: fixed;
+  right:5vw;
   margin: auto;
   margin-right:5vw;
   display: flex;
-  /* height: 5vh; */
+  height: 5vh;
 }
 
 .secondary-nav-link{
@@ -86,6 +91,10 @@ header {
   font-size: 15px;
   font-weight: 800;
   align-items: center;
+  cursor: pointer;
+}
+
+.secondary-nav-link:hover{
   cursor: pointer;
 }
 
@@ -229,6 +238,10 @@ header {
   z-index: 3;
 }
 
+.emoji:hover{
+  cursor: pointer;
+}
+
 @keyframes emoji {
   to {
     transform: rotate(360deg);
@@ -368,8 +381,7 @@ a:hover {
 
 #start {
   background-color: #562fff;
-  margin: auto;
-  margin-bottom: 5vh;
+  margin: 5vh auto;
   color: #121214;
   height: 88vh;
   width: 90vw;

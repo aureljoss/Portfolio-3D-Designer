@@ -142,6 +142,7 @@ gsap.to('#up-arrow',{
   duration: 1,
 })
 
+
 // ------ HippoProject ----- //
 
 // -- GSAP scroll trigger -- //
