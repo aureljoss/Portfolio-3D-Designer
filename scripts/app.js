@@ -100,20 +100,20 @@ cross.addEventListener("click", () => {
 // });
 
 // ------ Intro with GSAP Scroll Trigger ------//
-gsap.from(".introduction", {
+gsap.from("#introduction", {
   opacity: 0,
   scrollTrigger: {
-    trigger: ".introduction",
+    trigger: "#introduction",
     toggleActions: "restart pause reverse pause",
     start: "top center",
     once: true,
   },
   x: -150,
 });
-gsap.to(".introduction", {
+gsap.to("#introduction", {
   opacity: 1,
   scrollTrigger: {
-    trigger: ".introduction",
+    trigger: "#introduction",
     toggleActions: "restart pause reverse pause",
     start: "top bottom",
     once: true,
@@ -128,7 +128,7 @@ gsap.to(".introduction", {
 gsap.from('#up-arrow',{
   opacity:0,
   scrollTrigger: {
-    trigger: ".introduction",
+    trigger: "#introduction",
     start: "top center",
   },
 })
@@ -136,7 +136,7 @@ gsap.from('#up-arrow',{
 gsap.to('#up-arrow',{
   opacity:1,
   scrollTrigger: {
-    trigger: ".introduction",
+    trigger: "#introduction",
     start: "top bottom",
   },
   duration: 1,
