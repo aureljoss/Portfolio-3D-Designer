@@ -130,6 +130,7 @@ gsap.from('#up-arrow',{
   scrollTrigger: {
     trigger: "#introduction",
     start: "top center",
+    once:true,
   },
 })
 
@@ -138,6 +139,7 @@ gsap.to('#up-arrow',{
   scrollTrigger: {
     trigger: "#introduction",
     start: "top bottom",
+    once: true,
   },
   duration: 1,
 })
