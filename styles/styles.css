@@ -302,9 +302,10 @@ header {
   display: inline-block;
   margin: 0.3em auto;
   animation: scrollArrow 0.7s infinite alternate;
-  color: white;
+  color: #efefef;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 #scrollText {
@@ -746,7 +747,7 @@ button#hippo {
 }
 
 .section-block {
-  margin: auto auto 12vh;
+  margin: 8vh auto 12vh;
   justify-content: center;
   align-items: center;
   gap: 5vw;
@@ -799,8 +800,8 @@ button#hippo {
 }
 
 .sectionTitles {
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
+  margin-top: 10vh;
 }
 
 .section {
@@ -884,9 +885,13 @@ button#hippo {
   z-index: 4;
 }
 
+#objects-playground-div{
+  position: relative;
+}
+
 #objects-playground{
   position: absolute;
-  bottom:-75%;
+  bottom:-30px;
   left:-15%;
   max-width:150px;
   z-index: 4;
@@ -1229,7 +1234,7 @@ button#hippo {
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr 240px 1fr;
   gap:10px;
-  margin:4em auto;
+  margin:4em auto 16em;
 }
 
 #tip-calculator{
