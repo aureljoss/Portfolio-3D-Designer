@@ -171,9 +171,8 @@ header {
 #menu-black-box {
   position: fixed;
   background-color: black;
-  width: 30vw;
-  min-width: 340px;
-  height: 50%;
+  width: 360px;
+  height: 460px;
   left: 0px;
   z-index: -1;
 }
@@ -790,13 +789,14 @@ button#hippo {
 
 #photos-about-me{
   display:flex;
-  margin: 4rem auto;
+  margin: 8rem auto auto;
 }
 
 .photos-about{
   width:300px;
   height:auto;
   padding:0.5rem;
+  border-radius: 25px;
 }
 
 .sectionTitles {
@@ -952,6 +952,13 @@ button#hippo {
   position: relative;
 }
 
+#about-portrait{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+
 #journey-images{
   position: relative;
 }
@@ -1033,6 +1040,23 @@ button#hippo {
   margin: 4em auto 1em auto;
   max-width: 300px;
   font-weight: 800;
+}
+
+#coded-by{
+  position: fixed;
+  bottom:0vh;
+  left:0vh;
+  display: flex;
+  height:5vh;
+}
+
+#coded-by p{
+  font-size: 12px;
+  font-weight: 600;
+  margin-left:1vw;
+  /* background-color:  rgba(239, 239, 239, 0.692); */
+  align-self: center;
+  padding:0.3rem;
 }
 
 #contact-section{
@@ -1323,7 +1347,7 @@ div.portfolio-projects h6 {
   position: relative;
   background-color: #D7E5FE;
   width:100vw;
-  margin: 14vh auto;
+  margin: 18vh auto;
   padding-bottom: 4vh;
   padding-top: 4vh;
   max-width: 100vw;
@@ -1341,13 +1365,13 @@ div.portfolio-projects h6 {
   width: 12%;
 }
 
-#process{
+.ordered-list{
   margin: 4rem 0;
   padding-right: 0;
   list-style-type: none;
 }
 
-#process li{
+.ordered-list li{
   counter-increment: list-item;
   margin:3rem 0 3rem 4rem;
   position: relative;
@@ -1370,6 +1394,8 @@ ol li::before{
   background-size:60%;
   position:absolute;
   left:-75px;
+  top:-10px;
+  padding:0;
 }
 
 .header-projects{
@@ -1399,6 +1425,10 @@ ol li::before{
   line-height: 0px;
 }
 
+.project-section{
+  margin-top:6rem;
+}
+
 .secondary-images {
   max-width: 80%;
   display: block;
@@ -1423,7 +1453,7 @@ ol li::before{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
-  margin: 5em auto auto auto;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }

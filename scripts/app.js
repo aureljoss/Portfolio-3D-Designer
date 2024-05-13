@@ -32,13 +32,11 @@ new kursor({
 const menuText = document.getElementById("menuText");
 const menuOptions = document.getElementById("menuOptions");
 const menuLines = document.getElementById("lines");
-const cross = document.getElementById("cross");
 const aboutLink = document.getElementById("aboutLink");
 
 menuText.addEventListener("click", () => {
   menuText.style.display = "none";
   menuLines.style.display = "none";
-  cross.style.display = "block";
   menuOptions.style.display = "flex";
   menuOptions.style.alignItems = "center";
 });
@@ -46,7 +44,6 @@ menuText.addEventListener("click", () => {
 menuLines.addEventListener("click", () => {
   menuText.style.display = "none";
   menuLines.style.display = "none";
-  cross.style.display = "block";
   menuOptions.style.display = "flex";
   menuOptions.style.alignItems = "center";
 });
@@ -55,7 +52,6 @@ aboutLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
   menuText.style.display = "flex";
   menuLines.style.display = "block";
-  cross.style.display = "none";
 });
 
 const resumeLink = document.getElementById("resumeLink");
@@ -63,7 +59,6 @@ resumeLink.addEventListener("click", () => {
   menuOptions.style.display = "none";
   menuText.style.display = "flex";
   menuLines.style.display = "block";
-  cross.style.display = "none";
 });
 
 const workLink = document.getElementById("workLink");
@@ -71,21 +66,12 @@ const workLink = document.getElementById("workLink");
   menuOptions.style.display = "none";
   menuText.style.display = "flex";
   menuLines.style.display = "block";
-  cross.style.display = "none";
 });
 
 menuOptions.addEventListener("click",()=>{
   menuOptions.style.display="none";
-  cross.style.display="none";
   menuText.style.display="flex";
   menuLines.style.display="block";
-});
-
-cross.addEventListener("click", () => {
-  menuOptions.style.display = "none";
-  menuText.style.removeProperty("display");
-  cross.style.display = "none";
-  menuLines.style.removeProperty("display");
 });
 
 // // ------ About me button ----- //
