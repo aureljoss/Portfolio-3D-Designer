@@ -1529,7 +1529,11 @@ ol li::before{
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 26px;
+  }
+
+  h3{
+    font-size: 22px;
   }
 
   h4 {
@@ -1569,8 +1573,23 @@ ol li::before{
 
   .introduction {
     width: 80vw;
-    margin: 10vh auto;
+    margin: 6vh auto;
     text-align: center;
+  }
+
+  .pinkNumbers {
+    font-size: 22px;
+    background-size: 80%;
+    line-height: 3rem;
+    padding:20px;
+  }
+
+  .project-details, #objects-background, #objects-sphere, #up-arrow{
+    display: none;
+  }
+
+  #objects-background{
+    display:none;
   }
 
   #otw {
@@ -1697,18 +1716,6 @@ ol li::before{
     flex-direction: row;
   }
 
-  #socialIcon svg {
-    width: 10vw;
-    height: auto;
-    margin-top: 4px;
-  }
-
-  #madeWithLove {
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-
   .resume-email {
     font-size: 14px;
     border: solid 1px rgb(0, 0, 0);
@@ -1762,12 +1769,12 @@ ol li::before{
 
   .sectionTitles {
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 6vh;
   }
 
   .skills-vignette {
-    height: 270px;
-    margin: 1vh auto;
+    height: 340px;
+    margin: 4vh auto;
     width: 60vw;
   }
 
