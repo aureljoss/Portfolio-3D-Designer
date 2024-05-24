@@ -866,6 +866,7 @@ button#hippo {
 #skills{
   background-color: #D7E5FE;
   margin:0;
+  padding-top: 2rem;
   padding-bottom: 12vh;
   width:100vw;
   max-width: 100vw;
@@ -1529,7 +1530,7 @@ ol li::before{
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   h3{
@@ -1572,10 +1573,14 @@ ol li::before{
   }
 
   .introduction {
-    width: 80vw;
-    margin: 6vh auto;
+    width: 90vw;
     text-align: center;
   }
+
+  .button{
+    margin: 1rem 0;
+  }
+  
 
   .pinkNumbers {
     font-size: 22px;
@@ -1687,7 +1692,7 @@ ol li::before{
   button,
   #lapi-in-space {
     border-radius: 10px;
-    height: 300px;
+    height: 240px;
     width: 33%;
     min-width: 200px;
   }
@@ -1768,8 +1773,9 @@ ol li::before{
   }
 
   .sectionTitles {
-    text-align: center;
-    margin-top: 6vh;
+    text-align: start;
+    max-width: 80vw;
+    margin: 10vh auto 8vh;
   }
 
   .skills-vignette {
@@ -1789,8 +1795,20 @@ ol li::before{
     flex-wrap: wrap;
     margin: 4em auto;
     justify-content: center;
+    justify-items:center;
+    align-items: center;
+    max-width: none;
+    max-height: none;
   }
 
+  #objects-playground{
+    position: absolute;
+    bottom:30px;
+    left:-15%;
+    max-width:150px;
+    z-index: 4;
+  }
+  
   
 .portfolio-vignettes{
   min-width: 300px;
@@ -1799,7 +1817,41 @@ ol li::before{
 
 .portfolio-projects {
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 4rem auto;
+}
+
+.portfolio-preview {
+  border-radius: 20px;
+  border: 1px solid rgb(134, 134, 134);
+  max-width: 60vw;
+  max-height:340px;
+}
+
+#lapi-plage-animated, #tenzies{
+  display:none;
+}
+
+#contact-section{
+  margin-top:6rem;
+  padding: 2rem;
+}
+
+#contact{
+  display: block;
+  height:auto;
+  max-width: 80vw;
+  color:#efefef;
+}
+
+#connect{
+  max-width: 80vw;
+  height:auto;
+  margin:4rem auto;
+}
+
+#contact-me {
+  height:auto;
+  max-width: 80vw;
 }
 
 /*Mobile - 1024px breakpoint */
