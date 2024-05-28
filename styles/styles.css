@@ -1538,7 +1538,7 @@ ol li::before{
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h5 {
@@ -1739,7 +1739,7 @@ ol li::before{
   #menu {
     position: fixed;
     left: auto;
-    right: 6vw;
+    right: 5vw;
     top: 0vh;
     height: 5vh;
   }
@@ -1852,6 +1852,73 @@ ol li::before{
 #contact-me {
   height:auto;
   max-width: 80vw;
+}
+
+#project-title {
+  position: static;
+  bottom:auto;
+  max-width: 80vw;
+  text-align: center;
+  line-height: 1rem;
+  margin:auto;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#project-header{
+  display: block;
+  margin: 2rem auto;
+  max-width:80vw;
+}
+
+#project-tools{
+  margin:auto;
+  text-align: center;
+}
+
+.jump-end{
+  display: flex;
+  margin:auto;
+}
+
+#project-headline{
+  margin:10vh auto;
+}
+
+.KSU-site-diagrams{
+  width:auto;
+  max-width:60vw;
+  margin:1rem auto;
+}
+
+.work-portfolio{
+  display:flex;
+  flex-direction: column;
+}
+
+#objects-headline{
+  position: absolute;  
+  top:-2vh;
+  left:5vw;
+  width: 12%;
+}
+
+#img-tipCalculator{
+  height:234px;
+}
+
+.portfolio-preview:hover {
+  animation: none;
+  cursor: pointer;
+}
+
+.resume-email {
+  border-radius: 1rem;
+  padding: 0.65rem;
+  margin: 10vh auto;
+}
+
+.secondary-nav{
+  display:none;
 }
 
 /*Mobile - 1024px breakpoint */
