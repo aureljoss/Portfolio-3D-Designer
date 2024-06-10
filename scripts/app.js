@@ -130,6 +130,24 @@ gsap.to('#up-arrow',{
   duration: 1,
 })
 
+gsap.from('#up-arrow-portfolio',{
+  opacity:0,
+  scrollTrigger: {
+    trigger: "#gsap-trigger",
+    start: "top center",
+    once:true,
+  },
+})
+
+gsap.to('#up-arrow-portfolio',{
+  opacity:1,
+  scrollTrigger: {
+    trigger: "#gsap-trigger",
+    start: "top bottom",
+    once: true,
+  },
+  duration: 1,
+})
 
 // ------ HippoProject ----- //
 
