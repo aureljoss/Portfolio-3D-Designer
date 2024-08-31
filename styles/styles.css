@@ -1413,7 +1413,7 @@ ol li::before{
 
 #project-title {
   position: absolute;
-  bottom:0vh;
+  bottom:5vh;
   width: 100%;
   text-align: center;
   line-height: 0rem;
@@ -1803,6 +1803,11 @@ ol li::before{
     margin: auto auto 2rem;
     width: 60vw;
   }
+
+  
+#skills{
+  padding-top: 0.1rem;
+}
 
   #up-arrow-portfolio{
     display: none;
