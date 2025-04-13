@@ -109,46 +109,6 @@ gsap.to("#introduction", {
   ease: "bounce.out",
 });
 
-// Up arrow scroll trigger //
-
-gsap.from('#up-arrow',{
-  opacity:0,
-  scrollTrigger: {
-    trigger: "#introduction",
-    start: "top center",
-    once:true,
-  },
-})
-
-gsap.to('#up-arrow',{
-  opacity:1,
-  scrollTrigger: {
-    trigger: "#introduction",
-    start: "top bottom",
-    once: true,
-  },
-  duration: 1,
-})
-
-gsap.from('#up-arrow-portfolio',{
-  opacity:0,
-  scrollTrigger: {
-    trigger: "#gsap-trigger",
-    start: "top center",
-    once:true,
-  },
-})
-
-gsap.to('#up-arrow-portfolio',{
-  opacity:1,
-  scrollTrigger: {
-    trigger: "#gsap-trigger",
-    start: "top bottom",
-    once: true,
-  },
-  duration: 1,
-})
-
 // ------ HippoProject ----- //
 
 // -- GSAP scroll trigger -- //
@@ -250,21 +210,21 @@ gsap.to("#lapi", {
 });*/
 
 // -- Starfish Walking Lapi Project--//
-const SFwalking = gsap.timeline({ paused: true });
-const SFSpeed = 2;
+// const SFwalking = gsap.timeline({ paused: true });
+// const SFSpeed = 2;
 
-SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: 60, x:50 }, 0);
+// SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: 60, x:50 }, 0);
 
-// ---- Mouse Hover Lapi Project--//
+// // ---- Mouse Hover Lapi Project--//
 
-const Starfish = document.getElementById("lapi");
+// const Starfish = document.getElementById("lapi");
 
-Starfish.addEventListener("mouseenter", enterLapi);
-Starfish.addEventListener("mouseleave", leaveLapi);
+// Starfish.addEventListener("mouseenter", enterLapi);
+// Starfish.addEventListener("mouseleave", leaveLapi);
 
-function enterLapi() {
-  SFwalking .play();
-}
-function leaveLapi() {
-  SFwalking .reverse();
-}
+// function enterLapi() {
+//   SFwalking .play();
+// }
+// function leaveLapi() {
+//   SFwalking .reverse();
+// }
