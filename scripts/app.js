@@ -14,10 +14,10 @@ function myFunction() {
 
 // ---- //
 
-var text = document.querySelector("h1");
-document.addEventListener("scroll", () => {
-  text.style.left = window.scrollY * 5 + "px";
-});
+// var text = document.querySelector("h1");
+// document.addEventListener("scroll", () => {
+//   text.style.left = window.scrollY * 5 + "px";
+// });
 
 //gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
@@ -85,55 +85,70 @@ menuOptions.addEventListener("click",()=>{
 //   box.style.display = "block";
 // });
 
-// ------ Intro with GSAP Scroll Trigger ------//
-gsap.from("#introduction", {
-  opacity: 0,
+//------ Intro with GSAP Scroll Trigger ------//
+// gsap.from("#introduction", {
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: "#introduction",
+//     toggleActions: "restart pause reverse pause",
+//     start: "top center",
+//     once: true,
+//   },
+//   x: -150,
+// });
+// gsap.to("#introduction", {
+//   opacity: 1,
+//   scrollTrigger: {
+//     trigger: "#introduction",
+//     toggleActions: "restart pause reverse pause",
+//     start: "top bottom",
+//     once: true,
+//   },
+//   x: 0,
+//   duration: 2,
+//   ease: "bounce.out",
+// });
+
+// Up arrow scroll trigger //
+
+gsap.from('#up-arrow',{
+  opacity:0,
   scrollTrigger: {
-    trigger: "#introduction",
-    toggleActions: "restart pause reverse pause",
+    trigger: "#portfolio-projects-section",
     start: "top center",
-    once: true,
+    once:true,
   },
-  x: -150,
-});
-gsap.to("#introduction", {
-  opacity: 1,
+})
+
+gsap.to('#up-arrow',{
+  opacity:1,
   scrollTrigger: {
-    trigger: "#introduction",
-    toggleActions: "restart pause reverse pause",
+    trigger: "#portfolio-projects-section",
     start: "top bottom",
     once: true,
   },
-  x: 0,
-  duration: 2,
-  ease: "bounce.out",
-});
+  duration: 1,
+})
 
-// ------ HippoProject ----- //
+// gsap.from('#up-arrow-portfolio',{
+//   opacity:0,
+//   scrollTrigger: {
+//     trigger: "#gsap-trigger",
+//     start: "top center",
+//     once:true,
+//   },
+// })
 
-// -- GSAP scroll trigger -- //
-gsap.registerPlugin(ScrollTrigger);
+// gsap.to('#up-arrow-portfolio',{
+//   opacity:1,
+//   scrollTrigger: {
+//     trigger: "#gsap-trigger",
+//     start: "top bottom",
+//     once: true,
+//   },
+//   duration: 1,
+// })
 
-/*gsap.from("#hippo", {
-  scrollTrigger: {
-    trigger: "#hippo",
-    toggleActions: "restart pause reverse pause",
-    start: "top center",
-    once: true,
-  },
-  x: 200,
-});
-gsap.to("#hippo", {
-  scrollTrigger: {
-    trigger: "#hippo",
-    toggleActions: "restart pause reverse pause",
-    start: "top center",
-    once: true,
-  },
-  x: 0,
-  duration: 2,
-  ease: "bounce.out",
-});*/
 
 // -- Hippo Hover Animation -- //
 
@@ -183,48 +198,3 @@ earWiggle.to(".ear-right", { duration: 0.1, rotation: 75 });
 earWiggle.to(".ear-right", { duration: 0.1, rotation: 0 });
 window.setInterval(() => earWiggle.play(0), 1500);
 
-// ------ LapiProject ----- //
-
-// -- GSAP scroll trigger -- //
-
-/*gsap.from("#lapi", {
-  scrollTrigger: {
-    trigger: "#lapi",
-    toggleActions: "restart pause reverse pause",
-    start: "top center",
-    once: true,
-  },
-  x: 200,
-  autoAlpha: 0,
-});
-gsap.to("#lapi", {
-  scrollTrigger: {
-    trigger: "#lapi",
-    toggleActions: "restart pause reverse pause",
-    start: "top center",
-    once: true,
-  },
-  x: 0,
-  duration: 2,
-  ease: "bounce.out",
-});*/
-
-// -- Starfish Walking Lapi Project--//
-// const SFwalking = gsap.timeline({ paused: true });
-// const SFSpeed = 2;
-
-// SFwalking.to(".Starfish", { duration: SFSpeed, ease: easeType, y: 60, x:50 }, 0);
-
-// // ---- Mouse Hover Lapi Project--//
-
-// const Starfish = document.getElementById("lapi");
-
-// Starfish.addEventListener("mouseenter", enterLapi);
-// Starfish.addEventListener("mouseleave", leaveLapi);
-
-// function enterLapi() {
-//   SFwalking .play();
-// }
-// function leaveLapi() {
-//   SFwalking .reverse();
-// }

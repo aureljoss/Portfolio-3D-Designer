@@ -1183,6 +1183,7 @@ button#hippo {
   bottom:5vh;
   right:12px;
   z-index: 4;
+  opacity: 0;
 }
 
 #up-arrow:hover, #up-arrow-portfolio:hover{
@@ -1587,14 +1588,6 @@ ol li::before{
     flex-direction: row;
   }
 
-  #intro {
-    width: 60vw;
-    height: 20vh;
-    position: absolute;
-    left: 20vw;
-    align-self: flex-end;
-    margin-bottom: 10vh;
-  }
   #introduction {
     width: 60vw;
     max-width: 1200px;
@@ -1704,6 +1697,10 @@ ol li::before{
 
   .section-block {
     margin: 0vh auto ;
+    width: 80vw;
+  }
+
+  #canvas{
     width: 80vw;
   }
 
