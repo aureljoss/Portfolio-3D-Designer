@@ -1,12 +1,13 @@
 @import url('https://rsms.me/inter/inter.css');
 #root {
-    width: 90vw;
-    height: 90vh;
-    margin: 10vh auto;
-    padding: 10vh auto;
+    position:absolute;
+    width: 70vw;
+    height: 100vh;
+    margin: 0vh 0vw 0vh 30vw;
     position:static;
     box-sizing: border-box;
-    background-color: #efefef;
+    background-color: #4628ff;
+    /* background-color: #efefef; */
     /* max-width: 1200px; */
   }
   
@@ -19,22 +20,46 @@
     color: black;
   }
 
-  #introduction{
-    position: absolute; 
-    top: -10vh;
-    left: 8vw;
-    text-align: left;
+  #intro-threejs{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 10vw; 
+    left:0;
+    top:0;
     font-size: 16px;
     font-family: "Open Sans", "Noto Sans", Arial, sans-serif;
     text-decoration: none;
-    text-transform: uppercase;
+    width: 30vw;
+    height:100vh;
+    max-width: 1200px;
+    color: #efefef;
+    background-color: #4628ff;
   }
 
-  #intro-bold{
-    font-weight: 800;
+  #contact-threejs {
+    height:200px;
+    max-width: 30vw;
+    list-style: none;
+    font-weight: 600;
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    justify-content: center;
+    padding:0;
   }
 
-  #root::after {
+.button-threejs {
+    border: solid 1px #efefef;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+
+  /* #root::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -42,10 +67,9 @@
     transform: translate(-50%, -50%);
     width: 90vw;
     height: 90vh;
-    /* max-width: 1200px; */
     background-image: url('/view.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     pointer-events: none;
-  }
+  } */
