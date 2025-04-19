@@ -27,18 +27,19 @@ function Overlay() {
 
 root.render(
   <>
+    <Overlay />
     <Canvas
+        id="canvas-threejs"
         flat
         camera={ {
             fov: 35,
             near: 0.1,
             far: 100,
-            position: [ 0, 0.5, 8.5 ], 
+            position: [ 0, 0.5, 6.5 ], 
         } }
     >
         <Experience />
     </Canvas>
-    <Overlay />
   </>
 )
 

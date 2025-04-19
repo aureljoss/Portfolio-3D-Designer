@@ -36,9 +36,9 @@ export function Experience() {
           maxYaw={0.001} // Max amount camera can yaw in either direction
           maxPitch={0.001} // Max amount camera can pitch in either direction
           maxRoll={0.02} // Max amount camera can roll in either direction
-          yawFrequency={1} // Frequency of the the yaw rotation
-          pitchFrequency={1} // Frequency of the pitch rotation
-          rollFrequency={1} // Frequency of the roll rotation
+          yawFrequency={0.8} // Frequency of the the yaw rotation
+          pitchFrequency={0.8} // Frequency of the pitch rotation
+          rollFrequency={0.8} // Frequency of the roll rotation
           intensity={1} // initial intensity of the shake
           decayRate={0.8} // if decay = true this is the rate at which intensity will reduce at />
         />
