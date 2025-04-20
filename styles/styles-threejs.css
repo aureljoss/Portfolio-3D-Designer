@@ -1,9 +1,8 @@
 #root {
     position:absolute;
-    top:0;
-    height:100vh;
+    top:5vh;
+    height:88vh;
     width: 100vw;
-    /* background-color: #4628ff; */
     display: grid;
     justify-items:center;
     align-items: center;
@@ -13,24 +12,16 @@
 
   #canvas-threejs{
     width:80%;
-    height:auto;
-    margin:auto;
+    animation: introAnimation 1s 4s ease-in-out backwards;
+    z-index:0;
+    margin-right:6vw;
+    margin: 5vh auto;
+    height: 88vh;
   }
 
-  /* #canvas-threejs::before {
-    content: '';
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    width: 100%;
-    background-image: url('/images/ThreeJS/Browser.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80% 80%;
-    pointer-events: none;
-    padding-bottom: 56%;
-
-  } */
+  #canvas-threejs::before{
+    
+  }
 
   /* #canvas-threejs::after {
     content: '';
@@ -49,16 +40,6 @@
     
   } */
 
-  
-  /* body {
-    overscroll-behavior-y: none;
-    background: #efefef;
-    font-family: 'Inter var', sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: black;
-  } */
-
   #intro-threejs{
     display:flex;
     flex-direction: column;
@@ -69,6 +50,7 @@
     color: #efefef;
     padding-left:5vw;
     max-width: 500px;
+    justify-self: flex-start;
   }
 
   #contact-threejs {

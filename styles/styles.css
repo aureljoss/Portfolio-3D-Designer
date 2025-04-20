@@ -436,6 +436,7 @@ a:hover {
   left: 42vw;
   height: 90vh;
   width: 20vw;
+  z-index:1;
 }
 
 #bonjour {
