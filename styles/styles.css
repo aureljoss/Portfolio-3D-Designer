@@ -284,15 +284,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: scroll 1s 1s backwards;
+  animation: scroll 4s 1s backwards;
   font-weight: 600;
 }
 
 @keyframes scroll {
   0% {
+    opacity:0;
     transform: translateY(1vw);
   }
   100% {
+    opacity:1;
     transform: translateY(0vw);
   }
 }
@@ -327,12 +329,11 @@ header {
 .project-details{
   text-decoration: none;
   color:black;
-  max-width: 80%;
 }
 
 .button{
   display:flex;
-  width:150px;
+  width:140px;
   height:45px;
   padding: 0 0.5rem;
   border-radius: 100px;;
@@ -346,6 +347,7 @@ header {
   font-size:12px;
   color:#efefef;
   text-decoration: none;
+  min-width:70px;
 }
 
 .button-text:hover{
@@ -388,6 +390,7 @@ header {
   align-items: center;
   width:100%;
   justify-content: space-between;
+
 }
 
 .lines {
@@ -416,6 +419,7 @@ a:hover {
   display: flex;
   animation: redBackground 2s ease-in-out;
   animation-fill-mode: forwards;
+  margin-bottom: 20rem;
 }
 
 @keyframes redBackground {
@@ -1348,11 +1352,13 @@ button#hippo {
 #portfolio-projects-section {
   width: 60vw;
   max-width: 1200px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:4rem 2rem;
 }
 
 .portfolio-projects {
   width: 100%;
-  margin: 4rem 0rem;
 }
 
 div.portfolio-projects h6 {
@@ -1880,11 +1886,6 @@ ol li::before{
 .portfolio-vignettes{
   min-width: 300px;
   border-radius: 10px;
-}
-
-.portfolio-projects {
-  flex-direction: column;
-  margin: 4rem auto;
 }
 
 .portfolio-preview {

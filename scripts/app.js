@@ -74,47 +74,12 @@ menuOptions.addEventListener("click",()=>{
   menuLines.style.display="block";
 });
 
-// // ------ About me button ----- //
-
-// const btn = document.getElementById("collapsible");
-
-// btn.addEventListener("click", () => {
-//   btn.style.display = "none";
-
-//   const box = document.getElementById("hidden-text");
-//   box.style.display = "block";
-// });
-
-//------ Intro with GSAP Scroll Trigger ------//
-// gsap.from("#introduction", {
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: "#introduction",
-//     toggleActions: "restart pause reverse pause",
-//     start: "top center",
-//     once: true,
-//   },
-//   x: -150,
-// });
-// gsap.to("#introduction", {
-//   opacity: 1,
-//   scrollTrigger: {
-//     trigger: "#introduction",
-//     toggleActions: "restart pause reverse pause",
-//     start: "top bottom",
-//     once: true,
-//   },
-//   x: 0,
-//   duration: 2,
-//   ease: "bounce.out",
-// });
-
-// Up arrow scroll trigger //
+// Up and down arrow scroll trigger //
 
 gsap.from('#up-arrow',{
   opacity:0,
   scrollTrigger: {
-    trigger: "#portfolio-projects-section",
+    trigger: "#start",
     start: "top center",
     once:true,
   },
@@ -129,26 +94,6 @@ gsap.to('#up-arrow',{
   },
   duration: 1,
 })
-
-// gsap.from('#up-arrow-portfolio',{
-//   opacity:0,
-//   scrollTrigger: {
-//     trigger: "#gsap-trigger",
-//     start: "top center",
-//     once:true,
-//   },
-// })
-
-// gsap.to('#up-arrow-portfolio',{
-//   opacity:1,
-//   scrollTrigger: {
-//     trigger: "#gsap-trigger",
-//     start: "top bottom",
-//     once: true,
-//   },
-//   duration: 1,
-// })
-
 
 // -- Hippo Hover Animation -- //
 

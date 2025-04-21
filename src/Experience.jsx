@@ -8,8 +8,8 @@ import {
 import React from "react";
 
 export function Experience() {
-  const { nodes } = useGLTF("../model/Living Room Scene-MD.glb");
-  const bakedTexture = useTexture("../model/baked-final-test.jpg");
+  const { nodes } = useGLTF("../model/Living Room Scene-AJ.glb");
+  const bakedTexture = useTexture("../model/baked-final.jpg");
   bakedTexture.flipY = false;
 
   return (
