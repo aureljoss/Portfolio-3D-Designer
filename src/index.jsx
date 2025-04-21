@@ -11,15 +11,14 @@ const root = ReactDOM.createRoot(document.querySelector('#root'))
 function Overlay() {
   return (
     <div id="intro-threejs">
-      <h3>Bonjour.</h3>
+      <h3>I'm Aurelie.</h3>
       <p>
-        My name is Aurelie. I am a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus.
+      I am a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
+      Whether it’s a <span className="bold-threejs">digital product or a physical space</span>, I brind ideas to life through innovative and immersive <span className="bold-threejs">3D experiences.</span>
       </p>
       <ul id="contact-threejs">
-        <li><a href="mailto:josserand.n.aurelie@gmail.com" class="button-threejs">Say Hello</a></li>
-          <li>
-            <a href="About.html" class="button-threejs">See My Projects</a>
-          </li>
+        <li><a href="#portfolio-projects-section" className="button-threejs">See My Projects</a></li>
+        <li><a href="#about" className="button-threejs">About Me</a></li>
       </ul>
     </div>
   )

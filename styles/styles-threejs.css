@@ -1,7 +1,7 @@
 #root {
     position:absolute;
     top:5vh;
-    height:88vh;
+    height:95vh;
     width: 100vw;
     display: grid;
     justify-items:center;
@@ -14,13 +14,8 @@
     width:80%;
     animation: introAnimation 1s 4s ease-in-out backwards;
     z-index:0;
-    margin-right:6vw;
-    margin: 5vh auto;
+    margin: 5vh 5vw 5vh auto;
     height: 88vh;
-  }
-
-  #canvas-threejs::before{
-    
   }
 
   /* #canvas-threejs::after {
@@ -39,6 +34,11 @@
     pointer-events: none;
     
   } */
+
+  .bold-threejs{
+    font-weight: 800;
+    font-size:1.1rem;
+  }
 
   #intro-threejs{
     display:flex;
@@ -72,5 +72,11 @@
     text-decoration: none;
     color: #efefef;
   }
+
+.button-threejs:hover{
+    cursor: pointer;
+    border: solid 1px black;
+  }
+  
   
 

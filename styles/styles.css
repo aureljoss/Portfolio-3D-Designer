@@ -17,7 +17,7 @@ html {
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 160px;
   font-weight: 800;
 }
 
@@ -350,6 +350,7 @@ header {
 
 .button-text:hover{
   cursor: pointer;
+  color: #efefef;
 }
 
 .more-Arrow {
@@ -407,10 +408,11 @@ a:hover {
 
 #start {
   background-color: #4628ff;
-  margin: 5vh auto;
   color: #121214;
-  height: 88vh;
+  height: 100vh;
   width: 90vw;
+  position:static;
+  top:0;
   display: flex;
   animation: redBackground 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -443,7 +445,7 @@ a:hover {
   line-height: 11rem;
   animation: bonjour 3s ease-in-out;
   animation-fill-mode: forwards;
-  letter-spacing: -8px;
+  letter-spacing: -14px;
 }
 
 .period {
@@ -451,7 +453,7 @@ a:hover {
   transition: transform 1s;
   animation: ex 3.5s ease-in-out;
   animation-fill-mode: forwards;
-  margin-bottom: 0.89em;
+  margin-bottom: 0.97em;
   color: #ff5851;
 }
 
@@ -483,6 +485,24 @@ a:hover {
     visibility: visible;
     transform: translateX(0vw);
   }
+}
+
+#drag{
+  position:absolute;
+  left:28vw;
+  display: flex;
+  flex-direction: column;
+  width:200px;
+  align-items: center;
+  bottom: -10vh;
+  animation: introAnimation 1s 4s ease-in-out backwards;
+
+}
+
+#drag img{
+  width:60px;
+  transform: rotateZ(30deg);
+  animation: drag 1s alternate-reverse infinite;
 }
 
 /* ----- Introduction ----- */
