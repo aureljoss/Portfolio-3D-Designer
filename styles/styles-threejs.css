@@ -7,15 +7,15 @@
     justify-items:center;
     align-items: center;
     grid-template-columns: 1fr 1fr ;
-    gap:3vw;
+    /* gap:3vw; */
   }
 
   #canvas-threejs{
     width:80%;
     animation: introAnimation 1s 4s ease-in-out backwards;
     z-index:0;
-    margin: 5vh 5vw 5vh auto;
     height: 88vh;
+    /* background-color:#f8d1d1; */
   }
 
   /* #canvas-threejs::after {
