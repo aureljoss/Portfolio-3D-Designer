@@ -155,6 +155,7 @@ header {
   animation: menu 1s forwards;
   height: 4vh;
   z-index: 2;
+  opacity: 0;
 }
 
 #menuOptions {
@@ -278,52 +279,29 @@ header {
 
 #scroll {
   position: absolute;
-  bottom: 9vh;
+  bottom: 4vh;
   left: 48vw;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: scroll 4s 1s backwards;
+  /* animation: scroll 4s 1s infinite; */
   font-weight: 600;
 }
 
 @keyframes scroll {
   0% {
     opacity:0;
-    transform: translateY(1vw);
+    transform: translateY(0vw);
   }
   100% {
     opacity:1;
-    transform: translateY(0vw);
+    transform: translateY(1vw);
   }
 }
 
 #scrollArrow {
-  display: inline-block;
-  margin: 0.3em auto;
-  animation: scrollArrow 0.7s infinite alternate;
-  color: #efefef;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.2rem;
-}
-
-#scrollText {
-  font-size: 9px;
-  transform: rotate(-90deg);
-  color: white;
-  text-decoration: none;
-  margin-bottom: 1em;
-}
-
-@keyframes scrollArrow {
-  0% {
-    transform: translateY(1em) rotate(90deg) scale(1.2, 2);
-  }
-  100% {
-    transform: translateY(0em) rotate(90deg) scale(1.2, 2);
-  }
+  fill:white;
 }
 
 .project-details{
@@ -413,11 +391,11 @@ a:hover {
   background-color: #4628ff;
   color: #121214;
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
   position:static;
   top:0;
   display: flex;
-  animation: redBackground 2s ease-in-out;
+  /* animation: redBackground 2s ease-in-out; */
   animation-fill-mode: forwards;
   margin-bottom: 20rem;
 }
@@ -1201,17 +1179,17 @@ button#hippo {
 } */
 
 /* Up arrow */
-#up-arrow, #up-arrow-portfolio{
+#up-arrow{
   width:40px;
-  transform: rotate(-90deg);
   position: fixed;
   bottom:5vh;
-  right:12px;
   z-index: 4;
+  transform: rotate(-90deg);
   opacity: 0;
+  right:12px;
 }
 
-#up-arrow:hover, #up-arrow-portfolio:hover{
+#up-arrow:hover{
   transform: scale(1.2) rotate(-90deg);
   transition: all 0.5s;
 }
@@ -1574,6 +1552,7 @@ ol li::before{
   top: 48%;
   display: flex;
   flex-direction: column;
+  opacity: 0;
 }
 
 .hoverIcon:hover {

@@ -11,9 +11,9 @@ const root = ReactDOM.createRoot(document.querySelector('#root'))
 function Overlay() {
   return (
     <div id="intro-threejs">
-      <h3>I'm Aurelie.</h3>
+      <p>Bonjour,</p>
       <p>
-      I am a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
+      I'm Aurelie, a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
       Whether it’s a <span className="bold-threejs">digital product or a physical space</span>, I brind ideas to life through innovative and immersive <span className="bold-threejs">3D experiences.</span>
       </p>
       <ul id="contact-threejs">

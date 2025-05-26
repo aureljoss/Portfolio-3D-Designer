@@ -76,13 +76,25 @@ menuOptions.addEventListener("click",()=>{
 
 // Up and down arrow scroll trigger //
 
-gsap.from('#up-arrow',{
-  opacity:0,
+gsap.to('#menu',{
+  opacity:1,
   scrollTrigger: {
-    trigger: "#start",
-    start: "top center",
-    once:true,
+    trigger: "#portfolio-projects-section",
+    start: "top bottom",
+    once: false,
   },
+  duration: 1,
+})
+
+
+gsap.to('#socialIcon',{
+  opacity:1,
+  scrollTrigger: {
+    trigger: "#portfolio-projects-section",
+    start: "top bottom",
+    once: false,
+  },
+  duration: 1,
 })
 
 gsap.to('#up-arrow',{
@@ -90,7 +102,7 @@ gsap.to('#up-arrow',{
   scrollTrigger: {
     trigger: "#portfolio-projects-section",
     start: "top bottom",
-    once: true,
+    once: false,
   },
   duration: 1,
 })
