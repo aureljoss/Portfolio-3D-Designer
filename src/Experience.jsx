@@ -3,7 +3,7 @@ import {
   OrbitControls,
   CameraShake, 
   useGLTF,
-  useTexture
+  useTexture,
 } from "@react-three/drei";
 import React from "react";
 
@@ -50,7 +50,7 @@ export function Experience() {
           </AccumulativeShadows> */}
 
         <Center>
-          <mesh geometry={nodes.baked.geometry} >
+          <mesh geometry={nodes.baked.geometry}>
             <meshBasicMaterial map={bakedTexture} />
           </mesh>
         </Center>          

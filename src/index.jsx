@@ -30,10 +30,10 @@ root.render(
         id="canvas-threejs"
         flat
         camera={ {
-            fov: 38,
+            fov: 40,
             near: 0.1,
             far: 100,
-            position: [ 8, 3, 6 ], 
+            position: [ 6, 4, -8 ],
         } }
     >
         <Experience />
