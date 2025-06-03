@@ -8,8 +8,8 @@ import {
 import React from "react";
 
 export function Experience() {
-  const { nodes } = useGLTF("../model/Living Room Scene-AJ.glb");
-  const bakedTexture = useTexture("../model/baked-final.jpg");
+  const { nodes } = useGLTF("../model/Intro Scene - Portfolio.glb");
+  const bakedTexture = useTexture("../model/baked.jpg");
   bakedTexture.flipY = false;
 
   return (
@@ -40,7 +40,7 @@ export function Experience() {
           yawFrequency={0.8} // Frequency of the the yaw rotation
           pitchFrequency={0.8} // Frequency of the pitch rotation
           rollFrequency={0.8} // Frequency of the roll rotation
-          intensity={1} // initial intensity of the shake
+          intensity={0.8} // initial intensity of the shake
           decayRate={0.8} // if decay = true this is the rate at which intensity will reduce at />
         />
 

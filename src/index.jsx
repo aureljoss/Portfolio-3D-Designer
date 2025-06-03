@@ -11,14 +11,13 @@ const root = ReactDOM.createRoot(document.querySelector('#root'))
 function Overlay() {
   return (
     <div id="intro-threejs">
-      <p>Bonjour,</p>
+      <h4>Designing immersive 3D worlds to shape the future.</h4>
       <p>
-      I'm Aurelie, a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
-      Whether it’s a <span className="bold-threejs">digital product or a physical space</span>, I brind ideas to life through innovative and immersive <span className="bold-threejs">3D experiences.</span>
+      I am a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
+      Whether it’s a digital product or a physical space, I bring ideas to life through innovative and immersive 3D experiences.
       </p>
       <ul id="contact-threejs">
         <li><a href="#portfolio-projects-section" className="button-threejs">See My Projects</a></li>
-        <li><a href="#about" className="button-threejs">About Me</a></li>
       </ul>
     </div>
   )
@@ -31,10 +30,10 @@ root.render(
         id="canvas-threejs"
         flat
         camera={ {
-            fov: 35,
+            fov: 38,
             near: 0.1,
             far: 100,
-            position: [ 0, 0.5, 6.5 ], 
+            position: [ 8, 3, 6 ], 
         } }
     >
         <Experience />

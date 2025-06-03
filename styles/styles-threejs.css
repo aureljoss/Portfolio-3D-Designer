@@ -6,12 +6,12 @@
     display: grid;
     justify-items:center;
     align-items: center;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 2fr ;
     /* gap:3vw; */
   }
 
   #canvas-threejs{
-    width:80%;
+    /* width:80%; */
     /* animation: introAnimation 1s 4s ease-in-out backwards; */
     z-index:0;
     height: 88vh;
@@ -39,25 +39,22 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    color: #efefef;
     padding-left:7vw;
-    max-width: min(30vw, 500px);
+    max-width: min(33vw, 900px);
     justify-self: flex-start;
-    height: 400px;
   }
 
   #intro-threejs p{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .bold-threejs{
     font-weight: 800;
-    font-size: 14px;
   }
 
 
   #contact-threejs {
-    height:200px;
+    height:100px;
     max-width: 30vw;
     list-style: none;
     font-weight: 600;
@@ -70,11 +67,11 @@
   }
 
 .button-threejs {
-    border: solid 1px #efefef;
+    border: solid 1px black;
     border-radius: 1rem;
     padding: 0.8rem;
     text-decoration: none;
-    color: #efefef;
+    color: black;
     font-size: 14px;
   }
 
@@ -82,6 +79,4 @@
     cursor: pointer;
     border: solid 1px black;
   }
-  
-  
 
