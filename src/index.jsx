@@ -2,7 +2,7 @@ import '../styles/styles-threejs.css'
 import { Experience } from './Experience'
 import ReactDOM from 'react-dom/client'
 import React from 'react';
-import { Canvas } from '@react-three/fiber'
+import { Canvas} from '@react-three/fiber'
 
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
@@ -33,9 +33,9 @@ root.render(
             fov: 40,
             near: 0.1,
             far: 100,
-            position: [ 6, 4, -8 ],
+            position: [ 6.5, 2, 6 ],
         } }
-    >
+    >   
         <Experience />
     </Canvas>
   </>

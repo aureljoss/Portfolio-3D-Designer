@@ -4,8 +4,10 @@ import {
   CameraShake, 
   useGLTF,
   useTexture,
+
 } from "@react-three/drei";
 import React from "react";
+import { DoubleSide } from "three";
 
 export function Experience() {
   const { nodes } = useGLTF("../model/Intro Scene - Portfolio.glb");
@@ -16,19 +18,18 @@ export function Experience() {
     <>
 
         {/* <color attach="background" args={["#fcbbbb"]} /> */}
-
         {/** Controls */}
         <OrbitControls
           makeDefault
           autoRotateSpeed={-0.1}
           zoomSpeed={2}
           enableZoom={false}
-          minDistance={6}
-          maxDistance={9}
-          // enablePan={false}
-          dampingFactor={0.05}
-          minPolarAngle={Math.PI / 3}
-          maxPolarAngle={Math.PI / 2}
+          // minDistance={6}
+          maxDistance={12}
+          enablePan={true}
+          dampingFactor={0.1}
+          // minPolarAngle={Math.PI / 3}
+          // maxPolarAngle={Math.PI / 2}
           // minAzimuthAngle={(Math.PI*2)/1.15}
           // maxAzimuthAngle={Math.PI*2}
         />
@@ -45,13 +46,12 @@ export function Experience() {
         />
 
         {/** Soft shadows */}
-          {/* <AccumulativeShadows frames={100} color={"#3d1b65"} colorBlend={5} toneMapped={true} alphaTest={0.9} opacity={1} scale={30} position={[0, -1.01, 0]}>
+          {/* <AccumulativeShadows frames={100} color={"#3d1b65"} colorBlend={5} toneMapped={true} alphaTest={0.9} opacity={1} scale={30} position={[0, -10, 0]}>
             <RandomizedLight amount={4} radius={10} ambient={0.5} intensity={1} position={[0, 10, -10]} size={15} mapSize={1024} bias={0.0001} />
           </AccumulativeShadows> */}
-
         <Center>
           <mesh geometry={nodes.baked.geometry}>
-            <meshBasicMaterial map={bakedTexture} />
+            <meshBasicMaterial map={bakedTexture} side={DoubleSide}/>
           </mesh>
         </Center>          
     </>
