@@ -17,7 +17,7 @@ export function Experience() {
   return (
     <>
 
-        {/* <color attach="background" args={["#fcbbbb"]} /> */}
+        <color attach="background" args={["#D7E5FE"]} />
         {/** Controls */}
         <OrbitControls
           makeDefault
@@ -26,7 +26,7 @@ export function Experience() {
           enableZoom={false}
           // minDistance={6}
           maxDistance={12}
-          enablePan={true}
+          enablePan={false}
           dampingFactor={0.1}
           // minPolarAngle={Math.PI / 3}
           // maxPolarAngle={Math.PI / 2}
@@ -49,7 +49,7 @@ export function Experience() {
           {/* <AccumulativeShadows frames={100} color={"#3d1b65"} colorBlend={5} toneMapped={true} alphaTest={0.9} opacity={1} scale={30} position={[0, -10, 0]}>
             <RandomizedLight amount={4} radius={10} ambient={0.5} intensity={1} position={[0, 10, -10]} size={15} mapSize={1024} bias={0.0001} />
           </AccumulativeShadows> */}
-        <Center>
+        <Center  position={[0, 0.5, -0.5]}>
           <mesh geometry={nodes.baked.geometry}>
             <meshBasicMaterial map={bakedTexture} side={DoubleSide}/>
           </mesh>

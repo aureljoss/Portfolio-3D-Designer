@@ -13,7 +13,7 @@ function Overlay() {
     <div id="intro-threejs">
       <h4>Designing immersive 3D worlds to shape the future.</h4>
       <p>
-      I am a multi-faceted designer who uniquely blends an architectural background with a tech-driven focus. 
+      My name is Aurélie (pronounced oh-reh-lee). 
       Whether it’s a digital product or a physical space, I bring ideas to life through innovative and immersive 3D experiences.
       </p>
       <ul id="contact-threejs">
@@ -33,7 +33,7 @@ root.render(
             fov: 40,
             near: 0.1,
             far: 100,
-            position: [ 6.5, 2, 6 ],
+            position: [ 6.8, 2, 5 ],
         } }
     >   
         <Experience />

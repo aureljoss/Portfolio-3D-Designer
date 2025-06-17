@@ -1,12 +1,13 @@
 #root {
     position:absolute;
-    top:5vh;
-    height:90vh;
+    top:0vh;
+    height:100vh;
     width: 100vw;
     display: grid;
     justify-items:center;
     align-items: center;
     grid-template-columns: 1fr 2fr ;
+    background-color: #D7E5FE;
     /* gap:3vw; */
   }
 
@@ -18,7 +19,8 @@
     /* background-color:#f8d1d1; */
   }
 
-  /* #canvas-threejs::after {
+/* 
+  #canvas-threejs::after {
     content: '';
     position: absolute;
     top:0;
@@ -35,48 +37,47 @@
     
   } */
 
-  #intro-threejs{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left:7vw;
-    max-width: min(33vw, 900px);
-    justify-self: flex-start;
-  }
+#intro-threejs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+  max-width: min(33vw, 900px);
+  justify-self: start;
+}
 
-  #intro-threejs p{
-    font-size: 16px;
-  }
+#intro-threejs p {
+  font-size: 16px;
+}
 
-  .bold-threejs{
-    font-weight: 800;
-  }
+.bold-threejs {
+  font-weight: 800;
+}
 
-
-  #contact-threejs {
-    height:100px;
-    max-width: 30vw;
-    list-style: none;
-    font-weight: 600;
-    display:flex;
-    flex-direction: column;
-    gap:3rem;
-    justify-content: center;
-    padding:0;
-    margin:0px;
-  }
+#contact-threejs {
+  height: 100px;
+  max-width: 30vw;
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0px;
+}
 
 .button-threejs {
-    border: solid 1px black;
-    border-radius: 1rem;
-    padding: 0.8rem;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-  }
+  border: solid 1px black;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
 
-.button-threejs:hover{
-    cursor: pointer;
-    border: solid 1px black;
-  }
+.button-threejs:hover {
+  cursor: pointer;
+  border: solid 1px black;
+}
 
