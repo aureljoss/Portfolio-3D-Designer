@@ -10,8 +10,8 @@ import React from "react";
 import { DoubleSide } from "three";
 
 export function Experience() {
-  const { nodes } = useGLTF("../model/Intro Scene - Portfolio.glb");
-  const bakedTexture = useTexture("../model/baked.jpg");
+  const { nodes } = useGLTF("./model/Intro Scene - Portfolio.glb");
+  const bakedTexture = useTexture("./model/baked.jpg");
   bakedTexture.flipY = false;
 
   return (
