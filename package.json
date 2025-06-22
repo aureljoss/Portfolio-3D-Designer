@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vercel --prod"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/aureljoss/Portfolio-3D-Experience-Designer/issues"
   },
-  "homepage": "https://github.com/aureljoss/Portfolio-3D-Experience-Designer#readme",
+  "homepage": "https://www.aureliejosserand.com",
   "dependencies": {
     "@pmndrs/branding": "^0.0.8",
     "@react-three/drei": "^10.0.6",
@@ -36,6 +36,7 @@
     "vite": "^6.3.5"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite-plugin-glsl": "^1.5.0",
     "vite-plugin-restart": "^0.4.2"
   }

@@ -3,10 +3,13 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Portfolio-3D-Experience-Designer/",
+  base: "/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: true,
+  },
+  rollupOptions: {
+    input: ['index.html', 'about.html', 'VT.html', 'KSU.html']
   },
 });
