@@ -12,12 +12,12 @@ export default defineConfig({
   },
   rollupOptions: {
     input: {
-        index: "index.html",
-        about: "about.html",
-        vt: "VT.html",
-        ksu: "KSU.html",
-        jhu: "JHU.html",
-        renderings: "Renderings.html",
+      index: "index.html",
+      about: "public/About.html",
+      vt: "public/VT.html",
+      ksu: "public/KSU.html",
+      jhu: "public/JHU.html",
+      renderings: "public/Renderings.html",
     },
   },
 });
