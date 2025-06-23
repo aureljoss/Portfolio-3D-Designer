@@ -16,6 +16,8 @@ export default defineConfig({
         about: "about.html",
         vt: "VT.html",
         ksu: "KSU.html",
+        jhu: "JHU.html",
+        renderings: "Renderings.html",
     },
   },
 });
