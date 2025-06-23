@@ -10,12 +10,12 @@ export default defineConfig({
     assetsDir: "assets",
     sourcemap: true,
   },
-//   rollupOptions: {
-//     input: {
-//         index: "./index.html",
-//         about: "./about.html",
-//         vt: "./VT.html",
-//         ksu: "./KSU.html",
-//     },
-//   },
+  rollupOptions: {
+    input: {
+        index: "index.html",
+        about: "about.html",
+        vt: "VT.html",
+        ksu: "KSU.html",
+    },
+  },
 });
