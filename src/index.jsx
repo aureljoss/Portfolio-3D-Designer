@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.querySelector("#root"));
 function Overlay() {
   return (
     <div id="intro-threejs">
-      <h4>Designing immersive 3D worlds to shape the future.</h4>
+      <h4>Shaping the future through immersive 3D design.</h4>
       <p>
         My name is Aurélie (pronounced oh-reh-lee). Whether it’s a digital
         product or a physical space, I bring ideas to life through innovative
