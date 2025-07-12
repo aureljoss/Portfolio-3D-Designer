@@ -16,6 +16,14 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+// ------ Cursor ------//
+if (document.querySelector("body")) {
+  new kursor({
+    type: 1,
+    removeDefaultCursor: true,
+  });
+}
+
 // ---- //
 
 // var text = document.querySelector("h1");
@@ -25,13 +33,6 @@ function myFunction() {
 
 //gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
 
-// ------ Cursor ------//
-if (document.querySelector("body")) {
-  new kursor({
-    type: 1,
-    removeDefaultCursor: true,
-  });
-}
 
 // ------ Menu ----- //
 
@@ -90,7 +91,7 @@ menuOptions.addEventListener("click", () => {
   menuLines.style.display = "block";
 });
 
-// Up and down arrow scroll trigger //
+// scroll trigger //
 
 if (document.querySelector("#portfolio-projects-section")) {
   gsap.to("#menu", {
@@ -109,7 +110,7 @@ if (document.querySelector("#up-arrow-portfolio")) {
   gsap.to("#up-arrow-portfolio", {
     opacity: 1,
     scrollTrigger: {
-      trigger: "body",
+      trigger: "#project-headline",
       start: "top top+=100vh", // Start when scrolled 100vh (one viewport height)
       toggleActions: "play none none reverse", // Play when entering, reverse when leaving
     },
@@ -117,7 +118,7 @@ if (document.querySelector("#up-arrow-portfolio")) {
   });
 }
 
-if (document.querySelector("#portfolio-projects-section")) {
+if (document.querySelector("#up-arrow")) {
   gsap.to("#up-arrow", {
     opacity: 1,
     scrollTrigger: {

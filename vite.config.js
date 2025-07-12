@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-
 export default defineConfig({
   plugins: [react()],
   base: "/",
@@ -13,11 +12,17 @@ export default defineConfig({
   rollupOptions: {
     input: {
       index: "index.html",
-      about: "public/About.html",
-      vt: "public/VT.html",
-      ksu: "public/KSU.html",
-      jhu: "public/JHU.html",
-      renderings: "public/Renderings.html",
+      about: "/About.html",
+      vt: "/VT.html",
+      ksu: '/KSU.html',
+      jhu: "/JHU.html",
+      renderings: "/Renderings.html",
     },
   },
+  // rollupOptions: {
+  //   output: {
+  //     entryFileNames: `assets/[name].js`,
+  //     chunkFileNames: `assets/[name].js`,
+  //     assetFileNames: `assets/[name].[ext]`},
+  //   },
 });

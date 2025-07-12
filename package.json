@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aureljoss/Portfolio-3D-Experience-Designer.git"
+    "url": "git+https://github.com/aureljoss/Portfolio-3D-Designer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/aureljoss/Portfolio-3D-Experience-Designer/issues"
+    "url": "https://github.com/aureljoss/Portfolio-3D-Designer/issues"
   },
   "homepage": "https://www.aureliejosserand.com",
   "dependencies": {

@@ -35,8 +35,8 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 800;
   line-height: 1.7em;
 }
 
@@ -61,6 +61,16 @@ header {
   position: fixed;
   top: 0;
   z-index: 4;
+  
+}
+
+#main-nav-background {
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #efefef;
 }
 
 #navbar {
@@ -1158,7 +1168,7 @@ button#hippo {
 .pinkNumbers {
   color: white;
   font-size: 36px;
-  background-image: url("../images/Number-background.png");
+  background-image: url("images/Number.png");
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1171,7 +1181,7 @@ button#hippo {
 .progress,
 .progress-portfolio {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   width: 90vw;
   left: 5vw;
   top: 5vh;
@@ -1363,7 +1373,19 @@ button#hippo {
 .renderings {
   width: 100%;
   height: auto;
+  aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+.project-gallery{
+  display:flex;
+  flex-direction: row;
+}
+
+.project-gallery img{
+  width:25vw;
+  height:auto;
+  aspect-ratio: 16/9;
 }
 
 #grid-renderings {
@@ -1459,7 +1481,7 @@ ol li::before {
   display: flex;
   justify-content: center;
   align-items: start;
-  background-image: url("../images/Number-background.png");
+  background-image: url("images/Number.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 60%;

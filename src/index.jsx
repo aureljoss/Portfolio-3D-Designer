@@ -1,10 +1,15 @@
 import "../src/styles/styles-threejs.css";
 import { Experience } from "./Experience";
 import ReactDOM from "react-dom/client";
-import React from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-
 const root = ReactDOM.createRoot(document.querySelector("#root"));
+import { Html, useProgress} from '@react-three/drei' // for loading progress
+
+
+function Loader() {
+  return <Html center><div id="loader-threejs">Something fun is loading...</div></Html>
+}
 
 function Overlay() {
   return (
@@ -39,7 +44,9 @@ root.render(
         position: [6.8, 2, 5],
       }}
     >
-      <Experience />
+      <Suspense fallback={<Loader />}>
+        <Experience />
+      </Suspense>
     </Canvas>
   </>
 );
