@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 68px;
   font-weight: 800;
 }
 
@@ -61,7 +61,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 4;
-  
 }
 
 #main-nav-background {
@@ -507,10 +506,12 @@ a:hover {
 
 /* ----- Introduction ----- */
 #introduction {
-  width: 60vw;
+  width: 80vw;
   max-width: 1200px;
   margin: -16vh auto 36vh auto;
   text-align: center;
+  letter-spacing: -4px;
+  line-height: 60px;
 }
 
 #intro {
@@ -530,6 +531,26 @@ a:hover {
   to {
     opacity: 100;
   }
+}
+
+.svg-in-text {
+  height:80px;
+  vertical-align: text-bottom;
+  margin: 0 6px;
+  display: inline-block;
+}
+
+#designer-svg{
+  transform: translateX(-300px);
+}
+
+#designer-svg-items{
+  transform: translate(14px, 35px) scale(0.95,1.05);
+}
+
+
+#arch-svg-items{
+  transform: translate(12px, 38px) scale(0.12,0.15);  
 }
 
 #openToWork {
@@ -1168,7 +1189,7 @@ button#hippo {
 .pinkNumbers {
   color: white;
   font-size: 36px;
-  background-image: url("images/Number.png");
+  background-image: url("/dist/images/Number.png");
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1377,14 +1398,14 @@ button#hippo {
   object-fit: cover;
 }
 
-.project-gallery{
-  display:flex;
+.project-gallery {
+  display: flex;
   flex-direction: row;
 }
 
-.project-gallery img{
-  width:25vw;
-  height:auto;
+.project-gallery img {
+  width: 25vw;
+  height: auto;
   aspect-ratio: 16/9;
 }
 
@@ -1433,7 +1454,7 @@ div.portfolio-projects h6 {
 
 .main-images {
   width: 100%;
-  margin: 5vh auto;
+  margin: 5vh auto 0 auto;
 }
 
 #project-headline {
@@ -1481,7 +1502,7 @@ ol li::before {
   display: flex;
   justify-content: center;
   align-items: start;
-  background-image: url("images/Number.png");
+  background-image: url("/dist/images/Number.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 60%;

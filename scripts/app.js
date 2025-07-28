@@ -24,87 +24,91 @@ if (document.querySelector("body")) {
   });
 }
 
-// ---- //
+// ---- GSAP //
+import { gsap } from "gsap";
 
-// var text = document.querySelector("h1");
-// document.addEventListener("scroll", () => {
-//   text.style.left = window.scrollY * 5 + "px";
-// });
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { SplitText } from "gsap/SplitText";
 
-//gsap.to(".hello", { duration: 2.5, ease: "bounce.out", x: -600 });
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
+ScrollSmoother.create({
+  smooth: 1.5,
+  speed: 2,
+  effects: true,
+});
 
 // ------ Menu ----- //
 
-const menuText = document.getElementById("menuText");
-const menuOptions = document.getElementById("menuOptions");
-const menuLines = document.getElementById("lines");
+// const menuText = document.getElementById("menuText");
+// const menuOptions = document.getElementById("menuOptions");
+// const menuLines = document.getElementById("lines");
 
-if (menuText && menuOptions && menuLines) {
-  menuText.addEventListener("click", () => {
-    menuText.style.display = "none";
-    menuLines.style.display = "none";
-    menuOptions.style.display = "flex";
-    menuOptions.style.alignItems = "center";
-  });
+// if (menuText && menuOptions && menuLines) {
+//   menuText.addEventListener("click", () => {
+//     menuText.style.display = "none";
+//     menuLines.style.display = "none";
+//     menuOptions.style.display = "flex";
+//     menuOptions.style.alignItems = "center";
+//   });
 
-  menuLines.addEventListener("click", () => {
-    menuText.style.display = "none";
-    menuLines.style.display = "none";
-    menuOptions.style.display = "flex";
-    menuOptions.style.alignItems = "center";
-  });
-}
+//   menuLines.addEventListener("click", () => {
+//     menuText.style.display = "none";
+//     menuLines.style.display = "none";
+//     menuOptions.style.display = "flex";
+//     menuOptions.style.alignItems = "center";
+//   });
+// }
 
-// Navigation links
-const aboutLink = document.getElementById("aboutLink");
-const resumeLink = document.getElementById("resumeLink");
-const workLink = document.getElementById("workLink");
+// // Navigation links
+// const aboutLink = document.getElementById("aboutLink");
+// const resumeLink = document.getElementById("resumeLink");
+// const workLink = document.getElementById("workLink");
 
-if (aboutLink) {
-  aboutLink.addEventListener("click", () => {
-    menuOptions.style.display = "none";
-    menuText.style.display = "flex";
-    menuLines.style.display = "block";
-  });
-}
+// if (aboutLink) {
+//   aboutLink.addEventListener("click", () => {
+//     menuOptions.style.display = "none";
+//     menuText.style.display = "flex";
+//     menuLines.style.display = "block";
+//   });
+// }
 
-if (resumeLink) {
-  resumeLink.addEventListener("click", () => {
-    menuOptions.style.display = "none";
-    menuText.style.display = "flex";
-    menuLines.style.display = "block";
-  });
-}
+// if (resumeLink) {
+//   resumeLink.addEventListener("click", () => {
+//     menuOptions.style.display = "none";
+//     menuText.style.display = "flex";
+//     menuLines.style.display = "block";
+//   });
+// }
 
-if (workLink) {
-  workLink.addEventListener("click", () => {
-    menuOptions.style.display = "none";
-    menuText.style.display = "flex";
-    menuLines.style.display = "block";
-  });
-}
+// if (workLink) {
+//   workLink.addEventListener("click", () => {
+//     menuOptions.style.display = "none";
+//     menuText.style.display = "flex";
+//     menuLines.style.display = "block";
+//   });
+// }
 
-menuOptions.addEventListener("click", () => {
-  menuOptions.style.display = "none";
-  menuText.style.display = "flex";
-  menuLines.style.display = "block";
-});
+// menuOptions.addEventListener("click", () => {
+//   menuOptions.style.display = "none";
+//   menuText.style.display = "flex";
+//   menuLines.style.display = "block";
+// });
 
 // scroll trigger //
 
-if (document.querySelector("#portfolio-projects-section")) {
-  gsap.to("#menu", {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: "#portfolio-projects-section",
-      start: "top bottom",
-      end: "#canvas top", // This makes it disappear at the canvas
-      toggleActions: "play none none reverse", // Changed to reverse on the last action
-    },
-    duration: 1,
-  });
-}
+// if (document.querySelector("#portfolio-projects-section")) {
+//   gsap.to("#menu", {
+//     opacity: 1,
+//     scrollTrigger: {
+//       trigger: "#portfolio-projects-section",
+//       start: "top bottom",
+//       end: "#canvas top", // This makes it disappear at the canvas
+//       toggleActions: "play none none reverse", // Changed to reverse on the last action
+//     },
+//     duration: 1,
+//   });
+// }
 
 if (document.querySelector("#up-arrow-portfolio")) {
   gsap.to("#up-arrow-portfolio", {
@@ -131,6 +135,13 @@ if (document.querySelector("#up-arrow")) {
   });
 }
 
+let tl = gsap.timeline();
+
+if (document.querySelector("#designer-svg")) {
+tl.to("#designer-svg", {duration: 1, x:300, rotation:720})
+  .to("#arch-svg", {duration: 2, rotation: 360})
+  .to("#tech-svg", {duration: 1, rotation: 360})
+}
 // -- Hippo Hover Animation -- //
 
 const mouthOpen = gsap.timeline({ paused: true });
@@ -184,7 +195,7 @@ if (document.querySelector(".nostrils")) {
 
 const button = document.getElementById("hippo");
 
-if (document.querySelector(".hippo")) {
+if (document.querySelector("#hippo")) {
   button.addEventListener("mouseenter", enterButton);
   button.addEventListener("mouseleave", leaveButton);
 }

@@ -14,11 +14,10 @@ function Loader() {
 function Overlay() {
   return (
     <div id="intro-threejs">
-      <h4>Shaping the future through immersive 3D design.</h4>
+      <h3>&lt; 3D Designer & Creative Developer /&gt;</h3>
       <p>
-        My name is Aurélie (pronounced oh-reh-lee). Whether it’s a digital
-        product or a physical space, I bring ideas to life through innovative
-        and immersive 3D experiences.
+        My name is Aurélie (pronounced oh-reh-lee). <br/>
+        I bring ideas to life through immersive 3D design and innovative digital experiences.
       </p>
       <ul id="contact-threejs">
         <li>

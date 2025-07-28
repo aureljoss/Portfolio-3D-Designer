@@ -51,6 +51,11 @@
   font-size: 16px;
 }
 
+#intro-threejs h3 {
+  line-height: 3rem;
+}
+
+
 .bold-threejs {
   font-weight: 800;
 }
@@ -87,4 +92,6 @@
   font-weight: 800;
   width:400px;
   text-align:center;
+  animation: introAnimation 1.2s alternate infinite;
+
 }
