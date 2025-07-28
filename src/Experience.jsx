@@ -17,7 +17,7 @@ export function Experience() {
   return (
     <>
 
-        <color attach="background" args={["#D7E5FE"]} />
+        <color attach="background" args={["#634bff"]} />
         {/** Controls */}
         <OrbitControls
           makeDefault

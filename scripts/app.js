@@ -135,13 +135,47 @@ if (document.querySelector("#up-arrow")) {
   });
 }
 
-let tl = gsap.timeline();
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#introduction",
+    start: "top bottom",
+  },
+});
 
 if (document.querySelector("#designer-svg")) {
-tl.to("#designer-svg", {duration: 1, x:300, rotation:720})
-  .to("#arch-svg", {duration: 2, rotation: 360})
-  .to("#tech-svg", {duration: 1, rotation: 360})
+  gsap.to("#designer-svg", {
+    duration: 2,
+    x: 0,
+    y: 0,
+    rotation: 720,
+    ease: "Power2.easeOut",
+    scrollTrigger: {
+      trigger: "#introduction",
+      start: "top bottom",
+      end: "#portfolio-projects-section top", // This makes it disappear at the canvas
+      toggleActions: "play none none reverse", // Changed to reverse on the last action
+    },
+  });
+  gsap.to("#arch-svg", {
+    duration: 2,
+    rotation: 360,
+    ease: "Power2.easeOut",
+    scrollTrigger: {
+      trigger: "#introduction",
+      start: "top bottom",
+    },
+  });
+  gsap.to("#tech-svg", {
+    duration: 2,
+    x: 0,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: "#introduction",
+      start: "top bottom",
+    },
+  });
 }
+
 // -- Hippo Hover Animation -- //
 
 const mouthOpen = gsap.timeline({ paused: true });
