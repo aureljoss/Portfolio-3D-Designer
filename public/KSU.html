@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kennesaw State University ISTEM - Aurelie Josserand</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-C3eOvYgT.css">
+    <link rel="stylesheet" crossorigin href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="icon"
@@ -27,14 +27,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800;900&family=Open+Sans:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-Db46zdUb.js"></script>
+    <script type="module" crossorigin src="/scripts/app.js"></script>
     <meta name="robots" content="noindex">
   </head>
 
   
   <body>
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
         <header>
           <div id="main-nav">
             <nav id="navbar">
@@ -76,6 +74,8 @@
         </header>
 
         <!---------- MAIN -------->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
 
         <main>
           <div class="progress-portfolio">
@@ -90,18 +90,20 @@
                 </svg>
             </a>
           </div>
-          <section>
-            <div class="header-projects" id="top">
+
+          
+          <section class="header-projects">
+            <div id="top">
               <img
                 src="/images/KSU/North Facade.jpg"
                 alt="KSU north facade"
                 class="main-images"
               />
-              <div id="project-title">
-                <h4>KSU INTERDISCIPLINARY STEM BUILDING</h6>
+              <div>
+                <h6>KSU INTERDISCIPLINARY STEM BUILDING</h5>
               </div>
             </div>
-            <div id="project-header">
+            <div>
               <div id="project-tools">
                 <p><span class="bold">Toolkit:</span> Sketchup, Enscape, Lumion, Yulio (AR), Revit, Illustrator, Photoshop, pencil and paper. </p>
                 <p><span class="bold">Role:</span> Designer and Project Architect.</p>
@@ -112,14 +114,36 @@
             </div>
           </section>
 
-          <!-- <section>
-            <div class="project-gallery">
-              <img src="/images/KSU/NW Entry.jpg">
-              <img src="/images/KSU/Night Shot.jpg">
-              <img src="/images/KSU/Campus.jpg">
-              <img src="/images/KSU/03 - RELATIONSHIP WITH SITE.png"alt="landscape diagram"/>
+          <section >
+            <div class="project-intro" >
+                <h4> Ongoing relationship covering design, documentation and VR experience work for KSU's new interdisciplinary STEM building. </h4>
+              </div>
+          </section>
+
+          <section class="section-block-portfolio">
+            <div id="gsap-trigger"></div>
+            <div class="grid">
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="images/KSU/NW Entry.jpg" alt="images of a wireframe building" />
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="images/KSU/NE Hidden Lines.png" alt="images of a wireframe building" />
+                </div>
+              </div>
+              <div>
+                <h4>An Immersive Campus Experience</h4>
+                <p> To present the design to the client and stakeholders, I developed fully immersive scenes using SketchUp and Lumion, then integrated them into Yulio for VR viewing. 
+                  This interactive experience allowed the client to explore the design in a highly intuitive and immersive way, enabling more meaningful feedback. 
+                  As a result, the process supported clearer communication, informed decision-making, and ultimately, greater client satisfaction.
+                </p>
+                <div>
+                  <a href="https://yulio.com/JIP67Vu4UD" class="jump-end">View Final Product in VR</a>
+                </div>
+              </div>
             </div>
-          </section> -->
+          </section>
+
 
           <section id="project-headline">
             <div class="project-intro" id="project-headline-content">
@@ -128,14 +152,19 @@
               </div>
           </section>
 
-          <section class="section-block">
-            <div id="gsap-trigger">
-            <h4>Project background</h4>
-            <p>Kennesaw State University has broken ground on a new Interdisciplinary STEM (ISTEM) building on its Marietta campus, with completion expected by the end of 2025.
-              Designed to foster innovation and collaboration across fields such as engineering, computer science, cybersecurity, biology, and biomedical research, 
-              the two-story facility will feature 70,000 square feet of cutting-edge instructional labs, high-bay research spaces, classrooms, and student collaboration areas. 
-              Strategically located near the Marietta campus quad, the building will serve as both a symbolic and functional gateway for KSU’s growing research and innovation ecosystem.
-            </p>
+          <section class="section-block-portfolio">
+            <div id="gsap-trigger"></div>
+            <div class="grid">
+              <img src="images/KSU/Aerial Wireframe.png" alt="images of a wireframe building" class="portfolio-wireframe"/>
+              <div>
+                <h4>Project background</h4>
+                <p>Kennesaw State University has broken ground on a new Interdisciplinary STEM (ISTEM) building on its Marietta campus, with completion expected by the end of 2025.
+                  Designed to foster innovation and collaboration across fields such as engineering, computer science, cybersecurity, biology, and biomedical research, 
+                  the two-story facility will feature 70,000 square feet of cutting-edge instructional labs, high-bay research spaces, classrooms, and student collaboration areas. 
+                  Strategically located near the Marietta campus quad, the building will serve as both a symbolic and functional gateway for KSU’s growing research and innovation ecosystem.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section class="section-block">
