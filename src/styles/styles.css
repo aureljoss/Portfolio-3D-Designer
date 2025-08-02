@@ -8,7 +8,7 @@ html {
   padding: 0;
   height: 100%;
   max-width: 100%;
-  background-color: #FBF9F1;
+  background-color: #fbf9f1;
 }
 
 * {
@@ -69,7 +69,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 0;
-  background-color: #FBF9F1;
+  background-color: #fbf9f1;
 }
 
 #navbar {
@@ -534,27 +534,25 @@ a:hover {
 }
 
 .svg-in-text {
-  height:80px;
+  height: 80px;
   vertical-align: text-bottom;
   margin: 0 6px;
   display: inline-block;
 }
 
-#designer-svg{
+#designer-svg {
   transform: translate(-100vw, -80vh);
-
 }
 
-#designer-svg-items{
-  transform: translate(15px, 35px) scale(0.95,1.05);
+#designer-svg-items {
+  transform: translate(15px, 35px) scale(0.95, 1.05);
 }
 
-
-#arch-svg-items{
-  transform: translate(19px, 38px) scale(0.11,0.15);  
+#arch-svg-items {
+  transform: translate(19px, 38px) scale(0.11, 0.15);
 }
 
-#tech-svg{
+#tech-svg {
   transform: translateX(40vw);
 }
 
@@ -792,7 +790,8 @@ button#hippo {
   /* border-top: 1px solid #c4c4c4; */
 }
 
-.section-block, .section-block-portfolio {
+.section-block,
+.section-block-portfolio {
   margin: 6rem auto 10rem;
   justify-content: center;
   align-items: center;
@@ -802,9 +801,20 @@ button#hippo {
   /* border-top: 1px solid #c4c4c4; */
 }
 
-.section-block-portfolio{
+.section-block-portfolio {
   width: 80vw;
-  max-width: none;
+  padding-bottom: 4rem;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-bottom-style: solid;
+  border-bottom-width: 0.8px;
+}
+
+.section-block-portfolio .link-portfolio-renderings{
+  margin-top:100px;
+}
+
+.section-block-portfolio, .header-projects{
+  max-width: 1600px;
 }
 
 .section-about {
@@ -1067,13 +1077,17 @@ button#hippo {
   transform: translateY(-2px);
 }
 
+.jump-end:hover {
+  color: white;
+}
+
 .project-intro {
   width: 80vw;
   margin: 14vh auto;
   /* text-align: center; */
 }
 
-.project-intro h4{
+.project-intro h4 {
   max-width: 1200px;
 }
 
@@ -1461,8 +1475,8 @@ div.portfolio-projects h6 {
   cursor: pointer;
 }
 
-.portfolio-wireframe{
-  width:100%;
+.portfolio-wireframe {
+  width: 100%;
 }
 
 .portfolio-titles {
@@ -1470,8 +1484,10 @@ div.portfolio-projects h6 {
 }
 
 .main-images {
-  width: 100%;
   border-radius: 20px;
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 #project-headline {
@@ -1496,29 +1512,59 @@ div.portfolio-projects h6 {
   width: 12%;
 }
 
-.grid{ 
-  display:grid;
+.grid-image,
+.grid-text {
+  display: grid;
   width: 100%;
   grid-template-columns: 3fr 2fr;
   gap: 6rem;
-
 }
 
-.grid div{
-  padding-top:0px;
+.grid-image div {
+  padding-top: 0px;
 }
 
-.grid div h4{
-  margin:0px
+.grid-image div h4 {
+  margin: 0px;
 }
 
-.grid img{
+.grid-image img {
   aspect-ratio: 16/9;
+}
+
+.grid-text {
+  grid-template-columns: 1.5fr 2fr 1fr;
+  gap: 4rem;
+}
+
+.grid-text h4,
+.grid-text p,
+.grid-text div {
+  align-self: start;
+  margin-top: 0;
+}
+
+.grid-text > * {
+  align-self: start !important;
+  margin-top: 0 !important;
+}
+
+.grid-one-three-text {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+  gap: 6rem;
+}
+
+.grid-one-three-text p, 
+.grid-one-three-text h4{
+  align-self:start;
+  margin-top: 0;
 }
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 400px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -1531,8 +1577,8 @@ div.portfolio-projects h6 {
 .img-comp-img img {
   display: block;
   vertical-align: middle;
-  width:600px;
-  height:400px;
+  width: 600px;
+  height: 400px;
 }
 
 .img-comp-slider {
@@ -1542,7 +1588,7 @@ div.portfolio-projects h6 {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   opacity: 0.7;
   border-radius: 50%;
 }
@@ -1582,14 +1628,13 @@ ol li::before {
 
 .header-projects {
   position: relative;
-  width:80vw;
+  width: 80vw;
   margin: 10vh auto auto;
   border-bottom-color: rgba(0, 0, 0, 0.15);
   border-bottom-style: solid;
   border-bottom-width: 0.8px;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
-
 
 #project-header {
   display: flex;
@@ -1838,7 +1883,6 @@ ol li::before {
     margin: 0vh auto;
     width: 80vw;
   }
-
 
   #canvas {
     width: 80vw;
