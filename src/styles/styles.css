@@ -68,8 +68,9 @@ header {
   height: 5vh;
   position: fixed;
   top: 0;
-  z-index: 0;
+  z-index: 1;
   background-color: #fbf9f1;
+  opacity: 0; /* Start hidden */
 }
 
 #navbar {
@@ -283,6 +284,10 @@ header {
   to {
     transform: scale(1.2);
   }
+}
+
+#canvas {
+  z-index: 2;
 }
 
 #scroll {
@@ -1899,11 +1904,6 @@ ol li::before {
   .section-block {
     margin: 0vh auto;
     width: 80vw;
-  }
-
-  #canvas {
-    width: 80vw;
-    z-index: 2;
   }
 
   .my-portrait {

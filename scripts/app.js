@@ -404,3 +404,19 @@ if (document.querySelector(".ear-right")) {
 if (document.querySelector(".ear-right")) {
   window.setInterval(() => earWiggle.play(0), 1500);
 }
+
+// Add this to your existing GSAP code
+// Show nav background when scrolling past canvas
+if (
+  document.querySelector("#canvas") &&
+  document.querySelector("#main-nav-background")
+) {
+  gsap.to("#main-nav-background", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: "#canvas",
+      start: "bottom top", // When canvas bottom hits viewport top
+      toggleActions: "play none none reverse",
+    },
+  });
+}
