@@ -7,8 +7,9 @@
     justify-items:center;
     align-items: center;
     grid-template-columns: 1fr 2fr ;
-    background-color: #634bff;
-    /* background-color: #4f35fa; */
+    /* background-color: #d7e5fe; */
+    /* background-color: #634bff; */
+    background-color: #4f35fa;
     z-index: 3;
     /* gap:3vw; */
   }

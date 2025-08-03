@@ -297,7 +297,7 @@ header {
   z-index: 4;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     opacity: 0;
     transform: translateY(0vw);
@@ -306,7 +306,7 @@ header {
     opacity: 1;
     transform: translateY(1vw);
   }
-}
+} */
 
 #scrollArrow {
   fill: black;
@@ -512,6 +512,7 @@ a:hover {
   text-align: center;
   letter-spacing: -5px;
   line-height: 60px;
+  opacity: 0;
 }
 
 #intro {
@@ -803,17 +804,18 @@ button#hippo {
 
 .section-block-portfolio {
   width: 80vw;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   border-bottom-color: rgba(0, 0, 0, 0.15);
   border-bottom-style: solid;
   border-bottom-width: 0.8px;
 }
 
-.section-block-portfolio .link-portfolio-renderings{
-  margin-top:100px;
+.section-block-portfolio .link-portfolio-renderings {
+  margin-top: 100px;
 }
 
-.section-block-portfolio, .header-projects{
+.section-block-portfolio,
+.header-projects {
   max-width: 1600px;
 }
 
@@ -1079,6 +1081,10 @@ button#hippo {
 
 .jump-end:hover {
   color: white;
+}
+
+.bottom-margin {
+  margin-bottom: 40px;
 }
 
 .project-intro {
@@ -1458,6 +1464,7 @@ div.portfolio-projects h6 {
 .portfolio-vignettes {
   width: 100%;
   border-radius: 15px;
+  opacity: 0;
 }
 
 .portfolio-renderings,
@@ -1556,29 +1563,39 @@ div.portfolio-projects h6 {
   gap: 6rem;
 }
 
-.grid-one-three-text p, 
-.grid-one-three-text h4{
-  align-self:start;
+.grid-one-three-text p,
+.grid-one-three-text h4 {
+  align-self: start;
   margin-top: 0;
 }
 
 .img-comp-container {
   position: relative;
-  height: 400px; /*should be the same height as the images*/
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .img-comp-img {
   position: absolute;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .img-comp-img img {
   display: block;
   vertical-align: middle;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.img-comp-overlay {
+  /* Ensure the overlay image maintains full size */
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .img-comp-slider {
@@ -2147,61 +2164,71 @@ ol li::before {
     display: none;
   }
 
-  /*Mobile - 1024px breakpoint */
+  .img-comp-slider {
+    width: 30px;
+    height: 30px;
+  }
+}
 
-  @media only screen and (min-width: 480px) and (max-width: 1024px) {
-    h1 {
-      font-size: 90px;
-      line-height: 78px;
-    }
+/*Mobile - 1024px breakpoint */
 
-    .period {
-      font-size: 180px;
-      margin-bottom: 25vh;
-      margin-left: 1vw;
-    }
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  h1 {
+    font-size: 90px;
+    line-height: 78px;
+  }
 
-    #openToWork {
-      display: none;
-    }
+  .period {
+    font-size: 180px;
+    margin-bottom: 25vh;
+    margin-left: 1vw;
+  }
 
-    #intro {
-      right: 10vw;
-    }
+  #openToWork {
+    display: none;
+  }
 
-    #scroll {
-      left: 46vw;
-      bottom: 8vh;
-    }
+  #intro {
+    right: 10vw;
+  }
 
-    .my-portrait {
-      display: block;
-      border-radius: 100px;
-      max-width: 200px;
-      margin: 8vh auto;
-    }
+  #scroll {
+    left: 46vw;
+    bottom: 8vh;
+  }
 
-    #about {
-      flex-direction: column;
-    }
+  .my-portrait {
+    display: block;
+    border-radius: 100px;
+    max-width: 200px;
+    margin: 8vh auto;
+  }
 
-    .my-portrait:hover {
-      border-radius: 100px;
-      cursor: grab;
-    }
+  #about {
+    flex-direction: column;
+  }
 
-    #description {
-      max-width: none;
-    }
+  .my-portrait:hover {
+    border-radius: 100px;
+    cursor: grab;
+  }
 
-    .portfolio-vignettes {
-      min-width: 300px;
-      border-radius: 10px;
-    }
+  #description {
+    max-width: none;
+  }
 
-    .portfolio-projects {
-      flex-direction: column;
-      margin: 2rem auto;
-    }
+  .portfolio-vignettes {
+    min-width: 300px;
+    border-radius: 10px;
+  }
+
+  .portfolio-projects {
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  .img-comp-slider {
+    width: 35px;
+    height: 35px;
   }
 }
