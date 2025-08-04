@@ -13,8 +13,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kennesaw State University ISTEM - Aurelie Josserand</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-C3eOvYgT.css">
+    <title>Aurelie Josserand - Kennesaw State University ISTEM</title>
+    <link rel="stylesheet" crossorigin href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="icon"
@@ -27,271 +27,298 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800;900&family=Open+Sans:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-Db46zdUb.js"></script>
+    <script type="module" crossorigin src="/scripts/app.js"></script>
     <meta name="robots" content="noindex">
   </head>
 
   
   <body>
-    <header>
-      <div id="main-nav">
-        <nav id="navbar">
+        <header>
+          <div id="main-nav">
+            <nav id="navbar">
+              <div>
+                <a id="myName" href="index.html"> Aurélie Josserand</a>
+              </div>
+              <div class="secondary-nav">
+                <a class="secondary-nav-link" href="index.html">Home</a>
+                <a class="secondary-nav-link" href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank">Resume</a>
+            </div>
+            </nav>
+            <div id="emoji">
+              <a href="#contact"
+                ><img
+                  class="emoji"
+                  src="./images/Smiley-Face.svg"
+                  alt="smiley face"
+              /></a>
+            </div>
+          </div>
+          <div id="main-nav-background"></div>
+          <div class="progress-portfolio">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+          <div id="up-arrow-portfolio">
+            <a href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px">
+                    <path id="svg-up-arrow"  d="M50,0h0A50,50,0,0,0,0,50H0a50,50,0,0,0,50,50h0a50,50,0,0,0,50-50h0A50,50,0,0,0,50,0ZM74.47,51.25l-15.8,15.8a1.77,1.77,0,0,1-2.52,0,1.81,1.81,0,0,1,0-2.52L68.93,51.78H26.76A1.78,1.78,0,0,1,25,50a1.75,1.75,0,0,1,1.76-1.77H68.93L56.15,35.44A1.77,1.77,0,1,1,58.67,33l15.8,15.8A1.73,1.73,0,0,1,74.47,51.25Z"/>
+                </svg>
+            </a>
+          </div>
+        </header>
+
+        <!---------- MAIN -------->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+        <main>
+         
+          <section class="header-projects">
+            <div id="top">
+              <video class="main-images" autoplay muted loop><source src="images/KSU/KSU - Small - Made with Clipchamp.mp4" type="video/mp4"></video>
+              <div>
+                <h6>KSU INTERDISCIPLINARY STEM BUILDING</h5>
+              </div>
+            </div>
+            <!-- <div>
+              <div id="project-tools">
+                <p><span class="bold">Toolkit:</span> Sketchup, Enscape, Lumion, Yulio (AR), Revit, Illustrator, Photoshop, pencil and paper. </p>
+                <p><span class="bold">Role:</span> Designer and Project Architect.</p>
+              </div>
+              <div>
+                <a href="https://yulio.com/JIP67Vu4UD" class="jump-end">View Final Product in VR</a>
+              </div>
+            </div> -->
+          </section>
+
+          <section class="section-block-portfolio">
+            <div class="project-intro" >
+                <h3> Ongoing relationship covering design, documentation and VR experience work for KSU's future interdisciplinary STEM building. </h3>
+            </div>
+            <div id="gsap-trigger"></div>
+            <div class="grid-text">
+              <h4>An Immersive Campus Experience</h4>
+              <div>
+                <p class="bottom-margin"> To present the design to the client and stakeholders, I developed fully immersive scenes using SketchUp and Lumion, then integrated them into Yulio for VR viewing. 
+                  This interactive experience allowed the client to explore the design in a highly intuitive and immersive way, enabling more meaningful feedback. 
+                  As a result, the process supported clearer communication, informed decision-making, and ultimately, greater client satisfaction.
+                </p>
+                <a href="https://yulio.com/JIP67Vu4UD" class="jump-end">View Final Product in VR</a>
+              </div>
+              <div>
+                <p><span class="bold">Role</span> </p>
+                <ul class="list">
+                  <li>Designer</li>
+                  <li>Project Architect</li>
+                  <li>Visualization Specialist</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://yulio.com/JIP67Vu4UD" target="blank"><img src="/images/KSU/North Facade 360 with icons.jpg" class="link-portfolio-renderings-hover" alt="ar 360 scene"></a>
+          </section>
+
+          
+          <section class="section-block-portfolio">
+            <div id="gsap-trigger"></div>
+            <div class="grid-image">
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="images/KSU/NW Entry.jpg" alt="images of a wireframe building" />
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="images/KSU/NE Hidden Lines.png" alt="images of a wireframe building" />
+                </div>
+              </div>
+              <div>
+                <h4>Design and Technical Expertise</h4>
+                <p>Designing a 70,000-square-foot building is no small feat, especially considering the technical complexity of a cutting-edge laboratory building. 
+                  Our team worked to identify the unique project goals and design values to create a distinct home for the interdisciplinary STEM building. 
+                  With the design finalized and construction underway, we are now providing construction administration services to ensure the design intent is accurately executed.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block-portfolio">
+            <div class="grid-one-three-text">
+              <h4>Project background</h4>
+              <p>Kennesaw State University has broken ground on a new Interdisciplinary STEM (ISTEM) building on its Marietta campus, with completion expected by the end of 2025.
+                Designed to foster innovation and collaboration across fields such as engineering, computer science, cybersecurity, biology, and biomedical research, 
+                the two-story facility will feature 70,000 square feet of cutting-edge instructional labs, high-bay research spaces, classrooms, and student collaboration areas. 
+                Strategically located near the Marietta campus quad, the building will serve as both a symbolic and functional gateway for KSU’s growing research and innovation ecosystem.
+              </p>
+            </div>
+          </section>
+
+          <section class="section-block-portfolio">
+            <div class="grid-one-three-text">
+              <h4 class="project-section">Building Design</h4>
+              <p>
+                The building’s massing and articulation were thoughtfully designed to complement the scale of the existing campus. 
+                The brise-soleil reinterprets the rain screens found on the campus’s mid-century buildings, visually tying the new structure to its architectural context. 
+                The north façade—facing the main campus quad—highlights key organizing spaces and collaborative zones, activating the thoroughfare and enhancing the overall campus experience.
+              </p>
+            </div>
+            <!-- <div id="portfolio-images"> -->
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="/images/KSU/Campus.jpg" alt="images of a wireframe building" />
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="images/KSU/Aerial Wireframe.png" alt="images of a wireframe building" />
+                </div>
+              </div>
+              <!-- <img src="/images/KSU/Campus.jpg" class="portfolio-renderings" alt="Aerial rendering"> -->
+              <img src="/images/KSU/North Facade.jpg" class="portfolio-renderings" alt="Rendering of the NE Entry">
+              <img src="/images/KSU/NE entry - side.jpg" class="portfolio-renderings" alt="Rendering of the NE Entry">
+              <img src="/images/KSU/NW Entry.jpg" class="portfolio-renderings" alt="Rendering of the main entry">
+            <!-- </div> -->
+
+          </section>
+
+          <!-- <section id="project-headline">
+            <div class="project-intro" id="project-headline-content">
+                <h4> Providing a catalyst that binds together architectural context and programmatic needs to establish a cornerstone to STEM education on campus.</h4>
+                <img src="/images/objects-playground.png" id="objects-headline">
+              </div>
+          </section> -->
+
+          <section class="section-block">
+            <h4>Curious about the design process?</h4>
+            <h5>Visioning Sessions</h5>
+            <!-- <h5 class="project-section">Defining project goals</h5> -->
+            <p>First, a series of four workshops were conducted to understand the vision for this project during pre-design. Key takeaways included:</p>
+            <ol class="ordered-list">
+              <li>The design needs to <span class='bold'>embrace the campus fabric </span>through a rich composition of scale, materiality and architectural language.</li>
+              <li>Space planning should foster collaboration between STEM disciplines and promote <span class='bold'>interdisciplinary research</span> and innovation.
+              </li>
+              <li>The new facility should help <span class="bold">recruit</span> top-tier faculty members and students, as well as retain existing talent by providing them with a state-of-the-art facility. </li>
+              <li>The design solution needs to achieve a balance between form and function, creating spaces that are visually appealing while also being functional, practical and <span class='bold'>visible.</span></li>
+            </ol>
+
+            <!-- <p>The following objectives were established at the beginning of the conceptual design phase:</p>
+            <ol class="ordered-list">
+              <li>Identifying patterns behind the campus design.</li>
+              <li>Understanding user’s goals and priorities behind the building program.</li>
+              <li>Learning from state-of-the-art facilities at other universities.</li>
+            </ol> -->
+
+            <h5>Understanding site constraints</h5>
+            <p>Next, the team analyzed existing site conditions. Located at the edge of the campus quad, the site is highly visible from the main vehicular campus entry. 
+              A number of existing utilities are running through the site, including a main power line with a 100ft setback, and main water and electric lines. 
+              Existing building service entries and setbacks were also surveyed in order to inform the future building footprint.</p>
+              <img src="/images/KSU/Site Utilities.png" class="secondary-images" alt="site utilities">
+            <p>At a macro level, the campus is made up of two to four stories buildings, all oriented towards the campus quad. 
+              The majority of the buildings were built during the 60s and have a mid-century modern style characterized by clean lines, expansive glass facades, steel structures and concrete sunshades.</p>
+              <img src="/images/KSU/Site-section.png" class="secondary-images" alt="section through campus">
+            <p>With an emphasis on walkability and connectivity, the campus architecture prioritizes pedestrian circulation. 
+                Buildings are arranged in a way that encourages foot traffic, with pathways, a plaza, and open spaces strategically positioned to facilitate movement and interaction.</p>
+            <img src="/images/KSU/Site Plan - crop.jpg" class="secondary-images" alt="Site plan showing pedestrian movement on the KSU marietta campus">
+            <h5>Identifying building program priorities</h5>
+            <p>
+              In order to inform space programming, the team conducted benchmarking analysis against the program initially proposed by the client. 
+              While the building square footage was set to be below the average total area of similar facilities at other universities, the area set towards research spaces is well above what is seen across the industry. 
+              This observation helped facilitate conversations with the client about program needs given that the cost per square footage of research space is among the highest by space type.
+            </p>
+            <p>
+              Prior to our programming workshops with user groups, the building was set to be 100,000 GSF. 
+              After a few program iterations and efforts to understand gaps in space utilization during pre-design, the building program came down to 70,000 GSF. 
+              This was a crucial step in getting the building on budget prior to going into the design phase.
+            </p>
+
+            <h5>Creating a building map</h5>
+            <p>This process involved considering various factors such as desired adjacencies, functionality, life safety, building codes, accessibility and efficiency. 
+              Spaces are arranged in a logical manner to facilitate movement and activities within the building. 
+              This includes considering the flow of people, sight lines, and relationships between different areas.</p>
+              <p>To understand desired adjacencies, a "perfect diagram" exercise was conducted during user group interviews. 
+                Direct, indirect, or visual adjacencies are identified in order to inform the building's spatial organization.</p>
+            <img src="/images/KSU/Perfect Diagram 2.png" class="secondary-images" alt="site map">
+            <h5 class="project-section">Translating the building map into preliminary building plans</h5>
+            <p>Using the building map and our findings from the site analysis, a total of sixteen planning options were explored. 
+              The final three were presented to the user groups, and one was selected for its best response to site and planning. 
+              This is a crucial step in the architectural design process and lays the foundation for the development of architectural drawings and construction documents.
+              </p>
+            <img src="/images/KSU/Low Fi- Planning opt 1.png" class="secondary-images" alt="building axon">
+            <h5 class="project-section">Identifying the design pillars</h5>
+            <p>Concurrently to creating the initial building planning, the overall building massing was being explored. The site conditions, surroundings, and context of the building inform decisions about orientation, views, natural light, opacity, transparency and environmental impact. 
+              This step requires onboarding and collaboration with engineers to create a successful building design. </p>
+            <div class="work-portfolio">
+              <img
+                src="/images/KSU/01 - SITE CONSTRAINTS.png"
+                class="KSU-site-diagrams"
+                alt="site constraints diagram"
+              />
+              <img
+                src="/images/KSU/02 - PROGRAM.png"
+                class="KSU-site-diagrams"
+                alt="program diagram"
+              />
+              <img
+                src="/images/KSU/03 - RELATIONSHIP WITH SITE.png"
+                class="KSU-site-diagrams"
+                alt="landscape diagram"
+              />
+              <img
+                src="/images/KSU/04 - BRISE SOLEIL.png"
+                class="KSU-site-diagrams"
+                alt="brise soleil diagram"
+              />
+            </div>
+            <h5 class="project-section">Exploring exterior materials</h5>
+            <p>While the massing is not finalized at this stage, the materiality of the building and its relationship to existing buildings on campus are being researched.  Materiality plays a significant role in shaping the sensory experience and visual identity of a building. 
+              The campus has a strong mid-century language with the use of brick, glass and concrete rain screens. It only seemed appropriate to celebrate this heritage and use similar materials in different textures, surface treatments and locations to contribute to the identity and context of the campus.  
+              </p>
+              <img src="/images/KSU/Materials Exploration.png" class="secondary-images" alt="materials exploration">
+
+              <h5>Finalizing the building planning</h5>
+              <p>The building planning purposely distributes shared resources, program, amenities, and entries to draw the general student
+                population through the building and engage with the research and specialty labs. The central block of “super labs” creates a
+                flexible core of research visible to all who enter. Specialty labs like the cleanroom and cyber lab are showpieces on major
+                circulation routes. The depth of the circulation path varies to create spaces for collaboration and workspace outside of the
+                formal research and instruction spaces.</p>
+              <img src="/images/KSU/Axons with labels.png" class="secondary-images" alt="building axon">
+
+              <h5>Finalizing the building design</h5>
+              <p>
+                During design development and construction documentation, the design was refined and developed further. Findings from prior exercises were implemented and the architectural team worked on finalizing details, including systems, materials and specifications. 
+                Adjustments to the exterior facade were implemented based on preliminary cost estimating to bring the project in line with the construction budget.
+              </p>
+              <img src="/images/KSU/NE Entry Corner.jpg" class="secondary-images" alt="exterior rendering of the main entry">
+          </section>
+
           <div>
-            <a id="myName" href="index.html"> Aurélie Josserand</a>
+            <img
+              src="/images/KSU/Night Shot.jpg"
+              alt="KSU north facade at night"
+              class="main-images"
+            />
           </div>
-          <div class="secondary-nav">
-            <a class="secondary-nav-link" href="index.html">Home</a>
-            <a class="secondary-nav-link" href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank">Resume</a>
-        </div>
-        </nav>
-        <div id="emoji">
-          <a href="#contact"
-            ><img
-              class="emoji"
-              src="./images/Smiley-Face.svg"
-              alt="smiley face"
-          /></a>
-        </div>
-        <div id="menuOptions">
-          <ul id="nav">
-            <li><a href="index.html" id="aboutLink"> Home. </a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html#work" id="workLink"> Work. </a></li>
-            <li><a href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank" id="resumeLink"> Resume. </a></li>
-          </ul>
-          <div id="menu-black-box"></div>
-        </div>
-      </div>
-      <div id="main-nav-background"></div>
-      <div id="menu">
-        <div id="lines">
-          <span class="lines"></span>
-          <span class="lines"></span>
-          <span class="lines"></span>
-        </div>
-        <p id="menuText">Menu</p>
-      </div>
-    </header>
 
-    <!---------- MAIN -------->
-
-    <main>
-      <div class="progress-portfolio">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
-      </div>
-      <div id="up-arrow-portfolio">
-        <a href="#top">
-            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px">
-                <path id="svg-up-arrow"  d="M50,0h0A50,50,0,0,0,0,50H0a50,50,0,0,0,50,50h0a50,50,0,0,0,50-50h0A50,50,0,0,0,50,0ZM74.47,51.25l-15.8,15.8a1.77,1.77,0,0,1-2.52,0,1.81,1.81,0,0,1,0-2.52L68.93,51.78H26.76A1.78,1.78,0,0,1,25,50a1.75,1.75,0,0,1,1.76-1.77H68.93L56.15,35.44A1.77,1.77,0,1,1,58.67,33l15.8,15.8A1.73,1.73,0,0,1,74.47,51.25Z"/>
-            </svg>
-        </a>
-      </div>
-      <section>
-        <div class="header-projects" id="top">
-          <img
-            src="/images/KSU/North Facade.jpg"
-            alt="KSU north facade"
-            class="main-images"
-          />
-          <div id="project-title">
-            <h4>KSU INTERDISCIPLINARY STEM BUILDING</h6>
-          </div>
-        </div>
-        <div id="project-header">
-          <div id="project-tools">
-            <p><span class="bold">Toolkit:</span> Sketchup, Enscape, Lumion, Yulio (AR), Revit, Illustrator, Photoshop, pencil and paper. </p>
-            <p><span class="bold">Role:</span> Designer and Project Architect.</p>
-          </div>
-          <div>
-            <a href="https://yulio.com/JIP67Vu4UD" class="jump-end">View Final Product in VR</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- <section>
-        <div class="project-gallery">
-          <img src="/images/KSU/NW Entry.jpg">
-          <img src="/images/KSU/Night Shot.jpg">
-          <img src="/images/KSU/Campus.jpg">
-          <img src="/images/KSU/03 - RELATIONSHIP WITH SITE.png"alt="landscape diagram"/>
-        </div>
-      </section> -->
-
-      <section id="project-headline">
-        <div class="project-intro" id="project-headline-content">
-            <h4> Providing a catalyst that binds together architectural context and programmatic needs to establish a cornerstone to STEM education on campus.</h4>
-            <img src="/images/objects-playground.png" id="objects-headline">
-          </div>
-      </section>
-
-      <section class="section-block">
-        <div id="gsap-trigger">
-        <h4>Project background</h4>
-        <p>Kennesaw State University has broken ground on a new Interdisciplinary STEM (ISTEM) building on its Marietta campus, with completion expected by the end of 2025.
-          Designed to foster innovation and collaboration across fields such as engineering, computer science, cybersecurity, biology, and biomedical research, 
-          the two-story facility will feature 70,000 square feet of cutting-edge instructional labs, high-bay research spaces, classrooms, and student collaboration areas. 
-          Strategically located near the Marietta campus quad, the building will serve as both a symbolic and functional gateway for KSU’s growing research and innovation ecosystem.
-        </p>
-      </section>
-
-      <section class="section-block">
-        <h4 class="project-section">Building design</h4>
-        <p>
-          The building’s massing and articulation were thoughtfully designed to complement the scale of the existing campus. 
-          A brise-soleil reinterprets the rain screens found on the campus’s mid-century buildings, visually tying the new structure to its architectural context. 
-          The north façade—facing the main campus quad—highlights key organizing spaces and collaborative zones, activating the thoroughfare and enhancing the overall campus experience.
-        </p>
-        <!-- <div id="portfolio-images"> -->
-          <img src="/images/KSU/Campus.jpg" class="portfolio-renderings" alt="Aerial rendering">
-          <img src="/images/KSU/North Facade.jpg" class="portfolio-renderings" alt="Rendering of the NE Entry">
-          <img src="/images/KSU/NE entry - side.jpg" class="portfolio-renderings" alt="Rendering of the NE Entry">
-          <img src="/images/KSU/NW Entry.jpg" class="portfolio-renderings" alt="Rendering of the main entry">
-        <!-- </div> -->
-        <h4 id="VR" class="project-section">Virtual Reality</h4>
-        <p>
-          To present the design to the client and stakeholders, I developed fully immersive scenes using SketchUp and Lumion, then integrated them into Yulio for VR viewing. 
-          This interactive experience allowed the client to explore the design in a highly intuitive and immersive way, enabling more meaningful feedback. 
-          As a result, the process supported clearer communication, informed decision-making, and ultimately, greater client satisfaction.
-        </p>
-        <a href="https://yulio.com/JIP67Vu4UD" style="text-decoration: none;"><p class="ar-buttons">Immerse yourself in this VR scene</p></a>
-        <a href="https://yulio.com/JIP67Vu4UD" target="blank"><img src="/images/KSU/North Facade 360 with icons.jpg" class="link-portfolio-renderings" alt="ar 360 scene"></a>
-      </section>
-
-      <section class="section-block">
-        <h4>The Process</h4>
-        <!-- <h5 class="project-section">Defining project goals</h5> -->
-        <p>During the pre-design process, a series of four workshops were conducted to understand the vision for this project. Key takeaways included:</p>
-        <ol class="ordered-list">
-          <li>The design needs to <span class='bold'>embrace the campus fabric </span>through a rich composition of scale, materiality and architectural language.</li>
-          <li>Space planning should foster collaboration between STEM disciplines and promote <span class='bold'>interdisciplinary research</span> and innovation.
-          </li>
-          <li>The new facility should help <span class="bold">recruit</span> top-tier faculty members and students, as well as retain existing talent by providing them with a state-of-the-art facility. </li>
-          <li>The design solution needs to achieve a balance between form and function, creating spaces that are visually appealing while also being functional, practical and <span class='bold'>visible.</span></li>
-        </ol>
-
-        <!-- <p>The following objectives were established at the beginning of the conceptual design phase:</p>
-        <ol class="ordered-list">
-          <li>Identifying patterns behind the campus design.</li>
-          <li>Understanding user’s goals and priorities behind the building program.</li>
-          <li>Learning from state-of-the-art facilities at other universities.</li>
-        </ol> -->
-
-        <h5>Understanding site constraints</h5>
-        <p>Located at the edge of the campus quad, the site is highly visible from the main vehicular campus entry. 
-          A number of existing utilities are running through the site, including a main power line with a 100ft setback, and main water and electric lines. 
-          Existing building service entries and setbacks were also surveyed in order to inform the future building footprint.</p>
-          <img src="/images/KSU/Site Utilities.png" class="secondary-images" alt="site utilities">
-        <p>At a macro level, the campus is made up of two to four stories buildings, all oriented towards the campus quad. 
-          The majority of the buildings were built during the 60s and have a mid-century modern style characterized by clean lines, expansive glass facades, steel structures and concrete sunshades.</p>
-          <img src="/images/KSU/Site-section.png" class="secondary-images" alt="section through campus">
-        <p>With an emphasis on walkability and connectivity, the campus architecture prioritizes pedestrian circulation. 
-            Buildings are arranged in a way that encourages foot traffic, with pathways, a plaza, and open spaces strategically positioned to facilitate movement and interaction.</p>
-        <img src="/images/KSU/Site Plan - crop.jpg" class="secondary-images" alt="Site plan showing pedestrian movement on the KSU marietta campus">
-        <h5>Identifying building program priorities</h5>
-        <p>
-          In order to inform space programming, the team conducted benchmarking analysis against the program initially proposed by the client. 
-          While the building square footage was set to be below the average total area of similar facilities at other universities, the area set towards research spaces is well above what is seen across the industry. 
-          This observation helped facilitate conversations with the client about program needs given that the cost per square footage of research space is among the highest by space type.
-        </p>
-        <p>
-          Prior to our programming workshops with user groups, the building was set to be 100,000 GSF. 
-          After a few program iterations and efforts to understand gaps in space utilization during pre-design, the building program came down to 70,000 GSF. 
-          This was a crucial step in getting the building on budget prior to going into the design phase.
-        </p>
-
-        <h5>Creating a building map</h5>
-        <p>This process involved considering various factors such as desired adjacencies, functionality, life safety, building codes, accessibility and efficiency. 
-          Spaces are arranged in a logical manner to facilitate movement and activities within the building. 
-          This includes considering the flow of people, sight lines, and relationships between different areas.</p>
-          <p>To understand desired adjacencies, a "perfect diagram" exercise was conducted during user group interviews. 
-            Direct, indirect, or visual adjacencies are identified in order to inform the building's spatial organization.</p>
-        <img src="/images/KSU/Perfect Diagram 2.png" class="secondary-images" alt="site map">
-        <h5 class="project-section">Translating the building map into preliminary building plans</h5>
-        <p>Using the building map and our findings from the site analysis, a total of sixteen planning options were explored. 
-          The final three were presented to the user groups, and one was selected for its best response to site and planning. 
-          This is a crucial step in the architectural design process and lays the foundation for the development of architectural drawings and construction documents.
-          </p>
-        <img src="/images/KSU/Low Fi- Planning opt 1.png" class="secondary-images" alt="building axon">
-        <h5 class="project-section">Identifying the design pillars</h5>
-        <p>Concurrently to creating the initial building planning, the overall building massing was being explored. The site conditions, surroundings, and context of the building inform decisions about orientation, views, natural light, opacity, transparency and environmental impact. 
-          This step requires onboarding and collaboration with engineers to create a successful building design. </p>
-        <div class="work-portfolio">
-          <img
-            src="/images/KSU/01 - SITE CONSTRAINTS.png"
-            class="KSU-site-diagrams"
-            alt="site constraints diagram"
-          />
-          <img
-            src="/images/KSU/02 - PROGRAM.png"
-            class="KSU-site-diagrams"
-            alt="program diagram"
-          />
-          <img
-            src="/images/KSU/03 - RELATIONSHIP WITH SITE.png"
-            class="KSU-site-diagrams"
-            alt="landscape diagram"
-          />
-          <img
-            src="/images/KSU/04 - BRISE SOLEIL.png"
-            class="KSU-site-diagrams"
-            alt="brise soleil diagram"
-          />
-        </div>
-        <h5 class="project-section">Exploring exterior materials</h5>
-        <p>While the massing is not finalized at this stage, the materiality of the building and its relationship to existing buildings on campus are being researched.  Materiality plays a significant role in shaping the sensory experience and visual identity of a building. 
-          The campus has a strong mid-century language with the use of brick, glass and concrete rain screens. It only seemed appropriate to celebrate this heritage and use similar materials in different textures, surface treatments and locations to contribute to the identity and context of the campus.  
-          </p>
-          <img src="/images/KSU/Materials Exploration.png" class="secondary-images" alt="materials exploration">
-
-          <h5>Finalizing the building planning</h5>
-          <p>The building planning purposely distributes shared resources, program, amenities, and entries to draw the general student
-            population through the building and engage with the research and specialty labs. The central block of “super labs” creates a
-            flexible core of research visible to all who enter. Specialty labs like the cleanroom and cyber lab are showpieces on major
-            circulation routes. The depth of the circulation path varies to create spaces for collaboration and workspace outside of the
-            formal research and instruction spaces.</p>
-          <img src="/images/KSU/Axons with labels.png" class="secondary-images" alt="building axon">
-
-          <h5>Finalizing the building design</h5>
-          <p>
-            During design development and construction documentation, the design was refined and developed further. Findings from prior exercises were implemented and the architectural team worked on finalizing details, including systems, materials and specifications. 
-            Adjustments to the exterior facade were implemented based on preliminary cost estimating to bring the project in line with the construction budget.
-          </p>
-          <img src="/images/KSU/NE Entry Corner.jpg" class="secondary-images" alt="exterior rendering of the main entry">
-      </section>
-
-      <div>
-        <img
-          src="/images/KSU/Night Shot.jpg"
-          alt="KSU north facade at night"
-          class="main-images"
-        />
+        <div id="coded-by">
+          <p>Coded with ♥ by Aurélie</p>
       </div>
 
-    <div id="coded-by">
-      <p>Coded with ♥ by Aurélie</p>
-  </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-
-    </main>
-    <footer id="contact-section">
-      <div id="contact">
-          <div id="connect">
-              <h3>What's next?</h3>
-              <p> Whether you have a job opportunity, want to work together, or just want to say hi, I would love to hear from you!</p>
-          </div>
-          <div>
+        </main>
+        <footer id="contact-section">
+          <div id="contact">
+            <div id="connect">
+                <h3>What's next?</h3>
+                <p> Whether you have a job opportunity, want to work together, or just want to say hi, I would love to hear from you!</p>
+            </div>
+            <div>
               <ul id="contact-me">
-                  <li><a href="mailto:josserand.n.aurelie@gmail.com" class="resume-email">Say Hello</a></li>
-                  <li><a href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank" class="resume-email">See and download my resume</a></li>
+                <li><a href="mailto:josserand.n.aurelie@gmail.com" class="resume-email">Say Hello</a></li>
+                <li><a href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank" class="resume-email">See and download my resume</a></li>
               </ul>
+            </div>
           </div>
-          </div>
+        </footer>
       </div>
-  </footer>
+    </div>
   </body>
 </html>
