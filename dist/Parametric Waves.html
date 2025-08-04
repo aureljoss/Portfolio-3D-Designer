@@ -13,8 +13,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Aurelie Josserand - Summer Wonderland</title>
-    <link rel="stylesheet" crossorigin href="/src/styles/styles.css">
+    <title>Aurelie Josserand - Parametric Waves</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DVlkocfC.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="icon"
@@ -27,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800;900&family=Open+Sans:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/scripts/app.js"></script>
+    <script type="module" crossorigin src="/assets/index-DNdOv_Mx.js"></script>
     <meta name="robots" content="noindex">
   </head>
 
@@ -76,9 +76,9 @@
           
           <section class="header-projects">
             <div id="top">
-              <a href="https://winter-portal.vercel.app/" target="_blank"><video class="main-images" autoplay muted loop><source src="images/ThreeJS/Summer Wonderland.mp4" type="video/mp4"></video></a>
+              <a href="https://three-js-sea-shader.vercel.app/" target="_blank"><video class="main-images" autoplay muted loop><source src="images/ThreeJS/Parametric Waves.mp4" type="video/mp4"></video></a>
               <div>
-                <h6>SUMMER WONDERLAND</h5>
+                <h6>PARAMETRIC WAVES</h5>
               </div>
             </div>
             <!-- <div>
@@ -94,70 +94,58 @@
 
           <section class="section-block-portfolio">
             <div class="project-intro" >
-                <h3> Tiny Landscape, Big Adventure: Exploring Shaders and 3D Storytelling with Three.js </h3>
+                <h3>Below the Surface: Exploring Generative Patterns with Custom Shaders</h3>
             </div>
             <div id="gsap-trigger"></div>
             <div class="grid-text">
-              <h4>Real-Time Rendering Meets Playful Interactivity</h4>
+              <h4>Real-Time Customization Right in Your Browser</h4>
               <div>
-                <p class="bottom-margin"> I created this real-time 3D scene as a personal exploration into storytelling through interactive environments. 
-                  Using Blender for modeling and scene composition, I built a whimsical landscape featuring a glowing portal, a cozy tent, and a mischievous fox on a little adventure. 
-                  The scene was then brought to life in Three.js, where I used custom GLSL shaders to give the portal a dynamic, playful energy and to scatter flickering fireflies throughout the landscape. 
-                  This project was a chance to experiment with stylization, animation, and shader effects, while refining my skills in web-based rendering and immersive visual design.
+                <p class="bottom-margin"> This project dives into the power of shaders to generate a dynamic, ocean-inspired scene entirely through code - no modeling required! 
+                  Built using Three.js and GLSL, the waves are generated in real time using sine functions and time-based animation. 
+                  The motion, form, and colors all respond to parameters controlled directly in the browser, revealing how code can sculpt and animate complex surfaces.
                 </p>
-                <a href="https://winter-portal.vercel.app/" class="jump-end">View Final Product</a>
+                <a href="https://three-js-sea-shader.vercel.app/" target="_blank" class="jump-end">View Final Product</a>
               </div>
               <div>
                 <p><span class="bold">Tech Stack</span> </p>
                 <ul class="list">
-                  <li>Blender</li>
                   <li>HTML & CSS</li>
                   <li>Javascript</li>
                   <li>Three.js</li>
                   <li>WebGL</li>
-                  <li>React Three Fiber</li>
                 </ul>
               </div>
             </div>
-            <a href="https://winter-portal.vercel.app/" target="_blank"><video class="link-portfolio-renderings" autoplay muted loop><source src="images/ThreeJS/Winter Portal.mp4" type="video/mp4"></video></a>
+            <a href="https://three-js-sea-shader.vercel.app/" target="_blank"><video class="link-portfolio-renderings" autoplay muted loop><source src="images/ThreeJS/Waves-small.mp4" type="video/mp4"></video></a>
 
           </section>
 
           <section class="section-block">
             <h4>Curious about the process?</h4>
-            <h5>Building the Scene in Blender</h5>
-            To bring the environment to life, I started by creating and assembling low-poly assets — including the trees, fences, stylized lighting posts, and a circular portal. 
-              These assets were carefully arranged to support both visual storytelling and modeling efficiency.</p>
-            <p>To ensure smooth performance in the browser, I prepared the scene for export by correcting face orientations, removing hidden or redundant faces, and normalizing object scales to ensure consistent transformations in Three.js. 
-              I also manually unwrapped all objects into a UV map to prepare the model for export.</p>
-            <img src="images/ThreeJS/Wonderland-Modeling.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
-
-            <h5>Baking and Exporting the Scene</h5>
-            <p>Before exporting, I used Blender’s Cycles renderer to bake global illumination and soft shadows into a custom lightmap. 
-              Baking is the process of pre-calculating complex lighting and surface effects—such as indirect light, ambient occlusion, and soft shadows—and storing them in 2D textures. 
-              These textures are then applied to the geometry in Three.js, allowing the scene to simulate detailed lighting without the need for resource-intensive real-time calculations. Denoising was enabled to reduce sampling artifacts and produce a cleaner result.</p>
-            <p>I then exported the scene as a compressed .glb file, retaining the visually rich materials and atmosphere while making the model optimized for real-time performance in the browser.</p>
-            <img src="images/ThreeJS/Wonderland-UV Unwrapping.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+            <h5>Setting the Scene</h5>
+            <p>The foundation of the project started with a standard Three.js setup: creating a scene, configuring a perspective camera, and initializing a WebGL renderer. I also added responsive resizing and lighting to create a flexible environment suited for real-time animation. 
+              This foundation made it easy to focus on experimenting with shaders without worrying about structural or rendering issues down the line.</p>
+            <p>To simulate water realistically, I used a highly subdivided plane geometry as the base mesh. A dense grid of vertices was essential to create smooth and fluid movement using shader logic. 
+              Unlike static models, this geometry isn’t sculpted manually—instead, it acts as a canvas for real-time displacement handled entirely in the vertex shader.</p>
+            <img src="images/ThreeJS/Parametric Waves - Plane Geometry.png" class="link-portfolio-renderings" alt="screenshot showing the plane geometry">
 
             <h5>Creating Custom Shaders</h5>
-            <p>To add more interest to the scene, fireflies were added to the scene using instanced planes scattered around our landscape.
-              Each firefly was animated using a custom shader material that manipulated opacity, scale and position over time. 
-              This GPU-driven approach allowed for dozens of fireflies to be animated at minimal performance cost. </p>
-            <img src="images/ThreeJS/Wonderland-Shader.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
-
-            <p>To create the animated portal, a custom GLSL shader was applied to the mesh in Three.js. 
-              The vertex shader passed UV coordinates to the fragment shader, along with time-based uniforms, to create the swirling gradients effect on the portal surface. 
-              The motion effects were controlled by parameters like the uTime, uColorStart, and uColorEnd, allowing for real-time variation and visual interest. 
-              The final output was written in sRGB color space to ensure color accuracy across different devices, resulting in a vibrant, dynamic focal point within the scene.</p>
-            <img src="images/ThreeJS/Wonderland-Shader-Portal.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+            <p>The core visual behavior was built using custom GLSL shaders. In the vertex shader, I used a combination of sinus functions—modified by position and animated over time—to displace the surface and create lifelike wave motion. 
+              In the fragment shader, I introduced color gradients based on vertex elevation to simulate natural shading and depth.</p>
+            <p>To drive the movement, a uniform uTime variable was passed from the JavaScript animation loop into the shaders. 
+              This continuous stream of data allows the sine functions in the vertex shader to evolve frame-by-frame, creating an endlessly flowing, looping animation. </p>
+            <p>Together, these shaders bring the illusion of a realistic oceanic scene without any pre-made animations or models. </p>
+            <img src="images/ThreeJS/Parametric Waves - Shaders.png" class="link-portfolio-renderings" alt="A code snippet of custom shaders in Three.js">
 
             <h5>Adding Debugging and Custom parameters</h5>
-            <p>To iterate efficiently and add real-time controls like firefly size, background and portal colors, I integrated lil-gui.
-              Lil-gui is a lightweight JavaScript library that provides a graphical user interface (GUI) for changing the properties of JavaScript objects at runtime.  
-              These carefully crafted, shader-powered elements brought a sense of magic and motion to the scene—while remaining optimized for real-time rendering on the web.</p>
-              <img src="images/ThreeJS/lil-gui.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+            <p>To make the project more interactive, I integrated lil-gui, a lightweight interface for real-time parameter control. This allows for modifiable shader parameters—such as wave frequency, amplitude, speed, and colors—to the browser. 
+              With this setup, the scene becomes an interactive playground where users (or I, during testing) can fine-tune the behavior and appearance of the scene instantly, without touching the code.</p>
+              <img src="images/ThreeJS/Parametric Waves - lil gui.png" class="link-portfolio-renderings" alt="screenshot of the library lil-gui with the portal scene">
+            
+              <a href="https://github.com/aureljoss/Threejs-MyJourney/tree/main/29-raging-sea" target="_blank" class="buttons-portfolio">View Project on GitHub</a>
+          </section>
 
-
+          <section  class="section-block">
             <p><span class="bold">Note:</span> This project was built using the fantastic lessons from <a src="https://threejs-journey.com/">Three.js Journey</a> by Bruno Simon. Huge thanks to Bruno for teaching me the techniques and workflows that made this possible!</p>
 
           </section>

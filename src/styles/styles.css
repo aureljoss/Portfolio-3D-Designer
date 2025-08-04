@@ -1066,7 +1066,8 @@ button#hippo {
   }
 }
 
-.jump-end {
+.jump-end,
+.buttons-portfolio {
   font-size: 14px;
   background-color: #000;
   border-radius: 40px;
@@ -1075,6 +1076,7 @@ button#hippo {
   color: #efefef;
   text-decoration: none;
 }
+
 .expandButtons:hover,
 #collapsible:hover,
 .jump-end:hover,
@@ -1473,18 +1475,19 @@ div.portfolio-projects h6 {
 }
 
 .portfolio-renderings,
-.link-portfolio-renderings {
+.link-portfolio-renderings,
+.link-portfolio-renderings-hover {
   margin: 2rem 0rem;
   width: 100%;
   border-radius: 30px;
 }
 
 .portfolio-vignettes:hover,
-.link-portfolio-renderings:hover {
+.link-portfolio-renderings-hover:hover,
+.VR-hover:hover {
   cursor: pointer;
   box-shadow: 10px 5px 8px lightgray;
   animation: images 0.5s forwards;
-  cursor: pointer;
 }
 
 .portfolio-wireframe {
@@ -1590,7 +1593,6 @@ div.portfolio-projects h6 {
 
 .img-comp-img img {
   display: block;
-  vertical-align: middle;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1734,6 +1736,12 @@ ol li::before {
 #lobby {
   width: 100%;
   height: 600px;
+}
+
+
+#lobby *,
+#loft * {
+  cursor: pointer;
 }
 
 /* ----- Side bar - social media ----- */

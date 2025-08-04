@@ -14,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Aurelie Josserand - Virginia Tech</title>
-    <link rel="stylesheet" crossorigin href="/src/styles/styles.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DVlkocfC.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <script type="module" crossorigin src="/scripts/app.js"></script>
+    <script type="module" crossorigin src="/assets/index-DNdOv_Mx.js"></script>
     <link
       rel="icon"
       type="image/x-icon"
@@ -116,7 +116,7 @@
           <section class="section-block-portfolio">
             <div class="VRviewer">
               <div>
-                <div id="lobby">
+                <div id="lobby" class="VR-hover">
                   <!-- <h4>360 images used for VR</h4> -->
                 </div>
                 <script type="importmap">
@@ -138,10 +138,10 @@
                   });
                 </script>
               </div>
-              <div>
+              <div >
                 <h6></h6>
-                <div id="loft"></div>
-                <script type="module">
+                <div id="loft" class="VR-hover"></div>
+                <script type="module" >
                   import { Viewer } from "@photo-sphere-viewer/core";
                   const loftViewer = new Viewer({
                     container: document.querySelector("#loft"),
