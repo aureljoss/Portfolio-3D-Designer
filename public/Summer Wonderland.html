@@ -76,7 +76,7 @@
           
           <section class="header-projects">
             <div id="top">
-              <a href="https://winter-portal.vercel.app/" target="_blank"><video class="main-images" autoplay muted loop><source src="images/ThreeJS/Winter Portal.mp4" type="video/mp4"></video></a>
+              <a href="https://winter-portal.vercel.app/" target="_blank"><video class="main-images" autoplay muted loop><source src="images/ThreeJS/Summer Wonderland.mp4" type="video/mp4"></video></a>
               <div>
                 <h6>SUMMER WONDERLAND</h5>
               </div>
@@ -98,10 +98,10 @@
             </div>
             <div id="gsap-trigger"></div>
             <div class="grid-text">
-              <h4>Real-Time Rendering Meets Handcrafted Fantasy</h4>
+              <h4>Real-Time Rendering Meets Playful Interactivity</h4>
               <div>
                 <p class="bottom-margin"> I created this real-time 3D scene as a personal exploration into storytelling through interactive environments. 
-                  Using Blender for modeling and scene composition, I built a whimsical landscape featuring a cozy tent, cartoonish rocks, leafy trees, and a mischievous fox on a little adventure. 
+                  Using Blender for modeling and scene composition, I built a whimsical landscape featuring a glowing portal, a cozy tent, and a mischievous fox on a little adventure. 
                   The scene was then brought to life in Three.js, where I used custom GLSL shaders to give the portal a dynamic, playful energy and to scatter flickering fireflies throughout the landscape. 
                   This project was a chance to experiment with stylization, animation, and shader effects, while refining my skills in web-based rendering and immersive visual design.
                 </p>
@@ -119,34 +119,44 @@
                 </ul>
               </div>
             </div>
+            <a href="https://winter-portal.vercel.app/" target="_blank"><video class="link-portfolio-renderings" autoplay muted loop><source src="images/ThreeJS/Winter Portal.mp4" type="video/mp4"></video></a>
+
           </section>
 
           <section class="section-block">
             <h4>Curious about the process?</h4>
             <h5>Building the Scene in Blender</h5>
-              I started by creating and assembling low-poly assets — including the terrain, fences, trees, split logs, a tiny axe, rocks, stylized lighting posts, and a circular portal built from duplicated bricks. 
+            To bring the environment to life, I started by creating and assembling low-poly assets — including the trees, fences, stylized lighting posts, and a circular portal. 
               These assets were carefully arranged to support both visual storytelling and modeling efficiency.</p>
-            <p>To ensure smooth performance in the browser, I prepared the scene for light baking — a technique where complex lighting (like global illumination and soft shadows from ray tracing) is pre-rendered into textures. 
-              These baked textures are later applied in Three.js to emulate rich lighting effects without heavy computation.</p>
-            <img src="images/ThreeJS/Threejs-journey-096.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+            <p>To ensure smooth performance in the browser, I prepared the scene for export by correcting face orientations, removing hidden or redundant faces, and normalizing object scales to ensure consistent transformations in Three.js. 
+              I also manually unwrapped all objects into a UV map to prepare the model for export.</p>
+            <img src="images/ThreeJS/Wonderland-Modeling.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
 
             <h5>Baking and Exporting the Scene</h5>
-            <p>Before baking, I prepared the scene by correcting face orientations, optimizing geometry through the removal of hidden or redundant faces, and normalizing object scales to ensure consistent transformations in Three.js. 
-              I manually unwrapped a second, non-overlapping UV channel dedicated to lightmapping.</p>
-            <p>Using Blender’s Cycles renderer, I baked global illumination and soft shadows into the custom lightmap, enabling denoising to smooth out sampling artifacts and produce a cleaner result.</p>
+            <p>Before exporting, I used Blender’s Cycles renderer to bake global illumination and soft shadows into a custom lightmap. 
+              Baking is the process of pre-calculating complex lighting and surface effects—such as indirect light, ambient occlusion, and soft shadows—and storing them in 2D textures. 
+              These textures are then applied to the geometry in Three.js, allowing the scene to simulate detailed lighting without the need for resource-intensive real-time calculations. Denoising was enabled to reduce sampling artifacts and produce a cleaner result.</p>
             <p>I then exported the scene as a compressed .glb file, retaining the visually rich materials and atmosphere while making the model optimized for real-time performance in the browser.</p>
-            <img src="images/ThreeJS/Threejs-journey-108.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+            <img src="images/ThreeJS/Wonderland-UV Unwrapping.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
 
-            <h5>Adding animated particules</h5>
-            <p>To introduce ambient motion, I created a firefly system using instanced planes randomly distributed in 3D space.</p>
-            <p>Each firefly was animated using a custom shader material that manipulated opacity and scale over time with sine-based function combined with a time uniform and a random offset to simulating a soft, flickering glow. 
-              This GPU-driven approach allowed for dozens of fireflies to be animated at minimal performance cost. I also added a glowing portal mesh using alpha-blended materials and subtle refraction effects to deepen the scene’s atmosphere.</p>
-            <h6>Code screeshot of the vertex and fragment shader</h6>
-           
+            <h5>Creating Custom Shaders</h5>
+            <p>To add more interest to the scene, fireflies were added to the scene using instanced planes scattered around our landscape.
+              Each firefly was animated using a custom shader material that manipulated opacity, scale and position over time. 
+              This GPU-driven approach allowed for dozens of fireflies to be animated at minimal performance cost. </p>
+            <img src="images/ThreeJS/Wonderland-Shader.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+
+            <p>To create the animated portal, a custom GLSL shader was applied to the mesh in Three.js. 
+              The vertex shader passed UV coordinates to the fragment shader, along with time-based uniforms, to create the swirling gradients effect on the portal surface. 
+              The motion effects were controlled by parameters like the uTime, uColorStart, and uColorEnd, allowing for real-time variation and visual interest. 
+              The final output was written in sRGB color space to ensure color accuracy across different devices, resulting in a vibrant, dynamic focal point within the scene.</p>
+            <img src="images/ThreeJS/Wonderland-Shader-Portal.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+
             <h5>Adding Debugging and Custom parameters</h5>
-            <p>To iterate efficiently, I integrated lil-gui for real-time tuning of visual parameters like firefly size, pulse speed, and portal intensity. 
+            <p>To iterate efficiently and add real-time controls like firefly size, background and portal colors, I integrated lil-gui.
+              Lil-gui is a lightweight JavaScript library that provides a graphical user interface (GUI) for changing the properties of JavaScript objects at runtime.  
               These carefully crafted, shader-powered elements brought a sense of magic and motion to the scene—while remaining optimized for real-time rendering on the web.</p>
-            <h6>Screenshot of the lil-gui</h6>
+              <img src="images/ThreeJS/lil-gui.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+
 
             <p><span class="bold">Note:</span> This project was built using the fantastic lessons from <a src="https://threejs-journey.com/">Three.js Journey</a> by Bruno Simon. Huge thanks to Bruno for teaching me the techniques and workflows that made this possible!</p>
 
