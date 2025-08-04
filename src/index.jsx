@@ -21,7 +21,7 @@ function Overlay() {
       </p>
       <ul id="contact-threejs">
         <li>
-          <a href="#portfolio-projects-section" className="button-threejs">
+          <a href="http://aureliejosserand.com#portfolio-projects-section" className="button-threejs">
             My Projects
           </a>
         </li>

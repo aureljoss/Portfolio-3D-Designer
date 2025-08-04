@@ -1490,6 +1490,11 @@ div.portfolio-projects h6 {
   animation: images 0.5s forwards;
 }
 
+
+.image-margin-top{
+  margin-top: 4rem;
+}
+
 .portfolio-wireframe {
   width: 100%;
 }
@@ -1737,7 +1742,6 @@ ol li::before {
   width: 100%;
   height: 600px;
 }
-
 
 #lobby *,
 #loft * {
