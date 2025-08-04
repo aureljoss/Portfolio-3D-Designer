@@ -52,32 +52,8 @@
                   alt="smiley face"
               /></a>
             </div>
-            <div id="menuOptions">
-              <ul id="nav">
-                <li><a href="index.html" id="aboutLink"> Home. </a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#work" id="workLink"> Work. </a></li>
-                <li><a href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank" id="resumeLink"> Resume. </a></li>
-              </ul>
-              <div id="menu-black-box"></div>
-            </div>
           </div>
           <div id="main-nav-background"></div>
-          <div id="menu">
-            <div id="lines">
-              <span class="lines"></span>
-              <span class="lines"></span>
-              <span class="lines"></span>
-            </div>
-            <p id="menuText">Menu</p>
-          </div>
-        </header>
-
-        <!---------- MAIN -------->
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-
-        <main>
           <div class="progress-portfolio">
             <div class="progress-container">
               <div class="progress-bar" id="myBar"></div>
@@ -90,7 +66,13 @@
                 </svg>
             </a>
           </div>
+        </header>
 
+        <!---------- MAIN -------->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+        <main>
           
           <section class="header-projects">
             <div id="top">
@@ -148,18 +130,27 @@
               These baked textures are later applied in Three.js to emulate rich lighting effects without heavy computation.</p>
             <img src="images/ThreeJS/Threejs-journey-096.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
 
-            <h5>Understanding site constraints</h5>
-            <p><a href="https://threejs-journey.com/">threejs-journey</a> was used as an inspiration to build this scene.</p>
+            <h5>Baking and Exporting the Scene</h5>
+            <p>Before baking, I prepared the scene by correcting face orientations, optimizing geometry through the removal of hidden or redundant faces, and normalizing object scales to ensure consistent transformations in Three.js. 
+              I manually unwrapped a second, non-overlapping UV channel dedicated to lightmapping.</p>
+            <p>Using Blender’s Cycles renderer, I baked global illumination and soft shadows into the custom lightmap, enabling denoising to smooth out sampling artifacts and produce a cleaner result.</p>
+            <p>I then exported the scene as a compressed .glb file, retaining the visually rich materials and atmosphere while making the model optimized for real-time performance in the browser.</p>
+            <img src="images/ThreeJS/Threejs-journey-108.png" class="link-portfolio-renderings" alt="screenshot a the blender interface with the portal scene">
+
+            <h5>Adding animated particules</h5>
+            <p>To introduce ambient motion, I created a firefly system using instanced planes randomly distributed in 3D space.</p>
+            <p>Each firefly was animated using a custom shader material that manipulated opacity and scale over time with sine-based function combined with a time uniform and a random offset to simulating a soft, flickering glow. 
+              This GPU-driven approach allowed for dozens of fireflies to be animated at minimal performance cost. I also added a glowing portal mesh using alpha-blended materials and subtle refraction effects to deepen the scene’s atmosphere.</p>
+            <h6>Code screeshot of the vertex and fragment shader</h6>
+           
+            <h5>Adding Debugging and Custom parameters</h5>
+            <p>To iterate efficiently, I integrated lil-gui for real-time tuning of visual parameters like firefly size, pulse speed, and portal intensity. 
+              These carefully crafted, shader-powered elements brought a sense of magic and motion to the scene—while remaining optimized for real-time rendering on the web.</p>
+            <h6>Screenshot of the lil-gui</h6>
+
+            <p><span class="bold">Note:</span> This project was built using the fantastic lessons from <a src="https://threejs-journey.com/">Three.js Journey</a> by Bruno Simon. Huge thanks to Bruno for teaching me the techniques and workflows that made this possible!</p>
 
           </section>
-
-          <div>
-            <img
-              src="/images/KSU/Night Shot.jpg"
-              alt="KSU north facade at night"
-              class="main-images"
-            />
-          </div>
 
         <div id="coded-by">
           <p>Coded with ♥ by Aurélie</p>
