@@ -4,7 +4,7 @@
   "description": "Thanks for checking out my portfolio.",
   "main": "index.html",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --force",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
@@ -23,7 +23,7 @@
   "homepage": "https://www.aureliejosserand.com",
   "dependencies": {
     "@pmndrs/branding": "^0.0.8",
-    "@react-three/drei": "^10.0.6",
+    "@react-three/drei": "^10.6.1",
     "@react-three/fiber": "9.1",
     "@react-three/postprocessing": "^3.0.4",
     "@types/three": "^0.175.0",

@@ -62,7 +62,7 @@
   font-weight: 800;
 }
 
-#contact-threejs {
+#projects-threejs {
   height: 100px;
   max-width: 30vw;
   list-style: none;
@@ -99,4 +99,39 @@
   text-align:center;
   animation: introAnimation 1.2s alternate infinite;
   color: black;
+}
+
+/* Media Queries */
+
+/*Mobile - 480px breakpoint */
+
+@media screen and (max-width: 480px) {
+
+
+#root, #intro-threejs{
+  display: block;
+  max-width: none;
+}
+
+#projects-threejs{
+  max-width: none;
+}
+
+#intro-threejs{
+  margin-top: 10vh;
+}
+
+canvas{
+  max-width: fit-content;
+  max-height: 50vh;
+}
+
+#canvas-threejs{
+  max-height: 50vh;
+}
+
+#intro-threejs h3{
+  line-height: normal;
+}
+
 }

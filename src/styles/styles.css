@@ -1490,8 +1490,7 @@ div.portfolio-projects h6 {
   animation: images 0.5s forwards;
 }
 
-
-.image-margin-top{
+.image-margin-top {
   margin-top: 4rem;
 }
 
@@ -1805,10 +1804,20 @@ ol li::before {
   }
 
   #introduction {
-    width: 60vw;
+    width: 100%;
     max-width: 1200px;
-    margin: 12vh auto;
     text-align: center;
+    margin: 16vh auto;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+
+  #start{
+    margin-bottom: auto;
+  }
+
+  .svg-in-text {
+    display: none;
   }
 
   .introduction {
@@ -2061,10 +2070,10 @@ ol li::before {
 
   #objects-playground {
     position: absolute;
-    bottom: 30px;
-    left: -15%;
-    max-width: 150px;
-    z-index: 4;
+    bottom: -80px;
+    left: -5%;
+    max-width: 100px;
+    z-index: -1;
   }
 
   .portfolio-vignettes {
