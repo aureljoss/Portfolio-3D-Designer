@@ -2098,13 +2098,9 @@ ol li::before {
   .main-images {
     height: auto;
     width: 100%;
-    max-width: 80vw;
+    margin: auto;
   }
 
-  #mobile-flex{
-    display:flex;
-    margin: autp;
-  }
 
   .project-intro{
     margin: 60px auto;
@@ -2173,6 +2169,7 @@ ol li::before {
   #contact-me {
     height: auto;
     max-width: 80vw;
+    padding-inline-start: 0px;
   }
 
   #project-title {
@@ -2209,11 +2206,23 @@ ol li::before {
     flex-direction: column;
   }
 
+  .section-about{
+    width:80vw;
+  }
+
   #objects-headline {
     position: absolute;
     top: -2vh;
     left: 5vw;
     width: 12%;
+  }
+
+  #resume{
+    margin-top: 120px;
+  }
+
+  #photos-about-me{
+    display: none;
   }
 
   #img-tipCalculator,
