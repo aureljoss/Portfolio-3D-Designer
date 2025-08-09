@@ -1951,6 +1951,10 @@ ol li::before {
     margin: 2vh auto;
   }
 
+  .desktop-only{
+    display:none;
+  }
+
   #Wave {
     transform: translateY(30px);
   }
