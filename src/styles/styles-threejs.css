@@ -19,6 +19,7 @@
     /* animation: introAnimation 1s 4s ease-in-out backwards; */
     z-index:0;
     height: 88vh;
+    max-height: 800px;
     /* background-color:#f8d1d1; */
   }
 
@@ -133,5 +134,22 @@ canvas{
 #intro-threejs h3{
   line-height: normal;
 }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  
+  #root{
+    grid-template-columns: 2fr 3fr;
+  }
+
+  #intro-threejs{
+    max-width: 80%;
+  }
+  
+  #introduction {
+    letter-spacing: -4px;
+  }
 
 }

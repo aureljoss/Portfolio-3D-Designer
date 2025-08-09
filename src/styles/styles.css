@@ -952,7 +952,7 @@ button#hippo {
   top: -40%;
   right: -16%;
   max-width: 300px;
-  z-index: 2;
+  z-index: 0;
 }
 
 #objects-sphere {
@@ -960,7 +960,7 @@ button#hippo {
   top: -20%;
   right: -1.5%;
   max-width: 150px;
-  z-index: 4;
+  z-index: 1;
 }
 
 #objects-playground-div {
@@ -2261,6 +2261,18 @@ ol li::before {
     line-height: 78px;
   }
 
+  h2{
+    font-size: 48px;
+  }
+
+  h3{
+    font-size: 32px;
+  }
+
+  p{
+    line-height: 1.5;
+  }
+
   .period {
     font-size: 180px;
     margin-bottom: 25vh;
@@ -2281,23 +2293,7 @@ ol li::before {
   }
 
   .my-portrait {
-    display: block;
-    border-radius: 100px;
     max-width: 200px;
-    margin: 8vh auto;
-  }
-
-  #about {
-    flex-direction: column;
-  }
-
-  .my-portrait:hover {
-    border-radius: 100px;
-    cursor: grab;
-  }
-
-  #description {
-    max-width: none;
   }
 
   .portfolio-vignettes {
@@ -2314,4 +2310,75 @@ ol li::before {
     width: 35px;
     height: 35px;
   }
+
+  .project-details{
+    display:none;
+  }
+
+  .button{
+    margin-top:10px;
+  }
+
+  #listSkills{
+    max-width:90vw;
+    width:90vw;
+  }
+
+  #objects-playground {
+    z-index: -1;
+  }
+
+  #portfolio{
+    grid-template-columns: 1fr 1fr;
+    max-width: 90vw;
+  }
+
+  #img-countdown,
+  #img-tenzies,
+  #img-galaxy,
+  #img-living-room{
+    width: 45vw;
+  }
+
+  .section-flex {
+    padding-top:10px;
+    display: block;
+    width: 80vw;
+
+  }
+
+  .section-flex div{
+    margin:auto;
+  }
+
+  .section-block {
+    width: 80vw;
+  }
+
+  footer{
+    height:auto;
+  }
+
+  #connect,
+  #contact-me {
+    max-width: none;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #contact-me{
+    padding-bottom: 120px;
+    padding-left: 0px;
+  }
+
+  #contact {
+    display: block;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  #portfolio-projects-section{
+    margin:auto;
+  }
+
 }
