@@ -1492,6 +1492,7 @@ div.portfolio-projects h6 {
 
 .image-margin-top {
   margin-top: 4rem;
+  width:100%;
 }
 
 .portfolio-wireframe {
@@ -1531,8 +1532,7 @@ div.portfolio-projects h6 {
   width: 12%;
 }
 
-.grid-image,
-.grid-text {
+.grid-image {
   display: grid;
   width: 100%;
   grid-template-columns: 3fr 2fr;
@@ -1552,6 +1552,8 @@ div.portfolio-projects h6 {
 }
 
 .grid-text {
+  display: grid;
+  width: 100%;
   grid-template-columns: 1.5fr 2fr 1fr;
   gap: 4rem;
 }
@@ -1692,6 +1694,7 @@ ol li::before {
 
 .KSU-site-diagrams {
   width: 40%;
+  max-width: 60vw;
   border-radius: 15px;
   margin: 1rem 1rem;
   border-radius: 1.2em;
@@ -2092,9 +2095,61 @@ ol li::before {
     max-height: 340px;
   }
 
-  #lapi-plage-animated,
-  #tenzies {
+  .main-images {
+    height: auto;
+    width: 100%;
+    max-width: 80vw;
+  }
+
+  #mobile-flex{
+    display:flex;
+    margin: autp;
+  }
+
+  .project-intro{
+    margin: 60px auto;
+  }
+
+  .section-block-portfolio{
+    margin: auto auto 20px;
+  }
+
+  .grid-text, 
+  .grid-image,
+  .grid-one-three-text{
+    display: block;
+  }
+
+  .ordered-list li {
+    margin: 1rem 0 2rem 1rem;
+  }
+
+  .grid-text div{
+    margin-top: auto;
+    align-self: auto;
+  }
+
+  .image-margin-top {
+    width: 100%;
+  }
+
+  .img-comp-container{
     display: none;
+  }
+
+  .secondary-images,
+  .KSU-site-diagrams {
+    max-width: none;
+    width:100%;
+    margin:1rem auto;
+  }
+
+  .project-section {
+    margin-top: 2rem;
+  }
+
+  .role{
+    margin-top:60px !important;
   }
 
   #contact-section {
@@ -2147,12 +2202,6 @@ ol li::before {
 
   #project-headline {
     margin: 10vh auto;
-  }
-
-  .KSU-site-diagrams {
-    width: auto;
-    max-width: 60vw;
-    margin: 1rem auto;
   }
 
   .work-portfolio {
