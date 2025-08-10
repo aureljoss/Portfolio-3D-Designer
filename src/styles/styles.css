@@ -2359,7 +2359,7 @@ ol li::before {
   }
 
   .section-flex div{
-    margin:auto;
+    margin:20px auto;
   }
 
   .section-block {
@@ -2415,6 +2415,12 @@ ol li::before {
   .img-comp-container{
     max-width: 80vw;
     margin-bottom: 24px;
+  }
+
+  .skills-vignette {
+    display: block; 
+    height: 340px;
+    width: 50vw;
   }
 
 }
