@@ -205,7 +205,7 @@ if (document.querySelector("#up-arrow-portfolio")) {
   gsap.to("#up-arrow-portfolio", {
     opacity: 1,
     scrollTrigger: {
-      trigger: "#project-headline",
+      trigger: ".scroll-trigger-up-arrow",
       start: "top top+=100vh", // Start when scrolled 100vh (one viewport height)
       toggleActions: "play none none reverse", // Play when entering, reverse when leaving
     },
