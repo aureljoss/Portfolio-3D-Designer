@@ -7,9 +7,9 @@
     justify-items:center;
     align-items: center;
     grid-template-columns: 1fr 2fr ;
-    /* background-color: #d7e5fe; */
+    background-color: #d7e5fe;
     /* background-color: #634bff; */
-    background-color: #4f35fa;
+    /* background-color: #4f35fa; */
     z-index: 3;
     /* gap:3vw; */
   }
@@ -48,7 +48,7 @@
   padding-left: 5vw;
   max-width: min(33vw, 900px);
   justify-self: start;
-  color: rgb(236, 236, 236);
+  /* color: rgb(236, 236, 236); */
 }
 
 #intro-threejs p {
