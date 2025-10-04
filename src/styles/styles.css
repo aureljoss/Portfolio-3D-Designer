@@ -152,6 +152,16 @@ header {
   cursor: pointer;
 }
 
+.link{
+  font-weight: 600;
+  font-size: 1em;
+  color: black;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
 .pointer {
   cursor: pointer;
   font-size: 1em;
@@ -516,7 +526,7 @@ a:hover {
   max-width: 1200px;
   margin: -16vh auto 36vh auto;
   text-align: center;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   line-height: 60px;
   opacity: 0;
 }
@@ -886,8 +896,13 @@ button#hippo {
   text-align: center;
 }
 
-.bold {
+.bold{
   font-weight: 600;
+}
+
+#in-progress {
+  font-weight: 600;
+  margin-bottom: 4rem;
 }
 
 .list {
@@ -895,6 +910,10 @@ button#hippo {
   margin: 0;
   padding: 0;
   z-index: 2;
+}
+
+#under-development {
+  color: #db433e;
 }
 
 /* .list li::before {
