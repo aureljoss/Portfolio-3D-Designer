@@ -1165,7 +1165,6 @@ button#hippo {
   font-size: 12px;
   font-weight: 600;
   margin-left: 1vw;
-  /* background-color:  rgba(239, 239, 239, 0.692); */
   align-self: center;
   padding: 0.3rem;
 }
@@ -1528,6 +1527,10 @@ div.portfolio-projects h6 {
   height: 80vh;
   width: 100%;
   object-fit: cover;
+}
+
+#hover :hover{
+  cursor: pointer;
 }
 
 #project-headline {

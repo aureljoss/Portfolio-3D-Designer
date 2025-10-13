@@ -3,8 +3,9 @@ import { Experience } from "./Experience";
 import ReactDOM from "react-dom/client";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-const root = ReactDOM.createRoot(document.querySelector("#root"));
 import { Html } from "@react-three/drei"; // for loading progress
+
+const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 function Loader() {
   return (
@@ -22,12 +23,25 @@ function Overlay() {
     );
     if (portfolioSection) {
       portfolioSection.scrollIntoView({ behavior: "smooth" });
+      // If the ScrollTrigger/animations weren't created yet (user jumped
+      // directly via this link), call the fallback reveal helper after the
+      // scroll completes so the projects become visible.
+      // Use a short timeout to allow smooth scrolling to progress.
+      setTimeout(() => {
+        if (window.revealPortfolioProjects) {
+          try {
+            window.revealPortfolioProjects();
+          } catch (err) {
+            // ignore errors from the fallback
+          }
+        }
+      }, 550);
     }
   };
 
   return (
     <div id="intro-threejs">
-      <h3>&lt; 3D Designer & Frontend Developer /&gt;</h3>
+      <h3>&lt; 3D Designer & Creative Developer /&gt;</h3>
       <p>
         My name is Aurélie (pronounced oh-reh-lee). <br />I bring ideas to life
         through immersive 3D design and innovative digital experiences.
@@ -66,22 +80,22 @@ function Overlay() {
   );
 }
 
-root.render(
-  <>
-    <Overlay />
-    <Canvas
-      id="canvas-threejs"
-      flat
-      camera={{
-        fov: 40,
-        near: 0.1,
-        far: 100,
-        position: [6.8, 2, 5],
-      }}
-    >
-      <Suspense fallback={<Loader />}>
-        <Experience />
-      </Suspense>
-    </Canvas>
-  </>
-);
+  root.render(
+    <>
+      <Overlay />
+      <Canvas
+        id="canvas-threejs"
+        flat
+        camera={{
+          fov: 40,
+          near: 0.1,
+          far: 100,
+          position: [6.8, 2, 5],
+        }}
+      >
+        <Suspense fallback={<Loader />}>
+          <Experience />
+        </Suspense>
+      </Canvas>
+    </>
+  );

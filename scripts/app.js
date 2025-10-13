@@ -328,6 +328,53 @@ if (document.querySelector(".portfolio-projects")) {
   });
 }
 
+// Fallback helper: reveal portfolio projects immediately (used when user jumps
+// to the projects section before scroll triggers initialize). Exposed on
+// window so other modules (React overlay) can call it after scrolling.
+window.revealPortfolioProjects = function revealPortfolioProjects() {
+  try {
+    const projects = document.querySelectorAll(".portfolio-projects");
+    if (!projects || projects.length === 0) return;
+
+    projects.forEach((project) => {
+      const vignette = project.querySelector(".portfolio-vignettes");
+      const title = project.querySelector(".project-title");
+      const projectInfo = project.querySelector(".project-info");
+
+      // Immediately set final visible state (match the GSAP animation end)
+      [vignette, title, projectInfo].forEach((el) => {
+        if (el) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0px)";
+        }
+      });
+    });
+  } catch (e) {
+    // swallow errors; this is a best-effort fallback
+    console.warn("revealPortfolioProjects fallback failed", e);
+  }
+};
+
+// If the page loads with a hash linking directly to the portfolio projects
+// section, run the fallback reveal shortly after load so items are visible.
+if (typeof window !== "undefined") {
+  window.addEventListener("load", function () {
+    try {
+      if (
+        window.location &&
+        window.location.hash === "#portfolio-projects-section"
+      ) {
+        // short delay to allow layout and any other scripts to initialize
+        setTimeout(() => {
+          if (window.revealPortfolioProjects) window.revealPortfolioProjects();
+        }, 350);
+      }
+    } catch (e) {
+      // ignore
+    }
+  });
+}
+
 // -- Hippo Hover Animation -- //
 
 const mouthOpen = gsap.timeline({ paused: true });
@@ -420,3 +467,28 @@ if (
     },
   });
 }
+
+// Smooth-scroll to top when anchors with href="#top" are clicked. This
+// handles pages that might use a smooth scroller wrapper (#smooth-wrapper)
+// or default browser scrolling.
+(function setupTopAnchorScrolling() {
+  document.addEventListener("click", function (e) {
+    const target = e.target.closest('a[href="#top"]');
+    if (!target) return;
+
+    e.preventDefault();
+
+    // If the site uses a smooth wrapper with internal scroller (#smooth-wrapper
+    // / #smooth-content), attempt to scroll that container; otherwise scroll
+    // the window.
+    const smoothContent = document.querySelector("#smooth-content");
+    if (smoothContent) {
+      // Smooth scroll for the wrapper
+      smoothContent.scrollTo({ top: 0, behavior: "smooth" });
+      // Also update window scroll as a fallback
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+})();
