@@ -43,8 +43,7 @@ function Overlay() {
     <div id="intro-threejs">
       <h3>&lt; 3D Designer & Creative Developer /&gt;</h3>
       <p>
-        My name is Aurélie (pronounced oh-reh-lee). <br />I bring ideas to life
-        through immersive 3D design and innovative digital experiences.
+        My name is Aurélie (pronounced oh-reh-lee). <br />I bring ideas to life by combining innovative spatial design, immersive 3D, and interactive digital experiences.
       </p>
       <ul id="projects-threejs">
         <li>

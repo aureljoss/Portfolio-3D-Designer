@@ -1,9 +1,13 @@
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  background-color: #fbf9f1;
 }
 
-body,
-html {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -114,11 +118,8 @@ header {
 }
 
 #myName {
-  /* position: fixed; */
   display: flex;
   text-transform: uppercase;
-  /* width: 80vw; */
-  /* left: 5vw; */
   margin: auto;
   color: black;
   text-decoration: none;
@@ -152,7 +153,7 @@ header {
   cursor: pointer;
 }
 
-.link{
+.link {
   font-weight: 600;
   font-size: 1em;
   color: black;
@@ -170,7 +171,6 @@ header {
 #menu {
   position: fixed;
   left: 5px;
-  height: 80px;
   top: 48%;
   animation: menu 1s forwards;
   height: 4vh;
@@ -184,7 +184,6 @@ header {
   width: 100%;
   height: 100%;
   z-index: 1;
-  /* margin-left:2rem; */
   align-items: center;
   background-color: rgba(255, 255, 255, 0.65);
 }
@@ -308,21 +307,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* animation: scroll 4s 1s infinite; */
   font-weight: 600;
   z-index: 4;
 }
-
-/* @keyframes scroll {
-  0% {
-    opacity: 0;
-    transform: translateY(0vw);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(1vw);
-  }
-} */
 
 #scrollArrow {
   fill: black;
@@ -353,6 +340,7 @@ header {
   background-color: #000;
   color: #efefef;
   justify-content: center;
+  margin-left: 1rem;
 }
 
 .button-text {
@@ -429,7 +417,6 @@ a:hover {
   position: static;
   top: 0;
   display: flex;
-  /* animation: redBackground 2s ease-in-out; */
   animation-fill-mode: forwards;
   margin-bottom: 20rem;
 }
@@ -439,7 +426,6 @@ a:hover {
     width: 90vw;
     margin-left: 0vw;
   }
-
   100% {
     width: 50vw;
     margin-left: 0vw;
@@ -464,15 +450,6 @@ a:hover {
   letter-spacing: -14px;
 }
 
-/* .period {
-  font-size: 368px;
-  transition: transform 1s;
-  animation: ex 3.5s ease-in-out;
-  animation-fill-mode: forwards;
-  margin-bottom: 0.97em;
-  color: #ff5851;
-}
-
 @keyframes bonjour {
   0% {
     opacity: 0;
@@ -487,21 +464,6 @@ a:hover {
     transform: translateX(0vw);
   }
 }
-
-@keyframes ex {
-  0% {
-    opacity: 0;
-    transform: translateX(40vw);
-  }
-  80% {
-    opacity: 0;
-    transform: translateX(30vw);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(0vw);
-  }
-} */
 
 #drag {
   position: absolute;
@@ -595,6 +557,10 @@ a:hover {
   background: #8412b5;
 }
 
+button#hippo {
+  padding: 2em;
+}
+
 button {
   background: transparent;
   height: 360px;
@@ -603,12 +569,6 @@ button {
   border: 1px solid rgb(134, 134, 134);
   margin: auto;
 }
-
-button#hippo {
-  padding: 2em;
-}
-
-/* Lapi in Yelapa Animation */
 
 #lapi {
   background-color: #dba601;
@@ -634,17 +594,6 @@ button#hippo {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-/* #Wave {
-  transform: translateY(00px);
-}
-
-@keyframes wave {
-  to {
-    transform: translateX(-100px);
-    transform: translateY(60px);
-  }
-} */
 
 .carrot-fill,
 .carrot-head {
@@ -804,7 +753,6 @@ button#hippo {
   gap: 5vw;
   width: 60vw;
   max-width: 1200px;
-  /* border-top: 1px solid #c4c4c4; */
 }
 
 .section-block,
@@ -815,7 +763,6 @@ button#hippo {
   gap: 5vw;
   width: 60vw;
   max-width: 1200px;
-  /* border-top: 1px solid #c4c4c4; */
 }
 
 .section-block-portfolio {
@@ -896,7 +843,7 @@ button#hippo {
   text-align: center;
 }
 
-.bold{
+.bold {
   font-weight: 600;
 }
 
@@ -915,12 +862,6 @@ button#hippo {
 #under-development {
   color: #db433e;
 }
-
-/* .list li::before {
-  content: "\25B7";
-  display: inline-block;
-  width: 2em;
-} */
 
 .list li {
   line-height: 2em;
@@ -1027,15 +968,6 @@ button#hippo {
   margin-left: -2.5em;
   margin-bottom: 3em;
 }
-
-/* ul.resumeUl li:before {
-    width: 0.35em;
-    content: '';
-    height: 0.35em;
-    margin-right: 0.5em;
-    vertical-align: 10%;
-    display: inline-block;
-    background: rgb(53, 53, 53);}*/
 
 .resumeUl li {
   margin-bottom: 1.2em;
@@ -1267,16 +1199,6 @@ footer {
   top: 5vh;
 }
 
-.progress-portfolio {
-  top: 5vh;
-}
-
-/* .progress-container {
-  height: 1px;
-  
-  background: rgb(119, 119, 119);
-} */
-
 /* Up arrow */
 #up-arrow {
   width: 40px;
@@ -1375,7 +1297,7 @@ footer {
 
 #tip-calculator {
   grid-column: 3;
-  grid-row: 1/ 3;
+  grid-row: 1 / 3;
 }
 
 #living-room {
@@ -1387,11 +1309,6 @@ footer {
   width: 235px;
   height: 604px;
   object-fit: cover;
-}
-
-#tip-calculator {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 2;
 }
 
 #countdown {
@@ -1511,7 +1428,7 @@ div.portfolio-projects h6 {
 
 .image-margin-top {
   margin-top: 4rem;
-  width:100%;
+  width: 100%;
 }
 
 .portfolio-wireframe {
@@ -1529,7 +1446,7 @@ div.portfolio-projects h6 {
   object-fit: cover;
 }
 
-#hover :hover{
+#hover :hover {
   cursor: pointer;
 }
 
@@ -1838,7 +1755,7 @@ ol li::before {
     line-height: normal;
   }
 
-  #start{
+  #start {
     margin-bottom: auto;
   }
 
@@ -1978,8 +1895,8 @@ ol li::before {
     margin: 2vh auto;
   }
 
-  .desktop-only{
-    display:none;
+  .desktop-only {
+    display: none;
   }
 
   #Wave {
@@ -2125,18 +2042,17 @@ ol li::before {
     margin: auto;
   }
 
-
-  .project-intro{
+  .project-intro {
     margin: 60px auto;
   }
 
-  .section-block-portfolio{
+  .section-block-portfolio {
     margin: auto auto 20px;
   }
 
-  .grid-text, 
+  .grid-text,
   .grid-image,
-  .grid-one-three-text{
+  .grid-one-three-text {
     display: block;
   }
 
@@ -2144,7 +2060,7 @@ ol li::before {
     margin: 1rem 0 2rem 1rem;
   }
 
-  .grid-text div{
+  .grid-text div {
     margin-top: auto;
     align-self: auto;
   }
@@ -2153,23 +2069,23 @@ ol li::before {
     width: 100%;
   }
 
-  .img-comp-container{
+  .img-comp-container {
     display: none;
   }
 
   .secondary-images,
   .KSU-site-diagrams {
     max-width: none;
-    width:100%;
-    margin:1rem auto;
+    width: 100%;
+    margin: 1rem auto;
   }
 
   .project-section {
     margin-top: 2rem;
   }
 
-  .role{
-    margin-top:60px !important;
+  .role {
+    margin-top: 60px !important;
   }
 
   #contact-section {
@@ -2230,8 +2146,8 @@ ol li::before {
     flex-direction: column;
   }
 
-  .section-about{
-    width:80vw;
+  .section-about {
+    width: 80vw;
   }
 
   #objects-headline {
@@ -2241,11 +2157,11 @@ ol li::before {
     width: 12%;
   }
 
-  #resume{
+  #resume {
     margin-top: 120px;
   }
 
-  #photos-about-me{
+  #photos-about-me {
     display: none;
   }
 
@@ -2268,10 +2184,10 @@ ol li::before {
   }
 
   .secondary-nav {
-    right:0;
+    right: 0;
   }
 
-  .secondary-nav-link{
+  .secondary-nav-link {
     margin-left: 1rem;
   }
 
@@ -2289,22 +2205,21 @@ ol li::before {
     line-height: 78px;
   }
 
-  h2{
+  h2 {
     font-size: 48px;
   }
 
-  h3{
+  h3 {
     font-size: 32px;
   }
 
-  h4{
+  h4 {
     font-size: 28px;
   }
 
-  p{
+  p {
     line-height: 1.5;
   }
-
 
   .period {
     font-size: 180px;
@@ -2344,24 +2259,24 @@ ol li::before {
     height: 35px;
   }
 
-  .project-details{
-    display:none;
+  .project-details {
+    display: none;
   }
 
-  .button{
-    margin-top:10px;
+  .button {
+    margin-top: 10px;
   }
 
-  #listSkills{
-    max-width:90vw;
-    width:90vw;
+  #listSkills {
+    max-width: 90vw;
+    width: 90vw;
   }
 
   #objects-playground {
     z-index: -1;
   }
 
-  #portfolio{
+  #portfolio {
     grid-template-columns: 1fr 1fr;
     max-width: 90vw;
   }
@@ -2369,27 +2284,26 @@ ol li::before {
   #img-countdown,
   #img-tenzies,
   #img-galaxy,
-  #img-living-room{
+  #img-living-room {
     width: 45vw;
   }
 
   .section-flex {
-    padding-top:10px;
+    padding-top: 10px;
     display: block;
     width: 80vw;
-
   }
 
-  .section-flex div{
-    margin:20px auto;
+  .section-flex div {
+    margin: 20px auto;
   }
 
   .section-block {
     width: 80vw;
   }
 
-  footer{
-    height:auto;
+  footer {
+    height: auto;
   }
 
   #connect,
@@ -2399,7 +2313,7 @@ ol li::before {
     padding-bottom: 40px;
   }
 
-  #contact-me{
+  #contact-me {
     padding-bottom: 120px;
     padding-left: 0px;
   }
@@ -2410,39 +2324,38 @@ ol li::before {
     padding-top: 40px;
   }
 
-  #portfolio-projects-section{
-    margin:auto;
+  #portfolio-projects-section {
+    margin: auto;
   }
 
-  #sectionTitle-skills{
-    width:90vw;
+  #sectionTitle-skills {
+    width: 90vw;
     margin: 18vh auto 16vh;
   }
 
-  .grid-text, 
+  .grid-text,
   .grid-image,
-  .grid-one-three-text{
+  .grid-one-three-text {
     display: block;
   }
 
-   .jump-end {
+  .jump-end {
     display: flex;
     margin-bottom: 24px;
   }
 
-  .secondary-images{
+  .secondary-images {
     max-width: 100%;
   }
 
-  .img-comp-container{
+  .img-comp-container {
     max-width: 80vw;
     margin-bottom: 24px;
   }
 
   .skills-vignette {
-    display: block; 
+    display: block;
     height: 340px;
     width: 50vw;
   }
-
 }
