@@ -1248,7 +1248,7 @@ footer {
 .pinkNumbers {
   color: white;
   font-size: 36px;
-  background-image: url("/dist/images/Number.png");
+  background-image: url("/dist/images/number.png");
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;

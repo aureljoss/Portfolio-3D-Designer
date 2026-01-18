@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Aurelie Josserand - Johns Hopkins University Bloomberg Center</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-C3eOvYgT.css">
+    <link rel="stylesheet" crossorigin href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="icon"
@@ -27,88 +27,99 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800;900&family=Open+Sans:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="/assets/index-Db46zdUb.js"></script>
+    <script type="module" crossorigin src="/src/index.jsx"></script>
     <meta name="robots" content="noindex">
   </head>
-  <body>
-    <header>
-      <div id="main-nav">
-        <nav id="navbar">
-          <div>
-            <a id="myName" href="index.html"> Aurélie Josserand</a>
+
+    <body>
+        <header>
+          <div id="main-nav">
+            <nav id="navbar">
+              <div>
+                <a id="myName" href="https://aureliejosserand.com"> Aurélie Josserand</a>
+              </div>
+              <div class="secondary-nav">
+                <a class="secondary-nav-link" href="About.html">About</a>
+                <a class="secondary-nav-link" href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank">Resume</a>
+            </div>
+            </nav>
+            <div id="emoji">
+              <a href="#contact"
+                ><img
+                  class="emoji"
+                  src="./images/Smiley-Face.svg"
+                  alt="smiley face"
+              /></a>
+            </div>
           </div>
-          <div class="secondary-nav">
-            <a class="secondary-nav-link" href="index.html">Home</a>
-            <a class="secondary-nav-link" href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank">Resume</a>
-        </div>
-        </nav>
-        <div id="emoji">
-          <a href="#contact"
-            ><img
-              class="emoji"
-              src="./images/Smiley-Face.svg"
-              alt="smiley face"
-          /></a>
-        </div>
-        <div id="menuOptions">
-          <ul id="nav">
-            <li><a href="index.html" id="aboutLink"> Home. </a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html#work" id="workLink"> Work. </a></li>
-            <li><a href="https://aureliejosserand.com/Resume-AurelieJosserand.pdf" target="_blank" id="resumeLink"> Resume. </a></li>
-          </ul>
-          <div id="menu-black-box"></div>
-        </div>
-      </div>
-      <div id="main-nav-background"></div>
-      <div id="menu">
-        <div id="lines">
-          <span class="lines"></span>
-          <span class="lines"></span>
-          <span class="lines"></span>
-        </div>
-        <p id="menuText">Menu</p>
-      </div>
-    </header>
+          <div id="main-nav-background"></div>
+          <div class="progress-portfolio">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+          <div id="up-arrow-portfolio">
+            <a href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px">
+                    <path id="svg-up-arrow"  d="M50,0h0A50,50,0,0,0,0,50H0a50,50,0,0,0,50,50h0a50,50,0,0,0,50-50h0A50,50,0,0,0,50,0ZM74.47,51.25l-15.8,15.8a1.77,1.77,0,0,1-2.52,0,1.81,1.81,0,0,1,0-2.52L68.93,51.78H26.76A1.78,1.78,0,0,1,25,50a1.75,1.75,0,0,1,1.76-1.77H68.93L56.15,35.44A1.77,1.77,0,1,1,58.67,33l15.8,15.8A1.73,1.73,0,0,1,74.47,51.25Z"/>
+                </svg>
+            </a>
+          </div>
+        </header>
 
     <!---------- MAIN -------->
 
-    <main>
-      <div class="progress-portfolio">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
-      </div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
 
+        <main>
+         
+          <section class="header-projects">
+            <div id="top">
+              <img src="images/JHU/JHU-555 Penn_Alan Karchmer_230.jpg" alt="JHU Interior" class="main-images"/>
+              <div>
+                <h6>Johns Hopkins University Bloomberg Center</h5>
+              </div>
+            </div>
+          </section>
 
-      <section>
-        <div class="header-projects" id="top">
-          <img
-            src="/images/JHU/Exterior_1_0001_JHU_08_28_23.jpg"
-            alt="JHU South facade"
-            class="main-images"
-          />
-          <div id="project-title">
-            <h4>JOHNS HOPKINS UNIVERSITY BLOOMBERG CENTER</h6>
-          </div>
-        </div>
-        <div id="project-header">
-          <div id="project-tools">
-            <p><span class="bold">Toolkit:</span> LiDAR, Sketchup, Enscape, Revit, Illustrator, Photoshop, pencil and paper. </p>
-            <p><span class="bold">Role:</span> Architect and BIM Manager.</p>
-          </div>
-          <div>
-            <a href="#final-photography" class="jump-end">View Final Project Photography</a>
-          </div>
-        </div>
-      </section>
+          <section class="section-block-portfolio">
+            <div class="project-intro" >
+                <h3> Creating a transformative academic space in the heart of washington D.C. to reflect the university's focus on global challenges.</h3>
+            </div>
+            <div id="gsap-trigger"></div>
+            <div class="scroll-trigger-up-arrow"></div>
+            <div class="grid-text">
+              <h4>From Museum to Urban Academic Hub</h4>
+              <div>
+                <p class="bottom-margin"> The Johns Hopkins University Bloomberg Center at 555 Pennsylvania Avenue in Washington, D.C. is a 435,000-square-foot adaptive reuse of the former Newseum that has been transformed into a cutting-edge academic hub. The redesign reconfigures the interior and reinterprets the façade to bring light, transparency, and flexibility to learning, gathering, and public spaces. Its success lies in turning a once cultural institution into a vibrant urban vertical quad for education.
+                </p>
+                <a href="#final-photography" class="jump-end">View Final Project Photography</a>
+              </div>
+              <div class="role">
+                <p><span class="bold">Role</span> </p>
+                <ul class="list">
+                  <li>Architect</li>
+                  <li>Building Planning and Design</li>
+                  <li>3D Visualization Specialist</li>
+                  <li>BIM Leadership</li>
+                </ul>
+              </div>
+            </div>
+            <img src="images/JHU/JHU555interioratriumandentrance_alanK_1699040853_1440x810.jpg"image-margin-top" class="link-portfolio-renderings-hover" alt="ar 360 scene"/>
+          </section>
 
-      <section id="project-headline">
-        <div class="project-intro" id="project-headline-content">
-            <h4>Creating a transformative space in the heart of washington D.C. to reflect the university's focus on global challenges and create a flexible and innovative academic building.</h4>
-            <img src="/images/objects-playground.png" id="objects-headline">
-          </div>
-      </section>
+          
+          <section class="section-block-portfolio">
+            <div class="grid-one-three-text">
+              <h4>Project background</h4>
+              <p>Kennesaw State University has broken ground on a new Interdisciplinary STEM (ISTEM) building on its Marietta campus, with completion expected by the end of 2025.
+                Designed to foster innovation and collaboration across fields such as engineering, computer science, cybersecurity, biology, and biomedical research, 
+                the two-story facility will feature 70,000 square feet of cutting-edge instructional labs, high-bay research spaces, classrooms, and student collaboration areas. 
+                Strategically located near the Marietta campus quad, the building will serve as both a symbolic and functional gateway for KSU’s growing research and innovation ecosystem.
+              </p>
+            </div>
+          </section>
 
       <section class="section-block">
         <div id="gsap-trigger">
@@ -228,6 +239,9 @@
       <section class="section-block">
         <div id="final-photography">
           <h4>Final Photography</h4>
+          <img src="images/JHU/JHU555_lounge_groundfloor_1699372696_1440x810.jpg" class="secondary-images">
+          <img src="images/JHU/JHU-555 Penn_Alan Karchmer_242.jpg" class="secondary-images">
+          <img src="images/JHU/2023AK25_259_lrg.jpg" class="secondary-images">
           <img src="/images/JHU/JHU555interioratriumandentrance_alanK_1699040853_1440x810.jpg" class="secondary-images">
           <img src="/images/JHU/JHU555_terrace_square_1699377561_720x720.jpg" class="secondary-images">
 
