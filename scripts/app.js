@@ -458,22 +458,23 @@ if (document.querySelector(".ear-right")) {
   window.setInterval(() => earWiggle.play(0), 1500);
 }
 
-// Nav bar color: start blue, turn white after scrolling 100vh
-if (document.querySelector("#main-nav-background")) {
+// Nav bar color: start blue, turn white after scrolling 100vh (only on index.html)
+if (document.querySelector("#canvas") && document.querySelector("#main-nav-background")) {
   const navBg = document.querySelector("#main-nav-background");
+  const viewportHeight = window.innerHeight;
 
-  // Set initial blue background with full opacity
+  // Set initial blue background
   navBg.style.backgroundColor = "#d7e5fe";
   navBg.style.opacity = "1";
 
-  // Turn white after user scrolls 100vh
-  gsap.to("#main-nav-background", {
-    backgroundColor: "#fbf9f1",
-    scrollTrigger: {
-      trigger: "body",
-      start: "top+=100vh top", // After scrolling down 100vh
-      toggleActions: "play none none reverse", // Play forward, reverse when scrolling back up
-    },
+  // Track scroll and change color at 100vh
+  window.addEventListener("scroll", () => {
+    const scrolled = (window.scrollY)*2;
+    if (scrolled >= viewportHeight) {
+      navBg.style.backgroundColor = "#fbf9f1";
+    } else {
+      navBg.style.backgroundColor = "#d7e5fe";
+    }
   });
 }
 
