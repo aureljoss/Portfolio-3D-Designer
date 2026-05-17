@@ -117,48 +117,18 @@ if (document.querySelector(".img-comp-container")) {
 
 // ---- GSAP //
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { SplitText } from "gsap/SplitText";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-// Also expose to window for consistency
-window.gsap = gsap;
-
-// Wait for DOM to be ready before initializing ScrollSmoother
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initScrollSmoother);
-} else {
-  // Small delay to ensure all modules loaded
-  setTimeout(initScrollSmoother, 100);
-}
-
-function initScrollSmoother() {
-  try {
-    ScrollSmoother.create({
-      smooth: 1.5,
-      speed: 2,
-      effects: true,
-      // When smooth scrolling stops, nudge R3F to repaint (WebGL + ScrollSmoother
-      // transform often leaves a blank canvas until the next interaction).
-      onStop: () => {
-        window.dispatchEvent(new CustomEvent("r3f-invalidate"));
-      },
-    });
-
-    // Set up animations after ScrollSmoother is ready
-    setTimeout(setupScrollTriggerAnimations, 50);
-  } catch (e) {
-    console.warn("ScrollSmoother init error:", e);
-    setTimeout(setupScrollTriggerAnimations, 100);
-  }
-}
+ScrollSmoother.create({
+  smooth: 1.5,
+  speed: 2,
+  effects: true,
+});
 
 // scroll trigger - wrapped to run after ScrollSmoother initializes
-function setupScrollTriggerAnimations() {
-
   if (document.querySelector("#up-arrow-portfolio")) {
     gsap.to("#up-arrow-portfolio", {
       opacity: 1,
@@ -280,7 +250,6 @@ function setupScrollTriggerAnimations() {
         );
     });
   }
-}
 
 // Fallback helper: reveal portfolio projects immediately (used when user jumps
 // to the projects section before scroll triggers initialize). Exposed on
