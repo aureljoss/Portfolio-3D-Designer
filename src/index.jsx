@@ -1,9 +1,56 @@
 import "../src/styles/styles-threejs.css";
 import { Experience } from "./Experience";
 import ReactDOM from "react-dom/client";
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect } from "react";
+import gsap from "gsap";
+import { Canvas, invalidate } from "@react-three/fiber";
 import { Html } from "@react-three/drei"; // for loading progress
+
+/**
+ * ScrollSmoother translates #smooth-content with CSS transforms. Browsers often
+ * throttle or fail to repaint WebGL when that section leaves and re-enters the
+ * viewport. Invalidate on scroll / visibility so the scene draws again.
+ */
+function RefreshCanvasWhenNeeded() {
+  useEffect(() => {
+    const section = document.getElementById("canvas");
+    let debounce;
+
+    const bump = () => {
+      clearTimeout(debounce);
+      debounce = setTimeout(() => invalidate(), 0);
+    };
+
+    window.addEventListener("scroll", bump, { passive: true });
+    window.addEventListener("resize", bump);
+
+    const onR3fInvalidate = () => invalidate();
+    window.addEventListener("r3f-invalidate", onR3fInvalidate);
+
+    let io;
+    if (section) {
+      io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) invalidate();
+          }
+        },
+        { threshold: [0, 0.05, 0.2] },
+      );
+      io.observe(section);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", bump);
+      window.removeEventListener("resize", bump);
+      window.removeEventListener("r3f-invalidate", onR3fInvalidate);
+      clearTimeout(debounce);
+      io?.disconnect();
+    };
+  }, []);
+
+  return null;
+}
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
@@ -19,31 +66,41 @@ function Overlay() {
   const handlePortfolioClick = (e) => {
     e.preventDefault();
     const portfolioSection = document.getElementById(
-      "portfolio-projects-section"
+      "intro-headline",
     );
     if (portfolioSection) {
-      portfolioSection.scrollIntoView({ behavior: "smooth" });
-      // If the ScrollTrigger/animations weren't created yet (user jumped
-      // directly via this link), call the fallback reveal helper after the
-      // scroll completes so the projects become visible.
-      // Use a short timeout to allow smooth scrolling to progress.
-      setTimeout(() => {
-        if (window.revealPortfolioProjects) {
-          try {
-            window.revealPortfolioProjects();
-          } catch (err) {
-            // ignore errors from the fallback
+      // Use gsap.to() with ScrollSmoother's proxy for smooth, compatible scrolling
+      gsap.to(window, {
+        scrollTo: {
+          y: portfolioSection,
+          autoKill: false,
+        },
+        duration: 1.5,
+        ease: "power2.inOut",
+        onComplete: () => {
+          // If the ScrollTrigger/animations weren't created yet (user jumped
+          // directly via this link), call the fallback reveal helper after the
+          // scroll completes so the projects become visible.
+          if (window.revealPortfolioProjects) {
+            try {
+              window.revealPortfolioProjects();
+            } catch (err) {
+              // ignore errors from the fallback
+            }
           }
         }
-      }, 550);
+      });
     }
   };
 
   return (
     <div id="intro-threejs">
-      <h3>&lt; 3D Designer & Creative Developer /&gt;</h3>
+      <h3>&lt; Multidisciplinary Designer /&gt;</h3>
+      {/* <h3>&lt; 3D Designer & Creative Developer /&gt;</h3> */}
       <p>
-        My name is Aurélie (pronounced oh-reh-lee). <br />I bring ideas to life by combining innovative spatial design, immersive 3D, and interactive digital experiences.
+        My name is Aurélie (pronounced oh-reh-lee). <br />I bring ideas to life
+        by combining innovative spatial design, immersive 3D, and interactive
+        digital experiences.
       </p>
       <ul id="projects-threejs">
         <li>
@@ -79,22 +136,24 @@ function Overlay() {
   );
 }
 
-  root.render(
-    <>
-      <Overlay />
-      <Canvas
-        id="canvas-threejs"
-        flat
-        camera={{
-          fov: 40,
-          near: 0.1,
-          far: 100,
-          position: [6.8, 2, 5],
-        }}
-      >
-        <Suspense fallback={<Loader />}>
-          <Experience />
-        </Suspense>
-      </Canvas>
-    </>
-  );
+root.render(
+  <>
+    <Overlay />
+    <Canvas
+      id="canvas-threejs"
+      flat
+      resize={{ debounce: { scroll: 0, resize: 0 } }}
+      camera={{
+        fov: 40,
+        near: 0.1,
+        far: 100,
+        position: [6.8, 2, 5],
+      }}
+    >
+      <RefreshCanvasWhenNeeded />
+      <Suspense fallback={<Loader />}>
+        <Experience />
+      </Suspense>
+    </Canvas>
+  </>,
+);

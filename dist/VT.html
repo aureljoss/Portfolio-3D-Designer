@@ -13,10 +13,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Aurelie Josserand - Virginia Tech</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-DVlkocfC.css">
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <script type="module" crossorigin src="/assets/index-DNdOv_Mx.js"></script>
+    <title>Aurelie Josserand - Virginia Tech</title>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -35,6 +33,17 @@
       href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"
     />
     <meta name="robots" content="noindex">
+                <script type="importmap">
+                  {
+                    "imports": {
+                      "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                      "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+                    }
+                  }
+                </script>
+    <script type="module" crossorigin src="/assets/vt-IrxMDxI1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/app-CciLdMQN.js">
+    <link rel="stylesheet" crossorigin href="/assets/app-C06OlVcL.css">
   </head>
 
   <body>
@@ -119,37 +128,11 @@
                 <div id="lobby" class="VR-hover">
                   <!-- <h4>360 images used for VR</h4> -->
                 </div>
-                <script type="importmap">
-                  {
-                    "imports": {
-                      "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
-                      "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
-                    }
-                  }
-                </script>
-                <script type="module">
-                  import { Viewer } from "@photo-sphere-viewer/core";
-
-                  const lobbyViewer = new Viewer({
-                    container: document.querySelector("#lobby"),
-                    panorama: '/images/VT/Lobby 2.jpg',
-                    caption:'Main Lobby',
-                    navbar:['zoom', 'move', 'caption'], 
-                  });
-                </script>
+
               </div>
               <div >
                 <h6></h6>
-                <div id="loft" class="VR-hover"></div>
-                <script type="module" >
-                  import { Viewer } from "@photo-sphere-viewer/core";
-                  const loftViewer = new Viewer({
-                    container: document.querySelector("#loft"),
-                    panorama: '/images/VT/Loft.jpg',
-                    caption:'The Loft',
-                    navbar:['zoom', 'move','caption'], 
-                  });
-                </script>
+                <div id="loft" class="VR-hover"></div>
               </div>
               <!-- <div>
                 <h6>Roof</h6>

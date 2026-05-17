@@ -117,16 +117,22 @@ if (document.querySelector(".img-comp-container")) {
 
 // ---- GSAP //
 import { gsap } from "gsap";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { SplitText } from "gsap/SplitText";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText, ScrollToPlugin);
 
 ScrollSmoother.create({
   smooth: 1.5,
   speed: 2,
   effects: true,
+  // When smooth scrolling stops, nudge R3F to repaint (WebGL + ScrollSmoother
+  // transform often leaves a blank canvas until the next interaction).
+  onStop: () => {
+    window.dispatchEvent(new CustomEvent("r3f-invalidate"));
+  },
 });
 
 // ------ Menu ----- //
@@ -313,7 +319,7 @@ if (document.querySelector(".portfolio-projects")) {
           duration: 0.6,
           ease: "power2.out",
         },
-        "-=0.8"
+        "-=0.8",
       )
       .to(
         projectInfo,
@@ -323,7 +329,7 @@ if (document.querySelector(".portfolio-projects")) {
           duration: 0.6,
           ease: "power2.out",
         },
-        "-=0.6"
+        "-=0.6",
       );
   });
 }
@@ -384,21 +390,21 @@ if (document.querySelector(".mouth-back")) {
   mouthOpen.to(
     ".mouth-back",
     { duration: mouthSpeed, ease: easeType, y: -70 },
-    0
+    0,
   );
 }
 if (document.querySelector(".tongue")) {
   mouthOpen.to(
     ".tongue",
     { duration: mouthSpeed * 1.5, ease: easeType, y: -70 },
-    0
+    0,
   );
 }
 if (document.querySelector(".teeth")) {
   mouthOpen.to(
     ".teeth",
     { duration: mouthSpeed, ease: easeType, y: -70, scaleY: 1.2 },
-    0
+    0,
   );
 }
 if (document.querySelector(".freckles")) {
@@ -411,7 +417,7 @@ if (document.querySelector(".eye-right")) {
   mouthOpen.to(
     ".eye-right",
     { duration: mouthSpeed, ease: easeType, x: -2 },
-    0
+    0,
   );
 }
 if (document.querySelector(".eye-left")) {
@@ -452,43 +458,38 @@ if (document.querySelector(".ear-right")) {
   window.setInterval(() => earWiggle.play(0), 1500);
 }
 
-// Add this to your existing GSAP code
-// Show nav background when scrolling past canvas
-if (
-  document.querySelector("#canvas") &&
-  document.querySelector("#main-nav-background")
-) {
+// Nav bar color: start blue, turn white after scrolling 100vh
+if (document.querySelector("#main-nav-background")) {
+  const navBg = document.querySelector("#main-nav-background");
+
+  // Set initial blue background with full opacity
+  navBg.style.backgroundColor = "#d7e5fe";
+  navBg.style.opacity = "1";
+
+  // Turn white after user scrolls 100vh
   gsap.to("#main-nav-background", {
-    opacity: 1,
+    backgroundColor: "#fbf9f1",
     scrollTrigger: {
-      trigger: "#canvas",
-      start: "bottom top", // When canvas bottom hits viewport top
-      toggleActions: "play none none reverse",
+      trigger: "body",
+      start: "top+=100vh top", // After scrolling down 100vh
+      toggleActions: "play none none reverse", // Play forward, reverse when scrolling back up
     },
   });
 }
 
-// Smooth-scroll to top when anchors with href="#top" are clicked. This
-// handles pages that might use a smooth scroller wrapper (#smooth-wrapper)
-// or default browser scrolling.
+// Smooth-scroll to top when clicking up arrow or #start anchors
 (function setupTopAnchorScrolling() {
   document.addEventListener("click", function (e) {
-    const target = e.target.closest('a[href="#top"]');
+    const target = e.target.closest('a[href="#start"], a[href="#top"]');
     if (!target) return;
 
     e.preventDefault();
 
-    // If the site uses a smooth wrapper with internal scroller (#smooth-wrapper
-    // / #smooth-content), attempt to scroll that container; otherwise scroll
-    // the window.
-    const smoothContent = document.querySelector("#smooth-content");
-    if (smoothContent) {
-      // Smooth scroll for the wrapper
-      smoothContent.scrollTo({ top: 0, behavior: "smooth" });
-      // Also update window scroll as a fallback
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    // Use GSAP scrollTo for smooth, compatible scrolling with ScrollSmoother
+    gsap.to(window, {
+      scrollTo: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
   });
 })();
