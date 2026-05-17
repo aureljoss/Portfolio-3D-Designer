@@ -124,214 +124,162 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText, ScrollToPlugin);
 
-ScrollSmoother.create({
-  smooth: 1.5,
-  speed: 2,
-  effects: true,
-  // When smooth scrolling stops, nudge R3F to repaint (WebGL + ScrollSmoother
-  // transform often leaves a blank canvas until the next interaction).
-  onStop: () => {
-    window.dispatchEvent(new CustomEvent("r3f-invalidate"));
-  },
-});
+// Also expose to window for consistency
+window.gsap = gsap;
 
-// ------ Menu ----- //
-
-// const menuText = document.getElementById("menuText");
-// const menuOptions = document.getElementById("menuOptions");
-// const menuLines = document.getElementById("lines");
-
-// if (menuText && menuOptions && menuLines) {
-//   menuText.addEventListener("click", () => {
-//     menuText.style.display = "none";
-//     menuLines.style.display = "none";
-//     menuOptions.style.display = "flex";
-//     menuOptions.style.alignItems = "center";
-//   });
-
-//   menuLines.addEventListener("click", () => {
-//     menuText.style.display = "none";
-//     menuLines.style.display = "none";
-//     menuOptions.style.display = "flex";
-//     menuOptions.style.alignItems = "center";
-//   });
-// }
-
-// // Navigation links
-// const aboutLink = document.getElementById("aboutLink");
-// const resumeLink = document.getElementById("resumeLink");
-// const workLink = document.getElementById("workLink");
-
-// if (aboutLink) {
-//   aboutLink.addEventListener("click", () => {
-//     menuOptions.style.display = "none";
-//     menuText.style.display = "flex";
-//     menuLines.style.display = "block";
-//   });
-// }
-
-// if (resumeLink) {
-//   resumeLink.addEventListener("click", () => {
-//     menuOptions.style.display = "none";
-//     menuText.style.display = "flex";
-//     menuLines.style.display = "block";
-//   });
-// }
-
-// if (workLink) {
-//   workLink.addEventListener("click", () => {
-//     menuOptions.style.display = "none";
-//     menuText.style.display = "flex";
-//     menuLines.style.display = "block";
-//   });
-// }
-
-// menuOptions.addEventListener("click", () => {
-//   menuOptions.style.display = "none";
-//   menuText.style.display = "flex";
-//   menuLines.style.display = "block";
-// });
-
-// scroll trigger //
-
-// if (document.querySelector("#portfolio-projects-section")) {
-//   gsap.to("#menu", {
-//     opacity: 1,
-//     scrollTrigger: {
-//       trigger: "#portfolio-projects-section",
-//       start: "top bottom",
-//       end: "#canvas top", // This makes it disappear at the canvas
-//       toggleActions: "play none none reverse", // Changed to reverse on the last action
-//     },
-//     duration: 1,
-//   });
-// }
-
-if (document.querySelector("#up-arrow-portfolio")) {
-  gsap.to("#up-arrow-portfolio", {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: ".scroll-trigger-up-arrow",
-      start: "top top+=100vh", // Start when scrolled 100vh (one viewport height)
-      toggleActions: "play none none reverse", // Play when entering, reverse when leaving
-    },
-    duration: 1,
-  });
+// Wait for DOM to be ready before initializing ScrollSmoother
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initScrollSmoother);
+} else {
+  // Small delay to ensure all modules loaded
+  setTimeout(initScrollSmoother, 100);
 }
 
-if (document.querySelector("#up-arrow")) {
-  gsap.to("#up-arrow", {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: "#portfolio-projects-section",
-      start: "top bottom",
-      end: "#canvas top", // This makes it disappear at the canvas
-      toggleActions: "play none none reverse", // Changed to reverse on the last action
-    },
-    duration: 1,
-  });
-}
-
-if (document.querySelector("#introduction")) {
-  gsap.to("#introduction", {
-    opacity: 1,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#introduction",
-      start: "top bottom",
-    },
-  });
-}
-
-if (document.querySelector("#designer-svg")) {
-  gsap.to("#designer-svg", {
-    duration: 2,
-    x: 0,
-    y: 0,
-    rotation: 720,
-    ease: "Power2.easeOut",
-    scrollTrigger: {
-      trigger: "#introduction",
-      start: "top bottom",
-      end: "#portfolio-projects-section top", // This makes it disappear at the canvas
-      toggleActions: "play none none reverse", // Changed to reverse on the last action
-    },
-  });
-  gsap.to("#arch-svg", {
-    duration: 2,
-    rotation: 360,
-    ease: "Power2.easeOut",
-    scrollTrigger: {
-      trigger: "#introduction",
-      start: "top bottom",
-    },
-  });
-  gsap.to("#tech-svg", {
-    duration: 2,
-    x: 0,
-    ease: "bounce.out",
-    scrollTrigger: {
-      trigger: "#introduction",
-      start: "top bottom",
-    },
-  });
-}
-
-// Individual portfolio project animations
-if (document.querySelector(".portfolio-projects")) {
-  // Select all portfolio projects
-  const portfolioProjects = document.querySelectorAll(".portfolio-projects");
-
-  // Create individual animations for each project
-  portfolioProjects.forEach((project, index) => {
-    const vignette = project.querySelector(".portfolio-vignettes");
-    const title = project.querySelector(".project-title");
-    const projectInfo = project.querySelector(".project-info");
-
-    // Set initial state
-    gsap.set([vignette, title, projectInfo], {
-      opacity: 0,
-      y: 50,
-    });
-
-    // Create timeline for each project
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: project,
-        start: "top bottom-=100",
-        end: "bottom top+=100",
-        toggleActions: "play none none reverse",
+function initScrollSmoother() {
+  try {
+    ScrollSmoother.create({
+      smooth: 1.5,
+      speed: 2,
+      effects: true,
+      // When smooth scrolling stops, nudge R3F to repaint (WebGL + ScrollSmoother
+      // transform often leaves a blank canvas until the next interaction).
+      onStop: () => {
+        window.dispatchEvent(new CustomEvent("r3f-invalidate"));
       },
     });
 
-    // Animate elements with staggered delay
-    tl.to(vignette, {
+    // Set up animations after ScrollSmoother is ready
+    setTimeout(setupScrollTriggerAnimations, 50);
+  } catch (e) {
+    console.warn("ScrollSmoother init error:", e);
+    setTimeout(setupScrollTriggerAnimations, 100);
+  }
+}
+
+// scroll trigger - wrapped to run after ScrollSmoother initializes
+function setupScrollTriggerAnimations() {
+
+  if (document.querySelector("#up-arrow-portfolio")) {
+    gsap.to("#up-arrow-portfolio", {
       opacity: 1,
+      scrollTrigger: {
+        trigger: ".scroll-trigger-up-arrow",
+        start: "top top+=100vh",
+        toggleActions: "play none none reverse",
+      },
+      duration: 1,
+    });
+  }
+
+  if (document.querySelector("#up-arrow")) {
+    gsap.to("#up-arrow", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#portfolio-projects-section",
+        start: "top bottom",
+        end: "#canvas top",
+        toggleActions: "play none none reverse",
+      },
+      duration: 1,
+    });
+  }
+
+  if (document.querySelector("#introduction")) {
+    gsap.to("#introduction", {
+      opacity: 1,
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#introduction",
+        start: "top bottom",
+      },
+    });
+  }
+
+  if (document.querySelector("#designer-svg")) {
+    gsap.to("#designer-svg", {
+      duration: 2,
+      x: 0,
       y: 0,
-      duration: 1.2,
-      ease: "power2.out",
-    })
-      .to(
-        title,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power2.out",
+      rotation: 720,
+      ease: "Power2.easeOut",
+      scrollTrigger: {
+        trigger: "#introduction",
+        start: "top bottom",
+        end: "#portfolio-projects-section top",
+        toggleActions: "play none none reverse",
+      },
+    });
+    gsap.to("#arch-svg", {
+      duration: 2,
+      rotation: 360,
+      ease: "Power2.easeOut",
+      scrollTrigger: {
+        trigger: "#introduction",
+        start: "top bottom",
+      },
+    });
+    gsap.to("#tech-svg", {
+      duration: 2,
+      x: 0,
+      ease: "bounce.out",
+      scrollTrigger: {
+        trigger: "#introduction",
+        start: "top bottom",
+      },
+    });
+  }
+
+  // Individual portfolio project animations
+  if (document.querySelector(".portfolio-projects")) {
+    const portfolioProjects = document.querySelectorAll(".portfolio-projects");
+
+    portfolioProjects.forEach((project, index) => {
+      const vignette = project.querySelector(".portfolio-vignettes");
+      const title = project.querySelector(".project-title");
+      const projectInfo = project.querySelector(".project-info");
+
+      gsap.set([vignette, title, projectInfo], {
+        opacity: 0,
+        y: 50,
+      });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: project,
+          start: "top bottom-=100",
+          end: "bottom top+=100",
+          toggleActions: "play none none reverse",
         },
-        "-=0.8",
-      )
-      .to(
-        projectInfo,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power2.out",
-        },
-        "-=0.6",
-      );
-  });
+      });
+
+      tl.to(vignette, {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: "power2.out",
+      })
+        .to(
+          title,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power2.out",
+          },
+          "-=0.8",
+        )
+        .to(
+          projectInfo,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power2.out",
+          },
+          "-=0.6",
+        );
+    });
+  }
 }
 
 // Fallback helper: reveal portfolio projects immediately (used when user jumps

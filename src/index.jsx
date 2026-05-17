@@ -2,9 +2,15 @@ import "../src/styles/styles-threejs.css";
 import { Experience } from "./Experience";
 import ReactDOM from "react-dom/client";
 import React, { Suspense, useEffect } from "react";
-import gsap from "gsap";
 import { Canvas, invalidate } from "@react-three/fiber";
 import { Html } from "@react-three/drei"; // for loading progress
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { SplitText } from "gsap/SplitText";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText, ScrollToPlugin);
 
 /**
  * ScrollSmoother translates #smooth-content with CSS transforms. Browsers often
